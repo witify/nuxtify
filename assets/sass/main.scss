@@ -1,0 +1,30 @@
+// Variables
+@import 'variables';
+
+// Libraries
+@import "~bulma";
+@import "~buefy/src/scss/buefy";
+
+// Mixins
+@import "mixins/mixins";
+
+// Overwrites
+@import 'overwrites/bulma';
+@import 'overwrites/parallaxy';
+
+// General
+@import 'transitions';
+@import 'project';
+@import 'navigation';
+@import 'typography';
+@import 'button';
+@import 'profile-picture';
+@import 'layout';
+@import 'cta';
+@import 'footer';
+@import 'helpers';
+
+// Pages
+@import 'home';
+@import 'services';
+

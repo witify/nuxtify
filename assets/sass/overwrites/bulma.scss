@@ -1,0 +1,15 @@
+.heading {
+    color: $grey;
+    font-weight: $weight-semibold;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.icon.is-circle {
+    font-size: 1.7rem;
+    width: 4rem;
+    height: 4rem;
+    border: 2px solid $white-ter;
+    border-radius: 4rem;
+    color: $grey;
+}

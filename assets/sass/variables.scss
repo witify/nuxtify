@@ -1,0 +1,138 @@
+/*
+ |--------------------------------------------------------------------------
+ | Import the initial variables
+ |--------------------------------------------------------------------------
+ */
+
+ @import "~bulma/sass/utilities/initial-variables";
+ @import "~bulma/sass/utilities/functions";
+ 
+ /*
+  |--------------------------------------------------------------------------
+  | Base colors
+  |--------------------------------------------------------------------------
+  */
+ 
+ $black:        hsl(204, 0%, 4%);
+ $black-bis:    hsl(204, 0%, 7%);
+ $black-ter:    hsl(204, 0%, 14%);
+ 
+ $grey-darker:  hsl(204, 0%, 21%);
+ $grey-dark:    hsl(204, 0%, 29%);
+ $grey:         hsl(204, 0%, 48%);
+ $grey-light:   hsl(204, 0%, 71%);
+ $grey-lighter: hsl(204, 0%, 86%);
+ 
+ $white-darker: hsl(204, 0%, 88%);
+ $white-dark:   hsl(204, 0%, 92%);
+ $white-ter:    hsl(204, 0%, 96%);
+ $white-bis:    hsl(204, 0%, 99%);
+ $white:        hsl(204, 0%, 100%);
+ 
+ $orange:       hsl(14, 100%, 53%);
+ $yellow:       hsl(48,  100%, 67%);
+ $green:        hsl(141, 57%, 51%);
+ $turquoise:    hsl(171, 100%, 41%);
+ $cyan:         hsl(204, 86%,  53%);
+ $blue:         #1100FF;
+ $purple:       hsl(271, 100%, 71%);
+ $red:          hsl(0, 100%, 41%);
+ 
+ /*
+  |--------------------------------------------------------------------------
+  | Brand colors
+  |--------------------------------------------------------------------------
+  */
+ 
+ $primary: $blue;
+ $info: $cyan;
+ $success: $green;
+ $warning: $yellow;
+ $danger: $red;
+ $light: $white-ter;
+ $dark: $grey-darker;
+
+  /*
+  |--------------------------------------------------------------------------
+  | Custom colors
+  |--------------------------------------------------------------------------
+  */
+
+  $start-alberta: #D52824;
+  $start-alberta-invert: findColorInvert($start-alberta);
+ 
+  $pneus-a-petits-prix: #FE6C23;
+  $pneus-a-petits-prix-invert: findColorInvert($pneus-a-petits-prix);
+ 
+  $process-optimisation: #038f2d;
+  $process-optimisation-invert: findColorInvert($process-optimisation);
+ 
+  $e-commerce: rgb(121, 0, 226);
+  $e-commerce-invert: findColorInvert($e-commerce);
+ 
+  $custom-application: #c11e1b;
+  $custom-application-invert: findColorInvert($custom-application);
+ 
+  @import "~bulma/sass/utilities/derived-variables";
+  $addColors: (
+    "start-alberta":($start-alberta, $start-alberta-invert),
+    "pneus-a-petits-prix": ($pneus-a-petits-prix, $pneus-a-petits-prix-invert),
+    "process-optimisation": ($process-optimisation, $process-optimisation-invert),
+    "e-commerce": ($e-commerce, $e-commerce-invert),
+    "custom-application": ($custom-application, $custom-application-invert)
+  );
+  $colors: map-merge($colors, $addColors);
+ 
+ /*
+  |--------------------------------------------------------------------------
+  | Typography
+  |--------------------------------------------------------------------------
+  */
+ 
+ $text-color: $black;
+ $text-color-soft: $grey;
+ $side-navbar-width: 300px;
+ 
+ $size-small: 0.8rem;
+ $size-normal: $size-6;
+ $size-medium: $size-5;
+ $size-large: $size-4;
+ 
+ $weight-light: 400;
+ $weight-normal: 500;
+ $weight-medium: 600;
+ $weight-semibold: 700;
+ $weight-bold: 800;
+ $weight-extrabold: 900;
+ 
+ /*
+  |--------------------------------------------------------------------------
+  | Form
+  |--------------------------------------------------------------------------
+  */
+ 
+ $input-shadow: none;
+ $label-color: $grey;
+ $label-size: $size-small;
+ 
+ /*
+  |--------------------------------------------------------------------------
+  | Navbar
+  |--------------------------------------------------------------------------
+  */
+ 
+ $navbar-height: 4.25rem;
+ $navbar-item-hover-background-color: transparent;
+
+ /*
+ |--------------------------------------------------------------------------
+ | Box shadow
+ |--------------------------------------------------------------------------
+ */
+
+$box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+
+$box-shadow-card: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+$box-shadow-card-hover: 0 2px 3px rgba(10, 10, 10, 0.2), 0 0 0 1px rgba(75, 71, 71, 0.1);
+
+$box-shadow-large: 2px 2px 27px rgba(0,0,0,0.15);

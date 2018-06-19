@@ -1,0 +1,122 @@
+.navbar {
+
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+    background-color: #fff;
+    @include transition(0.2s);
+
+    .navbar-brand img {
+        height: 70px;
+    }
+
+    .navbar-link::after {
+        border-color: $grey;
+    }
+
+    @include touch() {
+        .navbar-burger {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            .icon {
+                font-size: 2em;
+            }
+        }
+    }
+}
+
+// Services
+
+.navbar-dropdown.is-services {
+    padding: 0;
+    overflow: hidden;
+
+    @include touch() {
+        padding-bottom: 30px;
+    }
+
+    .navbar-item {
+        background-color: transparent;
+        padding: 10px 0;
+        border-bottom: 1px solid $white-dark;
+        &:hover {
+            background-color: transparent;
+        }
+    }
+
+    .navbar-item .navbar-media {
+        padding: 15px 10px;
+        padding-right: 20px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+
+        &:last-child {
+            border: none;
+        }
+
+        &:hover {
+            background-color: $white-ter !important;
+        }
+
+        .icon {
+            margin-right: 10px;
+            font-size: 2em;
+            padding: 0 20px;
+        }
+
+        span {
+            span, strong {
+                display: block;
+                line-height: 1.2em;
+                color: $grey-dark;
+                font-size: 1.1em;
+            }
+            strong {
+                font-weight: $weight-semibold;
+            }
+            span {
+                font-weight: $weight-light;
+            }
+        }
+    }
+}
+
+// Transparent modifiers
+
+.navbar.is-transparent {
+    background-color: transparent;
+    box-shadow: none;
+
+    @include desktop {
+        .navbar-end, .navbar-start {
+            &> .navbar-item {
+                color: $white;
+            }
+        }
+        .navbar-link {
+            color: #fff;
+            &::after {
+                border-color: #fff;
+            }
+        }
+    }
+    
+    .navbar-burger {
+        background-color: transparent;
+
+        .icon {
+            color: #fff;
+        }
+    }
+}
+
+// Dropdown icon
+
+.select:not(.is-multiple):not(.is-loading)::after, .navbar-link::after {
+    border-width: 2px;
+    border-radius: 0px;
+    height: 0.5em;
+    width: 0.5em;
+    margin-top: -0.31em;
+}

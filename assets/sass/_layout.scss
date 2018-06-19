@@ -1,0 +1,126 @@
+.wrapper {
+    padding-top: $navbar-height;
+}
+
+.container.is-sm {
+    max-width: 800px;
+}
+
+.container.is-xs {
+    max-width: 600px;
+}
+
+.hero {
+    background-position: center;
+    background-size: cover;
+
+    .hero-body {
+        @include tablet() {
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+        }
+    }
+}
+
+.hero.is-main {
+    text-align: left;
+
+    .icon {
+        margin-bottom: 20px;
+    }
+
+    .title, .subtitle {
+        max-width: 50%;
+    }
+
+    .title {
+        font-size: 3rem;
+    }
+
+    .subtitle {
+        font-size: 1.4rem;
+        line-height: 1.4;
+        opacity: 0.9;
+        font-family: $family-sans-serif;
+    }
+}
+
+.hero.is-default {
+    background-image: url('~assets/img/bg/default.svg');
+}
+
+.hero.is-business {
+    background-image: url('~assets/img/bg/business.jpg');
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .subtitle {
+        font-size: 1.2rem;
+    }
+}
+
+.hero.is-light {
+    background-image: url('~assets/img/bg/light.svg');
+    background-color: #fff;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.section.is-grey {
+    background-color: $white-ter;
+}
+
+.is-bg {
+    background-position: center;
+    background-size: cover;
+}
+
+.is-bg-office {
+    background-image: url('~assets/img/bg/office.jpg');
+}
+
+.section-text {
+    padding: 4rem 0;
+
+    .title-icon {
+        font-size: 3rem;
+        margin-bottom: 30px;
+        color: $black;
+    }
+
+    .button {
+        margin-top: 30px;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .subtitle {
+        font-size: 1.4rem;
+    }
+    
+    p {
+        color: $grey;
+        font-size: 1.2rem;
+        margin-bottom: 40px;
+    }
+
+    li {
+        color: $grey-dark;
+        font-weight: 400;
+        font-size: 1.4rem;
+        border-bottom: 1px $white-ter solid;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+
+        &:last-child {
+            border: none;
+            padding-bottom: 0px;
+            margin-bottom: 0px;
+        }
+    }
+}

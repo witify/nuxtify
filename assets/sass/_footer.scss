@@ -1,0 +1,49 @@
+.footer {
+    padding: 70px 0;
+    background-color: $white-ter;
+    .footer-title {
+        font-weight: $weight-semibold;
+        margin-bottom: 35px;
+        font-size: $size-5;
+    }
+    .footer-link, p {
+        display: block;
+        color: $grey-dark;
+        margin-bottom: 10px;
+    }
+    p {
+        padding-right: 100px;
+    }
+
+    .footer-bottom {
+        margin-top: 50px;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+
+        .footer-bottom-left {
+            img, span {
+                display: inline-block;
+                vertical-align: middle;
+            }
+            img {
+                opacity: 0.4;
+                width: 32px;
+            }
+            span {
+                font-size: 0.9rem;
+                color: $grey;
+                padding-left: 15px;
+            }
+        }
+        .footer-bottom-right {
+            .icon {
+                color: $grey;
+                font-size: 1.4rem;
+                height: auto;
+                width: auto;
+                margin-left: 10px;
+            }
+        }
+    }
+}

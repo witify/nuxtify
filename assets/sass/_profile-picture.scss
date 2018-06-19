@@ -1,0 +1,11 @@
+$profile-size: 66px;
+
+.profile-picture {
+    height: $profile-size;
+    width: $profile-size;
+    border-radius: $profile-size;
+    background-position: center;
+    background-size: cover;
+    box-shadow: $box-shadow;
+    background-image: url('~assets/img/home/client.jpg');
+}
