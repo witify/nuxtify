@@ -4,7 +4,7 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'witify',
+    titleTemplate: '%s - Witify',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -67,9 +67,6 @@ module.exports = {
     'nuxt-buefy',
     ['nuxt-i18n', {
       defaultLocale: 'en',
-      vueI18n: {
-        fallbackLocale: 'en'
-      },
       locales: [
         {
           code: 'en',
@@ -81,7 +78,40 @@ module.exports = {
           iso: 'fr-FR',
           name: 'Français'
         }
-      ]
+      ],
+      vueI18n: {
+        messages: {
+          fr: {
+            pages: {
+              index: 'Accueil',
+              projects: 'Projets',
+              services: {
+                index: 'Services',
+                'process-optimisation': 'Optimisation de processus',
+                'e-commerce': 'E-commerce',
+                'custom-application': 'Application personnalisé'
+              },
+              about: 'À propos',
+              contact: 'Contactez-nous'
+            }
+          },
+          en: {
+            pages: {
+              index: 'Home',
+              projects: 'Projects',
+              services: {
+                index: 'Services',
+                'process-optimisation': 'Process optimisation',
+                'e-commerce': 'E-commerce',
+                'custom-application': 'Custom application'
+              },
+              about: 'About us',
+              contact: 'Contact us'
+            }
+          }
+        },
+        fallbackLocale: 'en'
+      }
     }]
   ],
 

@@ -1,6 +1,5 @@
 import Vue from 'vue'
 
-import VueParallaxy from 'vue-parallaxy'
 
 import ServiceCard from '../components/ServiceCard.vue'
 import CTA from '../components/CTA.vue'
@@ -8,12 +7,9 @@ import Footer from '../components/Footer.vue'
 import Reviews from '../components/Reviews.vue'
 import Navigation from '../components/Navigation.vue'
 import ContactForm from '../components/ContactForm.vue'
-
 import VeeValidate from 'vee-validate'
 
 Vue.use(VeeValidate);
-
-Vue.component('parallax', VueParallaxy)
 
 Vue.component('service-card', ServiceCard)
 Vue.component('cta', CTA)

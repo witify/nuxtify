@@ -49,13 +49,13 @@
         <div class="container">
           <div class="columns">
             <div class="column is-on-third">
-              <service-card title="Process optimisation" slug="process-optimisation" icon="rocket" v-vpshow></service-card>
+              <service-card title="Process optimisation" slug="process-optimisation" icon="rocket"></service-card>
             </div>
             <div class="column is-on-third">
-              <service-card title="E-commerce" slug="e-commerce" icon="store" v-vpshow></service-card>
+              <service-card title="E-commerce" slug="e-commerce" icon="store"></service-card>
             </div>
             <div class="column is-on-third">
-              <service-card title="Custom application" slug="custom-application" icon="server-network" v-vpshow></service-card>
+              <service-card title="Custom application" slug="custom-application" icon="server-network"></service-card>
             </div>
           </div>
         </div>
@@ -143,9 +143,9 @@
 
 <script>
 export default {
-  data() {
+  head() {
     return {
-      locale: this.$nuxt.$route.params.locale
+      title: this.$t('pages.index')
     }
   }
 }

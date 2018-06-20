@@ -57,15 +57,11 @@
         border-radius: 5px;
         overflow: hidden;
         box-shadow: $box-shadow-large;
-
-        &.before-enter {
-            opacity: 0;
-            @include transform(translateY(50px));
-        }
-
-        &.enter {
-            opacity: 1;
-            @include transform(translateY(0));
+        @include transition(.2s);
+        
+        &:hover {
+            @include transform(translateY(-5px));
+            box-shadow: $box-shadow-x-large;
         }
 
         .service-img {
@@ -106,7 +102,6 @@
         }
 
         &.is-process-optimisation {
-            @include transition(0.3s);
             .service-img {
                 background-image: url('~assets/img/home/process-optimisation.jpg');
             }
@@ -116,7 +111,6 @@
         }
 
         &.is-e-commerce {
-            @include transition(0.5s);
             .service-img {
                 background-image: url('~assets/img/home/e-commerce.jpg');
             }
@@ -126,7 +120,6 @@
         }
 
         &.is-custom-application {
-            @include transition(0.7s);
             .service-img {
                 background-image: url('~assets/img/home/custom-application.jpg');
             }

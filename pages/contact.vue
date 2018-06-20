@@ -66,11 +66,15 @@
 
 <script>
 export default {
-    layout: 'default',
     nuxtI18n: {
         paths: {
             en: '/contact-us',
             fr: '/nous-joindre'
+        }
+    },
+    head() {
+        return {
+            title: this.$t('pages.contact')
         }
     }
 }

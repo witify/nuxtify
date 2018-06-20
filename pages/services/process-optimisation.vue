@@ -262,6 +262,11 @@ export default {
             en: '/process-optimisation',
             fr: '/optimisation-de-processus'
         }
+    },
+    head() {
+        return {
+            title: this.$t('pages.services.process-optimisation')
+        }
     }
 }
 </script>

@@ -16,19 +16,19 @@
                         <h2 class="footer-title">
                         Services
                         </h2>
-                        <a href="#" class="footer-link">Process optimisation</a>
-                        <a href="#" class="footer-link">Process optimisation</a>
-                        <a href="#" class="footer-link">Process optimisation</a>
-                        <a href="#" class="footer-link">Process optimisation</a>
+                        <nuxt-link :to="localePath('services')" class="footer-link">All services</nuxt-link>
+                        <nuxt-link :to="localePath('services-process-optimisation')" class="footer-link">Process optimisation</nuxt-link>
+                        <nuxt-link :to="localePath('services-e-commerce')" class="footer-link">E-commerce</nuxt-link>
+                        <nuxt-link :to="localePath('services-custom-application')" class="footer-link">Custom application</nuxt-link>
                     </div>
                     <div class="column is-one-quarter">
                         <h2 class="footer-title">
                         Witify
                         </h2>
-                        <a href="#" class="footer-link">Process optimisation</a>
-                        <a href="#" class="footer-link">Process optimisation</a>
-                        <a href="#" class="footer-link">Process optimisation</a>
-                        <a href="#" class="footer-link">Process optimisation</a>
+                        <nuxt-link :to="localePath('index')" class="footer-link">Home</nuxt-link>
+                        <nuxt-link :to="localePath('projects')" class="footer-link">Projects</nuxt-link>
+                        <nuxt-link :to="localePath('about')" class="footer-link">About us</nuxt-link>
+                        <nuxt-link :to="localePath('contact')" class="footer-link">Contact us</nuxt-link>
                     </div>
                 </div>
                 <div class="footer-bottom">

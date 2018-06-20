@@ -2,7 +2,7 @@
 
     <div class="page-e-commerce">
 
-        <section class="hero is-main is-e-commerce is-large">
+        <section class="hero is-main is-e-commerce is-bold is-large">
             <div class="hero-body">
                 <div class="container">
                     <div class="icon is-circle is-dark">
@@ -261,6 +261,11 @@ export default {
         paths: {
             en: '/e-commerce',
             fr: '/e-commerce'
+        }
+    },
+    head() {
+        return {
+            title: this.$t('pages.services.e-commerce')
         }
     }
 }

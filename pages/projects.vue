@@ -111,11 +111,15 @@
 
 <script>
 export default {
-    layout: 'default',
     nuxtI18n: {
         paths: {
             en: '/projects',
             fr: '/projets'
+        }
+    },
+    head() {
+        return {
+            title: this.$t('pages.projects')
         }
     }
 }

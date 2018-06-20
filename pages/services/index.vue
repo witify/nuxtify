@@ -110,6 +110,11 @@ export default {
             en: '/services',
             fr: '/services'
         }
+    },
+    head() {
+        return {
+            title: this.$t('pages.services.index')
+        }
     }
 }
 </script>

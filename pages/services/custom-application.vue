@@ -1,7 +1,7 @@
 <template>
     <div class="page-custom-application">
 
-        <section class="hero is-main is-custom-application is-large">
+        <section class="hero is-main is-bold is-custom-application is-large">
             <div class="hero-body">
                 <div class="container">
                     <div class="icon is-circle is-dark">
@@ -28,6 +28,11 @@ export default {
         paths: {
             en: '/custom-application',
             fr: '/application-personalisee'
+        }
+    },
+    head() {
+        return {
+            title: this.$t('pages.services.custom-application')
         }
     }
 }

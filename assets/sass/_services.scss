@@ -94,7 +94,7 @@ $phase-icon-size: 40px;
 // Pages
 
 .page-process-optimisation, .page-e-commerce, .page-custom-application {
-    .hero.is-main {
+    .hero.is-main .hero-body {
         background-size: 45%;
         background-repeat: no-repeat;
         background-position: right;
@@ -102,19 +102,19 @@ $phase-icon-size: 40px;
 }
 
 .page-process-optimisation {
-    .hero.is-main {
+    .hero.is-main .hero-body {
         background-image: url('~assets/img/services/process-optimisation/illustration.svg');
     }
 }
 
 .page-e-commerce {
-    .hero.is-main {
+    .hero.is-main .hero-body {
         background-image: url('~assets/img/services/e-commerce/illustration.svg');
     }
 }
 
 .page-custom-application {
-    .hero.is-main {
+    .hero.is-main .hero-body {
         background-image: url('~assets/img/services/custom-application/illustration.svg');
     }
 }

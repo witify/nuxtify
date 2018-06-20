@@ -105,10 +105,13 @@ export default {
     },
     methods: {
         isTransparent() {
-            return this.$nuxt.$route.name.includes('index__') ||
-                this.$nuxt.$route.name.includes('services-process-optimisation__') ||
-                this.$nuxt.$route.name.includes('services-e-commerce__') ||
-                this.$nuxt.$route.name.includes('services-custom-application__')
+            if (this.$nuxt.$route.name) {
+                return this.$nuxt.$route.name.includes('index__') ||
+                    this.$nuxt.$route.name.includes('services-process-optimisation__') ||
+                    this.$nuxt.$route.name.includes('services-e-commerce__') ||
+                    this.$nuxt.$route.name.includes('services-custom-application__')
+            }
+            return false
         },
         toggle () {
             this.active = !this.active
@@ -116,6 +119,11 @@ export default {
         handleScroll (event) {
             let top = window.pageYOffset
             this.transparent = this.isTransparent() && top < 100
+        }
+    },
+    watch: {
+        '$nuxt.$route.name'() {
+            this.handleScroll()
         }
     }
 }

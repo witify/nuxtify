@@ -45,6 +45,11 @@ export default {
             en: '/about-us',
             fr: '/a-propos'
         }
+    },
+    head() {
+        return {
+            title: this.$t('pages.about')
+        }
     }
 }
 </script>
