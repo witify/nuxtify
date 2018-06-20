@@ -24,13 +24,17 @@
 
 .hero.is-main {
     text-align: left;
+    border-bottom: solid 1px $white-ter;
 
     .icon {
         margin-bottom: 20px;
     }
 
     .title, .subtitle {
-        max-width: 50%;
+        @include desktop() {
+            max-width: 50%;
+        }
+
     }
 
     .title {
@@ -41,7 +45,6 @@
         font-size: 1.4rem;
         line-height: 1.4;
         opacity: 0.9;
-        font-family: $family-sans-serif;
     }
 }
 

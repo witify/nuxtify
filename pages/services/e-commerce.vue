@@ -2,10 +2,10 @@
 
     <div class="page-e-commerce">
 
-        <section class="hero is-main is-large">
+        <section class="hero is-main is-e-commerce is-large">
             <div class="hero-body">
                 <div class="container">
-                    <div class="icon is-circle">
+                    <div class="icon is-circle is-dark">
                         <i class="mdi mdi-store"></i>
                     </div>
                     <h1 class="title">E-commerce</h1>
@@ -14,7 +14,7 @@
             </div>
         </section>
 
-        <section class="hero is-e-commerce">
+        <section class="hero">
             <div class="hero-body">
                 <div class="container is-sm">
                     <p class="is-size-3 has-text-centered has-text-close">
@@ -27,7 +27,7 @@
         <section class="section is-grey is-paddingless">
             <div class="columns is-gapless">
                 <div class="column">
-                    <div class="section is-large">
+                    <div class="section is-medium">
                         <div class="container is-sm">
                             <div class="icon is-large mb-20">
                                 <i class="mdi mdi-trending-up mdi-48px is-process-optimisation"></i>
@@ -256,7 +256,7 @@
 
 <script>
 export default {
-    layout: 'wrapper',
+    layout: 'default',
     nuxtI18n: {
         paths: {
             en: '/e-commerce',

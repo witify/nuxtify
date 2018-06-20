@@ -60,8 +60,12 @@
         }
 
         .selection-label {
+            font-size: 1.3rem;
             display: inline-block;
             vertical-align: middle;
+            color: $grey-dark;
+            font-weight: $weight-normal;
+            font-family: $family-sans-serif;
         }
 
         &:after {

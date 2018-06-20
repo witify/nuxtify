@@ -1,10 +1,10 @@
 <template>
     <div class="page-custom-application">
 
-        <section class="hero is-main is-large">
+        <section class="hero is-main is-custom-application is-large">
             <div class="hero-body">
                 <div class="container">
-                    <div class="icon is-circle">
+                    <div class="icon is-circle is-dark">
                         <i class="mdi mdi-server-network"></i>
                     </div>
                     <h1 class="title">Custom applications</h1>
@@ -13,12 +13,17 @@
             </div>
         </section>
 
+        <section class="section">
+            <div class="container">
+            </div>
+        </section>
+
     </div>
 </template>
 
 <script>
 export default {
-    layout: 'wrapper',
+    layout: 'default',
     nuxtI18n: {
         paths: {
             en: '/custom-application',

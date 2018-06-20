@@ -19,12 +19,12 @@
 
                 <div class="navbar-start">
 
-                    <nuxt-link :to="localePath('projects')" class="navbar-item">
+                    <nuxt-link :to="localePath('projects')" class="navbar-item is-uppercase">
                         Projects
                     </nuxt-link>
 
                     <div class="navbar-item has-dropdown is-hoverable">
-                        <nuxt-link :to="localePath('services')" class="navbar-link">
+                        <nuxt-link :to="localePath('services')" class="navbar-link is-uppercase">
                             Services
                         </nuxt-link>
 
@@ -65,11 +65,11 @@
                         </div>
                     </div>
 
-                    <nuxt-link :to="localePath('about')" class="navbar-item">
+                    <nuxt-link :to="localePath('about')" class="navbar-item is-uppercase">
                         About
                     </nuxt-link>
 
-                    <nuxt-link :to="localePath('contact')" class="navbar-item">
+                    <nuxt-link :to="localePath('contact')" class="navbar-item is-uppercase">
                         Contact
                     </nuxt-link>
 
@@ -105,7 +105,10 @@ export default {
     },
     methods: {
         isTransparent() {
-            return this.$nuxt.$route.name.includes('index__')
+            return this.$nuxt.$route.name.includes('index__') ||
+                this.$nuxt.$route.name.includes('services-process-optimisation__') ||
+                this.$nuxt.$route.name.includes('services-e-commerce__') ||
+                this.$nuxt.$route.name.includes('services-custom-application__')
         },
         toggle () {
             this.active = !this.active

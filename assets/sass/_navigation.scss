@@ -12,6 +12,15 @@
         border-color: $grey;
     }
 
+    .is-uppercase {
+        @include desktop() {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 3.2;
+            font-weight: $weight-semibold;
+        }
+    }
+
     @include touch() {
         .navbar-burger {
             display: flex;
@@ -36,8 +45,8 @@
     }
 
     .navbar-item {
-        background-color: transparent;
         padding: 10px 0;
+        background-color: transparent;
         border-bottom: 1px solid $white-dark;
         &:hover {
             background-color: transparent;
