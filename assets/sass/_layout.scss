@@ -2,6 +2,12 @@
     padding-top: $navbar-height;
 }
 
+/*
+|--------------------------------------------------------------------------
+| Container
+|--------------------------------------------------------------------------
+*/
+
 .container.is-sm {
     max-width: 800px;
 }
@@ -9,6 +15,12 @@
 .container.is-xs {
     max-width: 600px;
 }
+
+/*
+|--------------------------------------------------------------------------
+| Hero
+|--------------------------------------------------------------------------
+*/
 
 .hero {
     background-position: center;
@@ -30,6 +42,10 @@
         margin-bottom: 20px;
     }
 
+    .heading {
+        margin-bottom: 7px;
+    }
+
     .title, .subtitle {
         @include desktop() {
             max-width: 50%;
@@ -45,6 +61,19 @@
         font-size: 1.4rem;
         line-height: 1.4;
         opacity: 0.9;
+    }
+
+    &.is-dark {
+        * {
+            color: #fff;
+        }
+    }
+
+    &.is-center {
+        text-align: center;
+        .title, .subtitle {
+            max-width: none;
+        }
     }
 }
 
@@ -71,6 +100,22 @@
     background-repeat: no-repeat;
     background-size: contain;
 }
+
+.hero.is-quote {
+    .title {
+        font-weight: $weight-light;
+
+        strong {
+            font-weight: $weight-semibold;
+        }
+    }
+}
+
+/*
+|--------------------------------------------------------------------------
+| Section
+|--------------------------------------------------------------------------
+*/
 
 .section.is-grey {
     background-color: $white-ter;
@@ -125,5 +170,17 @@
             padding-bottom: 0px;
             margin-bottom: 0px;
         }
+    }
+}
+
+/*
+|--------------------------------------------------------------------------
+| Columns
+|--------------------------------------------------------------------------
+*/
+
+.columns.is-clients {
+    .column img {
+        width: 180px;
     }
 }

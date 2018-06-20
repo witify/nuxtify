@@ -31,7 +31,7 @@
                         <div class="navbar-dropdown is-boxed is-services">
                             <div class="navbar-item">
                                 <nuxt-link :to="localePath('services-process-optimisation')" class="navbar-media">
-                                    <span class="icon is-process-optimisation">
+                                    <span class="icon has-text-process-optimisation">
                                         <i class="mdi mdi-rocket"></i>
                                     </span>
                                     <span>
@@ -42,7 +42,7 @@
                             </div>
                             <div class="navbar-item">
                                 <nuxt-link :to="localePath('services-e-commerce')" class="navbar-media">
-                                    <span class="icon is-e-commerce">
+                                    <span class="icon has-text-e-commerce">
                                         <i class="mdi mdi-store"></i>
                                     </span>
                                     <span>
@@ -53,7 +53,7 @@
                             </div>
                             <div class="navbar-item">
                                 <nuxt-link :to="localePath('services-custom-application')" class="navbar-media">
-                                    <span class="icon is-custom-application">
+                                    <span class="icon has-text-custom-application">
                                         <i class="mdi mdi-server-network"></i>
                                     </span>
                                     <span>
@@ -107,6 +107,7 @@ export default {
         isTransparent() {
             if (this.$nuxt.$route.name) {
                 return this.$nuxt.$route.name.includes('index__') ||
+                    this.$nuxt.$route.name.includes('projects-') ||
                     this.$nuxt.$route.name.includes('services-process-optimisation__') ||
                     this.$nuxt.$route.name.includes('services-e-commerce__') ||
                     this.$nuxt.$route.name.includes('services-custom-application__')

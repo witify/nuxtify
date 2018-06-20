@@ -6,3 +6,34 @@
         padding: 20px 0;
     }
 }
+
+.is-project {
+    img {
+        display: block;
+    }
+}
+
+.project-summary {
+    .project-summary-item {
+        margin-bottom: 30px;
+        .heading {
+            color: $black;
+            margin-bottom: 10px;
+        }
+        a {
+            line-height: 1.7rem;
+            font-size: 2rem;
+            color: $primary;
+
+            .icon {
+                font-size: 1.4rem;
+            }
+        }
+    }
+}
+
+.page-boursify {
+    .hero.is-main {
+        background-image: url('~assets/img/projects/boursify/bg.jpg');
+    }
+}

@@ -1,0 +1,70 @@
+.diptych {
+    position: relative;
+    padding: 4rem 1.5rem; 
+
+    @include mobile() {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .diptych-body {
+        @include tablet() {
+            padding: 7rem 0;
+            width: 60%;
+        }
+        @include mobile() {
+            padding: 3rem 0;
+            padding-top: 4rem;
+        }
+        @include fullhd() {
+            width: 50%;
+        }
+    }
+
+    .diptych-image {
+        @include tablet() {
+            position: absolute;
+            left: 60%;
+            top: 0;
+            height: 100%;
+            padding-left: 4rem;
+
+            img {
+                height: 100%;
+                width: auto;
+                max-height: none;
+                max-width: none;
+            }
+        }
+        @include fullhd() {
+            left: 50%;
+        }
+    }
+
+    &.is-right {
+        .diptych-body {
+            @include tablet() {
+                position: relative;
+                left: 40%;
+            }
+            @include fullhd() {
+                left: 50%;
+            }
+        }
+        .diptych-image {
+            @include tablet() {
+                left: auto;
+                right: 60%;
+                padding-left: 0;
+                padding-right: 4rem;
+            }
+            @include fullhd() {
+                right: 50%;
+            }
+        }
+    }
+
+    &.is-border-bottom {
+        border-bottom: 1px solid $white-dark;
+    }
+}

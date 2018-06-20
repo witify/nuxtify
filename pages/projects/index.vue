@@ -119,7 +119,7 @@ export default {
     },
     head() {
         return {
-            title: this.$t('pages.projects')
+            title: this.$t('pages.projects.index')
         }
     }
 }

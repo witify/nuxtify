@@ -17,7 +17,7 @@
         <section class="hero">
             <div class="hero-body">
                 <div class="container is-sm">
-                    <p class="is-size-3 has-text-centered has-text-close">
+                    <p class="is-size-3 has-text-centered is-tight">
                         Intégrer des solutions <strong>personnalisées</strong> dans son environnement de travail afin de <strong>maximiser la vitesse de production</strong> et <strong>diminuer les coûts.</strong>
                     </p>
                 </div>
