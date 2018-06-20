@@ -4,7 +4,7 @@
         <div class="service-img"></div>
 
         <div class="service-body">
-            <h3 class="title is-size-5">
+            <h3 class="title">
                 <div class="icon">
                     <i class="mdi" :class="'mdi-' + icon"></i>
                 </div>

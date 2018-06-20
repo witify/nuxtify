@@ -5,7 +5,6 @@
         background-image: url('~/assets/img/bg/index.jpg');
         background-size: cover;
         background-position: center;
-        padding: 160px 0;
         text-align: left;
 
         .title {
@@ -15,19 +14,20 @@
         .subtitle {
             font-size: 1.7rem;
         }
+
+        .hero-body {
+            @include touch() {
+                padding: 5rem 1.5rem;
+                padding-top: 7rem;
+            }
+        }
     }
 
     // Expertise
 
     .section-expertise {
-        //background-image: url('~assets/img/bg/light.svg');
         background-size: cover;
         background-position: top;
-        padding: 120px 0;
-
-        .header {
-            max-width: 600px;
-        }
 
         .title {
             text-transform: uppercase;
@@ -44,7 +44,15 @@
         }
 
         .services {
-            margin-top: 100px;
+            @include desktop() {
+                margin-top: 7rem;
+            }
+            @include tablet() {
+                margin-top: 3rem;
+            }
+            @include mobile() {
+                margin-top: 1rem;
+            }
         }
     }
 
@@ -58,6 +66,10 @@
         overflow: hidden;
         box-shadow: $box-shadow-large;
         @include transition(.2s);
+
+        @include touch() {
+            height: auto;
+        }
         
         &:hover {
             @include transform(translateY(-5px));
@@ -72,6 +84,7 @@
             background-size: cover;
             height: 100%;
             width: 100%;
+            z-index: -1;
         }
 
         .service-body {
@@ -81,6 +94,11 @@
             width: 100%;
             padding: 20px;
             text-align: center;
+
+            @include touch() {
+                position: static;
+                height: 100%;
+            }
 
             .icon {
                 color: #fff;
@@ -93,6 +111,7 @@
                 color: #fff;
                 text-transform: none;
                 margin: 0;
+                font-size: $size-5;
             }
 
             p {
@@ -137,12 +156,29 @@
 
         overflow: hidden;
         position: relative;
-        padding: 0;
+        padding: 0 1.5rem;
         border-top: 1px solid $white-ter;
 
         .project-body {
             width: 60%;
-            padding: 160px 0;
+
+            @include mobile() {
+                width: 100%;
+                padding: 3rem 0 !important;
+                margin: 0 !important;
+            }
+
+            @include touch() {
+                padding: 3rem 0;
+            }
+
+            @include desktop() {
+                padding: 5rem 0;
+            }
+
+            @include widescreen() {
+                padding: 9rem 0;
+            }
         }
 
         .project-media {
@@ -154,14 +190,35 @@
 
         &.is-left {
             .project-media {left: 60%;}
-            .project-iphone {left: -$project-width/2;}
-            .project-body {padding-right: $project-padding;}
+            .project-iphone {
+                left: -$project-width/2;
+                @include touch() {
+                    left: 20px;
+                }
+            }
+            .project-body {
+                padding-right: $project-padding;
+                @include touch() {
+                    padding-right: 3rem;
+                }
+            }
         }
         
         &.is-right {
             .project-media {right: 60%;}
-            .project-iphone {right: -$project-width/2;}
-            .project-body {margin-left: 40%; padding-left: $project-padding;}
+            .project-iphone {
+                right: -$project-width/2;
+                @include touch() {
+                    right: 20px;
+                }
+            }
+            .project-body {
+                margin-left: 40%;
+                padding-left: $project-padding;
+                @include touch() {
+                    padding-left: 3rem;
+                }
+            }
         }
 
         .title {
@@ -180,8 +237,6 @@
         }
 
         p {
-            color: $grey;
-            font-size: 1.2rem;
             margin-bottom: 40px;
         }
 
@@ -202,6 +257,10 @@
             &.enter {
                 opacity: 1;
                 @include transform(translateY(0px));
+            }
+
+            @include mobile() {
+                display: none;
             }
         }
 
@@ -224,6 +283,10 @@
             &.enter {
                 opacity: 1;
                 @include transform(scale(1));
+            }
+
+            @include mobile() {
+                display: none;
             }
         }
 

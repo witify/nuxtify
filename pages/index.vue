@@ -1,7 +1,7 @@
 <template>
   <div class="page-home">
 
-    <section class="hero main-hero is-black">
+    <section class="hero is-large main-hero is-black">
       <div class="hero-body">
         <div class="container">
           <h1 class="title is-spaced">We build better <br>digital products.</h1>
@@ -21,7 +21,7 @@
 
     <section class="section section-expertise">
       <div class="container">
-        <div class="columns">
+        <div class="columns is-desktop">
           <div class="column">
 
             <h2 class="title is-size-1 is-spaced">
@@ -47,14 +47,14 @@
 
       <div class="services">
         <div class="container">
-          <div class="columns">
-            <div class="column is-on-third">
+          <div class="columns is-desktop">
+            <div class="column">
               <service-card title="Process optimisation" slug="process-optimisation" icon="rocket"></service-card>
             </div>
-            <div class="column is-on-third">
+            <div class="column">
               <service-card title="E-commerce" slug="e-commerce" icon="store"></service-card>
             </div>
-            <div class="column is-on-third">
+            <div class="column">
               <service-card title="Custom application" slug="custom-application" icon="server-network"></service-card>
             </div>
           </div>
@@ -70,7 +70,7 @@
               <img class="project-logo" src="~assets/img/projects/start-alberta/logo.png" label="Start Alberta" />
               <span>Start Alberta</span>
             </h2>
-            <p>
+            <p class="is-medium">
               Start Alberta is a web-community bringing together funders, investors and organizations in a comprehensible and interactive ecosystem. It is and will remain an open resource for everyone.
             </p>
             <a href="#" class="button is-medium is-start-alberta">
@@ -99,7 +99,7 @@
               <img class="project-logo" src="~assets/img/projects/pneus-a-petits-prix/logo.png" label="Pneus à petits prix" />
               <span>Low cost tires</span>
             </h2>
-            <p>
+            <p class="is-medium">
               Start Alberta is a web-community bringing together funders, investors and organizations in a comprehensible and interactive ecosystem. It is and will remain an open resource for everyone.
             </p>
             <a href="#" class="button is-medium is-pneus-a-petits-prix">

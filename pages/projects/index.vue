@@ -17,7 +17,7 @@
                     <div class="columns is-variable is-8 is-multiline">
 
                         <div class="column is-half">
-                            <div class="project-card">
+                            <nuxt-link :to="localePath('projects-start-alberta')" class="project-card">
                                 <div class="card-image">
                                     <figure class="image is-4by3">
                                         <img src="~assets/img/projects/start-alberta/thumbnail.jpg" alt="Start Alberta">
@@ -27,7 +27,7 @@
                                     <h2 class="title">Start Alberta</h2>
                                     <h3 class="subtitle">Alberta's startup community</h3>
                                 </div>
-                            </div>
+                            </nuxt-link>
                         </div>
 
                         <div class="column is-half">
@@ -45,17 +45,17 @@
                         </div>
 
                         <div class="column is-half">
-                            <div class="project-card">
+                            <nuxt-link :to="localePath('projects-boursify')" class="project-card">
                                 <div class="card-image">
                                     <figure class="image is-4by3">
                                         <img src="~assets/img/projects/boursify/thumbnail.jpg" alt="Boursify">
                                     </figure>
                                 </div>
                                 <div class="card-content">
-                                    <h2 class="title">Boursify</h2>
-                                    <h3 class="subtitle">Stock market simulations</h3>
+                                    <h2 class="title">{{ $t('project.boursify.title') }}</h2>
+                                    <h3 class="subtitle">{{ $t('project.boursify.subtitle') }}</h3>
                                 </div>
-                            </div>
+                            </nuxt-link>
                         </div>
 
                         <div class="column is-half">
