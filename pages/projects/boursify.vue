@@ -59,14 +59,12 @@
                 {{ $t('project.general.approach') }}
                 </h1>
 
-                <div class="content">
-                    <div class="columns is-variable is-8">
-                        <div class="column">
-                            <p class="is-medium">Witify devait développer une solution logicielle offrant aux organisateurs en charge de ce type d’évènements, et à leurs participants, une expérience hors-pair, se démarquant grandement du logiciel précédent. Witify a donc du prendre en charge le design de la marque, le développement du produit, la conception d’interfaces et la structure de la plateforme, de A à Z. </p>
-                        </div>
-                        <div class="column">
-                            <p class="is-medium">La solution, 100% clé-en-main, devait permettre la création de scénarios, une plateforme d’administration pour les organisateurs, une gestion de la simulation en temps réel et une plateforme de jeu pour les participants, le tout hébergé sur le cloud. La planification du produit, autant que son développement, et que sa phase test, relevait de l’expertise de l’équipe Witify.</p>
-                        </div>
+                <div class="columns is-variable is-8">
+                    <div class="column">
+                        <p class="is-medium">Witify devait développer une solution logicielle offrant aux organisateurs en charge de ce type d’évènements, et à leurs participants, une expérience hors-pair, se démarquant grandement du logiciel précédent. Witify a donc du prendre en charge le design de la marque, le développement du produit, la conception d’interfaces et la structure de la plateforme, de A à Z. </p>
+                    </div>
+                    <div class="column">
+                        <p class="is-medium">La solution, 100% clé-en-main, devait permettre la création de scénarios, une plateforme d’administration pour les organisateurs, une gestion de la simulation en temps réel et une plateforme de jeu pour les participants, le tout hébergé sur le cloud. La planification du produit, autant que son développement, et que sa phase test, relevait de l’expertise de l’équipe Witify.</p>
                     </div>
                 </div>
             </div>

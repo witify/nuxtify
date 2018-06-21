@@ -86,7 +86,8 @@ module.exports = {
               index: 'Accueil',
               projects: {
                 index: 'Projects',
-                boursify: 'Boursify'
+                boursify: 'Boursify',
+                'start-alberta': 'Start Alberta'
               },
               services: {
                 index: 'Services',
