@@ -16,17 +16,17 @@
                     <div class="columns is-variable is-7">
                         <div class="column">
                             <h2 class="title is-size-3 is-spaced">Excellence</h2>
-                            <h3 class="subtitle is-size-5 has-text-grey">Curabitur turpis. Fusce fermentum. Nulla porta dolor. Phasellus gravida semper nisi. Nullam dictum felis eu pede mollis pretium. Donec mollis hendrerit risus. Curabitur at lacus ac velit ornare lobortis. Nunc nulla. Aenean massa. Vestibulum volutpat pretium libero.</h3>
+                            <p class="is-medium">Curabitur turpis. Fusce fermentum. Nulla porta dolor. Phasellus gravida semper nisi. Nullam dictum felis eu pede mollis pretium. Donec mollis hendrerit risus. Curabitur at lacus ac velit ornare lobortis. Nunc nulla. Aenean massa. Vestibulum volutpat pretium libero.</p>
                             <br>
                         </div>
                         <div class="column">
                             <h2 class="title is-size-3 is-spaced">Collaboration</h2>
-                            <h3 class="subtitle is-size-5 has-text-grey">Curabitur turpis. Fusce fermentum. Nulla porta dolor. Phasellus gravida semper nisi. Nullam dictum felis eu pede mollis pretium. Donec mollis hendrerit risus. Curabitur at lacus ac velit ornare lobortis. Nunc nulla. Aenean massa. Vestibulum volutpat pretium libero.</h3>
+                            <p class="is-medium">Curabitur turpis. Fusce fermentum. Nulla porta dolor. Phasellus gravida semper nisi. Nullam dictum felis eu pede mollis pretium. Donec mollis hendrerit risus. Curabitur at lacus ac velit ornare lobortis. Nunc nulla. Aenean massa. Vestibulum volutpat pretium libero.</p>
                             <br>
                         </div>
                         <div class="column">
                             <h2 class="title is-size-3 is-spaced">Audacity</h2>
-                            <h3 class="subtitle is-size-5 has-text-grey">Curabitur turpis. Fusce fermentum. Nulla porta dolor. Phasellus gravida semper nisi. Nullam dictum felis eu pede mollis pretium. Donec mollis hendrerit risus. Curabitur at lacus ac velit ornare lobortis. Nunc nulla. Aenean massa. Vestibulum volutpat pretium libero.</h3>
+                            <p class="is-medium">Curabitur turpis. Fusce fermentum. Nulla porta dolor. Phasellus gravida semper nisi. Nullam dictum felis eu pede mollis pretium. Donec mollis hendrerit risus. Curabitur at lacus ac velit ornare lobortis. Nunc nulla. Aenean massa. Vestibulum volutpat pretium libero.</p>
                             <br>
                         </div>
                     </div>

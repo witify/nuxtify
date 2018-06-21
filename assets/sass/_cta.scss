@@ -3,8 +3,11 @@
         background-image: url('~assets/img/bg/cta.jpg');
         background-position: center;
         background-size: cover;
-        padding: 80px 0;
         text-align: center;
+
+        @include desktop() {
+            padding: 80px 0;
+        }
 
         .title {
             max-width: none;
@@ -18,6 +21,10 @@
 
     .selections {
         display: flex;
+
+        @include mobile() {
+            display: block;
+        }
     }
 
     .selection {
@@ -28,11 +35,9 @@
         text-align: left;
         position: relative;
         flex-grow: 1;
-        padding: 30px 20px;
         background-color: #fff;
         border-bottom: 1px solid $white-ter;
         border-right: 1px solid $white-ter;
-        font-size: 1.3rem;
         font-family: $font-family-title;
         font-weight: $weight-semibold;
 
@@ -41,26 +46,19 @@
         }
 
         .selection-circle {
-            height: 22px;
-            width: 22px;
             border: 1px $grey-lighter solid;
             border-radius: 30px;
             display: inline-block;
             vertical-align: middle;
-            margin-right: 20px;
             @include transition(0.2s);
         }
 
         .selection-icon {
             display: inline-block;
             vertical-align: middle;
-            position: relative;
-            top: -3px;
-            margin-right: 10px;
         }
 
         .selection-label {
-            font-size: 1.3rem;
             display: inline-block;
             vertical-align: middle;
             color: $grey-dark;
@@ -68,7 +66,7 @@
             font-family: $family-sans-serif;
         }
 
-        &:after {
+        &:before {
             content: '';
             display: block;
             position: absolute;
@@ -81,14 +79,30 @@
         }
         
         &.is-active {
-            &:after {
+            &:before {
                 @include transform(scaleY(1));
+            }
+            .selection-icon {
+                @include mobile() {
+                    color: #fff;
+                }
+            }
+            .selection-label {
+                @include mobile() {
+                    color: #fff;
+                }
             }
             .selection-circle {
                 border-width: 7px;
+                @include touch() {
+                    border-width: 4px;
+                }
+                @include mobile() {
+                    border-color: #fff !important;
+                }
             }
             &.is-process-optimisation {
-                &:after {
+                &:before {
                     background-color: $process-optimisation;
                 }
                 .selection-circle {
@@ -96,7 +110,7 @@
                 }
             }
             &.is-e-commerce {
-                &:after {
+                &:before {
                     background-color: $e-commerce;
                 }
                 .selection-circle {
@@ -104,12 +118,69 @@
                 }
             }
             &.is-custom-application {
-                &:after {
+                &:before {
                     background-color: $custom-application;
                 }
                 .selection-circle {
                     border-color: $custom-application;
                 }
+            }
+        }
+
+        @include desktop() {
+            padding: 30px 20px;
+            .selection-icon {
+                font-size: 1.3rem;
+                height: 1.7rem;
+                width: 1.3rem;
+                margin-right: 10px;
+            }
+            .selection-label { 
+                font-size: 1.3rem;
+            }
+            .selection-circle {
+                height: 22px;
+                width: 22px;
+                margin-right: 20px;
+            }
+        }
+
+        @include touch() {
+            padding: 20px 15px;
+            .selection-icon {
+                font-size: 1rem;
+                margin-right: 0;
+            }
+            .selection-label {
+                font-size: 1rem;
+            }
+            .selection-circle {
+                height: 16px;
+                width: 16px;
+                margin-right: 10px;
+            }
+        }
+
+        @include mobile() {
+            width: 100%;
+            background-color: transparent;
+            &:before {
+                height: 100%;
+                z-index: -1;
+            }
+            .selection-icon {
+                font-size: 1.1rem;
+                height: 1.5rem;
+                width: 1.1rem;
+                margin-right: 10px;
+            }
+            .selection-label { 
+                font-size: 1.2rem;
+            }
+            .selection-circle {
+                height: 22px;
+                width: 22px;
+                margin-right: 20px;
             }
         }
     }
@@ -120,10 +191,12 @@
     }
 
     .service-image {
-        padding-top: 20px;
-        max-width: 450px;
-        height: 340px;
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+        max-width: 500px;
+        height: 450px;
         display: block;
+        margin: 0 auto;
     }
 
     .service-content {
@@ -132,11 +205,7 @@
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
-
-        p {
-            font-size: 1.2rem;
-            color: $grey-dark;
-        }
+        padding: 1.5rem;
 
         .button {
             margin-top: 20px;

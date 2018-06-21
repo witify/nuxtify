@@ -125,6 +125,7 @@ export default {
     watch: {
         '$nuxt.$route.name'() {
             this.handleScroll()
+            this.active = false
         }
     }
 }

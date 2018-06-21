@@ -45,12 +45,12 @@
                     <div class="columns is-gapless">
                         <div class="column is-half">
                             <div class="service-image-wrapper">
-                                <img src="~assets/img/cta/process-optimisation.jpg" alt="Process optimisation service" class="service-image">
+                                <img src="~assets/img/services/process-optimisation/illustration.svg" alt="Process optimisation service" class="service-image">
                             </div>
                         </div>
                         <div class="column is-half">
                             <div class="service-content">
-                                <p>Praesent blandit laoreet nibh. Praesent venenatis metus at tortor pulvinar varius. Vestibulum dapibus nunc ac augue. Etiam vitae tortor. Phasellus leo dolor, tempus non, auctor et, hendrerit quis, nisi. Praesent adipiscing. Praesent egestas neque eu enim.</p>
+                                <p class="is-medium">Praesent blandit laoreet nibh. Praesent venenatis metus at tortor pulvinar varius. Vestibulum dapibus nunc ac augue. Etiam vitae tortor. Phasellus leo dolor, tempus non, auctor et, hendrerit quis, nisi. Praesent adipiscing. Praesent egestas neque eu enim.</p>
                                 <button class="button is-medium is-process-optimisation">
                                     <span>Begin a free business analysis</span>
                                     <span class="icon">
@@ -66,12 +66,12 @@
                     <div class="columns is-gapless">
                         <div class="column is-half">
                             <div class="service-image-wrapper">
-                                <img src="~assets/img/cta/e-commerce.jpg" alt="Process optimisation service" class="service-image">
+                                <img src="~assets/img/services/e-commerce/illustration.svg" alt="E-commerce service" class="service-image">
                             </div>
                         </div>
                         <div class="column is-half">
                             <div class="service-content">
-                                <p>Praesent blandit laoreet nibh. Praesent venenatis metus at tortor pulvinar varius. Vestibulum dapibus nunc ac augue. Etiam vitae tortor. Phasellus leo dolor, tempus non, auctor et, hendrerit quis, nisi. Praesent adipiscing. Praesent egestas neque eu enim.</p>
+                                <p class="is-medium">Praesent blandit laoreet nibh. Praesent venenatis metus at tortor pulvinar varius. Vestibulum dapibus nunc ac augue. Etiam vitae tortor. Phasellus leo dolor, tempus non, auctor et, hendrerit quis, nisi. Praesent adipiscing. Praesent egestas neque eu enim.</p>
                                 <button class="button is-medium is-e-commerce">
                                     <span>Begin a free business analysis</span>
                                     <span class="icon">
@@ -87,12 +87,12 @@
                     <div class="columns is-gapless">
                         <div class="column is-half">
                             <div class="service-image-wrapper">
-                                <img src="~assets/img/cta/custom-application.jpg" alt="Process optimisation service" class="service-image">
+                                <img src="~assets/img/services/custom-application/illustration.svg" alt="Custom application service" class="service-image">
                             </div>
                         </div>
                         <div class="column is-half">
                             <div class="service-content">
-                                <p>Praesent blandit laoreet nibh. Praesent venenatis metus at tortor pulvinar varius. Vestibulum dapibus nunc ac augue. Etiam vitae tortor. Phasellus leo dolor, tempus non, auctor et, hendrerit quis, nisi. Praesent adipiscing. Praesent egestas neque eu enim.</p>
+                                <p class="is-medium">Praesent blandit laoreet nibh. Praesent venenatis metus at tortor pulvinar varius. Vestibulum dapibus nunc ac augue. Etiam vitae tortor. Phasellus leo dolor, tempus non, auctor et, hendrerit quis, nisi. Praesent adipiscing. Praesent egestas neque eu enim.</p>
                                 <button class="button is-medium is-custom-application">
                                     <span>Begin a free business analysis</span>
                                     <span class="icon">
