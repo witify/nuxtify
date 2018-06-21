@@ -45,12 +45,12 @@
                     <div class="columns is-gapless">
                         <div class="column is-half">
                             <div class="service-image-wrapper">
-                                <img src="~assets/img/cta/process-optimisation.jpg" alt="Process optimisation service" class="service-image">
+                                <img src="~assets/img/services/process-optimisation/illustration.svg" alt="Process optimisation service" class="service-image">
                             </div>
                         </div>
                         <div class="column is-half">
                             <div class="service-content">
-                                <p>{{ $t('pages.cta.process-optimisation-text') }}</p>
+                                <p class="is-medium">{{ $t('pages.cta.process-optimisation-text') }}</p>
                                 <button class="button is-medium is-process-optimisation">
                                     <span>{{ $t('pages.cta.free-business-analysis') }}</span>
                                     <span class="icon">
@@ -66,12 +66,12 @@
                     <div class="columns is-gapless">
                         <div class="column is-half">
                             <div class="service-image-wrapper">
-                                <img src="~assets/img/cta/e-commerce.jpg" alt="E-commerce service" class="service-image">
+                                <img src="~assets/img/services/e-commerce/illustration.svg" alt="E-commerce service" class="service-image">
                             </div>
                         </div>
                         <div class="column is-half">
                             <div class="service-content">
-                                <p>{{ $t('pages.cta.e-commerce-text') }}</p>
+                                <p class="is-medium">{{ $t('pages.cta.e-commerce-text') }}</p>
                                 <button class="button is-medium is-e-commerce">
                                     <span>{{ $t('pages.cta.free-business-analysis') }}</span>
                                     <span class="icon">
@@ -87,12 +87,12 @@
                     <div class="columns is-gapless">
                         <div class="column is-half">
                             <div class="service-image-wrapper">
-                                <img src="~assets/img/cta/custom-application.jpg" alt="Custom application service" class="service-image">
+                                <img src="~assets/img/services/custom-application/illustration.svg" alt="Custom application service" class="service-image">
                             </div>
                         </div>
                         <div class="column is-half">
                             <div class="service-content">
-                                <p>{{ $t('pages.cta.custom-application-text') }}</p>
+                                <p class="is-medium">{{ $t('pages.cta.custom-application-text') }}</p>
                                 <button class="button is-medium is-custom-application">
                                     <span>{{ $t('pages.cta.free-business-analysis') }}</span>
                                     <span class="icon">

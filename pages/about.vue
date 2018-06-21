@@ -16,17 +16,17 @@
                     <div class="columns is-variable is-7">
                         <div class="column">
                             <h2 class="title is-size-3 is-spaced">{{ $t('pages.about.excellence') }}</h2>
-                            <h3 class="subtitle is-size-5 has-text-grey">{{ $t('pages.about.excellence-text') }}</h3>
+                            <p class="is-medium">{{ $t('pages.about.excellence-text') }}</p>
                             <br>
                         </div>
                         <div class="column">
                             <h2 class="title is-size-3 is-spaced">{{ $t('pages.about.collaboration') }}</h2>
-                            <h3 class="subtitle is-size-5 has-text-grey">{{ $t('pages.about.collaboration-text') }}</h3>
+                            <p class="is-medium">{{ $t('pages.about.collaboration-text') }}</p>
                             <br>
                         </div>
                         <div class="column">
                             <h2 class="title is-size-3 is-spaced">{{ $t('pages.about.boldness') }}</h2>
-                            <h3 class="subtitle is-size-5 has-text-grey">{{ $t('pages.about.boldness-text') }}</h3>
+                            <p class="is-medium">{{ $t('pages.about.boldness-text') }}</p>
                             <br>
                         </div>
                     </div>

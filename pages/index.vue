@@ -19,7 +19,7 @@
       </div>
     </section>
 
-    <section class="section section-expertise">
+    <section class="section section-expertise is-medium">
       <div class="container">
         <div class="columns is-desktop">
           <div class="column">
@@ -27,7 +27,7 @@
             <h2 class="title is-size-1 is-spaced" v-html="$t('pages.home.expertise-header')">
               
             </h2>
-            <h3 class="subtitle">Maecenas egestas arcu quis ligula mattis placerat. Donec vitae orci sed dolor rutrum auctor. In ac felis quis tortor malesuada pretium.</h3>
+            <p class="is-medium">Maecenas egestas arcu quis ligula mattis placerat. Donec vitae orci sed dolor rutrum auctor. In ac felis quis tortor malesuada pretium.</p>
 
             <br>
 

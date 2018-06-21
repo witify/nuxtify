@@ -43,6 +43,10 @@ p.is-lead {
 p.is-medium {
     color: $grey;
     font-size: 1.2rem;
+
+    @include touch() {
+        font-size: 1rem;
+    }
 }
 
 p.is-tight {
@@ -57,4 +61,23 @@ p.is-tight {
 
 strong {
     font-weight: $weight-semibold;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Responsive utils
+|--------------------------------------------------------------------------
+*/
+
+@include touch() {
+    .is-size-1 {
+        font-size: $size-2 !important;
+    }
+    .is-size-2 {
+        font-size: $size-3 !important;
+    }
+    .is-size-3 {
+        font-size: $size-4 !important;
+    }
+    
 }

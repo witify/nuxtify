@@ -1,3 +1,8 @@
+body {
+    width: 100%;
+    overflow: hidden;
+}
+
 .wrapper {
     padding-top: $navbar-height;
 }
@@ -54,12 +59,20 @@
 
     .title {
         font-size: 3rem;
+
+        @include touch() {
+            font-size: 2rem;
+        }
     }
 
     .subtitle {
         font-size: 1.4rem;
         line-height: 1.4;
         opacity: 0.9;
+
+        @include touch() {
+            font-size: 1rem;
+        }
     }
 
     &.is-dark {
