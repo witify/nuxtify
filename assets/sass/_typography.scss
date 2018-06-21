@@ -44,13 +44,40 @@ p.is-medium {
     color: $grey;
     font-size: 1.2rem;
 
-    @include touch() {
-        font-size: 1rem;
+    @include mobile() {
+        font-size: 1.1rem;
     }
 }
 
 p.is-tight {
     line-height: 1.1;
+}
+
+/*
+|--------------------------------------------------------------------------
+| List
+|--------------------------------------------------------------------------
+*/
+
+ul.is-bold {
+    li {
+        color: $grey-dark;
+        font-weight: 400;
+        font-size: 1.4rem;
+        border-bottom: 1px $white-ter solid;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+
+        @include mobile() {
+            font-size: 1.2rem;
+        }
+    
+        &:last-child {
+            border: none;
+            padding-bottom: 0px;
+            margin-bottom: 0px;
+        }
+    }
 }
 
 /*
@@ -69,7 +96,7 @@ strong {
 |--------------------------------------------------------------------------
 */
 
-@include touch() {
+@include mobile() {
     .is-size-1 {
         font-size: $size-2 !important;
     }

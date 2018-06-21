@@ -1,7 +1,7 @@
 <template>
     <div class="cta">
 
-        <div class="hero is-black">
+        <div class="hero is-primary">
             <div class="hero-body">
                 <div class="container is-small">
                     <h1 class="title">
@@ -10,6 +10,9 @@
                     <h2 class="subtitle">
                         Fill out the form to get instant insights regarding your business
                     </h2>
+                    <div class="icon is-circle">
+                        <i class="mdi mdi-arrow-down has-text-white"></i>
+                    </div>
                 </div>
             </div>
         </div>

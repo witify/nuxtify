@@ -37,11 +37,26 @@ body {
             padding-bottom: 5rem;
         }
     }
+
+    &.is-large {
+        .hero-body {
+            @include touch() {
+                padding: 7rem 1.5rem;
+            }
+            @include mobile() {
+                padding: 4rem 1.5rem;
+            }
+        }
+    }
 }
 
 .hero.is-main {
     text-align: left;
     border-bottom: solid 1px $white-ter;
+
+    @include mobile() {
+        text-align: center;
+    }
 
     .icon {
         margin-bottom: 20px;
@@ -52,7 +67,7 @@ body {
     }
 
     .title, .subtitle {
-        @include desktop() {
+        @include tablet() {
             max-width: 50%;
         }
     }
@@ -60,8 +75,8 @@ body {
     .title {
         font-size: 3rem;
 
-        @include touch() {
-            font-size: 2rem;
+        @include mobile() {
+            font-size: 2.4rem;
         }
     }
 
@@ -70,8 +85,8 @@ body {
         line-height: 1.4;
         opacity: 0.9;
 
-        @include touch() {
-            font-size: 1rem;
+        @include mobile() {
+            font-size: 1.2rem;
         }
     }
 
@@ -105,14 +120,6 @@ body {
     }
 }
 
-.hero.is-light {
-    background-image: url('~assets/img/bg/light.svg');
-    background-color: #fff;
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
 .hero.is-quote {
     .title {
         font-weight: $weight-light;
@@ -132,58 +139,6 @@ body {
 
 .section.is-grey {
     background-color: $white-ter;
-}
-
-.is-bg {
-    background-position: center;
-    background-size: cover;
-}
-
-.is-bg-office {
-    background-image: url('~assets/img/bg/office.jpg');
-}
-
-.section-text {
-    padding: 4rem 0;
-
-    .title-icon {
-        font-size: 3rem;
-        margin-bottom: 30px;
-        color: $black;
-    }
-
-    .button {
-        margin-top: 30px;
-    }
-
-    .title {
-        font-size: 2rem;
-    }
-
-    .subtitle {
-        font-size: 1.4rem;
-    }
-    
-    p {
-        color: $grey;
-        font-size: 1.2rem;
-        margin-bottom: 40px;
-    }
-
-    li {
-        color: $grey-dark;
-        font-weight: 400;
-        font-size: 1.4rem;
-        border-bottom: 1px $white-ter solid;
-        padding-bottom: 20px;
-        margin-bottom: 20px;
-
-        &:last-child {
-            border: none;
-            padding-bottom: 0px;
-            margin-bottom: 0px;
-        }
-    }
 }
 
 /*

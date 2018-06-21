@@ -1,6 +1,9 @@
+$image-padding: 6rem;
+
 .diptych {
     position: relative;
-    padding: 4rem 1.5rem; 
+    padding: 4rem 1.5rem;
+    overflow: hidden;
 
     @include mobile() {
         padding-top: 0;
@@ -14,7 +17,6 @@
         }
         @include mobile() {
             padding: 3rem 0;
-            padding-top: 4rem;
         }
         @include fullhd() {
             width: 50%;
@@ -22,12 +24,13 @@
     }
 
     .diptych-image {
+
         @include tablet() {
             position: absolute;
             left: 60%;
             top: 0;
             height: 100%;
-            padding-left: 4rem;
+            padding-left: $image-padding;
 
             img {
                 height: 100%;
@@ -38,6 +41,23 @@
         }
         @include fullhd() {
             left: 50%;
+        }
+
+        &.is-cover {
+
+            @include tablet() {
+
+                img {
+                    object-fit: cover;
+                    width: 100%;
+                }
+                
+                width: 40%;
+            }
+
+            @include fullhd() {
+                width: 50%;
+            }
         }
     }
 
@@ -56,7 +76,7 @@
                 left: auto;
                 right: 60%;
                 padding-left: 0;
-                padding-right: 4rem;
+                padding-right: $image-padding;
             }
             @include fullhd() {
                 right: 50%;
@@ -66,5 +86,9 @@
 
     &.is-border-bottom {
         border-bottom: 1px solid $white-dark;
+    }
+
+    &.is-grey {
+        background-color: $white-ter;
     }
 }

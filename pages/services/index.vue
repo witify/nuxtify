@@ -12,91 +12,68 @@
                 </div>
             </section>
 
-            <div class="container">
-
-                <section class="section">
-                    <div class="columns">
-                        <div class="column">
-                            <div class="v-center">
-                                <div class="icon is-circle">
-                                    <i class="mdi mdi-rocket"></i>
-                                </div>
-                                <h2 class="title">
-                                    Internal process optimisation
-                                </h2>
-                                <p>
-                                    Aenean massa. Sed aliquam ultrices mauris. Fusce fermentum. In auctor lobortis lacus. Proin viverra, ligula sit amet ultrices semper, ligula arcu tristique sapien, a accumsan nisi mauris ac eros. Nunc nulla. Vestibulum dapibus nunc ac augue.
-                                </p>
-                                <nuxt-link :to="localePath('services-process-optimisation')" class="button is-process-optimisation is-medium">
-                                    <span>Learn more</span>
-                                    <span class="icon">
-                                        <i class="mdi mdi-arrow-right"></i>
-                                    </span>
-                                </nuxt-link>
-                            </div>
+            <section class="diptych is-border-bottom">
+                <div class="container">
+                    <div class="diptych-body">
+                        <div class="icon is-circle mb-20">
+                            <i class="mdi mdi-rocket"></i>
                         </div>
-                        <div class="column">
-                            <img src="~assets/img/services/process-optimisation/illustration.svg" alt="Process optimisation" class="illustration">
-                        </div>
+                        <h2 class="title">Internal process optimisation</h2>
+                        <p class="is-medium mb-30">Aenean massa. Sed aliquam ultrices mauris. Fusce fermentum. In auctor lobortis lacus. Proin viverra, ligula sit amet ultrices semper, ligula arcu tristique sapien, a accumsan nisi mauris ac eros. Nunc nulla. Vestibulum dapibus nunc ac augue.</p>
+                        <nuxt-link :to="localePath('services-process-optimisation')" class="button is-process-optimisation is-medium">
+                            <span>Learn more</span>
+                            <span class="icon">
+                                <i class="mdi mdi-arrow-right"></i>
+                            </span>
+                        </nuxt-link>
                     </div>
-                </section>
+                </div>
+                <div class="diptych-image pt-40 pb-40 is-hidden-mobile">
+                    <img src="~assets/img/services/process-optimisation/illustration.svg" alt="Process optimisation">
+                </div>
+            </section>
 
-                <section class="section">
-                    <div class="columns">
-                        <div class="column">
-                            <img src="~assets/img/services/e-commerce/illustration.svg" alt="E-commerce" class="illustration">
+            <section class="diptych is-border-bottom is-right">
+                <div class="container">
+                    <div class="diptych-body">
+                        <div class="icon is-circle mb-20">
+                            <i class="mdi mdi-store"></i>
                         </div>
-                        <div class="column">
-                            <div class="v-center">
-                                <div class="icon is-circle">
-                                    <i class="mdi mdi-store"></i>
-                                </div>
-                                <h2 class="title">
-                                    E-commerce
-                                </h2>
-                                <p>
-                                    Aenean massa. Sed aliquam ultrices mauris. Fusce fermentum. In auctor lobortis lacus. Proin viverra, ligula sit amet ultrices semper, ligula arcu tristique sapien, a accumsan nisi mauris ac eros. Nunc nulla. Vestibulum dapibus nunc ac augue.
-                                </p>
-                                <nuxt-link :to="localePath('services-e-commerce')" class="button is-e-commerce is-medium">
-                                    <span>Learn more</span>
-                                    <span class="icon">
-                                        <i class="mdi mdi-arrow-right"></i>
-                                    </span>
-                                </nuxt-link>
-                            </div>
-                        </div>
+                        <h2 class="title">E-commerce</h2>
+                        <p class="is-medium mb-30">Aenean massa. Sed aliquam ultrices mauris. Fusce fermentum. In auctor lobortis lacus. Proin viverra, ligula sit amet ultrices semper, ligula arcu tristique sapien, a accumsan nisi mauris ac eros. Nunc nulla. Vestibulum dapibus nunc ac augue.</p>
+                        <nuxt-link :to="localePath('services-e-commerce')" class="button is-e-commerce is-medium">
+                            <span>Learn more</span>
+                            <span class="icon">
+                                <i class="mdi mdi-arrow-right"></i>
+                            </span>
+                        </nuxt-link>
                     </div>
-                </section>
+                </div>
+                <div class="diptych-image pt-40 pb-40 is-hidden-mobile">
+                    <img src="~assets/img/services/e-commerce/illustration.svg" alt="E-commerce">
+                </div>
+            </section>
 
-                <section class="section">
-                    <div class="columns">
-                        <div class="column">
-                            <div class="v-center">
-                                <div class="icon is-circle">
-                                    <i class="mdi mdi-server-network"></i>
-                                </div>
-                                <h2 class="title">
-                                    Custom application
-                                </h2>
-                                <p>
-                                    Aenean massa. Sed aliquam ultrices mauris. Fusce fermentum. In auctor lobortis lacus. Proin viverra, ligula sit amet ultrices semper, ligula arcu tristique sapien, a accumsan nisi mauris ac eros. Nunc nulla. Vestibulum dapibus nunc ac augue.
-                                </p>
-                                <nuxt-link :to="localePath('services-custom-application')" class="button is-custom-application is-medium">
-                                    <span>Learn more</span>
-                                    <span class="icon">
-                                        <i class="mdi mdi-arrow-right"></i>
-                                    </span>
-                                </nuxt-link>
-                            </div>
+            <section class="diptych is-border-bottom">
+                <div class="container">
+                    <div class="diptych-body">
+                        <div class="icon is-circle mb-20">
+                            <i class="mdi mdi-server-network"></i>
                         </div>
-                        <div class="column">
-                            <img src="~assets/img/services/custom-application/illustration.svg" alt="Custom application" class="illustration">
-                        </div>
+                        <h2 class="title">Custom application</h2>
+                        <p class="is-medium mb-30">Aenean massa. Sed aliquam ultrices mauris. Fusce fermentum. In auctor lobortis lacus. Proin viverra, ligula sit amet ultrices semper, ligula arcu tristique sapien, a accumsan nisi mauris ac eros. Nunc nulla. Vestibulum dapibus nunc ac augue.</p>
+                        <nuxt-link :to="localePath('services-custom-application')" class="button is-custom-application is-medium">
+                            <span>Learn more</span>
+                            <span class="icon">
+                                <i class="mdi mdi-arrow-right"></i>
+                            </span>
+                        </nuxt-link>
                     </div>
-                </section>
-
-            </div>
-
+                </div>
+                <div class="diptych-image pt-40 pb-40 is-hidden-mobile">
+                    <img src="~assets/img/services/custom-application/illustration.svg" alt="Custom application">
+                </div>
+            </section>
         </div>
     </div>
 

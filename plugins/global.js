@@ -18,6 +18,17 @@ Vue.component('v-reviews', Reviews)
 Vue.component('v-navigation', Navigation)
 Vue.component('contact-form', ContactForm)
 
+/*
+ |--------------------------------------------------------------------------
+ | Vue Scroll
+ |--------------------------------------------------------------------------
+ */
+
+import VueScrollTo from 'vue-scrollto'
+Vue.use(VueScrollTo, {
+    offset: -50,
+    duration: 200
+})
 
 /*
  |--------------------------------------------------------------------------
