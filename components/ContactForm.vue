@@ -3,11 +3,11 @@
         <transition name="scale" mode="out-in">
         <form v-if="!sent" class="form" v-loading="loading" @submit.prevent="send()">
 
-            <b-field label="Name" :type="errors.has('name') ? 'is-danger': ''" :message="errors.has('name') ? errors.first('name') : ''">
+            <b-field :label="$t('pages.contact.name')" :type="errors.has('name') ? 'is-danger': ''" :message="errors.has('name') ? errors.first('name') : ''">
                 <b-input type="text" name="name" v-model="form.name" v-validate="'required'"></b-input>
             </b-field>
 
-            <b-field label="Email" :type="errors.has('email') ? 'is-danger': ''" :message="errors.has('email') ? errors.first('email') : ''">
+            <b-field :label="$t('pages.contact.email')" :type="errors.has('email') ? 'is-danger': ''" :message="errors.has('email') ? errors.first('email') : ''">
                 <b-input type="email" name="email" v-model="form.email" v-validate="'required|email'"></b-input>
             </b-field>
 
@@ -16,15 +16,15 @@
             <b-field>
                 <b-radio-button v-model="form.budget"
                     native-value="10 000$ to 20 000$">
-                    10k to 20k
+                    10k {{ $t('pages.contact.to') }} 20k
                 </b-radio-button>
                 <b-radio-button v-model="form.budget"
                     native-value="20 000$ to 50 000$">
-                    20k to 50k
+                    20k {{ $t('pages.contact.to') }} 50k
                 </b-radio-button>
                 <b-radio-button v-model="form.budget"
                     native-value="50 000$ to 100 000$ ">
-                    50k to 100k
+                    50k {{ $t('pages.contact.to') }} 100k
                 </b-radio-button>
                 <b-radio-button v-model="form.budget"
                     native-value="100 000$ +">
@@ -36,54 +36,54 @@
                 <b-input type="textarea" name="message" v-model="form.message" v-validate="'required|min:5'"></b-input>
             </b-field>
 
-            <b-field label="Do you want to be contacted by phone?">
+            <b-field :label="$t('pages.contact.contacted-by-phone')">
                 <div class="field">
                     <b-checkbox v-model="form.contact_by_phone"
                         native-value="true">
-                        Yes, please!
+                        {{ $t('pages.contact.yes-please') }}
                     </b-checkbox>
                 </div>
             </b-field>
 
             <div v-show="form.contact_by_phone" class="mb-15">
-                <b-field label="Phone" :type="errors.has('phone') ? 'is-danger': ''" :message="errors.has('phone') ? errors.first('phone') : ''">
+                <b-field :label="$t('pages.contact.phone')" :type="errors.has('phone') ? 'is-danger': ''" :message="errors.has('phone') ? errors.first('phone') : ''">
                     <b-input type="text" name="phone" v-model="form.phone" v-validate="{required: this.form.contact_by_phone}"></b-input>
                 </b-field>
 
-                <b-field label="When are you available?"></b-field>
+                <b-field :label="$t('pages.contact.when-available')"></b-field>
 
                 <b-field>
                     <b-checkbox-button v-model="form.day"
                         native-value="Monday">
-                        Monday
+                        {{ $t('pages.contact.monday') }}
                     </b-checkbox-button>
                     <b-checkbox-button v-model="form.day"
                         native-value="Tuesday">
-                        Tuesday
+                        {{ $t('pages.contact.tuesday') }}
                     </b-checkbox-button>
                     <b-checkbox-button v-model="form.day"
                         native-value="Wednesday ">
-                        Wednesday 
+                        {{ $t('pages.contact.wednesday') }}
                     </b-checkbox-button>
                     <b-checkbox-button v-model="form.day"
                         native-value="Thursday">
-                        Thursday
+                        {{ $t('pages.contact.thursday') }}
                     </b-checkbox-button>
                     <b-checkbox-button v-model="form.day"
                         native-value="Friday">
-                        Friday
+                        {{ $t('pages.contact.friday') }}
                     </b-checkbox-button>
                     <b-checkbox-button v-model="form.day"
                         native-value="Saturday">
-                        Saturday
+                        {{ $t('pages.contact.saturday') }}
                     </b-checkbox-button>
                     <b-checkbox-button v-model="form.day"
                         native-value="Sunday">
-                        Sunday
+                        {{ $t('pages.contact.sunday') }}
                     </b-checkbox-button>
                 </b-field>
 
-                <b-field label="At which time?"></b-field>
+                <b-field :label="$t('pages.contact.which-time')"></b-field>
 
                 <b-field>
                     <b-checkbox-button v-model="form.time"
@@ -106,8 +106,8 @@
                     <i class="mdi mdi-checkbox-marked-circle-outline mdi-48px"></i>
                 </span>
                 <br>
-                <h3 class="title is-3">Message successfully sent!</h3>
-                <h4 class="subtitle is-5">We will get back to you as soon as possible</h4>
+                <h3 class="title is-3">{{ $t('pages.contact.message-sent') }}</h3>
+                <h4 class="subtitle is-5">{{ $t('pages.contact.back-to-you') }}</h4>
             </div>
         </div>
         </transition>
@@ -164,7 +164,7 @@
                 .catch(error => {
                     this.loading = false
                     this.$snackbar.open({
-                        message: 'The contact form is not wokring currently! Please contact us directly :)',
+                        message: 'The contact form is not working currently! Please contact us directly :)',
                         type: 'is-danger',
                         queue: false
                     })

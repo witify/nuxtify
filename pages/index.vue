@@ -4,15 +4,15 @@
     <section class="hero is-large main-hero is-black">
       <div class="hero-body">
         <div class="container">
-          <h1 class="title is-spaced">We build better <br>digital products.</h1>
-          <h2 class="subtitle">Witify is a design & engineering team crafting high-end digital products.</h2>
+          <h1 class="title is-spaced" v-html="$t('pages.home.title')"></h1>
+          <h2 class="subtitle" v-html="$t('pages.home.subtitle')"></h2>
 
           <div class="field is-grouped">
             <p class="control">
-              <nuxt-link :to="localePath('projects')" class="button is-danger is-medium">Case studies</nuxt-link>
+              <nuxt-link :to="localePath('projects')" class="button is-danger is-medium">{{ $t('pages.home.case-studies') }}</nuxt-link>
             </p>
             <p class="control">
-              <nuxt-link :to="localePath('services')" class="button is-white is-medium">Our services</nuxt-link>
+              <nuxt-link :to="localePath('services')" class="button is-white is-medium">{{ $t('pages.home.our-services') }}</nuxt-link>
             </p>
           </div>
         </div>
@@ -24,10 +24,8 @@
         <div class="columns is-desktop">
           <div class="column">
 
-            <h2 class="title is-size-1 is-spaced">
-              Thorough <br>
-              <strong>web</strong> & <strong>application</strong><br>
-              expertise.
+            <h2 class="title is-size-1 is-spaced" v-html="$t('pages.home.expertise-header')">
+              
             </h2>
             <h3 class="subtitle">Maecenas egestas arcu quis ligula mattis placerat. Donec vitae orci sed dolor rutrum auctor. In ac felis quis tortor malesuada pretium.</h3>
 
@@ -49,13 +47,13 @@
         <div class="container">
           <div class="columns is-desktop">
             <div class="column">
-              <service-card title="Process optimisation" slug="process-optimisation" icon="rocket"></service-card>
+              <service-card :title="$t('pages.services.process-optimisation')" slug="process-optimisation" icon="rocket"></service-card>
             </div>
             <div class="column">
-              <service-card title="E-commerce" slug="e-commerce" icon="store"></service-card>
+              <service-card :title="$t('pages.services.e-commerce')" slug="e-commerce" icon="store"></service-card>
             </div>
             <div class="column">
-              <service-card title="Custom application" slug="custom-application" icon="server-network"></service-card>
+              <service-card :title="$t('pages.services.custom-application')" slug="custom-application" icon="server-network"></service-card>
             </div>
           </div>
         </div>
@@ -71,11 +69,11 @@
               <span>Start Alberta</span>
             </h2>
             <p class="is-medium">
-              Start Alberta is a web-community bringing together funders, investors and organizations in a comprehensible and interactive ecosystem. It is and will remain an open resource for everyone.
+              {{ $t('pages.home.start-alberta-resume') }}
             </p>
             <a href="#" class="button is-medium is-start-alberta">
               <span>
-                Read the case study
+                {{ $t('project.general.read-case-study') }}
               </span>
               <span class="icon">
                 <i class="mdi mdi-arrow-right"></i>
@@ -97,14 +95,14 @@
           <div class="project-body">
             <h2 class="title">
               <img class="project-logo" src="~assets/img/projects/pneus-a-petits-prix/logo.png" label="Pneus à petits prix" />
-              <span>Low cost tires</span>
+              <span>{{ $t('project.low-cost-tires.title') }}</span>
             </h2>
             <p class="is-medium">
-              Start Alberta is a web-community bringing together funders, investors and organizations in a comprehensible and interactive ecosystem. It is and will remain an open resource for everyone.
+              {{ $t('pages.home.low-cost-tires-resume') }}
             </p>
             <a href="#" class="button is-medium is-pneus-a-petits-prix">
               <span>
-                Read the case study
+                {{ $t('project.general.read-case-study') }}
               </span>
               <span class="icon">
                 <i class="mdi mdi-arrow-right"></i>
@@ -122,7 +120,7 @@
 
     <section class="section section-review">
       <div class="container">
-        <h2 class="title">Apparently, we are awesome!</h2>
+        <h2 class="title">{{ $t('pages.home.we-are-awesome') }}</h2>
         <img src="~assets/img/home/stars.svg" alt="5 stars rating review" class="stars">
       </div>
       <v-reviews></v-reviews>

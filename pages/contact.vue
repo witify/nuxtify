@@ -5,8 +5,8 @@
             <section class="hero is-main">
                 <div class="hero-body">
                     <div class="container">
-                        <h1 class="title">Contact</h1>
-                        <h2 class="subtitle">We are real people here in Montreal. We are ready to answer your questions and help out however we can.</h2>
+                        <h1 class="title">{{ $t('pages.contact.title') }}</h1>
+                        <h2 class="subtitle">{{ $t('pages.contact.subtitle') }}</h2>
                     </div>
                 </div>
             </section>
@@ -15,16 +15,16 @@
                 <div class="container">
                     <div class="columns is-variable is-6">
                         <div class="column is-one-third-desktop">
-                            <h2 class="title">Coordinates</h2>
+                            <h2 class="title">{{ $t('pages.contact.coordinates') }}</h2>
                             
                             <div class="is-size-5">
-                                <strong>Email</strong><br>
+                                <strong>{{ $t('pages.contact.email') }}</strong><br>
                                 <div class="mb-30"><a href="mailto:info@witify.io">info@witify.io</a></div>
 
-                                <strong>Phone</strong><br>
+                                <strong>{{ $t('pages.contact.phone') }}</strong><br>
                                 <div class="mb-30"><a href="tel:(514) 916-3026">(514) 916-3026</a></div>
 
-                                <strong>Address</strong><br>
+                                <strong>{{ $t('pages.contact.address') }}</strong><br>
                                 <div>333 Sherbrooke E, 705</div>
                                 <div>Montréal (Québec) H2X 4E3</div>
                                 <div class="mb-25">Canada</div>
