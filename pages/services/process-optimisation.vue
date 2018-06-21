@@ -80,7 +80,7 @@
                                 <i class="mdi mdi-gauge-full"></i>
                             </div>
                             <h2 class="title">Process</h2>
-                            <h3 class="subtitle">improvement</h3>
+                            <h3 class="subtitle">acceleration</h3>
                         </div>
                     </div>
 
@@ -101,6 +101,16 @@
                             </div>
                             <h2 class="title">Security</h2>
                             <h3 class="subtitle">banking level security</h3>
+                        </div>
+                    </div>
+
+                    <div class="column is-one-third">
+                        <div class="service-item">
+                            <div class="icon is-circle">
+                                <i class="mdi mdi-tune-vertical"></i>
+                            </div>
+                            <h2 class="title">Operation</h2>
+                            <h3 class="subtitle">standardization</h3>
                         </div>
                     </div>
 

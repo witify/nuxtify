@@ -9,16 +9,22 @@
 
         .title {
             font-size: 3.8rem;
-            line-height: 0.96em;
+            line-height: 1;
+            margin-bottom: 1rem;
         }
         .subtitle {
             font-size: 1.7rem;
+            margin-bottom: 3rem;
         }
 
         .hero-body {
             @include touch() {
                 padding: 5rem 1.5rem;
                 padding-top: 7rem;
+                max-width: 70%;
+            }
+            @include mobile() {
+                max-width: 90%;
             }
         }
     }

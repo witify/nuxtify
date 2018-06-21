@@ -5,7 +5,7 @@
       <div class="hero-body">
         <div class="container">
           <h1 class="title is-spaced">We build better <br>digital products.</h1>
-          <h2 class="subtitle">Witify is a design & engineering team <br>crafting high-end digital products.</h2>
+          <h2 class="subtitle">Witify is a design & engineering team crafting high-end digital products.</h2>
 
           <div class="field is-grouped">
             <p class="control">
