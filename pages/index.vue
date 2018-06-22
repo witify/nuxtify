@@ -1,44 +1,48 @@
 <template>
   <div class="page-home">
 
-    <section class="hero is-large main-hero is-black">
+    <section class="hero main-hero is-black">
       <div class="hero-body">
         <div class="container">
+
           <h1 class="title is-spaced" v-html="$t('pages.home.title')"></h1>
           <h2 class="subtitle" v-html="$t('pages.home.subtitle')"></h2>
 
-          <div class="field is-grouped">
-            <p class="control">
-              <nuxt-link :to="localePath('projects')" class="button is-danger is-medium">{{ $t('pages.home.case-studies') }}</nuxt-link>
-            </p>
-            <p class="control">
-              <nuxt-link :to="localePath('services')" class="button is-white is-medium">{{ $t('pages.home.our-services') }}</nuxt-link>
-            </p>
-          </div>
+          <nuxt-link :to="localePath('projects')" class="button is-danger is-large mb-10 mr-10">
+            <span class="icon">
+              <i class="mdi mdi-clipboard-text"></i>
+            </span>
+            <span>
+              {{ $t('pages.home.case-studies') }}
+            </span>
+          </nuxt-link>
+
+          <nuxt-link :to="localePath('services')" class="button is-white is-large">
+            <span class="icon">
+              <i class="mdi mdi-google-circles-extended"></i>
+            </span>
+            <span>
+              {{ $t('pages.home.our-services') }}
+            </span>
+          </nuxt-link>
+        </div>
+      </div>
+
+      <div class="scroll-to" v-scroll-to="'#content'">
+        <div class="icon">
+          <i class="mdi mdi-chevron-down"></i>
         </div>
       </div>
     </section>
 
-    <section class="section section-expertise is-medium">
+    <section id="content" class="section section-expertise is-medium">
       <div class="container">
         <div class="columns is-desktop">
           <div class="column">
 
-            <h2 class="title is-size-1 is-spaced" v-html="$t('pages.home.expertise-header')">
-              
-            </h2>
-            <p class="is-medium">{{ $t('pages.home.expertise-paragraph') }}</p>
+            <h2 class="title is-size-1" v-html="$t('pages.home.expertise-header')"></h2>
+            <p class="subtitle is-size-3">{{ $t('pages.home.expertise-paragraph') }}</p>
 
-            <br>
-
-            <nuxt-link :to="localePath('services')" class="button is-primary is-medium">
-              <span>{{ $t('pages.home.what-we-do') }}</span>
-              <span class="icon">
-                <i class="mdi mdi-arrow-right"></i>
-              </span>
-            </nuxt-link>
-          </div>
-          <div class="column">
           </div>
         </div>
       </div>

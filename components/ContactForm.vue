@@ -14,39 +14,54 @@
             <b-field label="Budget"></b-field>
 
             <b-field>
-                <b-radio-button v-model="form.budget"
+                <b-radio v-model="form.budget"
                     native-value="10 000$ to 20 000$">
                     10k {{ $t('pages.contact.to') }} 20k
-                </b-radio-button>
-                <b-radio-button v-model="form.budget"
+                </b-radio>
+            </b-field>
+            <b-field>
+                <b-radio v-model="form.budget"
                     native-value="20 000$ to 50 000$">
                     20k {{ $t('pages.contact.to') }} 50k
-                </b-radio-button>
-                <b-radio-button v-model="form.budget"
+                </b-radio>
+            </b-field>
+            <b-field>
+                <b-radio v-model="form.budget"
                     native-value="50 000$ to 100 000$ ">
                     50k {{ $t('pages.contact.to') }} 100k
-                </b-radio-button>
-                <b-radio-button v-model="form.budget"
+                </b-radio>
+            </b-field>
+            <b-field>
+                <b-radio v-model="form.budget"
                     native-value="100 000$ +">
                     100k +
-                </b-radio-button>
-                <b-radio-button v-model="form.budget"
+                </b-radio>
+            </b-field>
+            <b-field>
+                <b-radio v-model="form.budget"
                     native-value="Don't know">
                     {{ $t('pages.contact.not-sure') }}
-                </b-radio-button>
+                </b-radio>
             </b-field>
 
             <b-field label="Message" :type="errors.has('message') ? 'is-danger': ''" :message="errors.has('message') ? errors.first('message') : ''">
                 <b-input type="textarea" name="message" v-model="form.message" v-validate="'required|min:5'"></b-input>
             </b-field>
 
-            <b-field :label="$t('pages.contact.contacted-by-phone')">
-                <div class="field">
-                    <b-checkbox v-model="form.contact_by_phone"
-                        native-value="true">
-                        {{ $t('pages.contact.yes-please') }}
-                    </b-checkbox>
-                </div>
+            <b-field :label="$t('pages.contact.contacted-by-phone')"></b-field>
+
+            <b-field>
+                <b-radio-button v-model="form.contact_by_phone"
+                    :native-value="false"
+                    type="is-danger">
+                    <span>{{ $t('pages.contact.no') }}</span>
+                </b-radio-button>
+
+                <b-radio-button v-model="form.contact_by_phone"
+                    :native-value="true"
+                    type="is-success">
+                    <span>{{ $t('pages.contact.yes-please') }}</span>
+                </b-radio-button>
             </b-field>
 
             <div v-show="form.contact_by_phone" class="mb-15">
@@ -57,34 +72,46 @@
                 <b-field :label="$t('pages.contact.when-available')"></b-field>
 
                 <b-field>
-                    <b-checkbox-button v-model="form.day"
+                    <b-checkbox v-model="form.day"
                         native-value="Monday">
                         {{ $t('pages.contact.monday') }}
-                    </b-checkbox-button>
-                    <b-checkbox-button v-model="form.day"
+                    </b-checkbox>
+                </b-field>
+                <b-field>
+                    <b-checkbox v-model="form.day"
                         native-value="Tuesday">
                         {{ $t('pages.contact.tuesday') }}
-                    </b-checkbox-button>
-                    <b-checkbox-button v-model="form.day"
+                    </b-checkbox>
+                </b-field>
+                <b-field>
+                    <b-checkbox v-model="form.day"
                         native-value="Wednesday ">
                         {{ $t('pages.contact.wednesday') }}
-                    </b-checkbox-button>
-                    <b-checkbox-button v-model="form.day"
+                    </b-checkbox>
+                </b-field>
+                <b-field>
+                    <b-checkbox v-model="form.day"
                         native-value="Thursday">
                         {{ $t('pages.contact.thursday') }}
-                    </b-checkbox-button>
-                    <b-checkbox-button v-model="form.day"
+                    </b-checkbox>
+                </b-field>
+                <b-field>
+                    <b-checkbox v-model="form.day"
                         native-value="Friday">
                         {{ $t('pages.contact.friday') }}
-                    </b-checkbox-button>
-                    <b-checkbox-button v-model="form.day"
+                    </b-checkbox>
+                </b-field>
+                <b-field>
+                    <b-checkbox v-model="form.day"
                         native-value="Saturday">
                         {{ $t('pages.contact.saturday') }}
-                    </b-checkbox-button>
-                    <b-checkbox-button v-model="form.day"
+                    </b-checkbox>
+                </b-field>
+                <b-field>
+                    <b-checkbox v-model="form.day"
                         native-value="Sunday">
                         {{ $t('pages.contact.sunday') }}
-                    </b-checkbox-button>
+                    </b-checkbox>
                 </b-field>
 
                 <b-field :label="$t('pages.contact.which-time')"></b-field>

@@ -31,6 +31,20 @@
                         </div>
 
                         <div class="column is-half">
+                            <nuxt-link :to="localePath('projects-sauver')" class="project-card">
+                                <div class="card-image">
+                                    <figure class="image is-4by3">
+                                        <img src="~assets/img/projects/sauver/thumbnail.jpg" alt="SAUVéR">
+                                    </figure>
+                                </div>
+                                <div class="card-content">
+                                    <h2 class="title">{{ $t('project.sauver.title') }}</h2>
+                                    <h3 class="subtitle">{{ $t('project.sauver.subtitle') }}</h3>
+                                </div>
+                            </nuxt-link>
+                        </div>
+
+                        <div class="column is-half">
                             <div class="project-card">
                                 <div class="card-image">
                                     <figure class="image is-4by3">
@@ -84,20 +98,6 @@
                                     <h3 class="subtitle">{{ $t('project.jussaume.subtitle') }}</h3>
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="column is-half">
-                            <nuxt-link :to="localePath('projects-sauver')" class="project-card">
-                                <div class="card-image">
-                                    <figure class="image is-4by3">
-                                        <img src="~assets/img/projects/sauver/thumbnail.jpg" alt="SAUVéR">
-                                    </figure>
-                                </div>
-                                <div class="card-content">
-                                    <h2 class="title">{{ $t('project.sauver.title') }}</h2>
-                                    <h3 class="subtitle">{{ $t('project.sauver.subtitle') }}</h3>
-                                </div>
-                            </nuxt-link>
                         </div>
 
                     </div>

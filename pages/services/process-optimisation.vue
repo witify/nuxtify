@@ -45,10 +45,10 @@
             </div>
         </section>
 
-        <section class="section is-medium has-text-centered">
+        <section class="section has-text-centered">
             <div class="container is-sm">
                 <h2 class="title is-size-2">Our services</h2>
-                <h2 class="subtitle is-size-4 mb-80">Nous offrons une gamme de services complète pour un accompagnement et un développement clé en main de A à Z.</h2>
+                <h2 class="subtitle is-size-4 mb-40">Nous offrons une gamme de services complète pour un accompagnement et un développement clé en main de A à Z.</h2>
 
                 <div class="columns is-mobile is-multiline">
 
