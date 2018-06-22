@@ -85,11 +85,11 @@ module.exports = {
             pages: {
               index: 'Accueil',
               home: {
-                title: 'Nous construisons des <br>meilleurs produits numériques.',
+                title: 'Nous développons de <br>meilleurs produits numériques.',
                 subtitle: 'Witify est une équipe de conception et d\'ingénierie qui confectionne des <br>produits numériques haut de gamme.',
                 'case-studies': 'Études de cas',
-                'our-services': 'Nos Services',
-                'expertise-header': 'Expertise du <br><strong>web</strong> & des <strong>logiciels</strong><br> en profondeur.',
+                'our-services': 'Nos services',
+                'expertise-header': 'Expertise <br><strong>web</strong> & <strong>logicielle</strong><br> approfondie.',
                 'expertise-paragraph': 'Notre équipe regroupe des ingénieurs, des experts web et des gens d\'affaires. Nous nous assurons que votre projet est sur la bonne voie. Et nous le faisons remarquablement bien.',
                 'expertise-paragraph-2': 'Notre équipe passionnée se dévoue chaque jour à développer des logiciels faits sur mesure pour votre entreprise. Toujours à jour avec les nouvelles technologies, ils proposent les solutions adaptées à vos besoins.',
                 'what-we-do': 'Ce que nous faisons',
@@ -101,6 +101,7 @@ module.exports = {
                 index: 'Projets',
                 boursify: 'Boursify',
                 'start-alberta': 'Start Alberta',
+                sauver: 'SAUVéR',
                 'featured-projects': 'Projets en vedette',
                 subtitle: "Nos clients ont toujours de bonnes idées. Et nous sommes très fier de pouvoir afficher leurs réalisations, car à la base de chacun de ces projets complétés, il y a une équipe passionnée d'experts à qui l'on doit dire 'Merci'.",
               },
@@ -110,7 +111,7 @@ module.exports = {
                 'process-optimisation-subtext': 'Optimisez votre modèle d\'affaire',
                 'e-commerce': 'Commerce en ligne',
                 'e-commerce-subtext': 'Les meilleurs solutions e-commerce',
-                'custom-application': 'Application personnalisée',
+                'custom-application': 'Application sur mesure',
                 'custom-application-subtext': 'Plateforme personnalisée haut de gamme'
               },
               about: {

@@ -10,14 +10,18 @@
                     <h2 class="subtitle">
                         {{ $t('pages.cta.fill-the-form') }}
                     </h2>
-                    <div class="icon is-circle">
-                        <i class="mdi mdi-arrow-down has-text-white"></i>
-                    </div>
                 </div>
             </div>
+
+            <div class="scroll-to" v-scroll-to="'#cta'">
+                <div class="icon">
+                    <i class="mdi mdi-chevron-down"></i>
+                </div>
+            </div>
+
         </div>
 
-        <div class="container">
+        <div id="cta" class="container">
             <div class="selections">
                 <button class="selection is-process-optimisation" :class="{'is-active': selected == 'process-optimisation'}" @click="selected = 'process-optimisation'">
                     <div class="selection-circle"></div>
@@ -47,7 +51,7 @@
                 <div v-if="selected == 'process-optimisation'" class="service" key="1">
                     <div class="columns is-gapless">
                         <div class="column is-half">
-                            <div class="service-image-wrapper">
+                            <div class="service-image-wrapper is-hidden-mobile">
                                 <img src="~assets/img/services/process-optimisation/illustration.svg" alt="Process optimisation service" class="service-image">
                             </div>
                         </div>
@@ -68,7 +72,7 @@
                 <div v-else-if="selected == 'e-commerce'" class="service" key="2">
                     <div class="columns is-gapless">
                         <div class="column is-half">
-                            <div class="service-image-wrapper">
+                            <div class="service-image-wrapper is-hidden-mobile">
                                 <img src="~assets/img/services/e-commerce/illustration.svg" alt="E-commerce service" class="service-image">
                             </div>
                         </div>
@@ -89,7 +93,7 @@
                 <div v-else-if="selected == 'custom-application'" class="service" key="3">
                     <div class="columns is-gapless">
                         <div class="column is-half">
-                            <div class="service-image-wrapper">
+                            <div class="service-image-wrapper is-hidden-mobile">
                                 <img src="~assets/img/services/custom-application/illustration.svg" alt="Custom application service" class="service-image">
                             </div>
                         </div>

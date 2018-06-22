@@ -87,7 +87,7 @@
                         </div>
 
                         <div class="column is-half">
-                            <div class="project-card">
+                            <nuxt-link :to="localePath('projects-sauver')" class="project-card">
                                 <div class="card-image">
                                     <figure class="image is-4by3">
                                         <img src="~assets/img/projects/sauver/thumbnail.jpg" alt="SAUVéR">
@@ -97,7 +97,7 @@
                                     <h2 class="title">{{ $t('project.sauver.title') }}</h2>
                                     <h3 class="subtitle">{{ $t('project.sauver.subtitle') }}</h3>
                                 </div>
-                            </div>
+                            </nuxt-link>
                         </div>
 
                     </div>

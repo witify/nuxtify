@@ -2,21 +2,15 @@ $image-padding: 6rem;
 
 .diptych {
     position: relative;
-    padding: 4rem 1.5rem;
     overflow: hidden;
-
-    @include mobile() {
-        padding-top: 0;
-        padding-bottom: 0;
-    }
 
     .diptych-body {
         @include tablet() {
-            padding: 7rem 0;
+            padding: 7rem 1.5rem;
             width: 60%;
         }
         @include mobile() {
-            padding: 3rem 0;
+            padding: 1.5rem;
         }
         @include fullhd() {
             width: 50%;
@@ -41,6 +35,9 @@ $image-padding: 6rem;
         }
         @include fullhd() {
             left: 50%;
+        }
+        @include mobile() {
+            padding-top: 2rem; 
         }
 
         &.is-cover {

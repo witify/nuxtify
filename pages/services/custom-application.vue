@@ -1,7 +1,7 @@
 <template>
     <div class="page-custom-application">
 
-        <section class="hero is-main is-bold is-custom-application is-large">
+        <section class="hero is-main is-half is-bold is-custom-application is-medium">
             <div class="hero-body">
                 <div class="container">
                     <div class="icon is-circle is-dark">
@@ -11,9 +11,15 @@
                     <h2 class="subtitle">Ut varius tincidunt libero. Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi.</h2>
                 </div>
             </div>
+
+            <div class="scroll-to" v-scroll-to="'#content'">
+                <div class="icon">
+                    <i class="mdi mdi-chevron-down"></i>
+                </div>
+            </div>
         </section>
 
-        <section class="section">
+        <section id="content" class="section">
             <div class="container">
             </div>
         </section>
@@ -27,7 +33,7 @@ export default {
     nuxtI18n: {
         paths: {
             en: '/custom-application',
-            fr: '/application-personalisee'
+            fr: '/application-sur-mesure'
         }
     },
     head() {

@@ -1,7 +1,7 @@
 <template>
     <div class="page-boursify is-project">
 
-        <div class="hero is-main is-large is-dark is-center">
+        <div class="hero is-main is-fullheight is-dark is-center">
             <div class="hero-body">
                 <div class="container">
                     <span class="heading">{{ $t('project.general.case-study') }}</span>
@@ -9,9 +9,15 @@
                     <h2 class="subtitle">{{ $t('project.boursify.subtitle') }}</h2>
                 </div>
             </div>
+
+            <div class="scroll-to" v-scroll-to="'#content'">
+                <div class="icon">
+                    <i class="mdi mdi-chevron-down"></i>
+                </div>
+            </div>
         </div>
 
-        <section class="section is-medium">
+        <section id="content" class="section is-medium">
             <div class="container">
                 <div class="columns is-variable is-6 is-desktop">
                     <div class="column is-one-third-desktop">

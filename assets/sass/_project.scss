@@ -37,3 +37,15 @@
         background-image: url('~assets/img/projects/start-alberta/hero.jpg');
     }
 }
+
+.page-sauver {
+    .hero.is-main {
+        background-image: url('~assets/img/projects/sauver/hero.jpg');
+    }
+    .hero.is-quote {
+        background-color: #006DE0;
+        .title {
+            color: #fff;
+        }
+    }
+}

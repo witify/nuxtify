@@ -30,6 +30,7 @@ body {
 .hero {
     background-position: center;
     background-size: cover;
+    position: relative;
 
     .hero-body {
         @include tablet() {
@@ -66,12 +67,6 @@ body {
         margin-bottom: 7px;
     }
 
-    .title, .subtitle {
-        @include tablet() {
-            max-width: 50%;
-        }
-    }
-
     .title {
         font-size: 3rem;
 
@@ -100,6 +95,14 @@ body {
         text-align: center;
         .title, .subtitle {
             max-width: none;
+        }
+    }
+}
+
+.hero.is-half {
+    .title, .subtitle {
+        @include tablet() {
+            max-width: 50%;
         }
     }
 }
@@ -139,6 +142,10 @@ body {
 
 .section.is-grey {
     background-color: $white-ter;
+}
+
+.section.has-border-bottom {
+    border-bottom: solid 1px $white-ter;
 }
 
 /*

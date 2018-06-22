@@ -2,7 +2,7 @@
 
     <div class="page-e-commerce">
 
-        <section class="hero is-main is-e-commerce is-bold is-large">
+        <section class="hero is-main is-half is-e-commerce is-bold is-medium">
             <div class="hero-body">
                 <div class="container">
                     <div class="icon is-circle is-dark">
@@ -12,9 +12,15 @@
                     <h2 class="subtitle">Ut varius tincidunt libero. Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi.</h2>
                 </div>
             </div>
+
+            <div class="scroll-to" v-scroll-to="'#content'">
+                <div class="icon">
+                    <i class="mdi mdi-chevron-down"></i>
+                </div>
+            </div>
         </section>
 
-        <section class="hero">
+        <section id="content" class="hero">
             <div class="hero-body">
                 <div class="container is-sm">
                     <p class="is-size-3 has-text-centered is-tight">

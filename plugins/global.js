@@ -26,7 +26,7 @@ Vue.component('contact-form', ContactForm)
 
 import VueScrollTo from 'vue-scrollto'
 Vue.use(VueScrollTo, {
-    offset: -50,
+    offset: -67,
     duration: 200
 })
 

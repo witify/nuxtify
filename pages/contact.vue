@@ -74,7 +74,7 @@ export default {
     },
     head() {
         return {
-            title: this.$t('pages.contact')
+            title: this.$t('pages.contact.title')
         }
     }
 }
