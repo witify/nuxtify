@@ -20,12 +20,12 @@
                 <div class="navbar-start">
 
                     <nuxt-link :to="localePath('projects')" class="navbar-item is-uppercase">
-                        Projects
+                        {{ $t('pages.projects.index') }}
                     </nuxt-link>
 
                     <div class="navbar-item has-dropdown is-hoverable">
                         <nuxt-link :to="localePath('services')" class="navbar-link is-uppercase">
-                            Services
+                            {{ $t('pages.services.index') }}
                         </nuxt-link>
 
                         <div class="navbar-dropdown is-boxed is-services">
@@ -35,8 +35,8 @@
                                         <i class="mdi mdi-rocket"></i>
                                     </span>
                                     <span>
-                                        <strong>Process optimisation</strong>
-                                        <span>Optimise your business model</span>
+                                        <strong>{{ $t('pages.services.process-optimisation') }}</strong>
+                                        <span>{{ $t('pages.services.process-optimisation-subtext') }}</span>
                                     </span>
                                 </nuxt-link>
                             </div>
@@ -46,8 +46,8 @@
                                         <i class="mdi mdi-store"></i>
                                     </span>
                                     <span>
-                                        <strong>E-commerce</strong>
-                                        <span>The best e-commerce solutions</span>
+                                        <strong>{{ $t('pages.services.e-commerce') }}</strong>
+                                        <span>{{ $t('pages.services.e-commerce-subtext') }}</span>
                                     </span>
                                 </nuxt-link>
                             </div>
@@ -57,8 +57,8 @@
                                         <i class="mdi mdi-server-network"></i>
                                     </span>
                                     <span>
-                                        <strong>Custom applications</strong>
-                                        <span>High quality custom platforms</span>
+                                        <strong>{{ $t('pages.services.custom-application') }}</strong>
+                                        <span>{{ $t('pages.services.custom-application-subtext') }}</span>
                                     </span>
                                 </nuxt-link>
                             </div>
@@ -66,11 +66,11 @@
                     </div>
 
                     <nuxt-link :to="localePath('about')" class="navbar-item is-uppercase">
-                        About
+                        {{ $t('pages.about.title') }}
                     </nuxt-link>
 
                     <nuxt-link :to="localePath('contact')" class="navbar-item is-uppercase">
-                        Contact
+                        {{ $t('pages.contact.index') }}
                     </nuxt-link>
 
                 </div>

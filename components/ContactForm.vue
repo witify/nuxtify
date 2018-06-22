@@ -30,6 +30,10 @@
                     native-value="100 000$ +">
                     100k +
                 </b-radio-button>
+                <b-radio-button v-model="form.budget"
+                    native-value="Don't know">
+                    {{ $t('pages.contact.not-sure') }}
+                </b-radio-button>
             </b-field>
 
             <b-field label="Message" :type="errors.has('message') ? 'is-danger': ''" :message="errors.has('message') ? errors.first('message') : ''">

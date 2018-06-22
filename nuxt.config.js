@@ -91,20 +91,27 @@ module.exports = {
                 'our-services': 'Nos Services',
                 'expertise-header': 'Expertise du <br><strong>web</strong> & des <strong>logiciels</strong><br> en profondeur.',
                 'expertise-paragraph': 'Notre équipe regroupe des ingénieurs, des experts web et des gens d\'affaires. Nous nous assurons que votre projet est sur la bonne voie. Et nous le faisons remarquablement bien.',
+                'expertise-paragraph-2': 'Notre équipe passionnée se dévoue chaque jour à développer des logiciels faits sur mesure pour votre entreprise. Toujours à jour avec les nouvelles technologies, ils proposent les solutions adaptées à vos besoins.',
+                'what-we-do': 'Ce que nous faisons',
                 'start-alberta-resume': 'Start Alberta est une communauté Web réunissant des fondateurs, des investisseurs et des organisations dans un écosystème compréhensible et interactif pour les startups. C\'est et restera une ressource ouverte pour tout le monde.',
                 'low-cost-tires-resume': 'Pneus À Petits Prix est une plateforme de commerce électronique dédiée à la vente de pneus à bas prix. Avec plus de 20 000 pneus différents enregistrés, Pneus À Petits Prix vise à rendre le processus d\'achat facile et accessible pour le grand public.',
                 'we-are-awesome': 'Apparemment, nous sommes géniaux!'
               },
               projects: {
-                index: 'Projects',
+                index: 'Projets',
                 boursify: 'Boursify',
-                'start-alberta': 'Start Alberta'
+                'start-alberta': 'Start Alberta',
+                'featured-projects': 'Projets en vedette',
+                subtitle: "Nos clients ont toujours de bonnes idées. Et nous sommes très fier de pouvoir afficher leurs réalisations, car à la base de chacun de ces projets complétés, il y a une équipe passionnée d'experts à qui l'on doit dire 'Merci'.",
               },
               services: {
                 index: 'Services',
                 'process-optimisation': 'Optimisation de processus',
-                'e-commerce': 'E-commerce',
-                'custom-application': 'Application personnalisée'
+                'process-optimisation-subtext': 'Optimisez votre modèle d\'affaire',
+                'e-commerce': 'Commerce en ligne',
+                'e-commerce-subtext': 'Les meilleurs solutions e-commerce',
+                'custom-application': 'Application personnalisée',
+                'custom-application-subtext': 'Plateforme personnalisée haut de gamme'
               },
               about: {
                 title: 'À Propos',
@@ -117,6 +124,7 @@ module.exports = {
                 'boldness-text': 'Notre équipe est audacieuse et innovante. Nous osons saisir les opportunités et transformer en atouts les défis qui peuvent se présenter sur votre route. Chaque épreuve est une occasion de repousser les limites de l’innovation et de la créativité. Nous croyons qu’il est important d’entreprendre des projets, de braver les obstacles et de constamment aspirer à mieux que le statu quo.' 
               },
               contact: {
+                index: 'Contact',
                 title: 'Contactez-nous',
                 subtitle: 'Nous sommes de vraies personnes ici à Montréal. Nous sommes prêts à répondre à vos questions et à vous aider, autant que nous le pouvons.',
                 coordinates: 'Coordonnées',
@@ -125,6 +133,7 @@ module.exports = {
                 address: 'Adresse',
                 name: 'Nom',
                 to: 'à',
+                'not-sure': 'Incertain',
                 'contacted-by-phone': 'Voulez-vous être contacté par téléphone?',
                 'yes-please': 'Oui, s\'il-vous-plaît!',
                 'when-available': 'Quand êtes-vous disponible?',
@@ -175,7 +184,20 @@ module.exports = {
                 subtitle: "Plateforme sociale pour l'écosystème des startups en Alberta"
               },
               "low-cost-tires": {
-                title: "Pneus À Petits Prix"
+                title: "Pneus À Petits Prix",
+                subtitle: 'Site e-commerce dédié à la vente de pneus'
+              },
+              mcc: {
+                title: 'Histoire québécoise',
+                subtitle: 'Plateforme d\'héritage culturel'
+              },
+              jussaume: {
+                title: 'Jussaume',
+                subtitle: 'Découvertes digitales pour Jussaume'
+              },
+              sauver: {
+                title: 'Systèmes SAUVéR',
+                subtitle: 'Autopartage de voiture en temps réel'
               }
             }
           },
@@ -189,6 +211,7 @@ module.exports = {
                 'our-services': 'Our Services',
                 'expertise-header': 'Thorough <br><strong>web</strong> & <strong>software</strong><br>expertise.',
                 'expertise-paragraph': 'Our team regroups engineers, web experts and business people. We make sure your project is on the right track. And we do it hella good.',
+                'what-we-do': 'What we do',
                 'start-alberta-resume': 'Start Alberta is a web-community bringing together founders, investors and organizations in a comprehensible and interactive startup ecosystem. It is and will remain an open resource for everyone.',
                 'low-cost-tires-resume': 'Low Cost Tires is an e-commerce platform dedicated to the sale of low-priced tires. With more than 20,000 different tires registered, Low Cost Tires aims to make the buying process easy and accessible for the general public.',
                 'we-are-awesome': 'Apparently, we are awesome!'
@@ -196,19 +219,31 @@ module.exports = {
               projects: {
                 index: 'Projects',
                 boursify: 'Boursify',
-                'start-alberta': 'Start Alberta'
+                'start-alberta': 'Start Alberta',
+                'featured-projects': 'Featured projects',
+                subtitle: "Our customers always have good ideas. And we are very proud to be able to display their achievements, because at the base of each of these completed projects, there is a passionate team of experts to whom we must say 'Thank you'.",
               },
               services: {
                 index: 'Services',
-                'process-optimisation': 'Process optimisation',
+                'process-optimisation': 'Process optimization',
+                'process-optimisation-subtext': 'Optimize your business model',
                 'e-commerce': 'E-commerce',
-                'custom-application': 'Custom application'
+                'e-commerce-subtext': 'The best e-commerce solutions',
+                'custom-application': 'Custom application',
+                'custom-application-subtext': 'High-quality custom platforms'
               },
               about: {
                 title: 'About',
                 subtitle: "We are a growing Montreal company. We love human contact and challenges of all kinds. Our team is dynamic and will be happy to listen to your ideas and bring your projects to the next stage. Each of our associates is duly qualified and passionate about the field.<br>Come and say hi!",   
+                excellence: 'Excellence',
+                'excellence-text': 'Excellence is at the heart of our values. Every project, interaction and action is based on a deep desire to offer superior quality and the best of ourselves. We combine talent and hard work to provide the best tools and the best results. Our team understands your desire to differentiate itself, which is why it takes pride in realizing your idea in the form of a powerful and remarkable digital product.',
+                collaboration: 'Collaboration',
+                'collaboration-text': "We believe that every success in life comes from a team. And not of any team. A strong team, united, who advocates trust. That's why we want to be a team with everyone. Whether internally, ensuring a strong self-help dynamic. Or with our clientele, which is built on transparency and accessible communication at all times. We are here, we are humans and we want to build the bridges of a lasting relationship.",
+                boldness: 'Boldness',
+                'boldness-text': 'Our team is bold and innovative. We dare to seize opportunities and turn the challenges that may be in your way into assets. Each event is an opportunity to push the boundaries of innovation and creativity. We believe that it is important to undertake projects, to overcome obstacles and to constantly aspire to better than the status quo.'
               },
               contact: {
+                index: 'Contact',
                 title: 'Contact us',
                 subtitle: 'We are real people here in Montreal. We are ready to answer your questions and help out however we can.',
                 coordinates: 'Coordinates',
@@ -217,6 +252,7 @@ module.exports = {
                 address: 'Address',
                 name: 'Name',
                 to: 'to',
+                'not-sure': 'Not sure',
                 'contacted-by-phone': 'Do you want to be contacted by phone?',
                 'yes-please': 'Yes, please!',
                 'when-available': 'When are you available?',
@@ -263,10 +299,23 @@ module.exports = {
               },
               "start-alberta": {
                 title: "Start Alberta",
-                subtitle: "Plateforme sociale pour l'écosystème des startups en Alberta"
+                subtitle: "Social platform for the startup ecosystem in Alberta"
               },
               "low-cost-tires": {
-                title: "Low Cost Tires"
+                title: "Low Cost Tires",
+                'low-cost-tires-subtitle': 'E-commerce specialized for tires'
+              },
+              mcc: {
+                title: 'Quebec history',
+                subtitle: 'Cultural heritage platform'
+              },
+              jussaume: {
+                title: 'Jussaume',
+                subtitle: 'Digital discoveries for Jussaume'
+              },
+              sauver: {
+                title: 'SAUVéR Systems',
+                subtitle: 'Real-time car sharing platform'
               }
             }
           }

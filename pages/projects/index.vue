@@ -6,8 +6,8 @@
             <section class="hero is-main">
                 <div class="hero-body">
                     <div class="container">
-                        <h1 class="title">Featured projects.</h1>
-                        <h2 class="subtitle">In turpis. Aenean massa. Nullam accumsan lorem in dui. Vivamus euismod mauris. Phasellus accumsan cursus velit.</h2>
+                        <h1 class="title">{{ $t('pages.projects.featured-projects') }}</h1>
+                        <h2 class="subtitle">{{ $t('pages.projects.subtitle') }}</h2>
                     </div>
                 </div>
             </section>
@@ -24,8 +24,8 @@
                                     </figure>
                                 </div>
                                 <div class="card-content">
-                                    <h2 class="title">Start Alberta</h2>
-                                    <h3 class="subtitle">Alberta's startup community</h3>
+                                    <h2 class="title">{{ $t('project.start-alberta.title') }}</h2>
+                                    <h3 class="subtitle">{{ $t('project.start-alberta.subtitle') }}</h3>
                                 </div>
                             </nuxt-link>
                         </div>
@@ -34,12 +34,12 @@
                             <div class="project-card">
                                 <div class="card-image">
                                     <figure class="image is-4by3">
-                                        <img src="~assets/img/projects/pneus-a-petits-prix/thumbnail.jpg" alt="Start Alberta">
+                                        <img src="~assets/img/projects/pneus-a-petits-prix/thumbnail.jpg" alt="Low Cost Tires">
                                     </figure>
                                 </div>
                                 <div class="card-content">
-                                    <h2 class="title">Low cost tires</h2>
-                                    <h3 class="subtitle">E-commerce specialized on tires</h3>
+                                    <h2 class="title">{{ $t('project.low-cost-tires.title') }}</h2>
+                                    <h3 class="subtitle">{{ $t('project.low-cost-tires.subtitle') }}</h3>
                                 </div>
                             </div>
                         </div>
@@ -66,8 +66,8 @@
                                     </figure>
                                 </div>
                                 <div class="card-content">
-                                    <h2 class="title">Quebec history</h2>
-                                    <h3 class="subtitle">Cultural Heritage Platform</h3>
+                                    <h2 class="title">{{ $t('project.mcc.title') }}</h2>
+                                    <h3 class="subtitle">{{ $t('project.mcc.subtitle') }}</h3>
                                 </div>
                             </div>
                         </div>
@@ -80,8 +80,8 @@
                                     </figure>
                                 </div>
                                 <div class="card-content">
-                                    <h2 class="title">Jussaume</h2>
-                                    <h3 class="subtitle">Digital discoveries for Jussaume</h3>
+                                    <h2 class="title">{{ $t('project.jussaume.title') }}</h2>
+                                    <h3 class="subtitle">{{ $t('project.jussaume.subtitle') }}</h3>
                                 </div>
                             </div>
                         </div>
@@ -90,12 +90,12 @@
                             <div class="project-card">
                                 <div class="card-image">
                                     <figure class="image is-4by3">
-                                        <img src="~assets/img/projects/sauver/thumbnail.jpg" alt="Mobilier Jussaume">
+                                        <img src="~assets/img/projects/sauver/thumbnail.jpg" alt="SAUVéR">
                                     </figure>
                                 </div>
                                 <div class="card-content">
-                                    <h2 class="title">SAUVéR Systems</h2>
-                                    <h3 class="subtitle">Real-time car sharing platform</h3>
+                                    <h2 class="title">{{ $t('project.sauver.title') }}</h2>
+                                    <h3 class="subtitle">{{ $t('project.sauver.subtitle') }}</h3>
                                 </div>
                             </div>
                         </div>

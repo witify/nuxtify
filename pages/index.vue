@@ -27,12 +27,12 @@
             <h2 class="title is-size-1 is-spaced" v-html="$t('pages.home.expertise-header')">
               
             </h2>
-            <p class="is-medium">Maecenas egestas arcu quis ligula mattis placerat. Donec vitae orci sed dolor rutrum auctor. In ac felis quis tortor malesuada pretium.</p>
+            <p class="is-medium">{{ $t('pages.home.expertise-paragraph') }}</p>
 
             <br>
 
             <nuxt-link :to="localePath('services')" class="button is-primary is-medium">
-              <span>What we do</span>
+              <span>{{ $t('pages.home.what-we-do') }}</span>
               <span class="icon">
                 <i class="mdi mdi-arrow-right"></i>
               </span>
