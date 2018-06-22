@@ -116,17 +116,3 @@
     opacity: 0;
   }
 }
-
-/*
- |--------------------------------------------------------------------------
- | Page
- |--------------------------------------------------------------------------
- */
-
-.page-enter-active, .animation-leave-active {
-  @include transition(.2s);
-}
-
-.page-enter, .animation-leave-active {
-  opacity: 0;
-}

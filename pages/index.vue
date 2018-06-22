@@ -1,7 +1,7 @@
 <template>
   <div class="page-home">
 
-    <section class="hero main-hero is-black">
+    <section class="hero is-half main-hero is-black">
       <div class="hero-body">
         <div class="container">
 
@@ -75,14 +75,14 @@
             <p class="is-medium">
               {{ $t('pages.home.start-alberta-resume') }}
             </p>
-            <a href="#" class="button is-medium is-start-alberta">
+            <nuxt-link :to="localePath('projects-start-alberta')" class="button is-medium is-start-alberta">
               <span>
                 {{ $t('project.general.read-case-study') }}
               </span>
               <span class="icon">
                 <i class="mdi mdi-arrow-right"></i>
               </span>
-            </a>
+            </nuxt-link>
           </div>
         </div>
 

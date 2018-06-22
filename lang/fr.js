@@ -2,8 +2,8 @@ export default {
   pages: {
     index: 'Accueil',
     home: {
-      title: 'Nous développons de <br>meilleurs produits numériques.',
-      subtitle: 'Witify est une équipe de conception et d\'ingénierie qui confectionne des <br>produits numériques haut de gamme.',
+      title: 'Nous développons de meilleurs produits numériques.',
+      subtitle: 'Witify est une équipe de conception et d\'ingénierie qui confectionne des produits numériques haut de gamme.',
       'case-studies': 'Études de cas',
       'our-services': 'Services',
       'expertise-header': 'Expertise <strong>web</strong> & <strong>logicielle</strong> approfondie.',
@@ -20,7 +20,7 @@ export default {
       'start-alberta': 'Start Alberta',
       sauver: 'SAUVéR',
       'featured-projects': 'Projets en vedette',
-      subtitle: "Nos clients ont toujours de bonnes idées. Et nous sommes très fier de pouvoir afficher leurs réalisations, car à la base de chacun de ces projets complétés, il y a une équipe passionnée d'experts à qui l'on doit dire 'Merci'.",
+      subtitle: "Nos clients ont toujours de bonnes idées. Et nous sommes très fier de pouvoir afficher leurs réalisations, car à la base de chacun de ces projets complétés, il y a une équipe passionnée d'experts à qui l'on doit dire merci.",
     },
     services: {
       index: 'Services',
@@ -33,7 +33,7 @@ export default {
     },
     about: {
       title: 'À Propos',
-      subtitle: "Nous sommes une entreprise montréalaise en pleine croissance. Nous adorons le contact humain et les défis de tout genre. Notre équipe est dynamique et se fera un plaisir d\'écouter vos idées et d\'amener vos projets à la prochaine étape. Chacun de nos associés est dûment qualifié et passionné par le domaine.<br>Venez leur dire salut!",
+      subtitle: "Nous sommes une entreprise <strong>montréalaise</strong> en pleine croissance. Nous adorons le contact humain et les défis en tout genre. Notre équipe est dynamique et se fera un plaisir <strong>d\'écouter</strong> vos idées et <strong>concrétiser</strong> vos projets.",
       excellence: 'Excellence',
       'excellence-text': 'L’excellence est au cœur de nos valeurs. Chaque projet, interaction et action est basée sur un désir profond d’offrir une qualité supérieure et le meilleur de nous-mêmes. Nous combinons talent et travail tenace afin de fournir les meilleurs outils et les meilleurs résultats. Notre équipe comprend votre désir de se différentier, c’est pourquoi elle prend fierté à concrétiser votre idée sous la forme d’un produit digital puissant et remarquable.',
       collaboration: 'Collaboration',

@@ -2,7 +2,7 @@ export default {
   pages: {
     index: 'Home',
     home: {
-      title: 'We build better <br>digital products.',
+      title: 'We build better digital products.',
       subtitle: 'Witify is a design & engineering team crafting high-end digital products.',
       'case-studies': 'Case Studies',
       'our-services': 'Services',

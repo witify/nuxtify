@@ -53,13 +53,13 @@
             <b-field>
                 <b-radio-button v-model="form.contact_by_phone"
                     :native-value="false"
-                    type="is-danger">
+                    type="is-primary">
                     <span>{{ $t('pages.contact.no') }}</span>
                 </b-radio-button>
 
                 <b-radio-button v-model="form.contact_by_phone"
                     :native-value="true"
-                    type="is-success">
+                    type="is-primary">
                     <span>{{ $t('pages.contact.yes-please') }}</span>
                 </b-radio-button>
             </b-field>

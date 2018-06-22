@@ -140,6 +140,13 @@ body {
 |--------------------------------------------------------------------------
 */
 
+.section {
+    @include tablet() {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+}
+
 .section.is-grey {
     background-color: $white-ter;
 }

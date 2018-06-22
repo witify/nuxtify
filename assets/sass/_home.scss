@@ -2,7 +2,7 @@
 
     // Hero
     .main-hero {
-        background-image: url('~/assets/img/bg/index.jpg');
+        background-image: url('~/assets/img/bg/default.svg');
         background-size: cover;
         background-position: center;
         text-align: left;
@@ -12,15 +12,36 @@
         .hero-body {
             align-items: center;
             display: flex;
+
+            background-image: url('~/assets/img/home/illustration.svg');
+            background-size: 45%;
+            background-repeat: no-repeat;
+            background-position: right;
+
+            @include tablet() {
+                padding-left: 3rem;
+                padding-right: 3rem;
+            }
+
+            @include touch() {
+                background-image: none;
+                text-align: center;
+            }
+        }
+
+        .title, .subtitle {
+            @include touch() {
+                max-width: none;
+            }
         }
 
         .title {
             font-size: 3.8rem;
-            line-height: 1;
+            line-height: 1.1;
             margin-bottom: 1rem;
 
             @include mobile() {
-                font-size: 3rem;
+                font-size: 2.5rem;
             }
         }
         .subtitle {
@@ -29,17 +50,6 @@
 
             @include mobile() {
                 font-size: 1.4rem;
-            }
-        }
-
-        .hero-body {
-            @include touch() {
-                padding: 5rem 1.5rem;
-                padding-top: 7rem;
-                max-width: 70%;
-            }
-            @include mobile() {
-                max-width: 90%;
             }
         }
     }
