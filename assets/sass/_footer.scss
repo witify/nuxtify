@@ -1,6 +1,16 @@
 .footer {
-    padding: 70px 0;
+    padding: 1.5rem;
+    padding-top: 8rem;
     background-color: $white-ter;
+
+    @include touch() {
+        padding-top: 4rem;
+    }
+
+    @include mobile() {
+        text-align: center;
+    }
+
     .footer-title {
         font-weight: $weight-semibold;
         margin-bottom: 35px;
@@ -12,16 +22,26 @@
         margin-bottom: 10px;
     }
     p {
-        padding-right: 100px;
+        @include tablet() {
+            padding-right: 100px;
+        }
     }
 
     .footer-bottom {
         margin-top: 50px;
-        display: flex;
         width: 100%;
-        justify-content: space-between;
+        
+        @include tablet() {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .footer-bottom-left, .footer-bottom-right {
+            display: block;
+        }
 
         .footer-bottom-left {
+            margin-bottom: 1.2rem;
             img, span {
                 display: inline-block;
                 vertical-align: middle;
@@ -37,12 +57,14 @@
             }
         }
         .footer-bottom-right {
+            a:not(:first-child) {
+                margin-left: 13px;
+            }
             .icon {
                 color: $grey;
                 font-size: 1.4rem;
                 height: auto;
                 width: auto;
-                margin-left: 10px;
             }
         }
     }
