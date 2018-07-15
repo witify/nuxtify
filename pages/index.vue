@@ -40,8 +40,8 @@
         <div class="columns is-desktop">
           <div class="column">
 
-            <h2 class="title is-size-1" v-html="$t('pages.home.expertise-header')"></h2>
-            <p class="subtitle is-size-3">{{ $t('pages.home.expertise-paragraph') }}</p>
+            <h2 class="title is-size-2" v-html="$t('pages.home.expertise-header')"></h2>
+            <p class="subtitle is-size-4">{{ $t('pages.home.expertise-paragraph') }}</p>
 
           </div>
         </div>

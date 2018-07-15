@@ -105,7 +105,7 @@
                     <p class="is-medium">L’équipe a développé des modèles flexibles permettant d’accomplir ses objectifs, en plus de leur permettre de connecter entre eux, à la manière d’un réseau social. Chaque utilisateur peut s’enregistrer sans peine et un processus fiable et sécuritaire a été implémenté pour supporter ce besoin. Des outils d’administrateur ont aussi été bâtis afin d’offrir une gestion autonome de la plateforme. Grâce à celle-ci, l’administrateur peut gérer les blogues, les différentes données et assurer la viabilité de l’information.</p>
                 </div>
             </div>
-            <div class="diptych-image">
+            <div class="diptych-image pt-50">
                 <img src="~assets/img/projects/start-alberta/mvp.jpg" alt="Start Alberta minimal viable product" class="has-shadow">
             </div>
         </section>
@@ -118,7 +118,7 @@
                     <p class="is-medium">En se dédiant à améliorer l’expérience-utilisateur, l’équipe a amélioré la structure des pages, le processus d’inscription et ajouter plusieurs fonctionnalités permettant de naviguer aisément à travers la plateforme et d’augmenter l’engagement des utilisateurs. De plus, plusieurs outils ont été ajoutés pour l’administration, tels que des rapports complets d’information, des outils de communication de masse et autre, dans le but de faciliter sa gestion de la plateforme.</p>
                 </div>
             </div>
-            <div class="diptych-image">
+            <div class="diptych-image pt-50">
                 <img src="~assets/img/projects/start-alberta/v1.jpg" alt="Start Alberta first release v1" class="has-shadow">
             </div>
         </section>

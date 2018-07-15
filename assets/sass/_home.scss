@@ -36,7 +36,7 @@
         }
 
         .title {
-            font-size: 3.8rem;
+            font-size: 3.2rem;
             line-height: 1.1;
             margin-bottom: 1rem;
 
@@ -125,7 +125,7 @@
             bottom: 0;
             left: 0;
             width: 100%;
-            padding: 20px;
+            padding: 0.8rem 1.2rem;
             text-align: center;
 
             @include touch() {
@@ -136,10 +136,10 @@
 
             .icon {
                 color: #fff;
-                font-size: 1.6rem;
-                height: 1.6rem;
+                font-size: 1.2rem;
+                height: 1.2rem;
                 display: inline-block;
-                margin-right: 20px;
+                margin-right: 10px;
 
                 @include touch() {
                     margin-right: 1rem;
@@ -150,7 +150,7 @@
                 color: #fff;
                 text-transform: none;
                 margin: 0;
-                font-size: $size-5;
+                font-size: $size-6;
 
                 @include touch() {
                     font-size: 1rem;
