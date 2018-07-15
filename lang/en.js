@@ -17,6 +17,7 @@ export default {
       index: 'Projects',
       boursify: 'Boursify',
       'start-alberta': 'Start Alberta',
+      'sauver': 'SAUVéR',
       'featured-projects': 'Featured projects',
       subtitle: "Our customers always have good ideas. And we are very proud to be able to display their achievements, because at the base of each of these completed projects, there is a passionate team of experts to whom we must say 'Thank you'.",
     },

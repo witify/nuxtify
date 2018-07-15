@@ -12,7 +12,7 @@
                 </div>
             </section>
 
-            <section class="diptych is-border-bottom">
+            <section class="diptych is-border-bottom is-imageless-mobile">
                 <div class="container">
                     <div class="diptych-body">
                         <div class="icon is-circle mb-20">
@@ -28,12 +28,12 @@
                         </nuxt-link>
                     </div>
                 </div>
-                <div class="diptych-image pt-40 pb-40 is-hidden-mobile">
+                <div class="diptych-image pt-40 pb-40">
                     <img src="~assets/img/services/process-optimisation/illustration.svg" alt="Process optimisation">
                 </div>
             </section>
 
-            <section class="diptych is-border-bottom is-right">
+            <section class="diptych is-border-bottom is-right is-imageless-mobile">
                 <div class="container">
                     <div class="diptych-body">
                         <div class="icon is-circle mb-20">
@@ -49,12 +49,12 @@
                         </nuxt-link>
                     </div>
                 </div>
-                <div class="diptych-image pt-40 pb-40 is-hidden-mobile">
+                <div class="diptych-image pt-40 pb-40">
                     <img src="~assets/img/services/e-commerce/illustration.svg" alt="E-commerce">
                 </div>
             </section>
 
-            <section class="diptych is-border-bottom">
+            <section class="diptych is-border-bottom is-imageless-mobile">
                 <div class="container">
                     <div class="diptych-body">
                         <div class="icon is-circle mb-20">
@@ -70,7 +70,7 @@
                         </nuxt-link>
                     </div>
                 </div>
-                <div class="diptych-image pt-40 pb-40 is-hidden-mobile">
+                <div class="diptych-image pt-40 pb-40">
                     <img src="~assets/img/services/custom-application/illustration.svg" alt="Custom application">
                 </div>
             </section>

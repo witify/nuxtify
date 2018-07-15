@@ -97,6 +97,12 @@ body {
             max-width: none;
         }
     }
+
+    .scroll-to {
+        @include mobile() {
+            display: none;
+        }
+    }
 }
 
 .hero.is-half {

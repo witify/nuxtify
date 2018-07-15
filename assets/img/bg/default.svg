@@ -1,1 +1,41 @@
-<svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 2206 768"><defs><style>.cls-1{fill:url(#Dégradé_sans_nom_4);}.cls-2,.cls-3{opacity:0.46;isolation:isolate;}.cls-2{fill:url(#Dégradé_sans_nom_2);}.cls-3{fill:url(#Dégradé_sans_nom_3);}</style><linearGradient id="Dégradé_sans_nom_4" x1="456.45" y1="768.73" x2="457.54" y2="768.35" gradientTransform="matrix(1920, 0, 0, -847, -876343.88, 651344)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#24067b"/><stop offset="1" stop-color="#0f31d8"/></linearGradient><linearGradient id="Dégradé_sans_nom_2" x1="456.58" y1="768.55" x2="457.61" y2="768.58" gradientTransform="matrix(2627.29, 0, 0, -586.62, -1199893.39, 451374.75)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#1223b5"/><stop offset="1" stop-color="#09125b"/></linearGradient><linearGradient id="Dégradé_sans_nom_3" x1="456.63" y1="768.42" x2="457.66" y2="768.46" gradientTransform="matrix(3080.32, 269.49, 61.9, -707.46, -1454782.68, 420956.95)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#172ce1"/><stop offset="1" stop-color="#0c1984"/></linearGradient></defs><title>bg</title><g id="Groupe_62" data-name="Groupe 62"><rect id="Rectangle_33" data-name="Rectangle 33" class="cls-1" x="-7.6" y="3" width="2222.53" height="777.69"/><path id="Tracé_11" data-name="Tracé 11" class="cls-2" d="M-310,469.44C87.39,458.58,351.52,246.76,637.07,242.69S1246.23,503.38,1627,506.1s866.15-150.72,866.15-150.72S2674,769.5,2666.82,777.65s-2765,0-2765,0-276-198.24-276-209.1S-310,469.44-310,469.44Z"/><path id="Tracé_12" data-name="Tracé 12" class="cls-3" d="M2773.84,641.32c-492.45-50-787.14-378.74-1141.56-409.26s-799.07,324-1272.94,295.06S-693.75,234.67-693.75,234.67-37.58,758.16-30,770.54s2220.45,8.65,2220.45,8.65S2836.24,805.73,2838,790,2773.84,641.32,2773.84,641.32Z"/></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 2206 768" style="enable-background:new 0 0 2206 768;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#Rectangle_33_1_);}
+	.st1{opacity:0.46;fill:url(#Tracé_11_1_);enable-background:new    ;}
+	.st2{opacity:0.46;fill:url(#Tracé_12_2_);enable-background:new    ;}
+	.st3{opacity:0.46;fill:url(#Tracé_12_3_);enable-background:new    ;}
+</style>
+<title>bg</title>
+<g id="Groupe_62">
+	
+		<linearGradient id="Rectangle_33_1_" gradientUnits="userSpaceOnUse" x1="876.2318" y1="-0.7397" x2="877.3218" y2="-0.3597" gradientTransform="matrix(1920 0 0 847 -1682323.875 848)">
+		<stop  offset="0" style="stop-color:#24067B"/>
+		<stop  offset="1" style="stop-color:#0F31D8"/>
+	</linearGradient>
+	<rect id="Rectangle_33" x="-7.6" y="-4" class="st0" width="2222.5" height="777.7"/>
+	
+		<linearGradient id="Tracé_11_1_" gradientUnits="userSpaceOnUse" x1="876.3842" y1="-0.385" x2="877.4141" y2="-0.4151" gradientTransform="matrix(2627.29 0 0 586.62 -2302935.25 850.5938)">
+		<stop  offset="0" style="stop-color:#1223B5"/>
+		<stop  offset="1" style="stop-color:#09125B"/>
+	</linearGradient>
+	<path id="Tracé_11" class="st1" d="M-404,570.3c397.4-10.9,661.5-222.7,947.1-226.7S1152.2,604.3,1533,607
+		s866.1-150.7,866.1-150.7s180.9,414.1,173.7,422.3s-2765,0-2765,0s-276-198.2-276-209.1S-404,570.3-404,570.3z"/>
+	
+		<linearGradient id="Tracé_12_2_" gradientUnits="userSpaceOnUse" x1="876.5251" y1="-0.1146" x2="877.5551" y2="-0.1546" gradientTransform="matrix(3080.3201 269.49 -61.9 707.46 -2700557.75 -235558.1563)">
+		<stop  offset="0" style="stop-color:#172CE1"/>
+		<stop  offset="1" style="stop-color:#0C1984"/>
+	</linearGradient>
+	<path id="Tracé_12" class="st2" d="M2837.6,653.3c-492.4-50-927.1-247.7-1281.6-278.3S896.9,568,423.1,539.1S-630,246.6-630,246.6
+		s400.7,711.5,408.3,723.8s2475.9-179.3,2475.9-179.3s645.8,26.5,647.6,10.8S2837.6,653.3,2837.6,653.3z"/>
+	
+		<linearGradient id="Tracé_12_3_" gradientUnits="userSpaceOnUse" x1="878.1353" y1="-0.9599" x2="879.1982" y2="-1.0012" gradientTransform="matrix(-2641.3049 134.8246 16.6849 709.2366 2321913 -117220.7891)">
+		<stop  offset="0" style="stop-color:#172CE1"/>
+		<stop  offset="1" style="stop-color:#0C1984"/>
+	</linearGradient>
+	<path id="Tracé_12_1_" class="st3" d="M-524.6,356.1C-88.7,328.3,180.6,99.5,494,85s715.5,523.6,1134,516s919.6-495,919.6-495
+		s-275.8,870.5-283.1,882.6c-7.3,12-2126.6-45.6-2126.6-45.6s-725.8-425.4-726.5-441.2S-524.6,356.1-524.6,356.1z"/>
+</g>
+</svg>

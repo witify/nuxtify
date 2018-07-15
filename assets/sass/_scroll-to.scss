@@ -11,7 +11,11 @@
     .icon {
         margin: 0 !important;
         @include animation(bounce 3s infinite);
-    }
+	}
+	
+	@include mobile() {
+		bottom: 0;
+	}
 }
 
 @keyframes bounce {

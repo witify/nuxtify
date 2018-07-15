@@ -168,7 +168,7 @@
             </div>
         </section>
 
-        <section id="phase1" class="diptych is-border-bottom">
+        <section id="phase1" class="diptych is-border-bottom is-imageless-mobile">
 
             <div class="container">
                 <div class="diptych-body">
@@ -201,13 +201,13 @@
                 </div>
             </div>
 
-            <div class="diptych-image pt-60 pb-60 is-hidden-mobile">
+            <div class="diptych-image pt-60 pb-60">
                 <img src="~assets/img/services/process-optimisation/phase1.svg" alt="Phase 1">
             </div>
 
         </section>
 
-        <section id="phase2" class="diptych is-right is-border-bottom">
+        <section id="phase2" class="diptych is-right is-border-bottom is-imageless-mobile">
             <div class="container">
                 <div class="diptych-body">
 
@@ -241,13 +241,13 @@
                 </div>
             </div>
 
-            <div class="diptych-image is-hidden-mobile">
+            <div class="diptych-image">
                 <img src="~assets/img/services/process-optimisation/phase2.svg" alt="Phase 2">
             </div>
 
         </section>
 
-        <section id="phase3" class="diptych is-border-bottom">
+        <section id="phase3" class="diptych is-border-bottom is-imageless-mobile">
             <div class="container">
                 <div class="diptych-body">
                     <div class="media mb-20">
@@ -279,12 +279,12 @@
                 </div>
             </div>
 
-            <div class="diptych-image pt-60 pb-60 is-hidden-mobile">
+            <div class="diptych-image pt-60 pb-60">
                 <img src="~assets/img/services/process-optimisation/phase3.svg" alt="Phase 3">
             </div>
         </section>
 
-        <section id="phase4" class="diptych is-right">
+        <section id="phase4" class="diptych is-right is-imageless-mobile">
             <div class="container">
                 <div class="diptych-body">
                     
@@ -319,7 +319,7 @@
 
             </div>
 
-            <div class="diptych-image pt-60 pb-60 is-hidden-mobile">
+            <div class="diptych-image pt-60 pb-60">
                 <img src="~assets/img/services/process-optimisation/phase4.svg" alt="Phase 4">
             </div>
 

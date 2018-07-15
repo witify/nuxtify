@@ -10,7 +10,8 @@ $image-padding: 6rem;
             width: 60%;
         }
         @include mobile() {
-            padding: 1.5rem;
+            padding: 2.5rem 1.5rem;
+            padding-bottom: 0;
         }
         @include fullhd() {
             width: 50%;
@@ -87,5 +88,16 @@ $image-padding: 6rem;
 
     &.is-grey {
         background-color: $white-ter;
+    }
+
+    &.is-imageless-mobile {
+        @include mobile() {
+            .diptych-body {
+                padding-bottom: 2.5rem;
+            }
+            .diptych-image {
+                display: none;
+            }
+        }
     }
 }

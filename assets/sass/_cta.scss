@@ -13,6 +13,14 @@
             max-width: none;
             margin-top: -1.25rem !important;
         }
+
+        .scroll-to {
+            bottom: 0;
+        }
+
+        @include mobile() {
+            padding-bottom: 2.5rem;
+        }
     }
 
     .selections {
