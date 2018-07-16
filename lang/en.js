@@ -32,7 +32,7 @@ export default {
     },
     about: {
       title: 'About',
-      subtitle: "We are a growing Montreal company. We love human contact and challenges of all kinds. Our team is dynamic and will be happy to listen to your ideas and bring your projects to the next stage. Each of our associates is duly qualified and passionate about the field.<br>Come and say hi!",   
+      subtitle: "We are a growing company from Montreal. We love human contact and challenges of all kinds. Our team is dynamic and will be happy to listen to your ideas and bring your projects to the next stage. Each of our associates is duly qualified and passionate about the field. Come and say hi!",
       excellence: 'Excellence',
       'excellence-text': 'Excellence is at the heart of our values. Every project, interaction and action is based on a deep desire to offer superior quality and the best of ourselves. We combine talent and hard work to provide the best tools and the best results. Our team understands your desire to differentiate itself, which is why it takes pride in realizing your idea in the form of a powerful and remarkable digital product.',
       collaboration: 'Collaboration',
