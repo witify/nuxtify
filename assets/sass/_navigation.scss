@@ -31,6 +31,11 @@
                 font-size: 2em;
             }
         }
+        .navbar-item, .navbar-link {
+            font-weight: $weight-semibold;
+            color: $black-bis;
+            text-transform: none !important;
+        }
     }
 }
 
@@ -40,52 +45,70 @@
     padding: 0;
     overflow: hidden;
 
-    @include touch() {
-        padding-bottom: 30px;
-    }
-
     .navbar-item {
-        padding: 10px 0;
         background-color: transparent;
-        border-bottom: 1px solid $white-dark;
         &:hover {
             background-color: transparent;
+        }
+        
+        @include desktop() {
+            border-bottom: 1px solid $white-dark;
+            padding: 10px 0;
+        }
+        
+        @include touch() {
+            padding: 0.5rem 0.7rem;
         }
     }
 
     .navbar-item .navbar-media {
-        padding: 15px 10px;
-        padding-right: 20px;
-        width: 100%;
-        display: flex;
-        align-items: center;
 
-        &:last-child {
-            border: none;
-        }
+        @include desktop() {
+            padding: 15px 10px;
+            padding-right: 20px;
+            width: 100%;
+            display: flex;
+            align-items: center;
 
-        &:hover {
-            background-color: $white-ter !important;
-        }
-
-        .icon {
-            margin-right: 10px;
-            font-size: 2em;
-            padding: 0 20px;
-        }
-
-        span {
-            span, strong {
-                display: block;
-                line-height: 1.2em;
-                color: $grey-dark;
-                font-size: 1.1em;
+            &:last-child {
+                border: none;
             }
-            strong {
-                font-weight: $weight-semibold;
+
+            &:hover {
+                background-color: $white-ter !important;
             }
+
+            .icon {
+                margin-right: 10px;
+                font-size: 2em;
+                padding: 0 20px;
+            }
+
             span {
-                font-weight: $weight-light;
+                span, strong {
+                    display: block;
+                    line-height: 1.2em;
+                    color: $grey-dark;
+                    font-size: 1.1em;
+                }
+                strong {
+                    font-weight: $weight-semibold;
+                }
+                span {
+                    font-weight: $weight-light;
+                }
+            }
+        }
+
+        @include touch() {
+            padding: 0;
+            span span {
+                display: none;
+            }
+            span strong {
+                font-weight: $weight-semibold;
+                color: $black-bis;
+                font-size: 1rem;
             }
         }
     }
