@@ -6,8 +6,8 @@
             <section class="hero is-main">
                 <div class="hero-body">
                     <div class="container">
-                        <h1 class="title">Our services.</h1>
-                        <h2 class="subtitle">Ut varius tincidunt libero. Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi.</h2>
+                        <h1 class="title">{{ $t('service.index.our-services') }}</h1>
+                        <h2 class="subtitle">{{ $t('service.index.our-services-subheader') }}</h2>
                     </div>
                 </div>
             </section>
@@ -18,10 +18,10 @@
                         <div class="icon is-circle mb-20">
                             <i class="mdi mdi-rocket"></i>
                         </div>
-                        <h2 class="title">Internal process optimisation</h2>
-                        <p class="is-medium mb-30">Aenean massa. Sed aliquam ultrices mauris. Fusce fermentum. In auctor lobortis lacus. Proin viverra, ligula sit amet ultrices semper, ligula arcu tristique sapien, a accumsan nisi mauris ac eros. Nunc nulla. Vestibulum dapibus nunc ac augue.</p>
+                        <h2 class="title">{{ $t('service.index.process-optimisation') }}</h2>
+                        <p class="is-medium mb-30">{{ $t('service.index.process-optimisation-text') }}</p>
                         <nuxt-link :to="localePath('services-process-optimisation')" class="button is-process-optimisation is-medium">
-                            <span>Learn more</span>
+                            <span>{{ $t('service.index.learn-more') }}</span>
                             <span class="icon">
                                 <i class="mdi mdi-arrow-right"></i>
                             </span>
@@ -39,10 +39,10 @@
                         <div class="icon is-circle mb-20">
                             <i class="mdi mdi-store"></i>
                         </div>
-                        <h2 class="title">E-commerce</h2>
-                        <p class="is-medium mb-30">Aenean massa. Sed aliquam ultrices mauris. Fusce fermentum. In auctor lobortis lacus. Proin viverra, ligula sit amet ultrices semper, ligula arcu tristique sapien, a accumsan nisi mauris ac eros. Nunc nulla. Vestibulum dapibus nunc ac augue.</p>
+                        <h2 class="title">{{ $t('service.index.e-commerce') }}</h2>
+                        <p class="is-medium mb-30">{{ $t('service.index.e-commerce-text') }}</p>
                         <nuxt-link :to="localePath('services-e-commerce')" class="button is-e-commerce is-medium">
-                            <span>Learn more</span>
+                            <span>{{ $t('service.index.learn-more') }}</span>
                             <span class="icon">
                                 <i class="mdi mdi-arrow-right"></i>
                             </span>
@@ -60,10 +60,10 @@
                         <div class="icon is-circle mb-20">
                             <i class="mdi mdi-server-network"></i>
                         </div>
-                        <h2 class="title">Custom application</h2>
-                        <p class="is-medium mb-30">Aenean massa. Sed aliquam ultrices mauris. Fusce fermentum. In auctor lobortis lacus. Proin viverra, ligula sit amet ultrices semper, ligula arcu tristique sapien, a accumsan nisi mauris ac eros. Nunc nulla. Vestibulum dapibus nunc ac augue.</p>
+                        <h2 class="title">{{ $t('service.index.custom-application') }}</h2>
+                        <p class="is-medium mb-30">{{ $t('service.index.custom-application-text') }}</p>
                         <nuxt-link :to="localePath('services-custom-application')" class="button is-custom-application is-medium">
-                            <span>Learn more</span>
+                            <span>{{ $t('service.index.learn-more') }}</span>
                             <span class="icon">
                                 <i class="mdi mdi-arrow-right"></i>
                             </span>

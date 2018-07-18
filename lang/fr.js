@@ -118,5 +118,67 @@ export default {
       title: 'Systèmes SAUVéR',
       subtitle: 'Autopartage de voiture en temps réel'
     }
+  },
+  service: {
+    index: {
+      'our-services': "Nos services",
+      'our-services-subheader': "Nos services seront toujours personalisés à votre réalité d'entreprise. Notre but est de vous offrir la meilleure expérience à travers une qualité inégalée et un service à la clientèle hors-pair.",
+      'process-optimisation': "Optimisation des processus internes",
+      'process-optimisation-text': "Ce service s'adresse aux entreprises en croissance qui ne profitent pas encore de services technologiques modernes et complets à l'interne. Une analyse compréhensive de l'entreprise est établie afin d'implémenter une solution technologique augmentant la productivité et diminuant les coûts internes.",
+      'e-commerce': "Commerce en ligne",
+      'e-commerce-text': "Ce service s'adresse aux entreprises de détail ou purement digitales qui souhaitent établir une présence en ligne forte leur permettant de décupler leurs ventes. La solution intègre autant des outils d'administration qu'une plateforme dédié aux clients, optimisée pour leur expérience d'achat en ligne.",
+      'custom-application': "Application personnalisée",
+      'custom-application-text': "Ce service s'adresse aux entreprises ou aux 'startups' qui désirent initier/renforcer un projet unique ou transformer leur idée en réalité digitale. Une plateforme est alors conçue et développée pour intégrer l'ensemble des fonctionnalités - visuelles ou techniques - que vous recherchez à implémenter.",
+      'learn-more': "En savoir plus",
+    },
+    'process-optimisation': {
+      subheader: "La façon moderne de faire passer votre entreprise au niveau supérieur. Tirez parti de la technologie pour dynamiser votre organisation.",
+      'integration-header': "Intégrer des solutions <strong>personnalisées</strong> dans son environnement de travail afin de <strong>maximiser la vitesse de production</strong> et <strong>diminuer les coûts</strong>.",
+      'growth-plateau-question': "Avez-vous atteint un plateau de croissance?",
+      'growth-plateau-answer': "Nos services sont optimaux pour les entreprises en croissance ou désireuses de croître, affichant déjà une certaine stabilité de revenus et <strong>prêtes à investir dans leur expansion</strong>.",
+      'our-services': "Nos services",
+      'services-range': "Nous offrons une gamme de services complète pour un accompagnement et un développement clé en main de A à Z.",
+      'benefit-1-title:': "Centralisation",
+      'benefit-1-subtitle': "de l'information",
+      'benefit-2-title:': "Analyse des résultat",
+      'benefit-2-subtitle': "et mesures",
+      'benefit-3-title:': "Processus",
+      'benefit-3-subtitle': "accélérés",
+      'benefit-4-title:': "Accessibilité",
+      'benefit-4-subtitle': "à travers le monde",
+      'benefit-5-title:': "Sécurité",
+      'benefit-5-subtitle': "de niveau bancaire",
+      'benefit-6-title:': "Opérations",
+      'benefit-6-subtitle': "normalisées",
+      '4-steps-method': 'Notre méthode en 4 phases',
+      '4-steps-method-subheader': "Conçue pour comprendre vos besoins uniques et optimiser vos métriques internes.",
+      'strategic-meeting-header': 'Rencontre stratégique',
+      'strategic-meeting-subheader': "La rencontre stratégique est dédiée à l’écoute du client, le ciblage des besoins prioritaires, la compréhension de l’entreprise et son positionnement actuel dans son parcours long-terme.",
+      'strategic-meeting-point-1': "Compréhension globale de l’entreprise et de ses besoins",
+      'strategic-meeting-point-2': "Édification du parcours de l’entreprise et de ses objectifs",
+      'strategic-meeting-point-3': "Recherche et définition des « Pain Points » et opportunités d’ajouts de valeur",
+      'process-analysis-header': "Analyse des procédés",
+      'process-analysis-subheader': "L’analyse des procédés se consacre à la compréhension profonde des systèmes, routines et méthodes utilisées pour le besoin cible du projet.",
+      'process-analysis-point-1': "Détecter et de cibler les inefficacités courantes (redondance, intégration, objectivité externe, goulot et erreurs humaines)",
+      'process-analysis-point-2': "Établir une solution optimale avec une analyse haut-niveau facile de compréhension (coûts, complexité, temps)",
+      'process-analysis-point-3': "Planifier la transition du statut actuel au statut désiré",
+      'implementation-header': "Implémentation de la solution",
+      'implementation-subheader': "L’implémentation de la solution est réalisée de façon personnalisée par nos professionnels de la technologie en gardant en tête la priorité de l’expérience d’utilisation du client.",
+      'implementation-point-1': "Augmenter le ROI du département fonctionnel ou du projet ciblé (réduction d’erreurs humaines, moins de duplication)",
+      'implementation-point-2': "Systèmes d’analyse haut-niveau afin de fournissant une vue d’ensemble pour les gestionnaires/VP en charge de la solution tout en connectant les divers acteurs",
+      'implementation-point-3': "Intégration simple, facile et efficace dans les systèmes actuels afin de fournir une expérience clé-en-main (formations, intégration, etc.)",
+      'project-report-header': "Rapport de projet",
+      'project-report-subheader': "Le rapport de projet se déroule en deux temps : une analyse immédiate de la solution et de son intégration et des opportunités liées, puis un retour quelques mois après afin d’établir un suivi sur l’intégration dans le mode d’entreprise.",
+      'project-report-point-1': "Confirmer la transition du positionnement de l’ancien statut interne au nouveau statut interne",
+      'project-report-point-2': "Établir les opportunités futures liées au projet, pouvant être abordées dans un avenir à déterminer",
+      'project-report-point-3': "Mesurer et justifier l’impact du logiciel dans l’entreprise auprès des différents acteurs stratégiques",
+
+    },
+    'e-commerce' : {
+
+    },
+    'custom-application' : {
+      
+    }
   }
 }

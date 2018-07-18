@@ -8,8 +8,8 @@
                     <div class="icon is-circle is-dark">
                         <i class="mdi mdi-rocket"></i>
                     </div>
-                    <h1 class="title">Process optimisation</h1>
-                    <h2 class="subtitle">Ut varius tincidunt libero. Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi.</h2>
+                    <h1 class="title">{{ $t('pages.services.process-optimisation') }}</h1>
+                    <h2 class="subtitle">{{ $t('service.process-optimisation.subheader') }}</h2>
                 </div>
             </div>
 
@@ -23,8 +23,8 @@
         <section id="content" class="hero">
             <div class="hero-body">
                 <div class="container is-sm">
-                    <p class="is-size-3 has-text-centered is-tight">
-                        Intégrer des solutions <strong>personnalisées</strong> dans son environnement de travail afin de <strong>maximiser la vitesse de production</strong> et <strong>diminuer les coûts.</strong>
+                    <p class="is-size-3 has-text-centered is-tight" v-html="$t('service.process-optimisation.integration-header')">
+                        
                     </p>
                 </div>
             </div>
@@ -36,8 +36,8 @@
                     <div class="icon is-large mb-20">
                         <i class="mdi mdi-trending-up mdi-48px has-text-process-optimisation"></i>
                     </div>
-                    <h3 class="title">Have you reached a growth plateau?</h3>
-                    <p class="is-medium">Our services are optimal for companies that are growing or want to grow, already posting some revenue stability and <strong>ready to invest in their expansion.</strong></p>
+                    <h3 class="title">{{ $t('service.process-optimisation.growth-plateau-question') }}</h3>
+                    <p class="is-medium" v-html="$t('service.process-optimisation.growth-plateau-answer')"></p>
                 </div>
             </div>
             <div class="diptych-image is-cover">
@@ -47,8 +47,8 @@
 
         <section class="section has-text-centered">
             <div class="container is-sm">
-                <h2 class="title is-size-2">Our services</h2>
-                <h2 class="subtitle is-size-4 mb-40">Nous offrons une gamme de services complète pour un accompagnement et un développement clé en main de A à Z.</h2>
+                <h2 class="title is-size-2">{{ $t('service.process-optimisation.our-services') }}</h2>
+                <h2 class="subtitle is-size-4 mb-40">{{ $t('service.process-optimisation.services-range') }}</h2>
 
                 <div class="columns is-mobile is-multiline">
 
@@ -57,8 +57,8 @@
                             <div class="icon is-circle has-text-process-optimisation">
                                 <i class="mdi mdi-database-search"></i>
                             </div>
-                            <h2 class="title">Centralized</h2>
-                            <h3 class="subtitle">information</h3>
+                            <h2 class="title">{{ $t('service.process-optimisation.benefit-1-title') }}</h2>
+                            <h3 class="subtitle">{{ $t('service.process-optimisation.benefit-1-subtitle') }}</h3>
                         </div>
                     </div>
 
@@ -67,8 +67,8 @@
                             <div class="icon is-circle has-text-process-optimisation">
                                 <i class="mdi mdi-clipboard-pulse-outline"></i>
                             </div>
-                            <h2 class="title">Result analysis</h2>
-                            <h3 class="subtitle">and measurements</h3>
+                            <h2 class="title">{{ $t('service.process-optimisation.benefit-2-title') }}</h2>
+                            <h3 class="subtitle">{{ $t('service.process-optimisation.benefit-2-subtitle') }}</h3>
                         </div>
                     </div>
 
@@ -77,8 +77,8 @@
                             <div class="icon is-circle has-text-process-optimisation">
                                 <i class="mdi mdi-gauge-full"></i>
                             </div>
-                            <h2 class="title">Process</h2>
-                            <h3 class="subtitle">acceleration</h3>
+                            <h2 class="title">{{ $t('service.process-optimisation.benefit-3-title') }}</h2>
+                            <h3 class="subtitle">{{ $t('service.process-optimisation.benefit-3-subtitle') }}</h3>
                         </div>
                     </div>
 
@@ -87,8 +87,8 @@
                             <div class="icon is-circle has-text-process-optimisation">
                                 <i class="mdi mdi-web"></i>
                             </div>
-                            <h2 class="title">Accessible</h2>
-                            <h3 class="subtitle">from anywhere</h3>
+                            <h2 class="title">{{ $t('service.process-optimisation.benefit-4-title') }}</h2>
+                            <h3 class="subtitle">{{ $t('service.process-optimisation.benefit-4-subtitle') }}</h3>
                         </div>
                     </div>
 
@@ -97,8 +97,8 @@
                             <div class="icon is-circle has-text-process-optimisation">
                                 <i class="mdi mdi-security"></i>
                             </div>
-                            <h2 class="title">Security</h2>
-                            <h3 class="subtitle">banking level security</h3>
+                            <h2 class="title">{{ $t('service.process-optimisation.benefit-5-title') }}</h2>
+                            <h3 class="subtitle">{{ $t('service.process-optimisation.benefit-5-subtitle') }}</h3>
                         </div>
                     </div>
 
@@ -107,8 +107,8 @@
                             <div class="icon is-circle has-text-process-optimisation">
                                 <i class="mdi mdi-tune-vertical"></i>
                             </div>
-                            <h2 class="title">Operation</h2>
-                            <h3 class="subtitle">standardization</h3>
+                            <h2 class="title">{{ $t('service.process-optimisation.benefit-6-title') }}</h2>
+                            <h3 class="subtitle">{{ $t('service.process-optimisation.benefit-6-subtitle') }}</h3>
                         </div>
                     </div>
 
@@ -121,8 +121,8 @@
             <div class="hero-body">
                 <div class="container">
 
-                    <h2 class="title is-size-2">Our method in 4 phases</h2>
-                    <h3 class="subtitle is-size-4 mb-50">Ut varius tincidunt libero. Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi.</h3>
+                    <h2 class="title is-size-2">{{ $t('service.process-optimisation.4-steps-method') }}</h2>
+                    <h3 class="subtitle is-size-4 mb-50">{{ $t('service.process-optimisation.4-steps-method-subheader') }}</h3>
 
                     <div class="columns is-multiline">
 
@@ -131,7 +131,7 @@
                                 <div class="tag is-process-optimisation">
                                     1
                                 </div>
-                                <h3 class="title">Strategic meeting</h3>
+                                <h3 class="title">{{ $t('service.process-optimisation.strategic-meeting-header') }}</h3>
                             </div>
                         </div>
 
@@ -140,7 +140,7 @@
                                 <div class="tag is-process-optimisation">
                                     2
                                 </div>
-                                <h3 class="title">Process analysis</h3>
+                                <h3 class="title">{{ $t('service.process-optimisation.process-analysis-header') }}</h3>
                             </div>
                         </div>
 
@@ -149,7 +149,7 @@
                                 <div class="tag is-process-optimisation">
                                     3
                                 </div>
-                                <h3 class="title">Implementation</h3>
+                                <h3 class="title">{{ $t('service.process-optimisation.implementation-header') }}</h3>
                             </div>
                         </div>
 
@@ -158,7 +158,7 @@
                                 <div class="tag is-process-optimisation">
                                     4
                                 </div>
-                                <h3 class="title">Project report</h3>
+                                <h3 class="title">{{ $t('service.process-optimisation.project-report-header') }}</h3>
                             </div>
                         </div>
 
@@ -184,19 +184,19 @@
                             </span>
 
                             <h2 class="title">
-                                Rencontre stratégique
+                                {{ $t('service.process-optimisation.strategic-meeting-header') }}
                             </h2>
                         </div>
                     </div>
 
                     <p class="is-medium mb-40">
-                        La rencontre stratégique est dédiée à l’écoute du client, le ciblage des besoins prioritaires, la compréhension de l’entreprise et son positionnement actuel dans son parcours long-terme.
+                        {{ $t('service.process-optimisation.strategic-meeting-subheader') }}
                     </p>
 
                     <ul class="is-bold">
-                        <li>Compréhension globale de l’entreprise et de ses besoins</li>
-                        <li>Édification du parcours de l’entreprise et de ses objectifs</li>
-                        <li>Recherche et définition des « Pain Points » et opportunités d’ajouts de valeur</li>
+                        <li>{{ $t('service.process-optimisation.strategic-meeting-point-1') }}</li>
+                        <li>{{ $t('service.process-optimisation.strategic-meeting-point-2') }}</li>
+                        <li>{{ $t('service.process-optimisation.strategic-meeting-point-3') }}</li>
                     </ul>
                 </div>
             </div>
@@ -223,19 +223,19 @@
                             </span>
 
                             <h2 class="title">
-                                Analyse des procédés
+                                {{ $t('service.process-optimisation.process-analysis-header') }}
                             </h2>
                         </div>
                     </div>
 
                     <p class="is-medium mb-40">
-                        L’analyse des procédés se consacre à la compréhension profonde des systèmes, routines et méthodes utilisées pour le besoin cible du projet.
+                        {{ $t('service.process-optimisation.process-analysis-subheader') }}
                     </p>
 
                     <ul class="is-bold">
-                        <li>Détecter et de cibler les inefficacités courantes (redondance, intégration, objectivité externe, goulot et erreurs humaines)</li>
-                        <li>Établir une solution optimale avec une analyse haut-niveau facile de compréhension (coûts, complexité, temps)</li>
-                        <li>Planifier la transition vers le statut actuel au statut désiré</li>
+                        <li>{{ $t('service.process-optimisation.process-analysis-point-1') }}</li>
+                        <li>{{ $t('service.process-optimisation.process-analysis-point-2') }}</li>
+                        <li>{{ $t('service.process-optimisation.process-analysis-point-3') }}</li>
                     </ul>
 
                 </div>
@@ -262,19 +262,19 @@
                             </span>
 
                             <h2 class="title">
-                                Implémentation de la solution
+                                {{ $t('service.process-optimisation.implementation-header') }}
                             </h2>
                         </div>
                     </div>
 
                     <p class="is-medium mb-40">
-                        L’implémentation de la solution est réalisée de façon personnalisée par nos professionnels de la technologie en gardant en tête la priorité de l’expérience d’utilisation du client.
+                        {{ $t('service.process-optimisation.implementation-subheader') }}
                     </p>
 
                     <ul class="is-bold">
-                        <li>Augmenter le ROI du département fonctionnel ou du projet ciblé (réduction d’erreurs humaines, moins de duplication)</li>
-                        <li>Systèmes d’analyse haut-niveau afin de fournissant une vue d’ensemble pour les gestionnaires/VP en charge de la solution tout en connectant les divers acteurs</li>
-                        <li>Intégration simple, facile et efficace dans les systèmes actuels afin de fournir une expérience clé-en-main (formations, intégration, etc.)</li>
+                        <li>{{ $t('service.process-optimisation.implementation-point-1') }}</li>
+                        <li>{{ $t('service.process-optimisation.implementation-point-2') }}</li>
+                        <li>{{ $t('service.process-optimisation.implementation-point-3') }}</li>
                     </ul>
                 </div>
             </div>
@@ -300,19 +300,19 @@
                             </span>
 
                             <h2 class="title">
-                                Rapport de projet
+                                {{ $t('service.process-optimisation.project-report-header') }}
                             </h2>
                         </div>
                     </div>
 
                     <p class="is-medium mb-40">
-                        Le rapport de projet se déroule en deux temps : une analyse immédiate de la solution et de son intégration et des opportunités liées, puis un retour quelques mois après afin d’établir un suivi sur l’intégration dans le mode d’entreprise.
+                        {{ $t('service.process-optimisation.project-report-subheader') }}
                     </p>
 
                     <ul class="is-bold">
-                        <li>Confirmer la transition du positionnement de l’ancien statut au nouveau statut</li>
-                        <li>Établir les opportunités futures liées au projet, pouvant être abordées dans un avenir à déterminer.</li>
-                        <li>Mesurer et justifier l’impact du logiciel dans l’entreprise auprès des différents acteurs</li>
+                        <li>{{ $t('service.process-optimisation.project-report-point-1') }}</li>
+                        <li>{{ $t('service.process-optimisation.project-report-point-2') }}</li>
+                        <li>{{ $t('service.process-optimisation.project-report-point-3') }}</li>
                     </ul>
 
                 </div>
