@@ -97,5 +97,7 @@ module.exports = {
    * Plugins
    */
 
-  plugins: ['~/plugins/global.js']
+  plugins: [
+    '~/plugins/global.js'
+  ]
 }

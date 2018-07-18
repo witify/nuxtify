@@ -2,8 +2,8 @@ export default {
   pages: {
     index: 'Accueil',
     home: {
-      title: 'Nous développons de meilleurs produits numériques.',
-      subtitle: 'Witify est une équipe de conception et d\'ingénierie qui confectionne des produits numériques haut de gamme.',
+      title: "Web, Web, Web",
+      subtitle: 'Witify est une équipe de conception et d\'ingénierie qui confectionne des produits web supérieurs.',
       'case-studies': 'Études de cas',
       'our-services': 'Services',
       'expertise-header': 'Expertise <strong>web</strong> & <strong>logicielle</strong> approfondie.',

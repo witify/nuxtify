@@ -5,7 +5,12 @@
       <div class="hero-body">
         <div class="container">
 
-          <h1 class="title is-spaced" v-html="$t('pages.home.title')"></h1>
+          <h1 class="title is-spaced">
+            <no-ssr>
+              <home-title></home-title>
+            </no-ssr>
+          </h1>
+
           <h2 class="subtitle" v-html="$t('pages.home.subtitle')"></h2>
 
           <nuxt-link :to="localePath('projects')" class="button is-danger is-large mb-10 mr-10">
@@ -133,22 +138,51 @@
     <section class="section">
       <div class="container">
         <div class="clients">
-          <img src="~/assets/img/clients/bromont.png" alt="Witify Clients - Bromont Ville branchée">
-          <img src="~/assets/img/clients/mcc.png" alt="Witify Clients - Ministère de la culture et des communications">
-          <img src="~/assets/img/clients/poly.png" alt="Witify Clients - École polytechnique de Montréal">
-          <img src="~/assets/img/clients/brio.png" alt="Witify Clients - Brioconcept custom electrical engineering">
+          <div class="client">
+            <img src="~/assets/img/clients/bromont.png" alt="Witify Clients - Bromont Ville branchée">
+          </div>
+          <div class="client">
+            <img src="~/assets/img/clients/mcc.png" alt="Witify Clients - Ministère de la culture et des communications">
+          </div>
+          <div class="client">
+            <img src="~/assets/img/clients/poly.png" alt="Witify Clients - École polytechnique de Montréal">
+          </div>
+          <div class="client">
+            <img src="~/assets/img/clients/brio.png" alt="Witify Clients - Brioconcept custom electrical engineering">
+          </div>
         </div>
       </div>
     </section>
+  
+    <section class="hero is-default is-dark has-text-centered">
+      <div class="hero-body">
+        <div class="container">
+          <h2 class="title">Tell us about your next big idea</h2>
+          <nuxt-link :to="localePath('contact')" class="button is-white is-medium is-outlined">
+            <span>Contact us now</span>
+            <span class="icon">
+              <i class="mdi mdi-arrow-right"></i>
+            </span>
+          </nuxt-link>
+        </div>
+      </div>
+    </section>
+    
   </div>
+
 </template>
 
 <script>
+import HomeTitle from '../components/HomeTitle.vue'
+
 export default {
   head() {
     return {
       title: this.$t('pages.index')
     }
+  },
+  components: {
+    HomeTitle
   }
 }
 </script>
