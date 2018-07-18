@@ -157,9 +157,9 @@
     <section class="hero is-default is-dark has-text-centered">
       <div class="hero-body">
         <div class="container">
-          <h2 class="title">Tell us about your next big idea</h2>
+          <h2 class="title">{{ $t('pages.footer.next-big-idea') }}</h2>
           <nuxt-link :to="localePath('contact')" class="button is-white is-medium is-outlined">
-            <span>Contact us now</span>
+            <span>{{ $t('pages.footer.contact-us-now') }}</span>
             <span class="icon">
               <i class="mdi mdi-arrow-right"></i>
             </span>

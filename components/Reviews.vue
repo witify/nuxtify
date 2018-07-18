@@ -3,13 +3,13 @@
         <div class="container">
             <transition name="slideLeftRight" mode="out-in">
                 <q v-if="key == 1" class="quote-text" key="1">
-                    Avec Witify, on n’a simplement plus besoin d’autre chose. C’est une solution clé-en-main, exactement comme on le souhaitait, quand on en avait besoin dans les délais qui nous convenait. Franchement, si tous les fournisseurs étaient de cette trempe, les affaires seraient tellement facile ! Merci Witify
+                    {{ $t('pages.reviews.nordresa-feedback') }}
                 </q>
                 <q v-else-if="key == 2" class="quote-text" key="2">
-                    Par son professionnalisme et sa sensibilité au contenu, Witify a mis sur pied rapidement une interface dynamique et innovante permettant la compréhension d’un jeu de données complexe. Je n’hésiterai pas à faire de nouveau appel à Witify pour un prochain projet!
+                    {{ $t('pages.reviews.mcc-feedback') }}
                 </q>
                 <q v-else-if="key == 3" class="quote-text" key="3">
-                    Witify has operated as our in-house dev and design team supporting us on our startup journey, and have exceeded our expectations as a reflection of their passion for their work.
+                    {{ $t('pages.reviews.sauver-feedback') }}
                 </q>
             </transition>
         </div>
@@ -23,7 +23,7 @@
                         </div>
                         <div class="media-content">
                             <h3 class="title is-size-5">Sylvain Castonguay</h3>
-                            <h4 class="subtitle is-size-6">Founder and CEO of <br>Nordresa</h4>
+                            <h4 class="subtitle is-size-6" v-html="$t('pages.reviews.nordresa-role')"></h4>
                         </div>
                     </div>
                 </button>
@@ -35,7 +35,7 @@
                         </div>
                         <div class="media-content">
                             <h3 class="title is-size-5">Philippe Michon</h3>
-                            <h4 class="subtitle is-size-6">Consultant en informatique <br>appliquée à l'histoire</h4>
+                            <h4 class="subtitle is-size-6" v-html="$t('pages.reviews.mcc-role')"></h4>
                         </div>
                     </div>
                 </button>
@@ -47,7 +47,7 @@
                         </div>
                         <div class="media-content">
                             <h3 class="title is-size-5">John Doe</h3>
-                            <h4 class="subtitle is-size-6">Co-Founder and CTO of <br>BC communications</h4>
+                            <h4 class="subtitle is-size-6" v-html="$t('pages.reviews.sauver-role')"></h4>
                         </div>
                     </div>
                 </button>

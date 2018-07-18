@@ -71,6 +71,8 @@ export default {
       'about-text': 'Our team is Montreal-based and growing fast. It thrive on human connection and cool projects. We\'d love to hear about your next awesome idea! No matter the stage you\'re at, we\'ll make the best out of it. We\'re only one phone call or one email away.',
       'all-services': 'All services',
       'all-rights-reserved': 'All rights reserved.',
+      'next-big-idea': "Tell us your next big idea",
+      'contact-us-now': "Contact us now",
     },
     cta: {
       'see-what-witify': 'Go further with Witify',
@@ -79,6 +81,14 @@ export default {
       'process-optimisation-text': 'A growing company does not only see its numbers increase, but also its internal complexity. Standardizing processes, centralizing information and having access to effective tools is no longer optional, it becomes a primary need. Make sure you have all the appropriate systems you need to lower costs, to increase productivity, and to grow the right way.',
       'e-commerce-text': 'With an annual growth of more than 20% expected for the next 5 years, e-commerce is an incredible opportunity. And building a site and a brand that people trust is not a small task. Put the odds on your side using professional tools, conversion-based structures and a team of just skills.',
       'custom-application-text': 'Each idea is unique. Each idea should also have a unique digital solution to it. A solution that highlights its strengths, its added value and allows the user to enjoy the best possible experience. Ensure optimal results by using experts who can combine the most appropriate technologies for your project.'
+    },
+    reviews: {
+      "nordresa-feedback": "With Witify, you simply do not need anything else. It's a turnkey solution, exactly the way we wanted it, when we needed it on time that suited us. Frankly, if all the suppliers were that way, business would be so easy! Thank you Witify",
+      "nordresa-role": "Founder and CEO of <br>Nordresa",
+      "mcc-feedback": "With its professionalism and sensitivity to content, Witify quickly put together a dynamic and innovative interface for understanding a complex dataset. I will not hesitate to call Witify again for a future project!",
+      "mcc-role": "Computer consultant <br>applied to History",
+      "sauver-feedback": "Witify has operated as our in-house dev and design team supporting us on our startup journey, and have exceeded our expectations as a reflection of their passion for their work.",
+      "sauver-role": "Co-founders and CTO of <br>BC Communications",
     }
   },
   project: {

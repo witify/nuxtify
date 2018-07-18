@@ -72,7 +72,9 @@ export default {
       about: 'À propos',
       'about-text': 'Notre équipe est basée à Montréal et grandit rapidement. Elle prospère sur la connexion humaine et les projets sympas. Nous aimerions entendre parler de votre prochaine super idée! Peu importe le stade auquel vous êtes, nous en tirerons le meilleur parti. Nous sommes seulement à un appel téléphonique ou à un courriel de distance.',
       'all-services': 'Tous les services',
-      'all-rights-reserved': 'Tous droits réservés.'
+      'all-rights-reserved': 'Tous droits réservés.',
+      'next-big-idea': "Parlez-nous de votre prochaine grande idée",
+      'contact-us-now': "Contactez-nous dès maintenant",
     },
     cta: {
       'see-what-witify': 'Voyez ce que Witify peut faire pour votre entreprise',
@@ -81,6 +83,14 @@ export default {
       'process-optimisation-text': "Une entreprise qui croît ne voit pas seulement ses chiffres grossir, mais aussi sa complexité interne. Standardiser les processus, centraliser l'information et avoir accès à des outils efficaces n'est plus optionnel, cela devient un besoin principal. Assurez-vous d'avoir en place tous les systèmes nécessaires pour diminuer vos coûts, augmenter votre productivité et croître de la bonne manière.",
       'e-commerce-text': "Avec une croissance annuelle de plus de 20% prévue pour les 5 prochaines années, le commerce en ligne est une opportunité incroyable. Et construire un site et une marque en qui les gens ont confiance n\'est pas une mince tâche. Mettez les chances de votre côté en utilisant des outils professionnels, des structures basées sur la conversion et une équipe regroupant les justes compétences.",
       'custom-application-text': "Chaque idée est unique. Chaque idée devrait aussi avoir une solution digitale unique à elle. Une solution qui met en valeur ses forces, sa valeur ajoutée et permet à l'utilisateur de vivre la meilleure expérience possible. Garantissez-vous un résultat optimal en recourant à des experts pouvant joindre les technologies les plus adaptées pour votre projet."
+    },
+    reviews: {
+      "nordresa-feedback": "Avec Witify, on n’a simplement plus besoin d’autre chose. C’est une solution clé-en-main, exactement comme on le souhaitait, quand on en avait besoin dans les délais qui nous convenait. Franchement, si tous les fournisseurs étaient de cette trempe, les affaires seraient tellement facile ! Merci Witify",
+      "nordresa-role": "Fondateur et CEO de <br>Nordresa",
+      "mcc-feedback": "Par son professionnalisme et sa sensibilité au contenu, Witify a mis sur pied rapidement une interface dynamique et innovante permettant la compréhension d’un jeu de données complexe. Je n’hésiterai pas à faire de nouveau appel à Witify pour un prochain projet!",
+      "mcc-role": "Consultant en informatique <br>appliquée à l'histoire",
+      "sauver-feedback": "Witify has operated as our in-house dev and design team supporting us on our startup journey, and have exceeded our expectations as a reflection of their passion for their work.",
+      "sauver-role": "Co-founders and CTO of <br>BC Communications",
     }
   },
   project: {
