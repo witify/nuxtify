@@ -11,7 +11,10 @@ export default {
       'what-we-do': 'What we do',
       'start-alberta-resume': 'Start Alberta is a web-community bringing together founders, investors and organizations in a comprehensible and interactive startup ecosystem. It is and will remain an open resource for everyone.',
       'low-cost-tires-resume': 'Low Cost Tires is an e-commerce platform dedicated to the sale of low-priced tires. With more than 20,000 different tires registered, Low Cost Tires aims to make the buying process easy and accessible for the general public.',
-      'we-are-awesome': 'Apparently, we are awesome!'
+      'we-are-awesome': 'Apparently, we are awesome!',
+      'killer-web-app': "You need a killer web application?",
+      'new-website': 'You want a strong new website?',
+      'engineering-team': "You search a dedicated engineering team?",
     },
     projects: {
       index: 'Projects',

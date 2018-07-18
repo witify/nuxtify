@@ -16,9 +16,9 @@ export default {
         return {
             countWord: 0,
             titles: [
-                "You need a killer web application?",
-                "You want a strong new website?",
-                "You search a dedicated engineering team?",
+                this.$t('pages.home.killer-web-app'),
+                this.$t('pages.home.new-website'),
+                this.$t('pages.home.engineering-team'),
             ]
         }
     },

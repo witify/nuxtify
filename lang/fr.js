@@ -12,7 +12,10 @@ export default {
       'what-we-do': 'Ce que nous faisons',
       'start-alberta-resume': 'Start Alberta est une communauté Web réunissant des fondateurs, des investisseurs et des organisations dans un écosystème compréhensible et interactif pour les startups. C\'est et restera une ressource ouverte pour tout le monde.',
       'low-cost-tires-resume': 'Pneus À Petits Prix est une plateforme de commerce électronique dédiée à la vente de pneus à bas prix. Avec plus de 20 000 pneus différents enregistrés, Pneus À Petits Prix vise à rendre le processus d\'achat facile et accessible pour le grand public.',
-      'we-are-awesome': 'Apparemment, nous sommes géniaux!'
+      'we-are-awesome': 'Apparemment, nous sommes géniaux!',
+      'killer-web-app': "Vous avez besoin d'une application web de feu?",
+      'new-website': 'Vous voulez un nouveau site web à en couper le souffle?',
+      'engineering-team': "Vous recherchez une équipe d'ingénierie dédiée?",
     },
     projects: {
       index: 'Projets',
