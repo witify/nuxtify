@@ -40,6 +40,10 @@
             line-height: 1.1;
             margin-bottom: 1rem;
 
+            span {
+                color: #fff;
+            }
+
             @include mobile() {
                 font-size: 2.5rem;
             }
@@ -358,7 +362,11 @@
 
     .quote {
         .quote-clients {
-            padding-top: 40px;
+            display: flex;
+            justify-content: center;
+            @include desktop() {
+                padding-top: 40px;
+            }
         }
         .quote-client {
             padding: 20px;
@@ -367,7 +375,14 @@
             outline: none;
             background-color: transparent;
             cursor: pointer;
+
+            @include touch() {
+                display: none;
+                padding: 10px 0;
+            }
+
             &.is-active {
+                display: inline-block;
                 opacity: 1;
             }
 
@@ -377,20 +392,41 @@
         }
         .quote-text {
             margin: 20px 0;
+            padding: 0 1rem;
             display: block;
             font-size: 1.7rem;
             line-height: 2.2rem;
             font-style: italic;
             font-weight: $weight-light;
+
+            @include touch() {
+                font-size: 1.2rem;
+                line-height: 1.5rem;
+            }
         }
     }
 
     .clients {
         display: flex;
         justify-content: space-around;
-        img {
+        @include mobile() {
+            flex-wrap: wrap;
+        }
+        .client {
+            display: block;
             width: 156px;
             height: 60px;
+
+            @include touch() {
+                width: 25%;
+                height: auto;
+                padding: 1rem;
+            }
+
+            @include mobile() {
+                width: 50%;
+                padding: 1rem 0.5rem;
+            }
         }
     }
 }

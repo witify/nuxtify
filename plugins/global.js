@@ -9,7 +9,7 @@ import Navigation from '../components/Navigation.vue'
 import ContactForm from '../components/ContactForm.vue'
 import VeeValidate from 'vee-validate'
 
-Vue.use(VeeValidate);
+Vue.use(VeeValidate)
 
 Vue.component('service-card', ServiceCard)
 Vue.component('cta', CTA)

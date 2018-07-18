@@ -73,7 +73,7 @@ export default {
       'all-rights-reserved': 'All rights reserved.',
     },
     cta: {
-      'see-what-witify': 'See what Witify can do for your business',
+      'see-what-witify': 'Go further with Witify',
       'fill-the-form': 'Fill out the form to get instant insights regarding your business',
       'free-business-analysis': 'Start a free business analysis',
       'process-optimisation-text': 'A growing company does not only see its numbers increase, but also its internal complexity. Standardizing processes, centralizing information and having access to effective tools is no longer optional, it becomes a primary need. Make sure you have all the appropriate systems you need to lower costs, increase productivity, and grow in the right way.',

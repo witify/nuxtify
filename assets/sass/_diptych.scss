@@ -101,3 +101,26 @@ $image-padding: 6rem;
         }
     }
 }
+
+/**
+  * Animations
+  */
+
+.diptych .diptych-image {
+
+    @include transition(0.2s);
+
+    &.before-enter {
+        opacity: 0;
+        @include transform(translateX(100px));
+    }
+
+    &.enter {
+        opacity: 1;
+        @include transform(translateX(0px));
+    }
+}
+
+.diptych.is-right .diptych-image.before-enter {
+    @include transform(translateX(-100px));
+}

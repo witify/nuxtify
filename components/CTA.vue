@@ -4,10 +4,10 @@
         <div class="hero is-primary">
             <div class="hero-body">
                 <div class="container is-small">
-                    <h1 class="title">
+                    <h1 class="title is-size-2">
                         {{ $t('pages.cta.see-what-witify') }}
                     </h1>
-                    <h2 class="subtitle">
+                    <h2 class="subtitle is-size-4">
                         {{ $t('pages.cta.fill-the-form') }}
                     </h2>
                 </div>

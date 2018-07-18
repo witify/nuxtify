@@ -1,7 +1,5 @@
 <template>
     <div>
-        
-        <cta></cta>
 
         <footer class="footer">
             <div class="container">

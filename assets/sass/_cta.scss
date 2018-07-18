@@ -1,9 +1,12 @@
 .cta {
+    background-image: url('~assets/img/bg/default.svg');
+    background-position: center;
+    background-size: cover;
+
     .hero {
-        background-image: url('~assets/img/bg/default.svg');
-        background-position: center;
-        background-size: cover;
         text-align: center;
+        padding-bottom: 3rem;
+        background-color: transparent;
 
         .title {
             max-width: none;
@@ -14,12 +17,15 @@
             margin-top: -1.25rem !important;
         }
 
-        .scroll-to {
-            bottom: 0;
-        }
-
         @include mobile() {
-            padding-bottom: 2.5rem;
+            padding-bottom: 0;
+        }
+    }
+
+    .container {
+        @include desktop() {
+            border-radius: 5px 5px 0 0;
+            overflow: hidden;
         }
     }
 
@@ -46,7 +52,7 @@
         font-weight: $weight-semibold;
 
         &:last-child {
-            border-right: none;
+            border-right: 1px solid #fff;
         }
 
         .selection-circle {
@@ -151,26 +157,30 @@
 
         @include touch() {
             padding: 20px 15px;
+            border-right: none;
             .selection-icon {
                 font-size: 1rem;
                 margin-right: 0;
+                position: relative;
             }
             .selection-label {
                 font-size: 1rem;
+                position: relative;
             }
             .selection-circle {
                 height: 16px;
                 width: 16px;
                 margin-right: 10px;
+                position: relative;
             }
         }
 
         @include mobile() {
             width: 100%;
-            background-color: transparent;
+            background-color: #fff;
             &:before {
                 height: 100%;
-                z-index: -1;
+                z-index: 0;
             }
             .selection-icon {
                 font-size: 1.1rem;
@@ -179,7 +189,7 @@
                 margin-right: 10px;
             }
             .selection-label { 
-                font-size: 1.2rem;
+                font-size: 1.1rem;
             }
             .selection-circle {
                 height: 22px;
@@ -187,6 +197,10 @@
                 margin-right: 20px;
             }
         }
+    }
+
+    .service {
+        background-color: #fff;
     }
 
     .service-image-wrapper {

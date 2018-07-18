@@ -14,12 +14,15 @@
             <section class="diptych is-border-bottom">
                 <div class="container">
                     <div class="diptych-body pt-120 pb-120">
+                        <div class="icon is-circle mb-20 has-text-primary">
+                            <i class="mdi mdi-trophy"></i>
+                        </div>
                         <h2 class="title is-size-3 is-spaced">{{ $t('pages.about.excellence') }}</h2>
                         <p class="is-medium">{{ $t('pages.about.excellence-text') }}</p>
                     </div>
                 </div>
 
-                <div class="diptych-image is-cover">
+                <div class="diptych-image is-cover" v-vpshow>
                     <img src="~assets/img/about/excellence.jpg" alt="Witify seeks Excellence">
                 </div>
             </section>
@@ -27,12 +30,15 @@
             <section class="diptych is-border-bottom is-right">
                 <div class="container">
                     <div class="diptych-body pt-120 pb-120">
+                        <div class="icon is-circle mb-20 has-text-primary">
+                            <i class="mdi mdi-account-group"></i>
+                        </div>
                         <h2 class="title is-size-3 is-spaced">{{ $t('pages.about.collaboration') }}</h2>
                         <p class="is-medium">{{ $t('pages.about.collaboration-text') }}</p>
                     </div>
                 </div>
 
-                <div class="diptych-image is-cover">
+                <div class="diptych-image is-cover" v-vpshow>
                     <img src="~assets/img/about/collaboration.jpg" alt="Witify seeks collaboration">
                 </div>
             </section>
@@ -40,17 +46,22 @@
             <section class="diptych">
                 <div class="container">
                     <div class="diptych-body pt-120 pb-120">
+                        <div class="icon is-circle mb-20 has-text-primary">
+                            <i class="mdi mdi-fire"></i>
+                        </div>
                         <h2 class="title is-size-3 is-spaced">{{ $t('pages.about.boldness') }}</h2>
                         <p class="is-medium">{{ $t('pages.about.boldness-text') }}</p>
                     </div>
                 </div>
 
-                <div class="diptych-image is-cover">
+                <div class="diptych-image is-cover" v-vpshow>
                     <img src="~assets/img/about/audacity.jpg" alt="Witify seeks boldness">
                 </div>
             </section>
 
         </div>
+
+        <cta></cta>
     </div>
 </template>
 

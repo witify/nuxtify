@@ -266,6 +266,20 @@
             </div>
         </section>
 
+        <section class="hero is-e-commerce is-bold has-text-centered">
+            <div class="hero-body">
+                <div class="container">
+                    <h2 class="title">Build your e-commerce with pros & quickly generate revenues</h2>
+                    <nuxt-link :to="localePath('contact')" class="button is-white is-medium is-outlined">
+                        <span>Contact us now</span>
+                        <span class="icon">
+                        <i class="mdi mdi-arrow-right"></i>
+                        </span>
+                    </nuxt-link>
+                </div>
+            </div>
+        </section>
+
     </div>
 
 </template>
