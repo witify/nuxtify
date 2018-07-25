@@ -8,8 +8,8 @@
                     <div class="icon is-circle is-dark">
                         <i class="mdi mdi-store"></i>
                     </div>
-                    <h1 class="title">E-commerce</h1>
-                    <h2 class="subtitle">Ut varius tincidunt libero. Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi.</h2>
+                    <h1 class="title">{{ $t('pages.services.e-commerce') }}</h1>
+                    <h2 class="subtitle">{{ $t('service.e-commerce.subtitle') }}</h2>
                 </div>
             </div>
 
@@ -23,8 +23,8 @@
         <section id="content" class="hero">
             <div class="hero-body">
                 <div class="container is-sm">
-                    <p class="is-size-3 has-text-centered is-tight">
-                        Witify propose une méthodologie en trois phases afin de <strong>comprendre les enjeux importants</strong> et d’implémenter la solution optimale pour votre entreprise et son <strong>positionnement stratégique</strong>.
+                    <p class="is-size-3 has-text-centered is-tight" v-html="$t('service.e-commerce.header')">
+
                     </p>
                 </div>
             </div>
@@ -38,8 +38,8 @@
 
         <section class="section has-text-centered">
             <div class="container is-sm">
-                <h2 class="title is-size-2">Our services</h2>
-                <h2 class="subtitle is-size-4 mb-40">Nous offrons une gamme de services complète pour un accompagnement et un développement clé en main de A à Z.</h2>
+                <h2 class="title is-size-2">{{ $t('service.e-commerce.our-services-header') }}</h2>
+                <h2 class="subtitle is-size-4 mb-40">{{ $t('service.e-commerce.our-services-subheader') }}</h2>
 
                 <div class="columns is-mobile is-multiline">
 
@@ -112,8 +112,8 @@
             <div class="hero-body">
                 <div class="container">
 
-                    <h2 class="title is-size-2">Our method in 3 phases</h2>
-                    <h3 class="subtitle is-size-4 mb-50">Ut varius tincidunt libero. Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi.</h3>
+                    <h2 class="title is-size-2">{{ $t('service.e-commerce.3-steps-method') }}</h2>
+                    <h3 class="subtitle is-size-4 mb-50">{{ $t('service.e-commerce.3-steps-method-subheader') }}</h3>
 
                     <div class="columns is-multiline">
 
@@ -122,7 +122,7 @@
                                 <div class="tag is-e-commerce">
                                     1
                                 </div>
-                                <h3 class="title">Strategic meeting</h3>
+                                <h3 class="title">{{ $t('service.e-commerce.analysis-positionning-header') }}</h3>
                             </div>
                         </div>
 
@@ -131,7 +131,7 @@
                                 <div class="tag is-e-commerce">
                                     2
                                 </div>
-                                <h3 class="title">Process analysis</h3>
+                                <h3 class="title">{{ $t('service.e-commerce.development-header') }}</h3>
                             </div>
                         </div>
 
@@ -140,7 +140,7 @@
                                 <div class="tag is-e-commerce">
                                     3
                                 </div>
-                                <h3 class="title">Implementation</h3>
+                                <h3 class="title">{{ $t('service.e-commerce.deployment-header') }}</h3>
                             </div>
                         </div>
 
@@ -166,19 +166,19 @@
                             </span>
 
                             <h2 class="title">
-                                Rencontre stratégique
+                                {{ $t('service.e-commerce.analysis-positionning-header') }}
                             </h2>
                         </div>
                     </div>
 
                     <p class="is-medium mb-40">
-                        La rencontre stratégique est dédiée à l’écoute du client, le ciblage des besoins prioritaires, la compréhension de l’entreprise et son positionnement actuel dans son parcours long-terme.
+                        {{ $t('service.e-commerce.analysis-positionning-subheader') }}
                     </p>
 
                     <ul class="is-bold">
-                        <li>Compréhension globale de l’entreprise et de ses besoins</li>
-                        <li>Édification du parcours de l’entreprise et de ses objectifs</li>
-                        <li>Recherche et définition des « Pain Points » et opportunités d’ajouts de valeur</li>
+                        <li>{{ $t('service.e-commerce.analysis-positionning-point-1') }}</li>
+                        <li>{{ $t('service.e-commerce.analysis-positionning-point-2') }}</li>
+                        <li>{{ $t('service.e-commerce.analysis-positionning-point-3') }}</li>
                     </ul>
                 </div>
             </div>
@@ -205,19 +205,19 @@
                             </span>
 
                             <h2 class="title">
-                                Analyse des procédés
+                                {{ $t('service.e-commerce.development-header') }}
                             </h2>
                         </div>
                     </div>
 
                     <p class="is-medium mb-40">
-                        L’analyse des procédés se consacre à la compréhension profonde des systèmes, routines et méthodes utilisées pour le besoin cible du projet.
+                        {{ $t('service.e-commerce.development-subheader') }}
                     </p>
 
                     <ul class="is-bold">
-                        <li>Détecter et de cibler les inefficacités courantes (redondance, intégration, objectivité externe, goulot et erreurs humaines)</li>
-                        <li>Établir une solution optimale avec une analyse haut-niveau facile de compréhension (coûts, complexité, temps)</li>
-                        <li>Planifier la transition vers le statut actuel au statut désiré</li>
+                        <li>{{ $t('service.e-commerce.development-point-1') }}</li>
+                        <li>{{ $t('service.e-commerce.development-point-2') }}</li>
+                        <li>{{ $t('service.e-commerce.development-point-3') }}</li>
                     </ul>
 
                 </div>
@@ -244,19 +244,19 @@
                             </span>
 
                             <h2 class="title">
-                                Implémentation de la solution
+                                {{ $t('service.e-commerce.deployment-header') }}
                             </h2>
                         </div>
                     </div>
 
                     <p class="is-medium mb-40">
-                        L’implémentation de la solution est réalisée de façon personnalisée par nos professionnels de la technologie en gardant en tête la priorité de l’expérience d’utilisation du client.
+                        {{ $t('service.e-commerce.deployment-subheader') }}
                     </p>
 
                     <ul class="is-bold">
-                        <li>Augmenter le ROI du département fonctionnel ou du projet ciblé (réduction d’erreurs humaines, moins de duplication)</li>
-                        <li>Systèmes d’analyse haut-niveau afin de fournissant une vue d’ensemble pour les gestionnaires/VP en charge de la solution tout en connectant les divers acteurs</li>
-                        <li>Intégration simple, facile et efficace dans les systèmes actuels afin de fournir une expérience clé-en-main (formations, intégration, etc.)</li>
+                        <li>{{ $t('service.e-commerce.deployment-point-1') }}</li>
+                        <li>{{ $t('service.e-commerce.deployment-point-2') }}</li>
+                        <li>{{ $t('service.e-commerce.deployment-point-3') }}</li>
                     </ul>
                 </div>
             </div>
@@ -269,9 +269,9 @@
         <section class="hero is-e-commerce is-bold has-text-centered">
             <div class="hero-body">
                 <div class="container">
-                    <h2 class="title">Build your e-commerce with pros & quickly generate revenues</h2>
+                    <h2 class="title">{{ $t('service.e-commerce.build-your-ecommerce') }}</h2>
                     <nuxt-link :to="localePath('contact')" class="button is-white is-medium is-outlined">
-                        <span>Contact us now</span>
+                        <span>{{ $t('pages.footer.contact-us-now') }}</span>
                         <span class="icon">
                         <i class="mdi mdi-arrow-right"></i>
                         </span>

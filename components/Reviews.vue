@@ -72,7 +72,7 @@
                     }
                 }
                 this.hasClicked = false
-            }, 5000)
+            }, 10000)
         },
         data() {
             return {

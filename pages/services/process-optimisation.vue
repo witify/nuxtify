@@ -328,9 +328,9 @@
         <section class="hero is-process-optimisation is-bold has-text-centered">
             <div class="hero-body">
                 <div class="container">
-                    <h2 class="title">Accelerate your growth & tell us your next big idea</h2>
+                    <h2 class="title">{{ $t('service.process-optimisation.accelerate-growth') }}</h2>
                     <nuxt-link :to="localePath('contact')" class="button is-white is-medium is-outlined">
-                        <span>Contact us now</span>
+                        <span>{{ $t('pages.footer.contact-us-now') }}</span>
                         <span class="icon">
                         <i class="mdi mdi-arrow-right"></i>
                         </span>
