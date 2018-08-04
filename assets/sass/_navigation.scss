@@ -38,7 +38,7 @@
             padding-left: 0.8rem;
         }
         .navbar-menu {
-            display: flex;
+            display: none;
             flex-direction: column;
             justify-content: space-between;
             height: calc(100vh - 4.25rem);
@@ -96,6 +96,12 @@
                     height: auto;
                     width: auto;
                 }
+            }
+        }
+
+        &.is-active {
+            .navbar-menu {
+                display: flex;
             }
         }
     }
