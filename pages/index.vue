@@ -5,31 +5,35 @@
       <div class="hero-body">
         <div class="container">
 
+          <nuxt-link :to="localePath('services')">
           <h1 class="title is-spaced">
             <no-ssr>
               <home-title></home-title>
             </no-ssr>
           </h1>
+          </nuxt-link>
 
           <h2 class="subtitle" v-html="$t('pages.home.subtitle')"></h2>
+          
+          <div class="links">
+            <nuxt-link :to="localePath('projects')" class="button is-danger is-large mb-10 mr-10">
+              <span class="icon">
+                <i class="mdi mdi-clipboard-text"></i>
+              </span>
+              <span>
+                {{ $t('pages.home.case-studies') }}
+              </span>
+            </nuxt-link>
 
-          <nuxt-link :to="localePath('projects')" class="button is-danger is-large mb-10 mr-10">
-            <span class="icon">
-              <i class="mdi mdi-clipboard-text"></i>
-            </span>
-            <span>
-              {{ $t('pages.home.case-studies') }}
-            </span>
-          </nuxt-link>
-
-          <nuxt-link :to="localePath('services')" class="button is-white is-large">
-            <span class="icon">
-              <i class="mdi mdi-google-circles-extended"></i>
-            </span>
-            <span>
-              {{ $t('pages.home.our-services') }}
-            </span>
-          </nuxt-link>
+            <nuxt-link :to="localePath('services')" class="button is-white is-large">
+              <span class="icon">
+                <i class="mdi mdi-google-circles-extended"></i>
+              </span>
+              <span>
+                {{ $t('pages.home.our-services') }}
+              </span>
+            </nuxt-link>
+          </div>
         </div>
       </div>
 
@@ -98,30 +102,30 @@
 
     </section>
 
-    <section class="section project is-pneus-a-petits-prix is-right">
+    <section class="section project is-boursify is-right">
     
         <div class="container">
           <div class="project-body">
             <h2 class="title">
-              <img class="project-logo" src="~assets/img/projects/pneus-a-petits-prix/logo.png" label="Pneus à petits prix" />
-              <span>{{ $t('project.low-cost-tires.title') }}</span>
+              <img class="project-logo" src="~assets/img/projects/boursify/logo-icon.svg" label="Boursify" />
+              <span>Boursify</span>
             </h2>
             <p class="is-medium">
-              {{ $t('pages.home.low-cost-tires-resume') }}
+              {{ $t('pages.home.boursify-resume') }}
             </p>
-            <a href="#" class="button is-medium is-pneus-a-petits-prix">
+            <nuxt-link :to="localePath('projects-boursify')" class="button is-medium is-start-alberta">
               <span>
                 {{ $t('project.general.read-case-study') }}
               </span>
               <span class="icon">
                 <i class="mdi mdi-arrow-right"></i>
               </span>
-            </a>
+            </nuxt-link>
           </div>
         </div>
 
         <div class="project-media">
-            <img src="~assets/img/projects/pneus-a-petits-prix/iphone.png" alt="Low Cost tires interface on iphone" class="project-iphone" v-vpshow />
+            <img src="~assets/img/projects/boursify/iphone.png" alt="Boursify interface on iphone" class="project-iphone" v-vpshow />
             <div class="project-bg" v-vpshow></div>
         </div>
 

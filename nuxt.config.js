@@ -98,6 +98,7 @@ module.exports = {
    */
 
   plugins: [
-    '~/plugins/global.js'
+    '~/plugins/global.js',
+    { src: '~/plugins/carousel', ssr: false }
   ]
 }

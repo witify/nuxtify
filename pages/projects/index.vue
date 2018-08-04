@@ -45,7 +45,7 @@
                         </div>
 
                         <div class="column is-half">
-                            <div class="project-card">
+                            <a href="//pneusapetitsprix.com" target="_blank" class="project-card">
                                 <div class="card-image">
                                     <figure class="image is-4by3">
                                         <img src="~assets/img/projects/pneus-a-petits-prix/thumbnail.jpg" alt="Low Cost Tires">
@@ -55,7 +55,7 @@
                                     <h2 class="title">{{ $t('project.low-cost-tires.title') }}</h2>
                                     <h3 class="subtitle">{{ $t('project.low-cost-tires.subtitle') }}</h3>
                                 </div>
-                            </div>
+                            </a>
                         </div>
 
                         <div class="column is-half">
@@ -73,7 +73,7 @@
                         </div>
 
                         <div class="column is-half">
-                            <div class="project-card">
+                            <a href="http://www.patrimoine-culturel.gouv.qc.ca/lab/" target="_blank" class="project-card">
                                 <div class="card-image">
                                     <figure class="image is-4by3">
                                         <img src="~assets/img/projects/mcc/thumbnail.jpg" alt="Ministère de la culture et de l'éducation">
@@ -83,11 +83,11 @@
                                     <h2 class="title">{{ $t('project.mcc.title') }}</h2>
                                     <h3 class="subtitle">{{ $t('project.mcc.subtitle') }}</h3>
                                 </div>
-                            </div>
+                            </a>
                         </div>
 
                         <div class="column is-half">
-                            <div class="project-card">
+                            <a href="//jussaume.ca" target="_blank" class="project-card">
                                 <div class="card-image">
                                     <figure class="image is-4by3">
                                         <img src="~assets/img/projects/jussaume/thumbnail.jpg" alt="Mobilier Jussaume">
@@ -97,7 +97,7 @@
                                     <h2 class="title">{{ $t('project.jussaume.title') }}</h2>
                                     <h3 class="subtitle">{{ $t('project.jussaume.subtitle') }}</h3>
                                 </div>
-                            </div>
+                            </a>
                         </div>
 
                     </div>

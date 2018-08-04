@@ -46,10 +46,50 @@
                     <div class="column is-half-mobile is-half-tablet is-one-third-desktop">
                         <div class="service-item">
                             <div class="icon is-circle has-text-e-commerce">
-                                <i class="mdi mdi-database-search"></i>
+                                <i class="mdi mdi-cart"></i>
                             </div>
-                            <h2 class="title">Centralized</h2>
-                            <h3 class="subtitle">information</h3>
+                            <h2 class="title">Flexible & complete</h2>
+                            <h3 class="subtitle">product management</h3>
+                        </div>
+                    </div>
+
+                    <div class="column is-half-mobile is-half-tablet is-one-third-desktop">
+                        <div class="service-item">
+                            <div class="icon is-circle has-text-e-commerce">
+                                <i class="mdi mdi-power-plug"></i>
+                            </div>
+                            <h2 class="title">Limitless</h2>
+                            <h3 class="subtitle">integrations</h3>
+                        </div>
+                    </div>
+
+                    <div class="column is-half-mobile is-half-tablet is-one-third-desktop">
+                        <div class="service-item">
+                            <div class="icon is-circle has-text-e-commerce">
+                                <i class="mdi mdi-flash"></i>
+                            </div>
+                            <h2 class="title">Blazing fast</h2>
+                            <h3 class="subtitle">page loading</h3>
+                        </div>
+                    </div>
+
+                    <div class="column is-half-mobile is-half-tablet is-one-third-desktop">
+                        <div class="service-item">
+                            <div class="icon is-circle has-text-e-commerce">
+                                <i class="mdi mdi-earth"></i>
+                            </div>
+                            <h2 class="title">Complete</h2>
+                            <h3 class="subtitle">internationalization</h3>
+                        </div>
+                    </div>
+
+                    <div class="column is-half-mobile is-half-tablet is-one-third-desktop">
+                        <div class="service-item">
+                            <div class="icon is-circle has-text-e-commerce">
+                                <i class="mdi mdi-sitemap"></i>
+                            </div>
+                            <h2 class="title">Integrated</h2>
+                            <h3 class="subtitle">omnichannels</h3>
                         </div>
                     </div>
 
@@ -60,46 +100,6 @@
                             </div>
                             <h2 class="title">Result analysis</h2>
                             <h3 class="subtitle">and measurements</h3>
-                        </div>
-                    </div>
-
-                    <div class="column is-half-mobile is-half-tablet is-one-third-desktop">
-                        <div class="service-item">
-                            <div class="icon is-circle has-text-e-commerce">
-                                <i class="mdi mdi-gauge-full"></i>
-                            </div>
-                            <h2 class="title">Process</h2>
-                            <h3 class="subtitle">acceleration</h3>
-                        </div>
-                    </div>
-
-                    <div class="column is-half-mobile is-half-tablet is-one-third-desktop">
-                        <div class="service-item">
-                            <div class="icon is-circle has-text-e-commerce">
-                                <i class="mdi mdi-web"></i>
-                            </div>
-                            <h2 class="title">Accessible</h2>
-                            <h3 class="subtitle">from anywhere</h3>
-                        </div>
-                    </div>
-
-                    <div class="column is-half-mobile is-half-tablet is-one-third-desktop">
-                        <div class="service-item">
-                            <div class="icon is-circle has-text-e-commerce">
-                                <i class="mdi mdi-security"></i>
-                            </div>
-                            <h2 class="title">Security</h2>
-                            <h3 class="subtitle">banking level security</h3>
-                        </div>
-                    </div>
-
-                    <div class="column is-half-mobile is-half-tablet is-one-third-desktop">
-                        <div class="service-item">
-                            <div class="icon is-circle has-text-e-commerce">
-                                <i class="mdi mdi-tune-vertical"></i>
-                            </div>
-                            <h2 class="title">Operation</h2>
-                            <h3 class="subtitle">standardization</h3>
                         </div>
                     </div>
 

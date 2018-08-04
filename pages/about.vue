@@ -1,68 +1,194 @@
 <template>
-    <div class="wrapper">
-        <div class="page-about">
-            
-            <section class="hero is-main">
-                <div class="hero-body">
-                    <div class="container">
-                        <h1 class="title">{{ $t('pages.about.title') }}</h1>
-                        <h2 class="subtitle" v-html="$t('pages.about.subtitle')"></h2>
-                    </div>
-                </div>
-            </section>
+    <div class="page-about">
 
-            <section class="diptych is-border-bottom">
+        <div class="hero is-main is-fullheight is-dark is-center ">
+            <div class="hero-body">
                 <div class="container">
-                    <div class="diptych-body pt-120 pb-120">
-                        <div class="icon is-circle mb-20 has-text-primary">
-                            <i class="mdi mdi-trophy"></i>
-                        </div>
-                        <h2 class="title is-size-3 is-spaced">{{ $t('pages.about.excellence') }}</h2>
-                        <p class="is-medium">{{ $t('pages.about.excellence-text') }}</p>
-                    </div>
+                    <h1 class="title">{{ $t('pages.about.title') }}</h1>
+                    <h2 class="subtitle" v-html="$t('pages.about.subtitle')"></h2>
                 </div>
+            </div>
 
-                <div class="diptych-image is-cover" v-vpshow>
-                    <img src="~assets/img/about/excellence.jpg" alt="Witify seeks Excellence">
+            <div class="scroll-to" v-scroll-to="'#content'">
+                <div class="icon">
+                    <i class="mdi mdi-chevron-down"></i>
                 </div>
-            </section>
-
-            <section class="diptych is-border-bottom is-right">
-                <div class="container">
-                    <div class="diptych-body pt-120 pb-120">
-                        <div class="icon is-circle mb-20 has-text-primary">
-                            <i class="mdi mdi-account-group"></i>
-                        </div>
-                        <h2 class="title is-size-3 is-spaced">{{ $t('pages.about.collaboration') }}</h2>
-                        <p class="is-medium">{{ $t('pages.about.collaboration-text') }}</p>
-                    </div>
-                </div>
-
-                <div class="diptych-image is-cover" v-vpshow>
-                    <img src="~assets/img/about/collaboration.jpg" alt="Witify seeks collaboration">
-                </div>
-            </section>
-
-            <section class="diptych">
-                <div class="container">
-                    <div class="diptych-body pt-120 pb-120">
-                        <div class="icon is-circle mb-20 has-text-primary">
-                            <i class="mdi mdi-fire"></i>
-                        </div>
-                        <h2 class="title is-size-3 is-spaced">{{ $t('pages.about.boldness') }}</h2>
-                        <p class="is-medium">{{ $t('pages.about.boldness-text') }}</p>
-                    </div>
-                </div>
-
-                <div class="diptych-image is-cover" v-vpshow>
-                    <img src="~assets/img/about/audacity.jpg" alt="Witify seeks boldness">
-                </div>
-            </section>
-
+            </div>
         </div>
 
+        <section id="content" class="section is-excellence">
+            <div class="container">
+
+                <div class="columns">
+                    <div class="column is-half">
+
+                        <div class="media is-aligned mb-40">
+                            <div class="media-left">
+                                <div class="icon is-circle has-text-primary">
+                                    <i class="mdi mdi-trophy"></i>
+                                </div>
+                            </div>
+                            <div class="media-content">
+                                <h2 class="title is-size-3 is-spaced">{{ $t('pages.about.excellence') }}</h2>
+                            </div>
+                        </div>
+
+                        <p class="is-lead mb-20">{{ $t('pages.about.excellence-text-1') }}</p>
+                        <p class="is-medium">{{ $t('pages.about.excellence-text-2') }}</p>
+
+                        <div class="mt-50">
+                            <h2 class="title is-size-3 has-text-weight-normal">What makes our product <strong class="has-text-weight-bold">SUPER</strong></h2>
+                            <p class="is-medium mb-50">We combine talent and hard work to provide the best tools and the best results. Our team understands your desire to differentiate itself.</p>
+
+                            <b-collapse class="card" animation="none" :open="false">
+                                <div slot="trigger" slot-scope="props" class="card-header">
+                                    <h2 class="card-header-title title is-size-5 mb-0">Secure</h2>
+                                    <a class="card-header-icon">
+                                        <b-icon
+                                            :icon="props.open ? 'chevron-down' : 'chevron-right'">
+                                        </b-icon>
+                                    </a>
+                                </div>
+                                <div class="card-content">
+                                    <div class="content">
+                                        <p>All our web applications are protected against the common <strong>cyper-attacks</strong> and apply the best practices in terms of privacy and <strong>data protection</strong>.</p>
+                                    </div>
+                                </div>
+                            </b-collapse>
+
+                            <b-collapse class="card" animation="none" :open="false">
+                                <div slot="trigger" slot-scope="props" class="card-header">
+                                    <h2 class="card-header-title title is-size-5 mb-0">Usable</h2>
+                                    <a class="card-header-icon">
+                                        <b-icon
+                                            :icon="props.open ? 'chevron-down' : 'chevron-right'">
+                                        </b-icon>
+                                    </a>
+                                </div>
+                                <div class="card-content">
+                                    <div class="content">
+                                        <p>Each digital product we craft is built to offer the <strong>best user experience</strong> possible. Our interfaces are fast and easy to use and learn.</p>
+                                    </div>
+                                </div>
+                            </b-collapse>
+
+                            <b-collapse class="card" animation="none" :open="false">
+                                <div slot="trigger" slot-scope="props" class="card-header">
+                                    <h2 class="card-header-title title is-size-5 mb-0">Powerful</h2>
+                                    <a class="card-header-icon">
+                                        <b-icon
+                                            :icon="props.open ? 'chevron-down' : 'chevron-right'">
+                                        </b-icon>
+                                    </a>
+                                </div>
+                                <div class="card-content">
+                                    <div class="content">
+                                        <p>Every product we build is custom made and specificaly tailored for our client. By switching to a custom solution, many of our clients saw a <strong>hude upgrade in terms of performance, efficiency and usability</strong>.</p>
+                                    </div>
+                                </div>
+                            </b-collapse>
+
+                            <b-collapse class="card" animation="none" :open="false">
+                                <div slot="trigger" slot-scope="props" class="card-header">
+                                    <h2 class="card-header-title title is-size-5 mb-0">Efficient</h2>
+                                    <a class="card-header-icon">
+                                        <b-icon
+                                            :icon="props.open ? 'chevron-down' : 'chevron-right'">
+                                        </b-icon>
+                                    </a>
+                                </div>
+                                <div class="card-content">
+                                    <div class="content">
+                                        <p>Our products are blazing fast on every plaforms. They are tailored to our clients needs, <strong>making every action faster and easier to learn</strong>.</p>
+                                    </div>
+                                </div>
+                            </b-collapse>
+
+                            <b-collapse class="card" animation="none" :open="false">
+                                <div slot="trigger" slot-scope="props" class="card-header">
+                                    <h2 class="card-header-title title is-size-5 mb-0">Reliable</h2>
+                                    <a class="card-header-icon">
+                                        <b-icon
+                                            :icon="props.open ? 'chevron-down' : 'chevron-right'">
+                                        </b-icon>
+                                    </a>
+                                </div>
+                                <div class="card-content">
+                                    <div class="content">
+                                        <p>Each web solution is hosted on entreprise-level servers. Your data is safely stored and duplicated on the cloud. The high quality of our code allows for easy updates and greater reliability.</p>
+                                    </div>
+                                </div>
+                            </b-collapse>
+
+                        </div>
+
+                    </div>
+                </div>
+                
+                
+            </div>
+        </section>
+
+        <section class="section is-grey">
+            <div class="container">
+
+                <div class="media is-aligned mb-40">
+                    <div class="media-left">
+                        <div class="icon is-circle is-grey has-text-primary">
+                            <i class="mdi mdi-account-group"></i>
+                        </div>
+                    </div>
+                    <div class="media-content">
+                        <h2 class="title is-size-3 is-spaced">{{ $t('pages.about.collaboration') }}</h2>
+                    </div>
+                </div>
+
+                <div class="columns is-variable is-8">
+                    <div class="column">
+                        <p class="is-lead mb-20">We believe that every success comes from a strong and sincere cooperation.</p>
+                        <p class="is-medium">At witify, we place great importance on teamwork. Whether internally, ensuring a strong self-help dynamic. Or with our clientele, which is built on transparency and accessible communication at all times. We are here, we are humans and we want to build the bridges of a lasting relationship.</p>
+                    </div>
+                    <div class="column">
+                        <p class="is-size-4 is-italic">"Witify is one of the few web agencies that really listens to its customers. My projects have always been completed with care and speed."</p>
+                        <div class="has-text-right">
+                            <p class="is-size-3 has-text-weight-semibold" style="line-height: 1">John Doe</p>
+                            <span>CTO at Acme</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="diptych is-border-bottom">
+            <div class="container">
+                <div class="diptych-body">
+                    <div class="media is-aligned mb-40">
+                        <div class="media-left">
+                            <div class="icon is-circle has-text-primary">
+                                <i class="mdi mdi-fire"></i>
+                            </div>
+                        </div>
+                        <div class="media-content">
+                            <h2 class="title is-size-3 is-spaced">{{ $t('pages.about.boldness') }}</h2>
+                        </div>
+                    </div>
+
+                    <p class="is-lead mb-20">Our team is bold and innovative. We dare to seize opportunities and turn the challenges that may be in your way into assets.</p>
+                    <p class="is-medium">Each event is an opportunity to push the boundaries of innovation and creativity. We believe that it is important to undertake projects, to overcome obstacles and to constantly aspire to better than the status quo.</p>
+
+                </div>
+            </div>
+            <div class="diptych-image">
+                <img src="~assets/img/projects/start-alberta/mobile-ui.jpg" alt="Boldness in Witify's projects">
+            </div>
+        </section>
+
         <cta></cta>
+        
     </div>
+
 </template>
 
 <script>

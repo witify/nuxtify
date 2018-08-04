@@ -27,6 +27,12 @@
                 background-image: none;
                 text-align: center;
             }
+
+            @include mobile() {
+                .links {
+                    display: none;
+                }
+            }
         }
 
         .title, .subtitle {
@@ -53,7 +59,7 @@
             margin-bottom: 3rem;
 
             @include mobile() {
-                font-size: 1.4rem;
+                display: none;
             }
         }
     }
@@ -147,6 +153,10 @@
 
                 @include touch() {
                     margin-right: 1rem;
+                }
+
+                @include mobile() {
+                    display: none;
                 }
             }
 
@@ -340,13 +350,13 @@
         &.is-start-alberta .project-bg  {
             background-image: url('~assets/img/projects/start-alberta/bg.jpg');
         }
-        &.is-pneus-a-petits-prix .project-bg  {
-            background-image: url('~assets/img/projects/pneus-a-petits-prix/bg.jpg');
+        &.is-boursify .project-bg  {
+            background-image: url('~assets/img/projects/boursify/bg-2.jpg');
         }
     }
 
     .section-review {
-        padding: 80px 0;
+        padding: 80px 15px;
         text-align: center;
         background-color: $white-ter;
 

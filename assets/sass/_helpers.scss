@@ -1,7 +1,7 @@
 $columns: 20;
 
 @mixin col-x-list {
-    @for $i from 1 through $columns {
+    @for $i from 0 through $columns {
         .mb-#{$i*5} {
             margin-bottom: #{$i*5}px !important;
         }

@@ -13,6 +13,10 @@
     border-radius: 4rem;
     color: $grey;
 
+    &.is-grey {
+        border-color: $grey-lighter !important;
+    }
+
     &.is-dark {
         border: none !important;
         color: #fff !important;
@@ -24,4 +28,8 @@
         width: 3rem;
         height: 3rem;
     }
+}
+
+.media.is-aligned {
+    align-items: center;
 }
