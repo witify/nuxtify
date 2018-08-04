@@ -23,7 +23,7 @@
             <div class="container">
                 <h2 class="title">Vous avez une idée d'application unique qui changera le monde?</h2>
                 <p class="is-medium">L’équipe Witify prend en charge le développement du logiciel pour transformer votre vision en application complète de grande qualité. Nous savons que votre projet possède ses propres objectifs, ses contraintes et ses caractéristiques uniques. Notre équipe est prête à s’adapter à vos besoins tout en vous guidant afin de garantir votre succès.</p>
-                <nuxt-link :to="localePath('projects-sauver')" class="clickable mt-30">
+                <nuxt-link :to="localePath('projects-sauver')" class="clickable show-on-mobile mt-30">
                     <div class="clickable-button">
                         <button class="button is-black is-medium">
                             <span>Étude de cas: SAUVéR</span>
@@ -62,7 +62,7 @@
                 <p class="is-medium">Un bon produit numérique doit être intuitif, performant et évolutif. Witify vous aide à atteindre vos objetifs avec excellence, sans jamais compromettre la qualité.</p>
             </div>
             <div class="container">
-                <nuxt-link :to="localePath('projects-sauver')" class="clickable mt-30">
+                <nuxt-link :to="localePath('projects-sauver')" class="clickable show-on-mobile mt-30">
                     <div class="clickable-button">
                         <button class="button is-black is-medium">
                             <span>Étude de cas: Start Alberta</span>
@@ -82,8 +82,8 @@
             <div class="hero-body">
                 <div class="container">
 
-                    <h2 class="title is-size-2">Notre méthode en 3 phases</h2>
-                    <h3 class="subtitle is-size-4 mb-50">Notre méthodologie en 3 étapes s’appuie sur une écoute active et une communication fluide qui maximisera le succès de votre produit. Nous voulons comprendre vos objectifs, votre clientèle et réellement mettre en œuvre la meilleure solution pour votre projet.</h3>
+                    <h2 class="title is-size-2 is-spaced">Notre méthode en 3 phases</h2>
+                    <h3 class="subtitle is-size-4 mb-60">Notre méthodologie en 3 étapes s’appuie sur une écoute active et une communication fluide qui maximisera le succès de votre produit. Nous voulons comprendre vos objectifs, votre clientèle et réellement mettre en œuvre la meilleure solution pour votre projet.</h3>
 
                     <div class="columns is-multiline">
 

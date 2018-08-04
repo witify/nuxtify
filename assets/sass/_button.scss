@@ -48,7 +48,28 @@
         @include clickable-active;
     }
 
-    @include touch() {
-        @include clickable-active;
+    &.show-on-mobile {
+        @include touch() {
+            @include clickable-active;
+        }
+    }
+    
+}
+
+/*
+|--------------------------------------------------------------------------
+| Responsive utils
+|--------------------------------------------------------------------------
+*/
+
+@include mobile() {
+    .button {
+        font-size: 1rem;
+    }
+    .button.is-medium {
+        font-size: 1.1rem;
+    }
+    .button.is-large {
+        font-size: 1.2rem;
     }
 }

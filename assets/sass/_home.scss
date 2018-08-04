@@ -27,12 +27,6 @@
                 background-image: none;
                 text-align: center;
             }
-
-            @include mobile() {
-                .links {
-                    display: none;
-                }
-            }
         }
 
         .title, .subtitle {
@@ -51,7 +45,7 @@
             }
 
             @include mobile() {
-                font-size: 2.5rem;
+                font-size: 1.6rem;
             }
         }
         .subtitle {
@@ -59,7 +53,7 @@
             margin-bottom: 3rem;
 
             @include mobile() {
-                display: none;
+                font-size: 1.2rem;
             }
         }
     }
@@ -71,7 +65,7 @@
         background-position: top;
 
         .title {
-            line-height: 2.9rem;
+            
             strong {
                 color: $primary;
             }
@@ -135,13 +129,14 @@
             bottom: 0;
             left: 0;
             width: 100%;
-            padding: 0.8rem 1.2rem;
+            padding: 2rem 1.2rem;
             text-align: center;
 
             @include touch() {
                 position: static;
                 height: 100%;
                 text-align: left;
+                padding: 1.2rem 1.2rem;
             }
 
             .icon {
@@ -167,7 +162,7 @@
                 font-size: $size-6;
 
                 @include touch() {
-                    font-size: 1rem;
+                    font-size: 1rem !important;
                 }
             }
 
@@ -243,6 +238,10 @@
             top: 0;
             height: 100%;
             width: 40%;
+
+            @include mobile() {
+                display: none;
+            }
         }
 
         &.is-left {

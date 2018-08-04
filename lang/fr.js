@@ -104,6 +104,7 @@ export default {
       implementation: 'Développement',
       results: 'Résultats',
       'read-case-study': 'Lire l\'étude de cas',
+      'visit-website': "Visiter le site web",
       type: "Type",
       'custom-app': "Application sur mesure",
       "social-network": "Réseau social",

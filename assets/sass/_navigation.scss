@@ -8,6 +8,7 @@
         @include desktop() {
             height: 2.5rem;
             max-height: 2.5rem;
+            margin-right: 1rem;
         }
         @include touch() {
             height: 2rem;
@@ -19,11 +20,10 @@
         border-color: $grey;
     }
 
-    .is-uppercase {
+    .is-bold {
         @include desktop() {
-            font-size: 0.9rem;
-            text-transform: uppercase;
-            letter-spacing: 3.2;
+            font-family: $font-family-title;
+            font-size: 1.1rem;
             font-weight: $weight-semibold;
         }
     }
@@ -67,7 +67,7 @@
             padding-bottom: 0.1rem;
         }
         .navbar-end {
-            margin-top: 2rem;
+            margin-top: 1rem;
         }
         .navbar-end .navbar-item {
             font-weight: $weight-light;

@@ -19,12 +19,12 @@
 
                 <div class="navbar-start">
 
-                    <nuxt-link :to="localePath('projects')" class="navbar-item is-uppercase">
+                    <nuxt-link :to="localePath('projects')" class="navbar-item is-bold">
                         {{ $t('pages.projects.index') }}
                     </nuxt-link>
 
                     <div class="navbar-item has-dropdown is-hoverable">
-                        <nuxt-link :to="localePath('services')" class="navbar-link is-uppercase">
+                        <nuxt-link :to="localePath('services')" class="navbar-link is-bold">
                             {{ $t('pages.services.index') }}
                         </nuxt-link>
 
@@ -65,11 +65,11 @@
                         </div>
                     </div>
 
-                    <nuxt-link :to="localePath('about')" class="navbar-item is-uppercase">
+                    <nuxt-link :to="localePath('about')" class="navbar-item is-bold">
                         {{ $t('pages.about.title') }}
                     </nuxt-link>
 
-                    <nuxt-link :to="localePath('contact')" class="navbar-item is-uppercase">
+                    <nuxt-link :to="localePath('contact')" class="navbar-item is-bold">
                         {{ $t('pages.contact.index') }}
                     </nuxt-link>
 

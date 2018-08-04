@@ -4,9 +4,12 @@
     }
     
     .is-excellence {
-        background-image: url('~/assets/img/about/excellence.jpg');
-        background-position: right top;
-        background-size: 50%;
-        background-repeat: repeat-y;
+        @include tablet() {
+
+            background-image: url('~/assets/img/about/excellence.jpg');
+            background-position: right top;
+            background-size: 50%;
+            background-repeat: repeat-y;
+        }
     }
 }

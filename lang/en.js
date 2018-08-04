@@ -103,6 +103,7 @@ export default {
       implementation: 'Implementation',
       results: 'Results',
       'read-case-study': 'Read case study',
+      'visit-website': 'Visit website',
       type: "Type",
       'custom-app': "Custom application",
       "social-network": "Social network",

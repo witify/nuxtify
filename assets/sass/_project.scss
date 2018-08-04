@@ -1,9 +1,26 @@
 .project-card {
+    
+    display: block;
+    margin-bottom: 30px;
 
-    margin-bottom: 40px;
+    .card-image {
+        border-radius: 5px;
+        overflow: hidden;
+    }
 
     .card-content {
         padding: 20px 0;
+
+        .title {
+            @include desktop() {
+                margin-top: 20px;
+            }
+            margin-bottom: 20px;
+        }
+
+        .subtitle {
+            color: $grey;
+        }
     }
 }
 

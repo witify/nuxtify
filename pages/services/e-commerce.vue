@@ -38,8 +38,8 @@
 
         <section class="section has-text-centered">
             <div class="container is-sm">
-                <h2 class="title is-size-2">{{ $t('service.e-commerce.our-services-header') }}</h2>
-                <h2 class="subtitle is-size-4 mb-40">{{ $t('service.e-commerce.our-services-subheader') }}</h2>
+                <h2 class="title is-size-2 is-spaced">{{ $t('service.e-commerce.our-services-header') }}</h2>
+                <h2 class="subtitle is-size-4 mb-60">{{ $t('service.e-commerce.our-services-subheader') }}</h2>
 
                 <div class="columns is-mobile is-multiline">
 
@@ -112,8 +112,8 @@
             <div class="hero-body">
                 <div class="container">
 
-                    <h2 class="title is-size-2">{{ $t('service.e-commerce.3-steps-method') }}</h2>
-                    <h3 class="subtitle is-size-4 mb-50">{{ $t('service.e-commerce.3-steps-method-subheader') }}</h3>
+                    <h2 class="title is-size-2 is-spaced">{{ $t('service.e-commerce.3-steps-method') }}</h2>
+                    <h3 class="subtitle is-size-4 mb-60">{{ $t('service.e-commerce.3-steps-method-subheader') }}</h3>
 
                     <div class="columns is-multiline">
 

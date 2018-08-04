@@ -26,6 +26,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .subtitle {
     font-family: $family-sans-serif;
+    font-weight: 400;
 }
 
 /*
@@ -41,6 +42,7 @@ p.is-lead {
 }
 
 p.is-medium {
+    font-weight: 400;
     color: $grey;
     font-size: 1.2rem;
 
@@ -97,6 +99,12 @@ strong {
 */
 
 @include mobile() {
+    .title {
+        font-size: $size-4;
+    }
+    .subtitle {
+        font-size: $size-5;
+    }
     .is-size-1 {
         font-size: $size-2 !important;
     }
@@ -108,6 +116,9 @@ strong {
     }
     .is-size-4 {
         font-size: $size-5 !important;
+    }
+    .is-size-5 {
+        font-size: $size-6 !important;
     }
     
 }

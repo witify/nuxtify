@@ -51,12 +51,21 @@ body {
     }
 }
 
+.wrapper .hero.is-main .hero-body {
+    @include mobile() {
+        padding-top: 3rem;
+    }
+}
+
 .hero.is-main {
     text-align: left;
     border-bottom: solid 1px $white-ter;
 
     @include mobile() {
         text-align: center;
+        .hero-body {
+            padding-top: 4rem;
+        }
     }
 
     .icon {
@@ -159,6 +168,13 @@ body {
 
 .section.has-border-bottom {
     border-bottom: solid 1px $white-ter;
+}
+
+.section.is-fullheight {
+
+    @include tablet() {
+        min-height: 70vh;
+    } 
 }
 
 /*

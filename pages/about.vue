@@ -1,7 +1,7 @@
 <template>
     <div class="page-about">
 
-        <div class="hero is-main is-fullheight is-dark is-center ">
+        <div class="hero is-main is-medium is-dark is-center">
             <div class="hero-body">
                 <div class="container">
                     <h1 class="title">{{ $t('pages.about.title') }}</h1>
@@ -37,7 +37,7 @@
                         <p class="is-medium">{{ $t('pages.about.excellence-text-2') }}</p>
 
                         <div class="mt-50">
-                            <h2 class="title is-size-3 has-text-weight-normal">What makes our product <strong class="has-text-weight-bold">SUPER</strong></h2>
+                            <h2 class="title is-size-3 has-text-weight-normal">What makes our products <strong class="has-text-weight-bold">SUPER</strong></h2>
                             <p class="is-medium mb-50">We combine talent and hard work to provide the best tools and the best results. Our team understands your desire to differentiate itself.</p>
 
                             <b-collapse class="card" animation="none" :open="false">
@@ -51,7 +51,7 @@
                                 </div>
                                 <div class="card-content">
                                     <div class="content">
-                                        <p>All our web applications are protected against the common <strong>cyper-attacks</strong> and apply the best practices in terms of privacy and <strong>data protection</strong>.</p>
+                                        <p class="is-size-5 has-text-weight-light has-text-grey">All our web applications are protected against the common <strong>cyper-attacks</strong> and apply the best practices in terms of privacy and <strong>data protection</strong>.</p>
                                     </div>
                                 </div>
                             </b-collapse>
@@ -67,7 +67,7 @@
                                 </div>
                                 <div class="card-content">
                                     <div class="content">
-                                        <p>Each digital product we craft is built to offer the <strong>best user experience</strong> possible. Our interfaces are fast and easy to use and learn.</p>
+                                        <p class="is-size-5 has-text-weight-light has-text-grey">Each digital product we craft is built to offer the <strong>best user experience</strong> possible. Our interfaces are fast and easy to use and learn.</p>
                                     </div>
                                 </div>
                             </b-collapse>
@@ -83,7 +83,7 @@
                                 </div>
                                 <div class="card-content">
                                     <div class="content">
-                                        <p>Every product we build is custom made and specificaly tailored for our client. By switching to a custom solution, many of our clients saw a <strong>hude upgrade in terms of performance, efficiency and usability</strong>.</p>
+                                        <p class="is-size-5 has-text-weight-light has-text-grey">Every product we build is custom made and specificaly tailored for our client. By switching to a custom solution, many of our clients saw a <strong>hude upgrade in terms of performance, efficiency and usability</strong>.</p>
                                     </div>
                                 </div>
                             </b-collapse>
@@ -99,7 +99,7 @@
                                 </div>
                                 <div class="card-content">
                                     <div class="content">
-                                        <p>Our products are blazing fast on every plaforms. They are tailored to our clients needs, <strong>making every action faster and easier to learn</strong>.</p>
+                                        <p class="is-size-5 has-text-weight-light has-text-grey">Our products are blazing fast on every plaforms. They are tailored to our clients needs, <strong>making every action faster and easier to learn</strong>.</p>
                                     </div>
                                 </div>
                             </b-collapse>
@@ -115,7 +115,7 @@
                                 </div>
                                 <div class="card-content">
                                     <div class="content">
-                                        <p>Each web solution is hosted on entreprise-level servers. Your data is safely stored and duplicated on the cloud. The high quality of our code allows for easy updates and greater reliability.</p>
+                                        <p class="is-size-5 has-text-weight-light has-text-grey">Each web solution is hosted on entreprise-level servers. Your data is safely stored and duplicated on the cloud. The high quality of our code allows for easy updates and greater reliability.</p>
                                     </div>
                                 </div>
                             </b-collapse>
@@ -124,7 +124,6 @@
 
                     </div>
                 </div>
-                
                 
             </div>
         </section>
@@ -150,7 +149,7 @@
                     </div>
                     <div class="column">
                         <p class="is-size-4 is-italic">"Witify is one of the few web agencies that really listens to its customers. My projects have always been completed with care and speed."</p>
-                        <div class="has-text-right">
+                        <div class="has-text-right-tablet mt-20">
                             <p class="is-size-3 has-text-weight-semibold" style="line-height: 1">John Doe</p>
                             <span>CTO at Acme</span>
                         </div>

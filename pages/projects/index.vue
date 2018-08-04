@@ -19,9 +19,21 @@
                         <div class="column is-half">
                             <nuxt-link :to="localePath('projects-start-alberta')" class="project-card">
                                 <div class="card-image">
-                                    <figure class="image is-4by3">
-                                        <img src="~assets/img/projects/start-alberta/thumbnail.jpg" alt="Start Alberta">
-                                    </figure>
+                                    <div class="clickable">
+                                        <div class="clickable-content">
+                                            <figure class="image is-4by3">
+                                                <img src="~assets/img/projects/start-alberta/thumbnail.jpg" alt="Start Alberta">
+                                            </figure>
+                                        </div>
+                                        <div class="clickable-button">
+                                            <button class="button is-black is-medium">
+                                                <span>{{ $t('project.general.read-case-study') }}</span>
+                                                <span class="icon">
+                                                    <i class="mdi mdi-clipboard-text"></i>
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="card-content">
                                     <h2 class="title">{{ $t('project.start-alberta.title') }}</h2>
@@ -33,9 +45,21 @@
                         <div class="column is-half">
                             <nuxt-link :to="localePath('projects-sauver')" class="project-card">
                                 <div class="card-image">
-                                    <figure class="image is-4by3">
-                                        <img src="~assets/img/projects/sauver/thumbnail.jpg" alt="SAUVéR">
-                                    </figure>
+                                    <div class="clickable">
+                                        <div class="clickable-content">
+                                            <figure class="image is-4by3">
+                                                <img src="~assets/img/projects/sauver/thumbnail.jpg" alt="SAUVéR system">
+                                            </figure>
+                                        </div>
+                                        <div class="clickable-button">
+                                            <button class="button is-black is-medium">
+                                                <span>{{ $t('project.general.read-case-study') }}</span>
+                                                <span class="icon">
+                                                    <i class="mdi mdi-clipboard-text"></i>
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="card-content">
                                     <h2 class="title">{{ $t('project.sauver.title') }}</h2>
@@ -47,9 +71,21 @@
                         <div class="column is-half">
                             <a href="//pneusapetitsprix.com" target="_blank" class="project-card">
                                 <div class="card-image">
-                                    <figure class="image is-4by3">
-                                        <img src="~assets/img/projects/pneus-a-petits-prix/thumbnail.jpg" alt="Low Cost Tires">
-                                    </figure>
+                                    <div class="clickable">
+                                        <div class="clickable-content">
+                                            <figure class="image is-4by3">
+                                                <img src="~assets/img/projects/pneus-a-petits-prix/thumbnail.jpg" alt="Pneus à petits prix">
+                                            </figure>
+                                        </div>
+                                        <div class="clickable-button">
+                                            <button class="button is-black is-medium">
+                                                <span>{{ $t('project.general.visit-website') }}</span>
+                                                <span class="icon">
+                                                    <i class="mdi mdi-open-in-new"></i>
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="card-content">
                                     <h2 class="title">{{ $t('project.low-cost-tires.title') }}</h2>
@@ -61,9 +97,21 @@
                         <div class="column is-half">
                             <nuxt-link :to="localePath('projects-boursify')" class="project-card">
                                 <div class="card-image">
-                                    <figure class="image is-4by3">
-                                        <img src="~assets/img/projects/boursify/thumbnail.jpg" alt="Boursify">
-                                    </figure>
+                                    <div class="clickable">
+                                        <div class="clickable-content">
+                                            <figure class="image is-4by3">
+                                                <img src="~assets/img/projects/boursify/thumbnail.jpg" alt="Boursify">
+                                            </figure>
+                                        </div>
+                                        <div class="clickable-button">
+                                            <button class="button is-black is-medium">
+                                                <span>{{ $t('project.general.read-case-study') }}</span>
+                                                <span class="icon">
+                                                    <i class="mdi mdi-clipboard-text"></i>
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="card-content">
                                     <h2 class="title">{{ $t('project.boursify.title') }}</h2>
@@ -75,9 +123,21 @@
                         <div class="column is-half">
                             <a href="http://www.patrimoine-culturel.gouv.qc.ca/lab/" target="_blank" class="project-card">
                                 <div class="card-image">
-                                    <figure class="image is-4by3">
-                                        <img src="~assets/img/projects/mcc/thumbnail.jpg" alt="Ministère de la culture et de l'éducation">
-                                    </figure>
+                                    <div class="clickable">
+                                        <div class="clickable-content">
+                                            <figure class="image is-4by3">
+                                                <img src="~assets/img/projects/mcc/thumbnail.jpg" alt="Minstère de la culture - Laboratoire du patrimoine culturel du Québec">
+                                            </figure>
+                                        </div>
+                                        <div class="clickable-button">
+                                            <button class="button is-black is-medium">
+                                                <span>{{ $t('project.general.visit-website') }}</span>
+                                                <span class="icon">
+                                                    <i class="mdi mdi-open-in-new"></i>
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="card-content">
                                     <h2 class="title">{{ $t('project.mcc.title') }}</h2>
@@ -89,9 +149,21 @@
                         <div class="column is-half">
                             <a href="//jussaume.ca" target="_blank" class="project-card">
                                 <div class="card-image">
-                                    <figure class="image is-4by3">
-                                        <img src="~assets/img/projects/jussaume/thumbnail.jpg" alt="Mobilier Jussaume">
-                                    </figure>
+                                    <div class="clickable">
+                                        <div class="clickable-content">
+                                            <figure class="image is-4by3">
+                                                <img src="~assets/img/projects/jussaume/thumbnail.jpg" alt="Mobilier Jussaume">
+                                            </figure>
+                                        </div>
+                                        <div class="clickable-button">
+                                            <button class="button is-black is-medium">
+                                                <span>{{ $t('project.general.visit-website') }}</span>
+                                                <span class="icon">
+                                                    <i class="mdi mdi-open-in-new"></i>
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="card-content">
                                     <h2 class="title">{{ $t('project.jussaume.title') }}</h2>
