@@ -20,9 +20,11 @@
         </section>
 
         <section id="content" class="section pb-0">
-            <div class="container">
+            <div class="container is-sm">
                 <h2 class="title">Vous avez une idée d'application unique qui changera le monde?</h2>
                 <p class="is-medium">L’équipe Witify prend en charge le développement du logiciel pour transformer votre vision en application complète de grande qualité. Nous savons que votre projet possède ses propres objectifs, ses contraintes et ses caractéristiques uniques. Notre équipe est prête à s’adapter à vos besoins tout en vous guidant afin de garantir votre succès.</p>
+            </div>
+            <div class="container">    
                 <nuxt-link :to="localePath('projects-sauver')" class="clickable show-on-mobile mt-30">
                     <div class="clickable-button">
                         <button class="button is-black is-medium">
@@ -80,11 +82,12 @@
 
         <section class="hero is-light has-text-centered">
             <div class="hero-body">
+                <div class="container is-sm">
+                    <h2 class="title">Notre méthode en 3 phases</h2>
+                    <p class="is-medium mb-50">Notre méthodologie en 3 étapes s’appuie sur une écoute active et une communication fluide qui maximisera le succès de votre produit. Nous voulons comprendre vos objectifs, votre clientèle et réellement mettre en œuvre la meilleure solution pour votre projet.</p>
+                </div>
+
                 <div class="container">
-
-                    <h2 class="title is-size-2 is-spaced">Notre méthode en 3 phases</h2>
-                    <h3 class="subtitle is-size-4 mb-60">Notre méthodologie en 3 étapes s’appuie sur une écoute active et une communication fluide qui maximisera le succès de votre produit. Nous voulons comprendre vos objectifs, votre clientèle et réellement mettre en œuvre la meilleure solution pour votre projet.</h3>
-
                     <div class="columns is-multiline">
 
                         <div class="column is-one-third-desktop">

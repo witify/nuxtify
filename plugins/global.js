@@ -7,10 +7,12 @@ import Footer from '../components/Footer.vue'
 import Reviews from '../components/Reviews.vue'
 import Navigation from '../components/Navigation.vue'
 import ContactForm from '../components/ContactForm.vue'
+import Socials from '../components/Socials.vue'
 import VeeValidate from 'vee-validate'
 
 Vue.use(VeeValidate)
 
+Vue.component('socials', Socials)
 Vue.component('service-card', ServiceCard)
 Vue.component('cta', CTA)
 Vue.component('v-footer', Footer)

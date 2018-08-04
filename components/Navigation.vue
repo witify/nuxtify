@@ -82,6 +82,10 @@
                     v-if="locale.code !== $i18n.locale"
                     :key="locale.code"
                     :to="switchLocalePath(locale.code)">{{ locale.name }}</nuxt-link>
+
+                    <div class="navbar-bottom is-hidden-desktop">
+                        <socials></socials>
+                    </div>
                 </div>
             </div>
         </div>
@@ -120,7 +124,7 @@ export default {
         },
         handleScroll (event) {
             let top = window.pageYOffset
-            this.transparent = this.isTransparent() && top < 100
+            this.transparent = this.isTransparent() && top < 30
         }
     },
     watch: {

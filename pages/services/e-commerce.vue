@@ -110,11 +110,12 @@
 
         <section class="hero is-light has-text-centered">
             <div class="hero-body">
+                <div class="container is-sm">
+                    <h2 class="title">{{ $t('service.e-commerce.3-steps-method') }}</h2>
+                    <h3 class="subtitle mb-50">{{ $t('service.e-commerce.3-steps-method-subheader') }}</h3>
+                </div>
+
                 <div class="container">
-
-                    <h2 class="title is-size-2 is-spaced">{{ $t('service.e-commerce.3-steps-method') }}</h2>
-                    <h3 class="subtitle is-size-4 mb-60">{{ $t('service.e-commerce.3-steps-method-subheader') }}</h3>
-
                     <div class="columns is-multiline">
 
                         <div class="column is-one-third-desktop">
