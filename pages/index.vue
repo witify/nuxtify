@@ -78,7 +78,7 @@
         <div class="container">
           <div class="project-body">
             <h2 class="title">
-              <img class="project-logo" src="~assets/img/projects/start-alberta/logo.png" label="Start Alberta" />
+              <img class="project-logo" src="~assets/img/projects/start-alberta/logo.png" alt="Start Alberta" />
               <span>Start Alberta</span>
             </h2>
             <p class="is-medium">
@@ -107,7 +107,7 @@
         <div class="container">
           <div class="project-body">
             <h2 class="title">
-              <img class="project-logo" src="~assets/img/projects/boursify/logo-icon.svg" label="Boursify" />
+              <img class="project-logo" src="~assets/img/projects/boursify/logo-icon.svg" alt="Boursify" />
               <span>Boursify</span>
             </h2>
             <p class="is-medium">
