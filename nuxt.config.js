@@ -24,6 +24,8 @@ module.exports = {
     '@/assets/sass/main.scss',
   ],
 
+  cache: true,
+
   /*
   ** Build configuration
   */
