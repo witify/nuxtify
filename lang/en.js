@@ -35,7 +35,7 @@ export default {
     },
     about: {
       title: 'About',
-      subtitle: "We are a growing company from Montreal. We love human contact and challenges of all kinds. Our team is dynamic and will be happy to listen to your ideas and bring your projects to the next stage. Each of our associates is duly qualified and passionate about the field. Come and say hi!",
+      subtitle: "We are a growing company from Montreal. We love human contact and challenges of all kinds. Our dynamic team will be happy to listen to your ideas and bring your projects to the next stage.",
       excellence: 'Excellence',
       'excellence-text-1': 'Excellence is at the heart of our values. Every project, interaction and action is based on a deep desire to offer superior quality and the best of ourselves.',
       'excellence-text-2': 'We combine talent and hard work to provide the best tools and the best results. Our team understands your desire to differentiate itself, which is why it takes pride in realizing your idea in the form of a powerful and remarkable digital product.',
@@ -181,7 +181,7 @@ export default {
       'e-commerce': "E-commerce",
       'e-commerce-text': "This service is aimed at retail or purely digital companies that wish to establish a strong online presence that will boost their sales. The solution integrates as much administration tools as a platform dedicated to customers, optimized for their online purchasing experience.",
       'custom-application': "Custom application",
-      'custom-application-text': "This service is intended for companies or 'startups' who wish to initiate / reinforce a single project or transform their idea into a digital reality. A platform is then designed and developed to integrate all the functionalities - visual or technical - that you seek to implement.",
+      'custom-application-text': "This service is intended for companies or 'startups' who wish to initiate & reinforce a single project or transform their idea into a digital reality. A platform is then designed and developed to integrate all the functionalities - visual or technical - that you seek to implement.",
       'learn-more': "Learn more",
     },
     'process-optimisation': {

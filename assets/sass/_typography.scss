@@ -43,7 +43,7 @@ p.is-lead {
 
 p.is-medium {
     font-weight: 400;
-    color: $grey;
+    color: $grey-dark;
     font-size: 1.2rem;
 
     @include mobile() {
