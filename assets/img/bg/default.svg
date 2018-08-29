@@ -4,38 +4,39 @@
 	 viewBox="0 0 2206 768" style="enable-background:new 0 0 2206 768;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:url(#Rectangle_33_1_);}
-	.st1{opacity:0.46;fill:url(#Tracé_11_1_);enable-background:new    ;}
-	.st2{opacity:0.46;fill:url(#Tracé_12_2_);enable-background:new    ;}
-	.st3{opacity:0.46;fill:url(#Tracé_12_3_);enable-background:new    ;}
+	.st1{opacity:0.36;fill:url(#Tracé_11_1_);enable-background:new    ;}
+	.st2{opacity:0.34;fill:url(#Tracé_12_2_);enable-background:new    ;}
+	.st3{opacity:0.33;fill:url(#Tracé_12_3_);enable-background:new    ;}
 </style>
 <title>bg</title>
 <g id="Groupe_62">
 	
-		<linearGradient id="Rectangle_33_1_" gradientUnits="userSpaceOnUse" x1="876.2318" y1="-0.7397" x2="877.3218" y2="-0.3597" gradientTransform="matrix(1920 0 0 847 -1682323.875 848)">
+		<linearGradient id="Rectangle_33_1_" gradientUnits="userSpaceOnUse" x1="1296.0131" y1="768.7397" x2="1297.103" y2="768.3597" gradientTransform="matrix(1920 0 0 -847 -2488304 651344)">
 		<stop  offset="0" style="stop-color:#24067B"/>
 		<stop  offset="1" style="stop-color:#0F31D8"/>
 	</linearGradient>
 	<rect id="Rectangle_33" x="-7.6" y="-4" class="st0" width="2222.5" height="777.7"/>
 	
-		<linearGradient id="Tracé_11_1_" gradientUnits="userSpaceOnUse" x1="876.3842" y1="-0.385" x2="877.4141" y2="-0.4151" gradientTransform="matrix(2627.29 0 0 586.62 -2302935.25 850.5938)">
+		<linearGradient id="Tracé_11_1_" gradientUnits="userSpaceOnUse" x1="1296.1721" y1="768.7806" x2="1297.1925" y2="768.8105" gradientTransform="matrix(2627.29 0 0 -586.62 -3405977 451374.75)">
 		<stop  offset="0" style="stop-color:#1223B5"/>
 		<stop  offset="1" style="stop-color:#09125B"/>
 	</linearGradient>
-	<path id="Tracé_11" class="st1" d="M-404,570.3c397.4-10.9,661.5-222.7,947.1-226.7S1152.2,604.3,1533,607
-		s866.1-150.7,866.1-150.7s180.9,414.1,173.7,422.3s-2765,0-2765,0s-276-198.2-276-209.1S-404,570.3-404,570.3z"/>
+	<path id="Tracé_11" class="st1" d="M-533,294.3c397.4-22.2,661.5-454,947.1-462.2s609.1,531.5,989.9,537s866.1-307.2,866.1-307.2
+		s180.9,844.2,173.7,861s-2765,0-2765,0s-276-404.1-276-426.3C-597.2,474.3-533,294.3-533,294.3z"/>
 	
-		<linearGradient id="Tracé_12_2_" gradientUnits="userSpaceOnUse" x1="876.5251" y1="-0.1146" x2="877.5551" y2="-0.1546" gradientTransform="matrix(3080.3201 269.49 -61.9 707.46 -2700557.75 -235558.1563)">
+		<linearGradient id="Tracé_12_2_" gradientUnits="userSpaceOnUse" x1="1296.4147" y1="768.1671" x2="1297.4432" y2="768.207" gradientTransform="matrix(3080.3201 269.49 61.9 -707.46 -4041411.5 194585.3438)">
+		<stop  offset="0" style="stop-color:#1755E1"/>
+		<stop  offset="1" style="stop-color:#0C2FCD"/>
+	</linearGradient>
+	<path id="Tracé_12" class="st2" d="M2924.5,678.6c-492.4-55.4-915-461.7-1269.5-495.6S1089.8,700,616,668
+		S-543.1,227.8-543.1,227.8s400.7,788.7,408.3,802.3c7.6,13.6,2434.7-97,2434.7-97s687-72.4,688.8-89.8
+		C2990.5,825.9,2924.5,678.6,2924.5,678.6z"/>
+	
+		<linearGradient id="Tracé_12_3_" gradientUnits="userSpaceOnUse" x1="1298.2833" y1="768.7765" x2="1299.3462" y2="768.8178" gradientTransform="matrix(-2641.3049 134.8246 -16.6849 -709.2366 3444495 370846.5625)">
 		<stop  offset="0" style="stop-color:#172CE1"/>
 		<stop  offset="1" style="stop-color:#0C1984"/>
 	</linearGradient>
-	<path id="Tracé_12" class="st2" d="M2837.6,653.3c-492.4-50-927.1-247.7-1281.6-278.3S896.9,568,423.1,539.1S-630,246.6-630,246.6
-		s400.7,711.5,408.3,723.8s2475.9-179.3,2475.9-179.3s645.8,26.5,647.6,10.8S2837.6,653.3,2837.6,653.3z"/>
-	
-		<linearGradient id="Tracé_12_3_" gradientUnits="userSpaceOnUse" x1="878.1353" y1="-0.9599" x2="879.1982" y2="-1.0012" gradientTransform="matrix(-2641.3049 134.8246 16.6849 709.2366 2321913 -117220.7891)">
-		<stop  offset="0" style="stop-color:#172CE1"/>
-		<stop  offset="1" style="stop-color:#0C1984"/>
-	</linearGradient>
-	<path id="Tracé_12_1_" class="st3" d="M-524.6,356.1C-88.7,328.3,180.6,99.5,494,85s715.5,523.6,1134,516s919.6-495,919.6-495
-		s-275.8,870.5-283.1,882.6c-7.3,12-2126.6-45.6-2126.6-45.6s-725.8-425.4-726.5-441.2S-524.6,356.1-524.6,356.1z"/>
+	<path id="Tracé_12_1_" class="st3" d="M-492.6,506.1C-56.7,478.3,212.6,249.5,526,235s715.5,523.6,1134,516s919.6-495,919.6-495
+		s-275.8,870.5-283.1,882.6c-7.3,12-2126.6-45.6-2126.6-45.6s-725.8-425.4-726.5-441.2S-492.6,506.1-492.6,506.1z"/>
 </g>
 </svg>

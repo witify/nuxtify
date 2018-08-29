@@ -79,12 +79,12 @@ export default {
       'contact-us-now': "Contact us now",
     },
     cta: {
-      'see-what-witify': 'Go further with Witify',
-      'fill-the-form': 'Fill out the form to get instant insights regarding your business',
+      'title': 'Which service do you need?',
+      'subtitle': 'See what Witify can do for your business.',
       'free-business-analysis': 'Start a free business analysis',
-      'process-optimisation-text': 'A growing company does not only see its numbers increase, but also its internal complexity. Standardizing processes, centralizing information and having access to effective tools is no longer optional, it becomes a primary need. Make sure you have all the appropriate systems you need to lower costs, to increase productivity, and to grow the right way.',
-      'e-commerce-text': 'With an annual growth of more than 20% expected for the next 5 years, e-commerce is an incredible opportunity. And building a site and a brand that people trust is not a small task. Put the odds on your side using professional tools, conversion-based structures and a team of just skills.',
-      'custom-application-text': 'Each idea is unique. Each idea should also have a unique digital solution to it. A solution that highlights its strengths, its added value and allows the user to enjoy the best possible experience. Ensure optimal results by using experts who can combine the most appropriate technologies for your project.'
+      'process-optimisation-text': "Accelerate your growth & move your business to the superior level",
+      'e-commerce-text': "Build your e-commerce with pros & quickly generate revenues",
+      'custom-application-text': "Tell us your next big idea & discover unsuspected benefits"
     },
     reviews: {
       "nordresa-feedback": "With Witify, you simply do not need anything else. It's a turnkey solution, exactly the way we wanted it, when we needed it on time that suited us. Frankly, if all the suppliers were that way, business would be so easy! Thank you Witify",

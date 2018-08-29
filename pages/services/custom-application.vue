@@ -12,7 +12,7 @@
                 </div>
             </div>
 
-            <div class="scroll-to" v-scroll-to="'#content'">
+            <div class="scroll-to is-hidden-mobile" v-scroll-to="'#content'">
                 <div class="icon">
                     <i class="mdi mdi-chevron-down"></i>
                 </div>
@@ -88,7 +88,7 @@
                 </div>
 
                 <div class="container">
-                    <div class="columns is-multiline">
+                    <div class="columns is-multiline is-variable is-5">
 
                         <div class="column is-one-third-desktop">
                             <div class="phase" v-scroll-to="'#phase1'">

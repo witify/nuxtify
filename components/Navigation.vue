@@ -113,9 +113,7 @@ export default {
                 return this.$nuxt.$route.name.includes('index__') ||
                     this.$nuxt.$route.name.includes('projects-') ||
                     this.$nuxt.$route.name.includes('about') ||
-                    this.$nuxt.$route.name.includes('services-process-optimisation__') ||
-                    this.$nuxt.$route.name.includes('services-e-commerce__') ||
-                    this.$nuxt.$route.name.includes('services-custom-application__')
+                    this.$nuxt.$route.name.includes('services')
             }
             return false
         },

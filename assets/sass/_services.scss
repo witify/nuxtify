@@ -1,6 +1,13 @@
+.page-services {
+    .hero.is-main {
+        background-image: url('~/assets/img/services/bg.jpg');
+    }
+}
+
 .service-item {
 
     margin-bottom: 20px;
+    
 
     .icon.is-circle {
         margin-bottom: 1rem;
@@ -36,12 +43,13 @@ $phase-icon-size-mobile: 35px;
 .phase {
     margin-top: $phase-icon-size / 2;
     position: relative;
-    padding: 1.1rem;
-    padding-top: 2rem;
-    padding-bottom: 1.3rem;
+    padding: 2rem;
+    padding-top: 2.3rem;
+    padding-bottom: 2rem;
     text-align: center;
     display: block;
     border-radius: 5px;
+    box-shadow: 3px 3px 16px rgba(0,0,0,0.1);
     background-color: #fff;
     cursor: pointer;
     @include transition(0.2s);
@@ -50,6 +58,7 @@ $phase-icon-size-mobile: 35px;
         font-size: 1.2rem;
         color: $grey-dark !important;
         font-weight: $weight-medium;
+        font-family: $family-sans-serif;
     }
 
     .tag {

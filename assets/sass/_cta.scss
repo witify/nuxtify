@@ -1,232 +1,38 @@
-.cta {
-    background-image: url('~assets/img/bg/default.svg');
-    background-position: center;
-    background-size: cover;
+.is-cta {
 
-    .hero {
-        text-align: center;
-        padding-bottom: 3rem;
-        background-color: transparent;
-
-        .title {
-            max-width: none;
-        }
-
-        .subtitle {
-            max-width: none;
-            margin-top: -1.25rem !important;
-        }
-
-        @include mobile() {
-            padding-bottom: 0;
-        }
+    .heading {
+        color: #fff;
+        font-size: 1.5rem;
     }
 
-    .container {
-        @include desktop() {
-            border-radius: 5px 5px 0 0;
-            overflow: hidden;
-        }
-    }
-
-    .selections {
-        display: flex;
-
-        @include mobile() {
-            display: block;
-        }
-    }
-
-    .selection {
-        border: none;
-        box-shadow: none;
-        cursor: pointer;
-        outline: none;
-        text-align: left;
-        position: relative;
-        flex-grow: 1;
-        background-color: #fff;
-        border-bottom: 1px solid $white-ter;
-        border-right: 1px solid $white-ter;
-        font-family: $font-family-title;
-        font-weight: $weight-semibold;
-
-        &:last-child {
-            border-right: 1px solid #fff;
-        }
-
-        .selection-circle {
-            border: 1px $grey-lighter solid;
-            border-radius: 30px;
-            display: inline-block;
-            vertical-align: middle;
-            @include transition(0.2s);
-        }
-
-        .selection-icon {
-            display: inline-block;
-            vertical-align: middle;
-        }
-
-        .selection-label {
-            display: inline-block;
-            vertical-align: middle;
-            color: $grey-dark;
-            font-weight: $weight-normal;
-            font-family: $family-sans-serif;
-        }
-
-        &:before {
-            content: '';
-            display: block;
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 4px;
-            @include transition(0.2s);
-            @include transform(scaleY(0));
-        }
-        
-        &.is-active {
-            &:before {
-                @include transform(scaleY(1));
-            }
-            .selection-icon {
-                @include mobile() {
-                    color: #fff;
-                }
-            }
-            .selection-label {
-                @include mobile() {
-                    color: #fff;
-                }
-            }
-            .selection-circle {
-                border-width: 7px;
-                @include touch() {
-                    border-width: 4px;
-                }
-                @include mobile() {
-                    border-color: #fff !important;
-                }
-            }
-            &.is-process-optimisation {
-                &:before {
-                    background-color: $process-optimisation;
-                }
-                .selection-circle {
-                    border-color: $process-optimisation;
-                }
-            }
-            &.is-e-commerce {
-                &:before {
-                    background-color: $e-commerce;
-                }
-                .selection-circle {
-                    border-color: $e-commerce;
-                }
-            }
-            &.is-custom-application {
-                &:before {
-                    background-color: $custom-application;
-                }
-                .selection-circle {
-                    border-color: $custom-application;
-                }
-            }
-        }
-
-        @include desktop() {
-            padding: 30px 20px;
-            .selection-icon {
-                font-size: 1.3rem;
-                height: 1.7rem;
-                width: 1.3rem;
-                margin-right: 10px;
-            }
-            .selection-label { 
-                font-size: 1.1rem;
-            }
-            .selection-circle {
-                height: 22px;
-                width: 22px;
-                margin-right: 20px;
-            }
-        }
-
-        @include touch() {
-            padding: 20px 15px;
-            border-right: none;
-            .selection-icon {
-                font-size: 1rem;
-                margin-right: 0;
-                position: relative;
-            }
-            .selection-label {
-                font-size: 1rem;
-                position: relative;
-            }
-            .selection-circle {
-                height: 16px;
-                width: 16px;
-                margin-right: 10px;
-                position: relative;
-            }
-        }
-
-        @include mobile() {
-            width: 100%;
-            background-color: #fff;
-            &:before {
-                height: 100%;
-                z-index: 0;
-            }
-            .selection-icon {
-                font-size: 1.1rem;
-                height: 1.5rem;
-                width: 1.1rem;
-                margin-right: 10px;
-            }
-            .selection-label { 
-                font-size: 1.1rem;
-            }
-            .selection-circle {
-                height: 22px;
-                width: 22px;
-                margin-right: 20px;
-            }
-        }
+    .buttons {
+        margin-top: 40px;
+        justify-content: center;
     }
 
     .service {
-        background-color: #fff;
-    }
-
-    .service-image-wrapper {
-        text-align: center;
-        overflow: hidden;
-    }
-
-    .service-image {
-        padding-top: 2.5rem;
-        padding-bottom: 2.5rem;
-        max-width: 500px;
-        height: 450px;
-        display: block;
+        max-width: 700px;
         margin: 0 auto;
+        margin-top: 40px;
     }
 
-    .service-content {
-        display: flex;
-        height: 100%;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-        padding: 1.5rem;
+    .hero-body {
+        background-size: 45%;
+        background-repeat: no-repeat;
+        background-position: 140%;
 
-        .button {
-            margin-top: 20px;
+        @include mobile() {
+            background-image: none;
         }
+    }
+
+    .hero-body.is-process-optimisation {
+        background-image: url('~assets/img/services/process-optimisation/illustration.svg');
+    }
+    .hero-body.is-e-commerce {
+        background-image: url('~assets/img/services/e-commerce/illustration.svg');
+    }
+    .hero-body.is-custom-application {
+        background-image: url('~assets/img/services/custom-application/illustration.svg');
     }
 }

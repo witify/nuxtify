@@ -24,14 +24,6 @@
     }
 }
 
-.is-project {
-    .hero.is-main .scroll-to {
-        @include mobile() {
-            display: block;
-        }
-    }
-}
-
 .project-summary {
     .project-summary-item {
         margin-bottom: 30px;

@@ -39,12 +39,13 @@
             font-size: 3.2rem;
             line-height: 1.1;
             margin-bottom: 1rem;
-
+            
             span {
                 color: #fff;
             }
-
+            
             @include mobile() {
+                margin-top: 3rem;
                 font-size: 1.6rem;
             }
         }
@@ -70,6 +71,10 @@
                 color: $primary;
             }
 
+            @include desktop() {
+                font-size: 2.4rem;
+            }
+
             @include mobile() {
                 margin-bottom: 1.5rem;
             }
@@ -77,7 +82,10 @@
 
         .subtitle {
             color: $grey;
-            font-size: 1.5rem;
+
+            @include desktop() {
+                font-size: 1.8rem;
+            }
         }
 
         .services {

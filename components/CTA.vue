@@ -1,118 +1,76 @@
 <template>
-    <div class="cta">
+    <div class="is-cta hero has-text-centered has-border-bottom has-border-top is-bold" :class="'is-' + selected">
 
-        <div class="hero is-primary">
-            <div class="hero-body">
-                <div class="container is-small">
-                    <h1 class="title is-size-2">
-                        {{ $t('pages.cta.see-what-witify') }}
-                    </h1>
-                    <h2 class="subtitle is-size-4">
-                        {{ $t('pages.cta.fill-the-form') }}
-                    </h2>
-                </div>
-            </div>
+        <div class="hero-body" :class="'is-' + selected">
 
-            <div class="scroll-to" v-scroll-to="'#cta'">
-                <div class="icon">
-                    <i class="mdi mdi-chevron-down"></i>
-                </div>
-            </div>
+            <h1 class="heading ">
+                {{ $t('pages.cta.title') }}
+            </h1>
 
-        </div>
+            <div class="buttons mt-10">
 
-        <div id="cta" class="container">
-            <div class="selections">
-                <button class="selection is-process-optimisation" :class="{'is-active': selected == 'process-optimisation'}" @click="selected = 'process-optimisation'">
-                    <div class="selection-circle"></div>
-                    <div class="selection-icon icon">
+                <button class="button is-medium is-rounded is-process-optimisation" :class="{'is-inverted is-outlined': selected !== 'process-optimisation'}" @click="selected = 'process-optimisation'">
+                    <div class="icon">
                         <i class="mdi mdi-rocket"></i>
                     </div>
-                    <div class="selection-label">{{ $t('pages.services.process-optimisation') }}</div>
+                    <span>{{ $t('pages.services.process-optimisation') }}</span>
                 </button>
-                <button class="selection is-e-commerce" :class="{'is-active': selected == 'e-commerce'}" @click="selected = 'e-commerce'">
-                    <div class="selection-circle"></div>
-                    <div class="selection-icon icon">
+
+                <button class="button is-medium is-rounded is-e-commerce" :class="{'is-inverted is-outlined': selected !== 'e-commerce'}" @click="selected = 'e-commerce'">
+                    <div class="icon">
                         <i class="mdi mdi-store"></i>
                     </div>
-                    <div class="selection-label">{{ $t('pages.services.e-commerce') }}</div>
+                    <span>{{ $t('pages.services.e-commerce') }}</span>
                 </button>
-                <button class="selection is-custom-application" :class="{'is-active': selected == 'custom-application'}" @click="selected = 'custom-application'">
-                    <div class="selection-circle"></div>
-                    <div class="selection-icon icon">
+
+                <button class="button is-medium is-rounded is-custom-application" :class="{'is-inverted is-outlined': selected !== 'custom-application'}" @click="selected = 'custom-application'">
+                    <div class="icon">
                         <i class="mdi mdi-server-network"></i>
                     </div>
-                    <div class="selection-label">{{ $t('pages.services.custom-application') }}</div>
+                    <span>{{ $t('pages.services.custom-application') }}</span>
                 </button>
-            </div>
 
+            </div>
+            
             <transition name="cta" mode="out-in">
 
                 <div v-if="selected == 'process-optimisation'" class="service" key="1">
-                    <div class="columns is-gapless">
-                        <div class="column is-half">
-                            <div class="service-image-wrapper is-hidden-mobile">
-                                <img src="~assets/img/services/process-optimisation/illustration.svg" alt="Process optimisation service" class="service-image">
-                            </div>
-                        </div>
-                        <div class="column is-half">
-                            <div class="service-content">
-                                <p class="is-medium">{{ $t('pages.cta.process-optimisation-text') }}</p>
-                                <button class="button is-medium is-process-optimisation">
-                                    <span>{{ $t('pages.cta.free-business-analysis') }}</span>
-                                    <span class="icon">
-                                        <i class="mdi mdi-arrow-right"></i>
-                                    </span>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
+
+                    <h2 class="title">{{ $t('pages.cta.process-optimisation-text') }}</h2>
+                    <nuxt-link :to="localePath('contact')" class="button is-medium is-white">
+                        <span>{{ $t('pages.cta.free-business-analysis') }}</span>
+                        <span class="icon">
+                            <i class="mdi mdi-arrow-right"></i>
+                        </span>
+                    </nuxt-link>
+
                 </div>
 
-                <div v-else-if="selected == 'e-commerce'" class="service" key="2">
-                    <div class="columns is-gapless">
-                        <div class="column is-half">
-                            <div class="service-image-wrapper is-hidden-mobile">
-                                <img src="~assets/img/services/e-commerce/illustration.svg" alt="E-commerce service" class="service-image">
-                            </div>
-                        </div>
-                        <div class="column is-half">
-                            <div class="service-content">
-                                <p class="is-medium">{{ $t('pages.cta.e-commerce-text') }}</p>
-                                <button class="button is-medium is-e-commerce">
-                                    <span>{{ $t('pages.cta.free-business-analysis') }}</span>
-                                    <span class="icon">
-                                        <i class="mdi mdi-arrow-right"></i>
-                                    </span>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
+                <div v-if="selected == 'e-commerce'" class="service" key="1">
+
+                    <h2 class="title">{{ $t('pages.cta.e-commerce-text') }}</h2>
+                    <nuxt-link :to="localePath('contact')" class="button is-medium is-white">
+                        <span>{{ $t('pages.cta.free-business-analysis') }}</span>
+                        <span class="icon">
+                            <i class="mdi mdi-arrow-right"></i>
+                        </span>
+                    </nuxt-link>
+
                 </div>
 
-                <div v-else-if="selected == 'custom-application'" class="service" key="3">
-                    <div class="columns is-gapless">
-                        <div class="column is-half">
-                            <div class="service-image-wrapper is-hidden-mobile">
-                                <img src="~assets/img/services/custom-application/illustration.svg" alt="Custom application service" class="service-image">
-                            </div>
-                        </div>
-                        <div class="column is-half">
-                            <div class="service-content">
-                                <p class="is-medium">{{ $t('pages.cta.custom-application-text') }}</p>
-                                <button class="button is-medium is-custom-application">
-                                    <span>{{ $t('pages.cta.free-business-analysis') }}</span>
-                                    <span class="icon">
-                                        <i class="mdi mdi-arrow-right"></i>
-                                    </span>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
+                <div v-if="selected == 'custom-application'" class="service" key="1">
+
+                    <h2 class="title">{{ $t('pages.cta.custom-application-text') }}</h2>
+                    <nuxt-link :to="localePath('contact')" class="button is-medium is-white">
+                        <span>{{ $t('pages.cta.free-business-analysis') }}</span>
+                        <span class="icon">
+                            <i class="mdi mdi-arrow-right"></i>
+                        </span>
+                    </nuxt-link>
+
                 </div>
 
             </transition>
-
         </div>
 
     </div>

@@ -80,7 +80,7 @@ body {
         font-size: 3rem;
 
         @include mobile() {
-            font-size: 2.4rem;
+            font-size: 2rem;
         }
     }
 
@@ -104,12 +104,6 @@ body {
         text-align: center;
         .title, .subtitle {
             max-width: none;
-        }
-    }
-
-    .scroll-to {
-        @include mobile() {
-            display: none;
         }
     }
 }
@@ -149,6 +143,14 @@ body {
     }
 }
 
+.hero.has-border-top {
+    border-top: solid 1px $white-ter;
+}
+
+.hero.has-border-bottom {
+    border-bottom: solid 1px $white-ter;
+}
+
 /*
 |--------------------------------------------------------------------------
 | Section
@@ -174,7 +176,7 @@ body {
 
     @include tablet() {
         min-height: 70vh;
-    } 
+    }
 }
 
 /*

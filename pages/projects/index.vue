@@ -6,7 +6,7 @@
             <section class="hero is-main">
                 <div class="hero-body">
                     <div class="container">
-                        <h1 class="title">{{ $t('pages.projects.featured-projects') }}</h1>
+                        <h1 class="title is-spaced">{{ $t('pages.projects.featured-projects') }}</h1>
                         <h2 class="subtitle">{{ $t('pages.projects.subtitle') }}</h2>
                     </div>
                 </div>

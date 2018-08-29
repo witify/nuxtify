@@ -45,7 +45,7 @@ export default {
       'boldness-text': 'Notre équipe est audacieuse et innovante. Nous osons saisir les opportunités et transformer en atouts les défis qui peuvent se présenter sur votre route. Chaque épreuve est une occasion de repousser les limites de l’innovation et de la créativité. Nous croyons qu’il est important d’entreprendre des projets, de braver les obstacles et de constamment aspirer à mieux que le statu quo.' 
     },
     contact: {
-      index: 'Contact',
+      index: 'Nous joindre',
       title: 'Nous joindre',
       subtitle: 'Nous sommes de vraies personnes ici à Montréal. Nous sommes prêts à répondre à vos questions et à vous aider, autant que nous le pouvons.',
       coordinates: 'Coordonnées',
@@ -80,12 +80,12 @@ export default {
       'contact-us-now': "Nous joindre",
     },
     cta: {
-      'see-what-witify': 'Voyez ce que Witify peut faire pour votre entreprise',
-      'fill-the-form': 'Remplissez le formulaire pour obtenir instantanément des observations clés sur votre entreprise',
+      'title': 'De quel service avez-vous de besoin?',
+      'subtitle': 'Voyez ce que Witify peut faire pour votre entreprise',
       'free-business-analysis': 'Analyse commerciale gratuite',
-      'process-optimisation-text': "Une entreprise qui croît ne voit pas seulement ses chiffres grossir, mais aussi sa complexité interne. Standardiser les processus, centraliser l'information et avoir accès à des outils efficaces n'est plus optionnel, cela devient un besoin principal. Assurez-vous d'avoir en place tous les systèmes nécessaires pour diminuer vos coûts, augmenter votre productivité et croître de la bonne manière.",
-      'e-commerce-text': "Avec une croissance annuelle de plus de 20% prévue pour les 5 prochaines années, le commerce en ligne est une opportunité incroyable. Et construire un site et une marque en qui les gens ont confiance n\'est pas une mince tâche. Mettez les chances de votre côté en utilisant des outils professionnels, des structures basées sur la conversion et une équipe regroupant les justes compétences.",
-      'custom-application-text': "Chaque idée est unique. Chaque idée devrait aussi avoir une solution digitale unique à elle. Une solution qui met en valeur ses forces, sa valeur ajoutée et permet à l'utilisateur de vivre la meilleure expérience possible. Garantissez-vous un résultat optimal en recourant à des experts pouvant joindre les technologies les plus adaptées pour votre projet."
+      'process-optimisation-text': "Accélérez votre croissance et faites passer votre entreprise au niveau supérieur",
+      'e-commerce-text': "Construisez votre e-commerce avec des pros et générez rapidement des revenus",
+      'custom-application-text': "Faites nous part de votre prochaine grande idée et poussez la plus loin"
     },
     reviews: {
       "nordresa-feedback": "Avec Witify, on n’a simplement plus besoin d’autre chose. C’est une solution clé-en-main, exactement comme on le souhaitait, quand on en avait besoin dans les délais qui nous convenait. Franchement, si tous les fournisseurs étaient de cette trempe, les affaires seraient tellement facile ! Merci Witify",

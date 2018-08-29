@@ -1,10 +1,10 @@
 <template>
     <div class="page-about">
 
-        <div class="hero is-main is-medium is-dark is-center">
+        <div class="hero is-main is-fullheight is-dark is-center">
             <div class="hero-body">
                 <div class="container">
-                    <h1 class="title">{{ $t('pages.about.title') }}</h1>
+                    <h1 class="title is-spaced">{{ $t('pages.about.title') }}</h1>
                     <h2 class="subtitle" v-html="$t('pages.about.subtitle')"></h2>
                 </div>
             </div>
@@ -160,7 +160,7 @@
 
         </section>
 
-        <section class="diptych is-border-bottom">
+        <section class="diptych">
             <div class="container">
                 <div class="diptych-body">
                     <div class="media is-aligned mb-40">
