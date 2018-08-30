@@ -129,18 +129,6 @@ body {
     background-image: url('~assets/img/bg/default.svg');
 }
 
-.hero.is-business {
-    background-image: url('~assets/img/bg/business.jpg');
-
-    .title {
-        font-size: 2rem;
-    }
-
-    .subtitle {
-        font-size: 1.2rem;
-    }
-}
-
 .hero.is-quote {
     .title {
         font-weight: $weight-light;

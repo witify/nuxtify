@@ -6,6 +6,14 @@
   </div>
 </template>
 
-<style>
+<script>
+import Navigation from '../components/Navigation.vue'
+import Footer from '../components/Footer.vue'
 
-</style>
+export default {
+  components: {
+    'v-navigation': Navigation,
+    'v-footer': Footer
+  }
+}
+</script>

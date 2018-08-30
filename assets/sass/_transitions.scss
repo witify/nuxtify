@@ -1,3 +1,5 @@
+/* purgecss start ignore */
+
 /*
  |--------------------------------------------------------------------------
  | Fade
@@ -47,7 +49,7 @@
  |--------------------------------------------------------------------------
  */
 
- .slideLeft-enter-active, .slideLeft-leave-active {
+.slideLeft-enter-active, .slideLeft-leave-active {
   @include transition(all 0.3s cubic-bezier(0.23, 1, 0.32, 1));
 }
 
@@ -76,7 +78,7 @@
  |--------------------------------------------------------------------------
  */
 
- .slideLeftRight-enter-active, .slideLeftRight-leave-active {
+.slideLeftRight-enter-active, .slideLeftRight-leave-active {
   @include transition(all 0.4s cubic-bezier(0.23, 1, 0.32, 1));
 }
 
@@ -90,29 +92,4 @@
   opacity: 0;
 }
 
-/*
- |--------------------------------------------------------------------------
- | CTA
- |--------------------------------------------------------------------------
- */
-
-.cta-enter-active, .cta-leave-active {
-  @include transition(all .2s cubic-bezier(0.23, 1, 0.32, 1));
-  
-  .service-image, .service-content {
-    @include transition(all .2s cubic-bezier(0.23, 1, 0.32, 1));
-  }
-}
-
-.cta-enter, .cta-leave-active {
-
-  .service-image {
-    @include transform(translateY(60px));
-    opacity: 0;
-  }
-
-  .service-content {
-    @include transform(translateX(60px));
-    opacity: 0;
-  }
-}
+/* purgecss end ignore */

@@ -2,7 +2,16 @@
     position: relative; // for loading
 }
 
-.input, .textarea {
+.input, .textarea, .select {
     border-color: $white-ter;
     background-color: $white-ter;
+}
+
+.select select {
+    border-color: $white-ter;
+    background-color: $white-ter;
+}
+
+.label {
+    font-weight: $weight-semibold;
 }

@@ -40,85 +40,20 @@
                             <h2 class="title is-size-3 has-text-weight-normal">What makes our products <strong class="has-text-weight-bold">SUPER</strong></h2>
                             <p class="is-medium mb-50">We combine talent and hard work to provide the best tools and the best results. Our team understands your desire to differentiate itself.</p>
 
-                            <b-collapse class="card" animation="none" :open="false">
-                                <div slot="trigger" slot-scope="props" class="card-header">
-                                    <h2 class="card-header-title title is-size-5 mb-0">Secure</h2>
-                                    <a class="card-header-icon">
-                                        <b-icon
-                                            :icon="props.open ? 'chevron-down' : 'chevron-right'">
-                                        </b-icon>
-                                    </a>
-                                </div>
-                                <div class="card-content">
-                                    <div class="content">
-                                        <p class="is-size-5 has-text-weight-light has-text-grey">All our web applications are protected against the common <strong>cyper-attacks</strong> and apply the best practices in terms of privacy and <strong>data protection</strong>.</p>
-                                    </div>
-                                </div>
-                            </b-collapse>
+                            <h3 class="title is-size-5 mb-5">Secure</h3>
+                            <p class="is-medium mb-30">All our web applications are protected against the common <strong>cyper-attacks</strong> and apply the best practices in terms of privacy and <strong>data protection</strong>.</p>
 
-                            <b-collapse class="card" animation="none" :open="false">
-                                <div slot="trigger" slot-scope="props" class="card-header">
-                                    <h2 class="card-header-title title is-size-5 mb-0">Usable</h2>
-                                    <a class="card-header-icon">
-                                        <b-icon
-                                            :icon="props.open ? 'chevron-down' : 'chevron-right'">
-                                        </b-icon>
-                                    </a>
-                                </div>
-                                <div class="card-content">
-                                    <div class="content">
-                                        <p class="is-size-5 has-text-weight-light has-text-grey">Each digital product we craft is built to offer the <strong>best user experience</strong> possible. Our interfaces are fast and easy to use and learn.</p>
-                                    </div>
-                                </div>
-                            </b-collapse>
+                            <h3 class="title is-size-5 mb-5">Usable</h3> 
+                            <p class="is-medium mb-30">Each digital product we craft is built to offer the <strong>best user experience</strong> possible. Our interfaces are fast and easy to use and learn.</p>
 
-                            <b-collapse class="card" animation="none" :open="false">
-                                <div slot="trigger" slot-scope="props" class="card-header">
-                                    <h2 class="card-header-title title is-size-5 mb-0">Powerful</h2>
-                                    <a class="card-header-icon">
-                                        <b-icon
-                                            :icon="props.open ? 'chevron-down' : 'chevron-right'">
-                                        </b-icon>
-                                    </a>
-                                </div>
-                                <div class="card-content">
-                                    <div class="content">
-                                        <p class="is-size-5 has-text-weight-light has-text-grey">Every product we build is custom made and specificaly tailored for our client. By switching to a custom solution, many of our clients saw a <strong>hude upgrade in terms of performance, efficiency and usability</strong>.</p>
-                                    </div>
-                                </div>
-                            </b-collapse>
-
-                            <b-collapse class="card" animation="none" :open="false">
-                                <div slot="trigger" slot-scope="props" class="card-header">
-                                    <h2 class="card-header-title title is-size-5 mb-0">Efficient</h2>
-                                    <a class="card-header-icon">
-                                        <b-icon
-                                            :icon="props.open ? 'chevron-down' : 'chevron-right'">
-                                        </b-icon>
-                                    </a>
-                                </div>
-                                <div class="card-content">
-                                    <div class="content">
-                                        <p class="is-size-5 has-text-weight-light has-text-grey">Our products are blazing fast on every plaforms. They are tailored to our clients needs, <strong>making every action faster and easier to learn</strong>.</p>
-                                    </div>
-                                </div>
-                            </b-collapse>
-
-                            <b-collapse class="card" animation="none" :open="false">
-                                <div slot="trigger" slot-scope="props" class="card-header">
-                                    <h2 class="card-header-title title is-size-5 mb-0">Reliable</h2>
-                                    <a class="card-header-icon">
-                                        <b-icon
-                                            :icon="props.open ? 'chevron-down' : 'chevron-right'">
-                                        </b-icon>
-                                    </a>
-                                </div>
-                                <div class="card-content">
-                                    <div class="content">
-                                        <p class="is-size-5 has-text-weight-light has-text-grey">Each web solution is hosted on entreprise-level servers. Your data is safely stored and duplicated on the cloud. The high quality of our code allows for easy updates and greater reliability.</p>
-                                    </div>
-                                </div>
-                            </b-collapse>
+                            <h3 class="title is-size-5 mb-5">Powerful</h3>
+                            <p class="is-medium mb-30">Every product we build is custom made and specificaly tailored for our client. By switching to a custom solution, many of our clients saw a <strong>hude upgrade in terms of performance, efficiency and usability</strong>.</p>
+                            
+                            <h3 class="title is-size-5 mb-5">Efficient</h3>
+                            <p class="is-medium mb-30">Our products are blazing fast on every plaforms. They are tailored to our clients needs, <strong>making every action faster and easier to learn</strong>.</p>
+                                  
+                            <h3 class="title is-size-5 mb-5">Reliable</h3>
+                            <p class="is-medium mb-30">Each web solution is hosted on entreprise-level servers. Your data is safely stored and duplicated on the cloud. The high quality of our code allows for easy updates and greater reliability.</p>
 
                         </div>
 

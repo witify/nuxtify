@@ -130,7 +130,7 @@
         <h2 class="title">{{ $t('pages.home.we-are-awesome') }}</h2>
         <img src="~assets/img/home/stars.svg" alt="5 stars rating review" class="stars">
       </div>
-      <v-reviews></v-reviews>
+      <reviews></reviews>
     </section>
     
     <section class="section">
@@ -172,6 +172,8 @@
 
 <script>
 import HomeTitle from '../components/HomeTitle.vue'
+import Reviews from '../components/Reviews.vue'
+import ServiceCard from '../components/ServiceCard.vue'
 
 export default {
   head() {
@@ -180,7 +182,9 @@ export default {
     }
   },
   components: {
-    HomeTitle
+    HomeTitle,
+    Reviews,
+    ServiceCard
   }
 }
 </script>

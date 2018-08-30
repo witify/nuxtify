@@ -13,7 +13,7 @@
 
             <section class="section">
                 <div class="container">
-                    <div class="columns is-variable is-6">
+                    <div class="columns">
                         <div class="column is-one-third-desktop">
                             <h2 class="title">{{ $t('pages.contact.coordinates') }}</h2>
                             
@@ -65,12 +65,16 @@
 </template>
 
 <script>
+import ContactForm from '../components/ContactForm.vue'
 export default {
     nuxtI18n: {
         paths: {
             en: '/contact-us',
             fr: '/nous-joindre'
         }
+    },
+    components: {
+        'contact-form': ContactForm
     },
     head() {
         return {

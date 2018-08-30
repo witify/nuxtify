@@ -34,7 +34,7 @@
                 </div>
             </div>
             <div class="diptych-image pt-40 pb-40">
-                <img src="~assets/img/services/process-optimisation/illustration.svg" alt="Process optimisation">
+                <img src="~assets/img/services/process-optimisation/illustration.png" alt="Process optimisation">
             </div>
         </section>
 
@@ -55,7 +55,7 @@
                 </div>
             </div>
             <div class="diptych-image pt-40 pb-40">
-                <img src="~assets/img/services/e-commerce/illustration.svg" alt="E-commerce">
+                <img src="~assets/img/services/e-commerce/illustration.png" alt="E-commerce">
             </div>
         </section>
 
@@ -76,7 +76,7 @@
                 </div>
             </div>
             <div class="diptych-image pt-40 pb-40">
-                <img src="~assets/img/services/custom-application/illustration.svg" alt="Custom application">
+                <img src="~assets/img/services/custom-application/illustration.png" alt="Custom application">
             </div>
         </section>
     </div>

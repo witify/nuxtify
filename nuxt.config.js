@@ -1,3 +1,5 @@
+const purgecss = require('@fullhuman/postcss-purgecss')
+
 module.exports = {
 
   /*
@@ -11,8 +13,9 @@ module.exports = {
       { hid: 'description', name: 'description', content: 'Witify Official Website' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/2.6.95/css/materialdesignicons.min.css' },
+    ],
   },
 
   /*
@@ -44,10 +47,20 @@ module.exports = {
       }
     },
 
+    analyze: false,
+
     postcss: {
-      plugins: {
-        'postcss-custom-properties': false,
-      }
+      plugins: [
+        purgecss({
+          content: [
+            './pages/**/*.vue',
+            './layouts/**/*.vue',
+            './components/**/*.vue'
+          ],
+          whitelist: ['html', 'body'],
+          whitelistPatterns: [/nuxt-/]
+        })
+      ]
     }
   },
 
@@ -66,7 +79,6 @@ module.exports = {
    */
 
   modules: [
-    'nuxt-buefy',
     ['nuxt-i18n', {
       defaultLocale: 'en',
       locales: [
@@ -91,18 +103,14 @@ module.exports = {
     }]
   ],
 
-  buefy: {
-    css: false
-  },
-
   /**
    * Plugins
    */
 
   plugins: [
     '~/plugins/global.js',
-    { src: '~/plugins/carousel', ssr: false },
     { src: '~plugins/crisp.js', ssr: false },
     { src: '~plugins/ga.js', ssr: false }
   ]
 }
+

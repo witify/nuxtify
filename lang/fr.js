@@ -52,6 +52,7 @@ export default {
       email: 'Email',
       phone: 'Téléphone',
       address: 'Adresse',
+      message: 'Décrivez votre projet',
       name: 'Nom',
       to: 'à',
       'not-sure': 'Incertain',
@@ -66,6 +67,7 @@ export default {
       friday: 'Vendredi',
       saturday: 'Samedi',
       sunday: 'Dimanche',
+      submit: 'Envoyer',
       'which-time': 'À quel moment de la journée?',
       'message-sent': 'Message envoyé avec succès!',
       'back-to-you': 'Nous vous reviendrons dès que possible'

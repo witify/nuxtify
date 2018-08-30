@@ -109,7 +109,7 @@
                 </div>
             </div>
             <div class="diptych-image pt-80">
-                <img src="~assets/img/projects/sauver/gestion.jpg" alt="Gestion de flotte en temps réel" class="has-shadow">
+                <img src="~assets/img/projects/sauver/gestion.png" alt="Gestion de flotte en temps réel" class="has-shadow">
             </div>
         </section>
 
@@ -121,7 +121,7 @@
                 </div>
             </div>
             <div class="diptych-image pt-80">
-                <img src="~assets/img/projects/sauver/reservation.jpg" alt="Reservation rapide et intuitive sur ordinateur et mobile" class="has-shadow">
+                <img src="~assets/img/projects/sauver/reservation.png" alt="Reservation rapide et intuitive sur ordinateur et mobile" class="has-shadow">
             </div>
         </section>
 
