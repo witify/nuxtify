@@ -22,7 +22,21 @@
         background-position: 140%;
 
         @include mobile() {
-            background-image: none;
+            padding-bottom: 16rem;
+            background-size: 100% 80%;
+            background-position: 0px 278%;
+        }
+
+        @include until(400px) {
+            padding-bottom: 10rem;
+            background-size: 100% 39%;
+            background-position: 0 131%;
+        }
+    }
+
+    .button {
+        @include until(500px) {
+            width: 100%;
         }
     }
 

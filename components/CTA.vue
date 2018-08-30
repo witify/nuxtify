@@ -37,7 +37,7 @@
                 <div v-if="selected == 'process-optimisation'" class="service" key="1">
 
                     <h2 class="title">{{ $t('pages.cta.process-optimisation-text') }}</h2>
-                    <nuxt-link :to="localePath('contact')" class="button is-medium is-white">
+                    <nuxt-link :to="localePath('contact')" class="button is-large is-white is-shiny is-rounded">
                         <span>{{ $t('pages.cta.free-business-analysis') }}</span>
                         <span class="icon">
                             <i class="mdi mdi-arrow-right"></i>
@@ -49,7 +49,7 @@
                 <div v-if="selected == 'e-commerce'" class="service" key="1">
 
                     <h2 class="title">{{ $t('pages.cta.e-commerce-text') }}</h2>
-                    <nuxt-link :to="localePath('contact')" class="button is-medium is-white">
+                    <nuxt-link :to="localePath('contact')" class="button is-large is-white is-shiny is-rounded">
                         <span>{{ $t('pages.cta.free-business-analysis') }}</span>
                         <span class="icon">
                             <i class="mdi mdi-arrow-right"></i>
@@ -61,7 +61,7 @@
                 <div v-if="selected == 'custom-application'" class="service" key="1">
 
                     <h2 class="title">{{ $t('pages.cta.custom-application-text') }}</h2>
-                    <nuxt-link :to="localePath('contact')" class="button is-medium is-white">
+                    <nuxt-link :to="localePath('contact')" class="button is-large is-white is-shiny is-rounded">
                         <span>{{ $t('pages.cta.free-business-analysis') }}</span>
                         <span class="icon">
                             <i class="mdi mdi-arrow-right"></i>

@@ -81,7 +81,7 @@ export default {
     cta: {
       'title': 'Which service do you need?',
       'subtitle': 'See what Witify can do for your business.',
-      'free-business-analysis': 'Start a free business analysis',
+      'free-business-analysis': 'Start you project',
       'process-optimisation-text': "Accelerate your growth & move your business to the superior level",
       'e-commerce-text': "Build your e-commerce with pros & quickly generate revenues",
       'custom-application-text': "Tell us your next big idea & discover unsuspected benefits"
