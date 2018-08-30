@@ -17,7 +17,7 @@
             </div>
         </div>
 
-        <section id="content" class="diptych is-border-bottom is-imageless-mobile">
+        <section id="content" class="diptych is-border-bottom ">
             <div class="container">
                 <div class="diptych-body">
                     <div class="icon is-circle mb-20">
@@ -38,7 +38,7 @@
             </div>
         </section>
 
-        <section class="diptych is-border-bottom is-right is-imageless-mobile">
+        <section class="diptych is-border-bottom is-right ">
             <div class="container">
                 <div class="diptych-body">
                     <div class="icon is-circle mb-20">
@@ -59,7 +59,7 @@
             </div>
         </section>
 
-        <section class="diptych is-border-bottom is-imageless-mobile">
+        <section class="diptych is-border-bottom ">
             <div class="container">
                 <div class="diptych-body">
                     <div class="icon is-circle mb-20">

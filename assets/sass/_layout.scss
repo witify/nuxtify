@@ -49,6 +49,15 @@ body {
             }
         }
     }
+
+    &.is-fullheight {
+        @include touch() {
+            min-height: initial;
+            .scroll-to {
+                display: none;
+            }
+        }
+    }
 }
 
 .wrapper .hero.is-main .hero-body {

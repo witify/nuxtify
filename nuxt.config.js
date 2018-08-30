@@ -46,7 +46,7 @@ module.exports = {
 
     postcss: {
       plugins: {
-        'postcss-custom-properties': false
+        'postcss-custom-properties': false,
       }
     }
   },
@@ -101,6 +101,8 @@ module.exports = {
 
   plugins: [
     '~/plugins/global.js',
-    { src: '~/plugins/carousel', ssr: false }
+    { src: '~/plugins/carousel', ssr: false },
+    { src: '~plugins/crisp.js', ssr: false },
+    { src: '~plugins/ga.js', ssr: false }
   ]
 }

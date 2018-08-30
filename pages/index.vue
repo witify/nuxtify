@@ -57,16 +57,10 @@
 
         <div class="services">
           <div class="container">
-            <div class="columns is-desktop">
-              <div class="column">
-                <service-card :title="$t('pages.services.process-optimisation')" slug="process-optimisation" icon="rocket"></service-card>
-              </div>
-              <div class="column">
-                <service-card :title="$t('pages.services.e-commerce')" slug="e-commerce" icon="store"></service-card>
-              </div>
-              <div class="column">
-                <service-card :title="$t('pages.services.custom-application')" slug="custom-application" icon="server-network"></service-card>
-              </div>
+            <div class="buttons">
+              <service-card :title="$t('pages.services.process-optimisation')" slug="process-optimisation" icon="rocket"></service-card>
+              <service-card :title="$t('pages.services.e-commerce')" slug="e-commerce" icon="store"></service-card>
+              <service-card :title="$t('pages.services.custom-application')" slug="custom-application" icon="server-network"></service-card>
             </div>
           </div>
         </div>
@@ -96,8 +90,8 @@
         </div>
 
         <div class="project-media">
-            <img src="~assets/img/projects/start-alberta/iphone.png" alt="Start Alberta interface on iphone" class="project-iphone" v-vpshow />
-            <div class="project-bg" v-vpshow></div>
+            <img src="~assets/img/projects/start-alberta/iphone.png" alt="Start Alberta interface on iphone" class="project-iphone" />
+            <div class="project-bg"></div>
         </div>
 
     </section>
@@ -125,8 +119,8 @@
         </div>
 
         <div class="project-media">
-            <img src="~assets/img/projects/boursify/iphone.png" alt="Boursify interface on iphone" class="project-iphone" v-vpshow />
-            <div class="project-bg" v-vpshow></div>
+            <img src="~assets/img/projects/boursify/iphone.png" alt="Boursify interface on iphone" class="project-iphone" />
+            <div class="project-bg"></div>
         </div>
 
     </section>
@@ -162,7 +156,7 @@
       <div class="hero-body">
         <div class="container">
           <h2 class="title">{{ $t('pages.footer.next-big-idea') }}</h2>
-          <nuxt-link :to="localePath('contact')" class="button is-white is-medium is-outlined">
+          <nuxt-link :to="localePath('contact')" class="button is-white is-medium is-shiny is-rounded">
             <span>{{ $t('pages.footer.contact-us-now') }}</span>
             <span class="icon">
               <i class="mdi mdi-arrow-right"></i>

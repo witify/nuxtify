@@ -209,7 +209,7 @@
 
         </section>
 
-        <section id="phase2" class="diptych is-right is-border-bottom is-imageless-mobile">
+        <section id="phase2" class="diptych is-right is-border-bottom">
             <div class="container">
                 <div class="diptych-body">
 
@@ -249,7 +249,7 @@
 
         </section>
 
-        <section id="phase3" class="diptych is-border-bottom is-imageless-mobile">
+        <section id="phase3" class="diptych is-border-bottom">
             <div class="container">
                 <div class="diptych-body">
                     <div class="media mb-20">
@@ -331,7 +331,7 @@
             <div class="hero-body">
                 <div class="container">
                     <h2 class="title">{{ $t('service.process-optimisation.accelerate-growth') }}</h2>
-                    <nuxt-link :to="localePath('contact')" class="button is-white is-medium is-outlined">
+                    <nuxt-link :to="localePath('contact')" class="button is-white is-medium is-shiny is-rounded">
                         <span>{{ $t('pages.footer.contact-us-now') }}</span>
                         <span class="icon">
                         <i class="mdi mdi-arrow-right"></i>
