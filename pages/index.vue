@@ -178,7 +178,7 @@ import ServiceCard from '../components/ServiceCard.vue'
 export default {
   head() {
     return {
-      title: this.$t('pages.index')
+      title: '111' + this.$t('pages.index')
     }
   },
   components: {
