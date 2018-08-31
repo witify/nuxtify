@@ -36,8 +36,8 @@ module.exports = {
     /*
     ** Run ESLint on save
     */
-    extend (config, { isDev, isClient }) {
-      if (isDev && isClient) {
+    extend (config, { isDev }) {
+      if (isDev && process.client) {
         config.module.rules.push({
           enforce: 'pre',
           test: /\.(js|vue)$/,
@@ -65,7 +65,7 @@ module.exports = {
   },
 
   /**
-   * Modules
+   * Router
    */
 
   router: {
@@ -79,6 +79,7 @@ module.exports = {
    */
 
   modules: [
+    '@nuxtjs/component-cache',
     ['nuxt-i18n', {
       defaultLocale: 'en',
       locales: [

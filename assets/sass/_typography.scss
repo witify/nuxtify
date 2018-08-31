@@ -62,7 +62,11 @@ p.is-tight {
 */
 
 ul.is-bold {
+
+    margin-left: 24px;
+
     li {
+        position: relative;
         color: $grey-dark;
         font-weight: 400;
         font-size: 1.2rem;
@@ -78,6 +82,20 @@ ul.is-bold {
             border: none;
             padding-bottom: 0px;
             margin-bottom: 0px;
+        }
+
+        &:before {
+            position: absolute;
+            left: -32px;
+            top: -2px;
+            content: "\f142";
+            display: inline-block;
+            font: normal normal normal 24px/1 "Material Design Icons";
+            color: $grey-light;
+            font-size: 1.5rem;
+            text-rendering: auto;
+            line-height: inherit;
+            -webkit-font-smoothing: antialiased;
         }
     }
 }

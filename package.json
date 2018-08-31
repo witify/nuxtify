@@ -13,10 +13,12 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
+    "@nuxtjs/component-cache": "^1.1.2",
     "axios": "^0.18.0",
     "bulma": "^0.7.1",
-    "nuxt": "^1.0.0",
-    "nuxt-i18n": "^4.0.0",
+    "nuxt": "npm:nuxt-edge",
+    "nuxt-edge": "npm:nuxt-edge",
+    "nuxt-i18n": "^5.0.0",
     "vue-scrollto": "^2.11.0",
     "vue-typer": "^1.2.0"
   },

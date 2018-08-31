@@ -20,7 +20,7 @@
                 </div>
 
                 <div class="field">
-                    <label for="" class="label">Estimated budget</label>
+                    <label for="" class="label">{{ $t('pages.contact.budget') }}</label>
                     <div class="select" required>
                         <select v-model="form.budget">
                             <option value="10k-20k">10k {{ $t('pages.contact.to') }} 20k</option>
@@ -184,11 +184,7 @@
                 })
                 .catch(error => {
                     this.loading = false
-                    this.$snackbar.open({
-                        message: 'The contact form is not working currently! Please contact us directly :)',
-                        type: 'is-danger',
-                        queue: false
-                    })
+                    alert('The contact form is not working currently! Please contact us directly :)')
                 })
             }
         }

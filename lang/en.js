@@ -52,6 +52,7 @@ export default {
       email: 'Email',
       phone: 'Phone',
       address: 'Address',
+      budget: 'Estimated budget',
       message: 'Describe your project',
       name: 'Name',
       to: 'to',
