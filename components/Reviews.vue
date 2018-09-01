@@ -1,18 +1,22 @@
 <template>
     <div class="quote">
+    
         <div class="container">
-            <transition name="slideLeftRight" mode="out-in">
-                <q v-if="key == 1" class="quote-text" key="1">
-                    {{ $t('pages.reviews.nordresa-feedback') }}
-                </q>
-                <q v-else-if="key == 2" class="quote-text" key="2">
-                    {{ $t('pages.reviews.mcc-feedback') }}
-                </q>
-                <q v-else-if="key == 3" class="quote-text" key="3">
-                    {{ $t('pages.reviews.sauver-feedback') }}
-                </q>
-            </transition>
+            <div class="quote-content">
+                <transition name="slideLeftRight" mode="out-in">
+                    <q v-if="key == 1" class="quote-text" key="1">
+                        {{ $t('pages.reviews.nordresa-feedback') }}
+                    </q>
+                    <q v-else-if="key == 2" class="quote-text" key="2">
+                        {{ $t('pages.reviews.mcc-feedback') }}
+                    </q>
+                    <q v-else-if="key == 3" class="quote-text" key="3">
+                        {{ $t('pages.reviews.sauver-feedback') }}
+                    </q>
+                </transition>
+            </div>
         </div>
+
         <div class="container">
             <div class="quote-clients">
 
@@ -54,6 +58,14 @@
                 
             </div>
         </div>
+
+        <div class="icon is-circle is-grey quote-arrow quote-arrow-left" @click="prev()">
+            <i class="mdi mdi-chevron-left"></i>
+        </div>
+        <div class="icon is-circle is-grey quote-arrow quote-arrow-right" @click="next()">
+            <i class="mdi mdi-chevron-right"></i>
+        </div>
+
     </div>
 </template>
 
@@ -65,11 +77,7 @@
         created() {
             setInterval(() => {
                 if (!this.hasClicked) {
-                    if (this.key < 3) {
-                        this.key++
-                    } else {
-                        this.key = 1
-                    }
+                    this.next()
                 }
                 this.hasClicked = false
             }, 10000)
@@ -86,6 +94,20 @@
             select(key) {
                 this.key = key
                 this.hasClicked = true
+            },
+            prev() {
+                if (this.key > 1) {
+                    this.key--
+                } else {
+                    this.key = 3
+                }
+            },
+            next() {
+                if (this.key < 3) {
+                    this.key++
+                } else {
+                    this.key = 1
+                }
             }
         }
     }

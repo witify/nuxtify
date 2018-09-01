@@ -11,15 +11,14 @@
 }
 
 .page-enter {
-  @include transform(translateX(-200px));
+  @include transform(translateX(-100px));
   opacity: 0;
 }
 
 .page-leave-active {
-  @include transform(translateX(200px));
+  @include transform(translateX(100px));
   opacity: 0;
 }
-
 
 /*
  |--------------------------------------------------------------------------

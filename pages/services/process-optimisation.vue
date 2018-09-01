@@ -23,9 +23,7 @@
         <section id="content" class="hero">
             <div class="hero-body">
                 <div class="container is-sm">
-                    <p class="is-size-3 has-text-centered is-tight" v-html="$t('service.process-optimisation.integration-header')">
-                        
-                    </p>
+                    <p class="is-size-3 has-text-centered is-tight" v-html="$t('service.process-optimisation.integration-header')"></p>
                 </div>
             </div>
         </section>
@@ -54,7 +52,7 @@
 
                     <div class="column is-half-mobile is-half-tablet is-one-third-desktop">
                         <div class="service-item">
-                            <div class="icon is-circle has-text-process-optimisation">
+                            <div class="icon is-size-3 mb-20 has-text-process-optimisation">
                                 <i class="mdi mdi-database-search"></i>
                             </div>
                             <h2 class="title">{{ $t('service.process-optimisation.benefit-1-title') }}</h2>
@@ -64,7 +62,7 @@
 
                     <div class="column is-half-mobile is-half-tablet is-one-third-desktop">
                         <div class="service-item">
-                            <div class="icon is-circle has-text-process-optimisation">
+                            <div class="icon is-size-3 mb-20 has-text-process-optimisation">
                                 <i class="mdi mdi-clipboard-pulse-outline"></i>
                             </div>
                             <h2 class="title">{{ $t('service.process-optimisation.benefit-2-title') }}</h2>
@@ -74,7 +72,7 @@
 
                     <div class="column is-half-mobile is-half-tablet is-one-third-desktop">
                         <div class="service-item">
-                            <div class="icon is-circle has-text-process-optimisation">
+                            <div class="icon is-size-3 mb-20 has-text-process-optimisation">
                                 <i class="mdi mdi-gauge-full"></i>
                             </div>
                             <h2 class="title">{{ $t('service.process-optimisation.benefit-3-title') }}</h2>
@@ -84,7 +82,7 @@
 
                     <div class="column is-half-mobile is-half-tablet is-one-third-desktop">
                         <div class="service-item">
-                            <div class="icon is-circle has-text-process-optimisation">
+                            <div class="icon is-size-3 mb-20 has-text-process-optimisation">
                                 <i class="mdi mdi-web"></i>
                             </div>
                             <h2 class="title">{{ $t('service.process-optimisation.benefit-4-title') }}</h2>
@@ -94,7 +92,7 @@
 
                     <div class="column is-half-mobile is-half-tablet is-one-third-desktop">
                         <div class="service-item">
-                            <div class="icon is-circle has-text-process-optimisation">
+                            <div class="icon is-size-3 mb-20 has-text-process-optimisation">
                                 <i class="mdi mdi-security"></i>
                             </div>
                             <h2 class="title">{{ $t('service.process-optimisation.benefit-5-title') }}</h2>
@@ -104,7 +102,7 @@
 
                     <div class="column is-half-mobile is-half-tablet is-one-third-desktop">
                         <div class="service-item">
-                            <div class="icon is-circle has-text-process-optimisation">
+                            <div class="icon is-size-3 mb-20 has-text-process-optimisation">
                                 <i class="mdi mdi-tune-vertical"></i>
                             </div>
                             <h2 class="title">{{ $t('service.process-optimisation.benefit-6-title') }}</h2>
