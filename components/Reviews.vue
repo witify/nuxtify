@@ -2,6 +2,7 @@
     <div class="quote">
     
         <div class="container">
+        
             <div class="quote-content">
                 <transition name="slideLeftRight" mode="out-in">
                     <q v-if="key == 1" class="quote-text" key="1">
@@ -15,9 +16,7 @@
                     </q>
                 </transition>
             </div>
-        </div>
 
-        <div class="container">
             <div class="quote-clients">
 
                 <button class="quote-client" :class="{'is-active': key == 1}" @click="select(1)">
@@ -57,13 +56,14 @@
                 </button>
                 
             </div>
-        </div>
 
-        <div class="icon is-circle is-grey quote-arrow quote-arrow-left" @click="prev()">
-            <i class="mdi mdi-chevron-left"></i>
-        </div>
-        <div class="icon is-circle is-grey quote-arrow quote-arrow-right" @click="next()">
-            <i class="mdi mdi-chevron-right"></i>
+            <div class="icon is-circle is-grey quote-arrow quote-arrow-left" @click="prev()">
+                <i class="mdi mdi-chevron-left"></i>
+            </div>
+            <div class="icon is-circle is-grey quote-arrow quote-arrow-right" @click="next()">
+                <i class="mdi mdi-chevron-right"></i>
+            </div>
+
         </div>
 
     </div>
