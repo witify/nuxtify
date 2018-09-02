@@ -45,7 +45,7 @@
 
                     <div class="column is-half-mobile is-half-tablet is-one-third-desktop">
                         <div class="service-item">
-                            <div class="icon is-circle has-text-e-commerce">
+                            <div class="icon is-size-3 mb-20 has-text-e-commerce">
                                 <i class="mdi mdi-cart"></i>
                             </div>
                             <h2 class="title">Flexible & complete</h2>
@@ -55,7 +55,7 @@
 
                     <div class="column is-half-mobile is-half-tablet is-one-third-desktop">
                         <div class="service-item">
-                            <div class="icon is-circle has-text-e-commerce">
+                            <div class="icon is-size-3 mb-20 has-text-e-commerce">
                                 <i class="mdi mdi-power-plug"></i>
                             </div>
                             <h2 class="title">Limitless</h2>
@@ -65,7 +65,7 @@
 
                     <div class="column is-half-mobile is-half-tablet is-one-third-desktop">
                         <div class="service-item">
-                            <div class="icon is-circle has-text-e-commerce">
+                            <div class="icon is-size-3 mb-20 has-text-e-commerce">
                                 <i class="mdi mdi-flash"></i>
                             </div>
                             <h2 class="title">Blazing fast</h2>
@@ -75,7 +75,7 @@
 
                     <div class="column is-half-mobile is-half-tablet is-one-third-desktop">
                         <div class="service-item">
-                            <div class="icon is-circle has-text-e-commerce">
+                            <div class="icon is-size-3 mb-20 has-text-e-commerce">
                                 <i class="mdi mdi-earth"></i>
                             </div>
                             <h2 class="title">Complete</h2>
@@ -85,7 +85,7 @@
 
                     <div class="column is-half-mobile is-half-tablet is-one-third-desktop">
                         <div class="service-item">
-                            <div class="icon is-circle has-text-e-commerce">
+                            <div class="icon is-size-3 mb-20 has-text-e-commerce">
                                 <i class="mdi mdi-sitemap"></i>
                             </div>
                             <h2 class="title">Integrated</h2>
@@ -95,7 +95,7 @@
 
                     <div class="column is-half-mobile is-half-tablet is-one-third-desktop">
                         <div class="service-item">
-                            <div class="icon is-circle has-text-e-commerce">
+                            <div class="icon is-size-3 mb-20 has-text-e-commerce">
                                 <i class="mdi mdi-clipboard-pulse-outline"></i>
                             </div>
                             <h2 class="title">Result analysis</h2>

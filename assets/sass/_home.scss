@@ -9,6 +9,14 @@
         min-height: 100vh;
         max-height: 1000px;
 
+        @include ie() {
+            min-height: auto;
+
+            @include desktop() {
+                padding: 5rem 0;
+            }
+        }
+
         @include touch() {
             min-height: initial;
         }
@@ -297,6 +305,37 @@
     }
 
     .quote {
+        position: relative;
+
+        .quote-content {
+            @include desktop() {
+                padding: 0 100px;
+            }
+        }
+        .quote-arrow {
+            position: absolute;
+            cursor: pointer;
+            @include desktop() {
+                top: 1rem;
+            }
+            @include touch() {
+                bottom: 1rem;
+            }
+            @include mobile() {
+                position: static;
+                margin: 10px 10px 0px 10px;
+            }
+        }
+        .quote-arrow-left {
+            @include tablet() {
+                left: 1rem;  
+            }
+        }
+        .quote-arrow-right {
+            @include tablet() {
+                right: 1rem;
+            }
+        }
         .quote-clients {
             display: flex;
             justify-content: center;

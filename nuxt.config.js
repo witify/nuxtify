@@ -59,6 +59,9 @@ module.exports = {
           ],
           whitelist: ['html', 'body'],
           whitelistPatterns: [/nuxt-/]
+        }),
+        require('cssnano')({
+          preset: 'default',
         })
       ]
     }

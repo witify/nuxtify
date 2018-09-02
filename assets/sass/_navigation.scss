@@ -7,11 +7,17 @@
     .navbar-brand img {
         @include desktop() {
             height: 2.5rem;
+            @include ie() {
+                height: auto;
+            }
             max-height: 2.5rem;
             margin-right: 1rem;
         }
         @include touch() {
             height: 2rem;
+            @include ie() {
+                height: auto;
+            }
             max-height: 2rem;
         }
     }
