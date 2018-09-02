@@ -159,7 +159,7 @@ export default {
       'user-experience-text': "L’équipe design a confectionné une interface moderne et intuitive, permettant de relever les informations importantes sur les écrans dédiés aux joueurs, tout en gardant la marque graphique du produit. Les interfaces ont été implémentées afin de dynamiquement s’adapter aux paramètres sélectionnés par les organisateurs lors de la préparation de l’évènement.",
       'results': "Résultats",
       'results-text': "Boursify a finalement vu sa première utilisation grand public, lors de la simulation organisée par le Collège André-Grasset et le Collège Marianopolis. Cet évènement a été un grand succès, avec plusieurs participants ayant émis leur préférence du nouveau logiciel par rapport à l’ancien.",
-      'simulations-made-with': "Simulations réalisées avec",
+      'simulations-made-for': "Simulations réalisées pour",
       'contest-prize': "Prix de concours",
       'prize-innovinc': "Prix du public INNOVINC RBC",
       'prize-pkp': "Finaliste de la Bourse Pierre-Péladeau",
