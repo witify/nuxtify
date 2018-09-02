@@ -155,8 +155,7 @@ module.exports = {
   */
 
   sentry: {
-    public_key: '034a385b35114c24a52746f15e902320',
-    private_key: 'bb844caff5d942a093c49b7dc10e9ee0',
-    project_id: '1273174',
+    dsn: 'https://034a385b35114c24a52746f15e902320:bb844caff5d942a093c49b7dc10e9ee0@sentry.io/1273174',
+    public_dns: 'https://034a385b35114c24a52746f15e902320@sentry.io/1273174'
   }
 }
