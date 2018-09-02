@@ -9,6 +9,14 @@
         min-height: 100vh;
         max-height: 1000px;
 
+        @include ie() {
+            min-height: auto;
+
+            @include desktop() {
+                padding: 5rem 0;
+            }
+        }
+
         @include touch() {
             min-height: initial;
         }

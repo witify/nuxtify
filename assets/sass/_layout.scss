@@ -51,6 +51,15 @@ body {
     }
 
     &.is-fullheight {
+
+        @include ie() {
+            min-height: auto;
+    
+            @include desktop() {
+                padding: 5rem 0;
+            }
+        }
+
         @include touch() {
             min-height: initial;
             .scroll-to {
