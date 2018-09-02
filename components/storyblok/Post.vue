@@ -15,7 +15,7 @@ export default {
     props: ['blok'],
     computed: {
         body () {
-            return marked(this.blok.text)
+            return marked(this.blok.text || '')
         }
     }
 }

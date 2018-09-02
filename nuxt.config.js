@@ -83,6 +83,7 @@ module.exports = {
 
   modules: [
     '@nuxtjs/component-cache',
+    '@nuxtjs/sentry',
     ['storyblok-nuxt', {
       accessToken: 'VDX4VNxVYk3uTxXyIlMp5Qtt',
       cacheProvider: 'memory'
@@ -120,6 +121,15 @@ module.exports = {
     '~/plugins/disqus',
     { src: '~plugins/crisp.js', ssr: false },
     { src: '~plugins/ga.js', ssr: false }
-  ]
-}
+  ],
 
+  /**
+   * Sentry
+   */
+
+  sentry: {
+    public_key: '034a385b35114c24a52746f15e902320',
+    private_key: 'bb844caff5d942a093c49b7dc10e9ee0',
+    project_id: '1273174',
+  }
+}

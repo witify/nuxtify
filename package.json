@@ -13,7 +13,6 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "@nuxtjs/component-cache": "^1.1.2",
     "axios": "^0.18.0",
     "bulma": "^0.7.1",
     "marked": "^0.5.0",
@@ -26,6 +25,8 @@
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^1.0.1",
+    "@nuxtjs/component-cache": "^1.1.2",
+    "@nuxtjs/sentry": "^1.1.2",
     "babel-eslint": "^8.2.1",
     "cssnano": "^4.1.0",
     "eslint": "^4.15.0",

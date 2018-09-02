@@ -47,12 +47,18 @@ Vue.directive('loading', {
 })
 
 Vue.prototype.$resizeImage = function(image, option) {
+    if (image === undefined) {
+        return ''
+    }
     let imageService = '//img2.storyblok.com/'
     let path = image.replace('//a.storyblok.com', '')
     return imageService + option + path
 }
 
 Vue.prototype.$limit = function(text, max = 100) {
+    if (text === undefined) {
+        return ''
+    }
     if (text.length > max) text = text.substring(0, max) + '...'
     return text
 }
