@@ -52,7 +52,7 @@
                         <p class="is-lead mb-20">
                         {{ $t('project.sauver.header-1') }} 
                         </p>
-                        <p>
+                        <p class="is-medium">
                         {{ $t('project.sauver.subheader-1') }}
                         </p>
                     </div>
