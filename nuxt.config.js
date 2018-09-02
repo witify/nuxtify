@@ -83,6 +83,10 @@ module.exports = {
 
   modules: [
     '@nuxtjs/component-cache',
+    ['storyblok-nuxt', {
+      accessToken: 'VDX4VNxVYk3uTxXyIlMp5Qtt',
+      cacheProvider: 'memory'
+    }],
     ['nuxt-i18n', {
       defaultLocale: 'en',
       locales: [
@@ -113,6 +117,7 @@ module.exports = {
 
   plugins: [
     '~/plugins/global.js',
+    '~/plugins/disqus',
     { src: '~plugins/crisp.js', ssr: false },
     { src: '~plugins/ga.js', ssr: false }
   ]

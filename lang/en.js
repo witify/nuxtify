@@ -44,6 +44,10 @@ export default {
       boldness: 'Boldness',
       'boldness-text': 'Our team is bold and innovative. We dare to seize opportunities and turn the challenges that may be in your way into assets. Each event is an opportunity to push the boundaries of innovation and creativity. We believe that it is important to undertake projects, to overcome obstacles and to constantly aspire to better than the status quo.'
     },
+    blog: {
+      title: 'Blog',
+      subtitle: 'Latest news'
+    },
     contact: {
       index: 'Contact',
       title: 'Contact us',

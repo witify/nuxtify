@@ -44,6 +44,10 @@ export default {
       boldness: 'Audace',
       'boldness-text': 'Notre équipe est audacieuse et innovante. Nous osons saisir les opportunités et transformer en atouts les défis qui peuvent se présenter sur votre route. Chaque épreuve est une occasion de repousser les limites de l’innovation et de la créativité. Nous croyons qu’il est important d’entreprendre des projets, de braver les obstacles et de constamment aspirer à mieux que le statu quo.' 
     },
+    blog: {
+      title: 'Blog',
+      subtitle: 'Dernières nouvelles'
+    },
     contact: {
       index: 'Nous joindre',
       title: 'Nous joindre',

@@ -65,6 +65,10 @@
                         </div>
                     </div>
 
+                    <nuxt-link :to="localePath('blog')" class="navbar-item is-bold">
+                        {{ $t('pages.blog.title') }}
+                    </nuxt-link>
+
                     <nuxt-link :to="localePath('about')" class="navbar-item is-bold">
                         {{ $t('pages.about.title') }}
                     </nuxt-link>
