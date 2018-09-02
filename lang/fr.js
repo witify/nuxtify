@@ -311,7 +311,37 @@ export default {
 
     },
     'custom-application' : {
-      
+      'title': "Applications sur mesure",
+      'subtitle': "Une solution unique et personnalisée, développée pour vos besoins et votre réalité, quels qu'ils soient.",
+      "unique-app-header": "Vous avez une idée d'application unique qui changera le monde?",
+      "unique-app-text": "L’équipe Witify prend en charge le développement du logiciel pour transformer votre vision en application complète de grande qualité. Nous savons que votre projet possède ses propres objectifs, ses contraintes et ses caractéristiques uniques. Notre équipe est prête à s’adapter à vos besoins tout en vous guidant afin de garantir votre succès.",
+      "adapt-reality-header": "Nous nous adaptons à votre réalité",
+      "adapt-reality-text-1": "Que vous désiriez initialement concevoir un prototype ou rapidement atteindre une version commercialisable, nous nous adaptons à votre réalité.",
+      "adapt-reality-text-2": "Notre équipe tient à vous appuyer dans les tâches où vous manquez de temps ou d’expertise; que ce soit en « Product Management », en design, en développement d’expérience-utilisateur, en ingénierie logicielle, en assurance-qualité ou en intégration en environnement technologique.",
+      "adapt-reality-text-3": "Concentrez-vous sur vos forces, nous nous occupons du reste.",
+      "quality-products-header": "Des produits de qualité, toujours.",
+      "quality-products-text": "Un bon produit numérique doit être intuitif, performant et évolutif. Witify vous aide à atteindre vos objetifs avec excellence, sans jamais compromettre la qualité.",
+      "3-steps-method": "Notre méthode en 3 phases",
+      "3-steps-method-text": "Notre méthodologie en 3 étapes s’appuie sur une écoute active et une communication fluide qui maximisera le succès de votre produit. Nous voulons comprendre vos objectifs, votre clientèle et réellement mettre en œuvre la meilleure solution pour votre projet.",
+      "project-analysis-header": "Analyse du projet",
+      "project-analysis-subheader": "La phase d'analyse permet de cibler les besoins prioritaires, mieux compendre de l’entreprise et son positionnement actuel et long-terme.",
+      "project-analysis-point-1": "Analyse des objectifs du projet",
+      "project-analysis-point-2": "Définition de l’utilisateur-type",
+      "project-analysis-point-3": "Vision de l’entreprise et marque graphique",
+      "project-analysis-point-4": "Planification de l'échéancier des diverses phases de prototypage et de mise en commercialisation",
+      "app-dev-header": "Développement de l’application",
+      "app-dev-subheader": "Des suivis fréquents nous permettent de communiquer rapidement et efficacement à travers le processus de développement.",
+      "app-dev-point-1": "Conception des maquettes visuelles et optimisation de l’expérience-utilisateur",
+      "app-dev-point-2": "Développement logiciel back-end et front-end",
+      "app-dev-point-3": "Gestionnaire de projet attitré",
+      "app-dev-point-4": "Tests et assurance qualité",
+      "deployment-header": "Déploiement et revues par itération",
+      "deployment-subheader": "Un produit numérique est en constante évolution et doit constamment être peaufiner pour satisfaire sa clientèle cible.",
+      "deployment-point-1": "Déploiement et mise en place des outils de suivi",
+      "deployment-point-2": "Documentation des métriques internes (technologique et affaire)",
+      "deployment-point-3": "Formation",
+      "deployment-point-4": "Suivis et revues itératives",
+      'next-big-idea': "Faites nous part de votre prochaine grande idée et poussez la plus loin",
     }
   }
 }
