@@ -48,8 +48,8 @@
                             <div class="icon is-size-3 mb-20 has-text-e-commerce">
                                 <i class="mdi mdi-cart"></i>
                             </div>
-                            <h2 class="title">Flexible & complete</h2>
-                            <h3 class="subtitle">product management</h3>
+                            <h2 class="title">{{ $t('service.e-commerce.benefit-1-title') }}</h2>
+                            <h3 class="subtitle">{{ $t('service.e-commerce.benefit-1-subtitle') }}</h3>
                         </div>
                     </div>
 
@@ -58,8 +58,8 @@
                             <div class="icon is-size-3 mb-20 has-text-e-commerce">
                                 <i class="mdi mdi-power-plug"></i>
                             </div>
-                            <h2 class="title">Limitless</h2>
-                            <h3 class="subtitle">integrations</h3>
+                            <h2 class="title">{{ $t('service.e-commerce.benefit-2-title') }}</h2>
+                            <h3 class="subtitle">{{ $t('service.e-commerce.benefit-2-subtitle') }}</h3>
                         </div>
                     </div>
 
@@ -68,8 +68,8 @@
                             <div class="icon is-size-3 mb-20 has-text-e-commerce">
                                 <i class="mdi mdi-flash"></i>
                             </div>
-                            <h2 class="title">Blazing fast</h2>
-                            <h3 class="subtitle">page loading</h3>
+                            <h2 class="title">{{ $t('service.e-commerce.benefit-3-title') }}</h2>
+                            <h3 class="subtitle">{{ $t('service.e-commerce.benefit-3-subtitle') }}</h3>
                         </div>
                     </div>
 
@@ -78,8 +78,8 @@
                             <div class="icon is-size-3 mb-20 has-text-e-commerce">
                                 <i class="mdi mdi-earth"></i>
                             </div>
-                            <h2 class="title">Complete</h2>
-                            <h3 class="subtitle">internationalization</h3>
+                            <h2 class="title">{{ $t('service.e-commerce.benefit-4-title') }}</h2>
+                            <h3 class="subtitle">{{ $t('service.e-commerce.benefit-4-subtitle') }}</h3>
                         </div>
                     </div>
 
@@ -88,8 +88,8 @@
                             <div class="icon is-size-3 mb-20 has-text-e-commerce">
                                 <i class="mdi mdi-sitemap"></i>
                             </div>
-                            <h2 class="title">Integrated</h2>
-                            <h3 class="subtitle">omnichannels</h3>
+                            <h2 class="title">{{ $t('service.e-commerce.benefit-5-title') }}</h2>
+                            <h3 class="subtitle">{{ $t('service.e-commerce.benefit-5-subtitle') }}</h3>
                         </div>
                     </div>
 
@@ -98,8 +98,8 @@
                             <div class="icon is-size-3 mb-20 has-text-e-commerce">
                                 <i class="mdi mdi-clipboard-pulse-outline"></i>
                             </div>
-                            <h2 class="title">Result analysis</h2>
-                            <h3 class="subtitle">and measurements</h3>
+                            <h2 class="title">{{ $t('service.e-commerce.benefit-6-title') }}</h2>
+                            <h3 class="subtitle">{{ $t('service.e-commerce.benefit-6-subtitle') }}</h3>
                         </div>
                     </div>
 
