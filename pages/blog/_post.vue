@@ -1,43 +1,38 @@
 <template>
     <div class="wrapper">
-        <section class="section">
+        <section class="section post">
             <div class="container is-sm">
-                <component v-if="story.content.component" :key="story.content._uid" :blok="story.content" :is="story.content.component"></component>
+                <img v-bind="$resizeImage(post.picture.value[0].url, 800, 600)" :alt="post.title.value" class="post-picture">
+                <h1 class="title">{{ post.title.value }}</h1>
+                <div class="content" v-html="post.body.value"></div>
+                <hr class="mt-50 mb-50">
+                <vue-disqus shortname="witify" :identifier="post.slug.value" :url="`https://witify.io${$route.path}`"></vue-disqus>
             </div>
         </section>
     </div>
 </template>
 
 <script>
+import kentico from '@/plugins/kentico'
+
 export default {
     layout: 'default',
-    mounted () {
-        this.$storyblok.init()
-        this.$storyblok.on('change', () => {
-            location.reload(true)
-        })
-        this.$storyblok.on('published', () => {
-            location.reload(true)
-        })
-    },
     data () {
-        return { story: { content: {} } }
+        return { post: {} }
     },
-    asyncData (context) {
-        // Check if we are in the editor mode
-        let version = context.query._storyblok || context.isDev ? 'draft' : 'published'
-        // Load the JSON from the API
-        return context.app.$storyapi.get(`cdn/stories/blog/${context.params.post}`, {
-            version: version
-        }).then((res) => {
-            return res.data
-        }).catch((res) => {
-            context.error({ statusCode: res.response.status, message: res.response.data })
-        })
+    asyncData ({ app }) {
+         return kentico.send(app.i18n.locale, 'post', app.context.params.post)
+            .then(response =>  {
+                if (response.data.item) {
+                    return {post: response.data.item.elements}
+                } else {
+                    app.context.error({ statusCode: 404, message: 'Post not found'})
+                }
+            })
     },
     head() {
         return {
-            title: this.story.content.title
+            title: this.post.title.value
         }
     }
 }

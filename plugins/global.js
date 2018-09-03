@@ -3,14 +3,8 @@ import Vue from 'vue'
 import CTA from '@/components/CTA.vue'
 import Socials from '@/components/Socials.vue'
 
-// Storyblok
-import Post from '@/components/storyblok/Post.vue'
-
 Vue.component('socials', Socials)
 Vue.component('cta', CTA)
-
-// Storyblok
-Vue.component('post', Post)
 
 /*
  |--------------------------------------------------------------------------
@@ -46,13 +40,15 @@ Vue.directive('loading', {
     }
 })
 
-Vue.prototype.$resizeImage = function(image, option) {
-    if (image === undefined) {
-        return ''
+Vue.prototype.$resizeImage = function(image, width = 800, height = 600) {
+    let imageSrc = ''
+    if (image) {
+        imageSrc = image + '?w=' + width + '&h=' + height + '&fit=crop'
     }
-    let imageService = '//img2.storyblok.com/'
-    let path = image.replace('//a.storyblok.com', '')
-    return imageService + option + path
+    return {
+        src: image,
+        srcset: imageSrc
+    }
 }
 
 Vue.prototype.$limit = function(text, max = 100) {

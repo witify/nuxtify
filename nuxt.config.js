@@ -114,10 +114,6 @@ module.exports = {
   modules: [
     '@nuxtjs/component-cache',
     '@nuxtjs/sentry',
-    ['storyblok-nuxt', {
-      accessToken: 'VDX4VNxVYk3uTxXyIlMp5Qtt',
-      cacheProvider: 'memory'
-    }],
     ['nuxt-i18n', {
       defaultLocale: 'en',
       locales: [
@@ -151,6 +147,7 @@ module.exports = {
   plugins: [
     '~/plugins/global.js',
     '~/plugins/disqus',
+    '~/plugins/kentico',
     { src: '~plugins/crisp.js', ssr: false },
     { src: '~plugins/ga.js', ssr: false }
   ],
@@ -163,6 +160,8 @@ module.exports = {
 
   sentry: {
     dsn: 'https://034a385b35114c24a52746f15e902320:bb844caff5d942a093c49b7dc10e9ee0@sentry.io/1273174',
-    public_dns: 'https://034a385b35114c24a52746f15e902320@sentry.io/1273174'
+    public_dns: 'https://034a385b35114c24a52746f15e902320@sentry.io/1273174',
+    disabled: process.env.NODE_ENV !== 'production',
+    disableClientSide: process.env.NODE_ENV !== 'production',
   }
 }
