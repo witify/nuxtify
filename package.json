@@ -13,6 +13,7 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
+    "@nuxtjs/google-gtag": "^1.0.4",
     "axios": "^0.18.0",
     "bulma": "^0.7.1",
     "nuxt-edge": "^2.0.0-25594102.4311aca",

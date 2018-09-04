@@ -116,6 +116,7 @@ module.exports = {
   modules: [
     '@nuxtjs/component-cache',
     '@nuxtjs/sentry',
+    '@nuxtjs/google-gtag',
     ['nuxt-facebook-pixel-module', {
       track: 'PageView',
       pixelId: '337172820372152',
@@ -154,8 +155,7 @@ module.exports = {
     '~/plugins/global.js',
     '~/plugins/disqus',
     '~/plugins/kentico',
-    { src: '~plugins/crisp.js', ssr: false },
-    { src: '~plugins/ga.js', ssr: false }
+    { src: '~plugins/crisp.js', ssr: false }
   ],
 
   /*
@@ -169,5 +169,15 @@ module.exports = {
     public_dns: 'https://034a385b35114c24a52746f15e902320@sentry.io/1273174',
     disabled: process.env.NODE_ENV !== 'production',
     disableClientSide: process.env.NODE_ENV !== 'production',
+  },
+
+  /*
+  |--------------------------------------------------------------------------
+  | Google Analytics
+  |--------------------------------------------------------------------------
+  */
+
+  'google-tag': {
+    id: 'UA-81356151-2'
   }
 }
