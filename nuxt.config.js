@@ -16,6 +16,8 @@ module.exports = {
       { hid: 'description', name: 'description', content: 'Witify Official Website' },
       { name: 'msapplication-TileColor', content: '#ffffff'},
       { name: 'theme-color', content: '#ffffff'},
+      { property: 'og:image', content: '/thumbnail.jpg'},
+      { property: 'og:type', content: 'website'}
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
