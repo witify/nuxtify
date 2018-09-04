@@ -116,6 +116,10 @@ module.exports = {
   modules: [
     '@nuxtjs/component-cache',
     '@nuxtjs/sentry',
+    ['nuxt-facebook-pixel-module', {
+      track: 'PageView',
+      pixelId: '337172820372152',
+    }],
     ['nuxt-i18n', {
       defaultLocale: 'en',
       locales: [
