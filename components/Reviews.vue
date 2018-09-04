@@ -12,7 +12,7 @@
                         {{ $t('pages.reviews.mcc-feedback') }}
                     </q>
                     <q v-else-if="key == 3" class="quote-text" key="3">
-                        {{ $t('pages.reviews.sauver-feedback') }}
+                        {{ $t('pages.reviews.jussaume-feedback') }}
                     </q>
                 </transition>
             </div>
@@ -43,17 +43,17 @@
                     </div>
                 </button>
 
-                <!-- <button class="quote-client" :class="{'is-active': key == 3}" @click="select(3)">
+                <button class="quote-client" :class="{'is-active': key == 3}" @click="select(3)">
                     <div class="media">
                         <div class="media-left">
-                            <div class="profile-picture"></div>
+                            <div class="profile-picture" :style="{ 'background-image': 'url(' + charles + ')' }"></div>
                         </div>
                         <div class="media-content">
-                            <h3 class="title is-size-5">John Doe</h3>
-                            <h4 class="subtitle is-size-6" v-html="$t('pages.reviews.sauver-role')"></h4>
+                            <h3 class="title is-size-5">Charles Hardy</h3>
+                            <h4 class="subtitle is-size-6" v-html="$t('pages.reviews.jussaume-role')"></h4>
                         </div>
                     </div>
-                </button> -->
+                </button> 
                 
             </div>
 
@@ -72,6 +72,7 @@
 <script>
     import castonguay from '~/assets/img/home/castonguay.jpg'
     import michon from '~/assets/img/home/michon.jpg'
+    import charles from '~/assets/img/home/charles.jpg'
 
     export default {
         created() {
@@ -88,6 +89,7 @@
                 hasClicked: false,
                 castonguay: castonguay,
                 michon: michon,
+                charles: charles,
             }
         },
         methods: {
@@ -99,11 +101,11 @@
                 if (this.key > 1) {
                     this.key--
                 } else {
-                    this.key = 2
+                    this.key = 3
                 }
             },
             next() {
-                if (this.key < 2) {
+                if (this.key < 3) {
                     this.key++
                 } else {
                     this.key = 1

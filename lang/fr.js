@@ -124,6 +124,9 @@ export default {
       "mcc-role": "Consultant en informatique <br>appliquée à l'histoire",
       "sauver-feedback": "Witify has operated as our in-house dev and design team supporting us on our startup journey, and have exceeded our expectations as a reflection of their passion for their work.",
       "sauver-role": "Co-founders and CTO of <br>BC Communications",
+      "jussaume-feedback": "Ils sont exceptionnels, toujours à l'écoute des idées, organisés, impliqués et motivés dans tous les projets. Je recommande Witify de pied ferme à tous ceux qui cherche une solution web media.",
+      "jussaume-role": "Directeur des ventes chez <br> Jussaume",
+
     }
   },
   project: {

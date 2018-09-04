@@ -119,6 +119,8 @@ export default {
       "mcc-role": "Computer consultant <br>applied to History",
       "sauver-feedback": "Witify has operated as our in-house dev and design team supporting us on our startup journey, and have exceeded our expectations as a reflection of their passion for their work.",
       "sauver-role": "Co-founders and CTO of <br>BC Communications",
+      "jussaume-feedback": "They are exceptional, always attentive to ideas, organized, involved and motivated in all projects. I recommend Witify firmly to anyone looking for a web media solution.",
+      "jussaume-role": "Director of Sales at <br> Jussaume",
     }
   },
   project: {
