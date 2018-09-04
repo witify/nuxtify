@@ -117,6 +117,9 @@ module.exports = {
     '@nuxtjs/component-cache',
     '@nuxtjs/sentry',
     '@nuxtjs/google-gtag',
+    ['@nuxtjs/google-analytics', {
+      id: 'UA-81356151-2'
+    }],
     ['nuxt-facebook-pixel-module', {
       track: 'PageView',
       pixelId: '337172820372152',
