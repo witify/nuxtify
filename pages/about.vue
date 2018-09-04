@@ -85,8 +85,8 @@
                     <div class="column">
                         <p class="is-size-4 is-italic">"{{ $t('pages.about.collaboration-quote-text') }}"</p>
                         <div class="has-text-right-tablet mt-20">
-                            <p class="is-size-3 has-text-weight-semibold" style="line-height: 1">John Doe</p>
-                            <span>{{ $t('pages.about.collaboration-quote-author-role') }}</span>
+                            <!-- <p class="is-size-3 has-text-weight-semibold" style="line-height: 1">John Doe</p>
+                            <span>{{ $t('pages.about.collaboration-quote-author-role') }}</span> -->
                         </div>
                     </div>
                 </div>

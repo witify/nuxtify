@@ -30,6 +30,14 @@
                         </nuxt-link>
                     </div>
                 </div>
+
+                <div class="has-text-centered" v-if="items.length == 0">
+                    <span class="icon is-size-1 mb-30">
+                        <i class="mdi mdi-newspaper"></i>
+                    </span>
+                    <h2 class="title is-size-4 has-text-grey">{{ $t('pages.blog.empty') }}</h2>
+                </div>
+
             </div>
         </section>
     </div>

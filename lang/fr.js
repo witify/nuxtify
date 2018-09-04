@@ -68,7 +68,8 @@ export default {
     },
     blog: {
       title: 'Blog',
-      subtitle: 'Dernières nouvelles'
+      subtitle: 'Dernières nouvelles',
+      empty: 'Aucun article. Revenez plus tard!'
     },
     contact: {
       index: 'Nous joindre',

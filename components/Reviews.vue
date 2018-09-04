@@ -43,7 +43,7 @@
                     </div>
                 </button>
 
-                <button class="quote-client" :class="{'is-active': key == 3}" @click="select(3)">
+                <!-- <button class="quote-client" :class="{'is-active': key == 3}" @click="select(3)">
                     <div class="media">
                         <div class="media-left">
                             <div class="profile-picture"></div>
@@ -53,7 +53,7 @@
                             <h4 class="subtitle is-size-6" v-html="$t('pages.reviews.sauver-role')"></h4>
                         </div>
                     </div>
-                </button>
+                </button> -->
                 
             </div>
 
@@ -99,11 +99,11 @@
                 if (this.key > 1) {
                     this.key--
                 } else {
-                    this.key = 3
+                    this.key = 2
                 }
             },
             next() {
-                if (this.key < 3) {
+                if (this.key < 2) {
                     this.key++
                 } else {
                     this.key = 1

@@ -64,7 +64,8 @@ export default {
     },
     blog: {
       title: 'Blog',
-      subtitle: 'Latest news'
+      subtitle: 'Latest news',
+      empty: 'No article. Come back later!'
     },
     contact: {
       index: 'Contact',
