@@ -25,10 +25,15 @@ $image-padding: 6rem;
 
     .diptych-image {
 
+        img {
+            display: inline-block;
+        }
+
         @include tablet() {
             position: absolute;
             left: 60%;
             top: 0;
+            width: 100%;
             height: 100%;
             padding-left: $image-padding;
 
@@ -80,6 +85,7 @@ $image-padding: 6rem;
                 right: 60%;
                 padding-left: 0;
                 padding-right: $image-padding;
+                text-align: right;
             }
             @include fullhd() {
                 right: 50%;
