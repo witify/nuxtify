@@ -1,7 +1,19 @@
+/*
+|--------------------------------------------------------------------------
+| Body
+|--------------------------------------------------------------------------
+*/
+
 body {
     width: 100%;
     overflow: hidden;
 }
+
+/*
+|--------------------------------------------------------------------------
+| Wrapper
+|--------------------------------------------------------------------------
+*/
 
 .wrapper {
     padding-top: $navbar-height;
@@ -31,121 +43,12 @@ body {
     background-position: center;
     background-size: cover;
     position: relative;
-
-    .hero-body {
-        @include tablet() {
-            padding-top: 5rem;
-            padding-bottom: 5rem;
-        }
-    }
-
-    &.is-large {
-        .hero-body {
-            @include touch() {
-                padding: 7rem 1.5rem;
-            }
-            @include mobile() {
-                padding: 4rem 1.5rem;
-            }
-        }
-    }
-
-    &.is-fullheight {
-
-        @include ie() {
-            min-height: auto;
-    
-            @include desktop() {
-                padding: 5rem 0;
-            }
-        }
-
-        @include touch() {
-            min-height: initial;
-            .scroll-to {
-                display: none;
-            }
-        }
-    }
 }
 
-.wrapper .hero.is-main .hero-body {
-    @include mobile() {
-        padding-top: 3rem;
-    }
-}
-
-.hero.is-main {
-    text-align: left;
-    border-bottom: solid 1px $white-ter;
-
-    @include mobile() {
-        text-align: center;
-        .hero-body {
-            padding-top: 4rem;
-        }
-    }
-
-    .icon {
-        margin-bottom: 20px;
-    }
-
-    .heading {
-        margin-bottom: 7px;
-    }
-
-    .title {
-        font-size: 3rem;
-
-        @include mobile() {
-            font-size: 2rem;
-        }
-    }
-
-    .subtitle {
-        font-size: 1.4rem;
-        line-height: 1.4;
-        opacity: 0.9;
-
-        @include mobile() {
-            font-size: 1.2rem;
-        }
-    }
-
-    &.is-dark {
-        * {
-            color: #fff;
-        }
-    }
-
-    &.is-center {
-        text-align: center;
-        .title, .subtitle {
-            max-width: none;
-        }
-    }
-}
-
-.hero.is-half {
-    .title, .subtitle {
-        @include tablet() {
-            max-width: 50%;
-        }
-    }
-}
-
-.hero.is-default {
-    background-image: url('~assets/img/bg/default.svg');
-}
-
-.hero.is-quote {
-    .title {
-        font-weight: $weight-light;
-        font-family: $family-sans-serif;
-
-        strong {
-            font-weight: $weight-semibold;
-        }
+.hero-body {
+    @include tablet() {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
     }
 }
 
@@ -182,17 +85,5 @@ body {
 
     @include tablet() {
         min-height: 70vh;
-    }
-}
-
-/*
-|--------------------------------------------------------------------------
-| Columns
-|--------------------------------------------------------------------------
-*/
-
-.columns.is-clients {
-    .column img {
-        width: 180px;
     }
 }

@@ -12,13 +12,11 @@
 
 // General
 @import 'transitions';
-@import 'project';
 @import 'typography';
 @import 'navigation';
 @import 'button';
 @import 'profile-picture';
 @import 'layout';
-@import 'cta';
 @import 'footer';
 @import 'general';
 @import 'helpers';
@@ -28,7 +26,5 @@
 @import 'diptych';
 
 // Pages
-@import 'home';
-@import 'about';
-@import 'services';
+@import 'pages/pages';
 

@@ -20,19 +20,6 @@
                 </div>
 
                 <div class="field">
-                    <label for="" class="label">{{ $t('pages.contact.budget') }}</label>
-                    <div class="select" required>
-                        <select v-model="form.budget">
-                            <option value="10k-20k">10k {{ $t('pages.contact.to') }} 20k</option>
-                            <option value="20k-50k">20k {{ $t('pages.contact.to') }} 50k</option>
-                            <option value="50k-100k">50k {{ $t('pages.contact.to') }} 100k</option>
-                            <option value="100k+">100k+</option>
-                            <option value="not-sure">{{ $t('pages.contact.not-sure') }}</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="field">
                     <label class="label">{{ $t('pages.contact.message') }}</label>
                     <textarea cols="20" rows="5" class="textarea" v-model="form.message" minlength="3" required></textarea>
                 </div>
@@ -152,7 +139,6 @@
                     name: '',
                     email: '',
                     message: '',
-                    budget: null,
                     contact_by_phone: false,
                     phone: '',
                     day: [],
@@ -169,10 +155,10 @@
             },
             sendRequest() {
                 let data = {
-                    "text": "New message on witify.io 🤗",
+                    "text": "New message " + this.$config.app.url + " 🤗",
                     "attachments": [
                         {
-                            "title": this.form.name + ' @' + this.form.email + ' (' + this.form.budget + ')',
+                            "title": this.form.name + ' @' + this.form.email,
                             "text": this.form.message + '\n' + this.form.phone + '\n' + this.form.day.join(', ') + '\n' + this.form.time.join(' + ') + '\n'
                         }
                     ]

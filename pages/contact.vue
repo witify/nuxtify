@@ -2,7 +2,7 @@
     <div class="wrapper">
         <div class="page-contact">
 
-            <section class="hero is-main">
+            <section class="hero has-border-bottom">
                 <div class="hero-body">
                     <div class="container">
                         <h1 class="title">{{ $t('pages.contact.title') }}</h1>
@@ -19,10 +19,10 @@
                             
                             <div class="is-size-5">
                                 <strong>{{ $t('pages.contact.email') }}</strong><br>
-                                <div class="mb-30"><a href="mailto:info@witify.io">info@witify.io</a></div>
+                                <div class="mb-30"><a :href="`mailto:${$config.app.email}`">{{ $config.app.email }}</a></div>
 
                                 <strong>{{ $t('pages.contact.phone') }}</strong><br>
-                                <div class="mb-30"><a href="tel:(514) 916-3026">(514) 916-3026</a></div>
+                                <div class="mb-30"><a :href="`tel:${$config.app.phone}`">{{ $config.app.phone }}</a></div>
 
                                 <strong>{{ $t('pages.contact.address') }}</strong><br>
                                 <div>333 Sherbrooke E, 705</div>

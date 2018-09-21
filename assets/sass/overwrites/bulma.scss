@@ -1,48 +1,5 @@
-.heading {
-    color: $grey;
-    font-weight: $weight-semibold;
-    font-size: 0.9rem;
-    margin: 0;
-}
-
-.icon.is-circle {
-    font-size: 1.7rem;
-    width: 4rem;
-    height: 4rem;
-    border: 2px solid $white-ter;
-    border-radius: 4rem;
-    color: $grey;
-
-    &.is-grey {
-        border-color: $grey-lighter !important;
-    }
-
-    &.is-dark {
-        border: none !important;
-        color: #fff !important;
-        background-color: rgba(255,255,255,0.2);
-    }
-
-    @include touch() {
-        font-size: 1.4rem;
-        width: 3rem;
-        height: 3rem;
-    }
-}
-
 .media.is-aligned {
     align-items: center;
-}
-
-.button.is-shiny {
-    box-shadow: 0px 0px 27px rgba(255, 255, 255, 0.5);
-    padding: 25px 25px;
-    height: 2.6em;
-    
-    &:hover {
-        background-color: #fff;
-        box-shadow: 0px 0px 37px rgba(255, 255, 255, 0.5);
-    }
 }
 
 .card .card-image img {

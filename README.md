@@ -1,6 +1,6 @@
-# witify
+# Nuxtify
 
-> Witify Official Website
+> A clean boilerplate to start a static website, batteries included
 
 ## Build Setup
 

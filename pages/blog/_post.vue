@@ -6,7 +6,7 @@
                 <h1 class="title">{{ post.title.value }}</h1>
                 <div class="content" v-html="post.body.value"></div>
                 <hr class="mt-50 mb-50">
-                <vue-disqus shortname="witify" :identifier="post.slug.value" :url="`https://witify.io${$route.path}`"></vue-disqus>
+                <vue-disqus :shortname="$config.app.name" :identifier="post.slug.value" :url="`${$config.app.url}${$route.path}`"></vue-disqus>
             </div>
         </section>
     </div>

@@ -1,5 +1,7 @@
 const purgecss = require('@fullhuman/postcss-purgecss')
 
+import config from './config/general'
+
 module.exports = {
 
   /*
@@ -9,11 +11,11 @@ module.exports = {
   */
 
   head: {
-    titleTemplate: '%s - Witify',
+    titleTemplate: '%s - ' + config.app.name,
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Witify Official Website' },
+      { hid: 'description', name: 'description', content: 'Nuxtify Demo' },
       { name: 'msapplication-TileColor', content: '#ffffff'},
       { name: 'theme-color', content: '#ffffff'},
       { property: 'og:image', content: '/thumbnail.jpg'},
@@ -109,21 +111,28 @@ module.exports = {
 
   /*
   |--------------------------------------------------------------------------
+  | Plugins
+  |--------------------------------------------------------------------------
+  */
+
+  plugins: [
+    '~/plugins/global.js',
+    //'~/plugins/disqus',
+    //'~/plugins/kentico',
+    //{ src: '~plugins/crisp.js', ssr: false }
+  ],
+
+  /*
+  |--------------------------------------------------------------------------
   | Modules
   |--------------------------------------------------------------------------
   */
 
   modules: [
     '@nuxtjs/component-cache',
-    '@nuxtjs/sentry',
-    '@nuxtjs/google-gtag',
-    ['@nuxtjs/google-analytics', {
-      id: 'UA-81356151-2'
-    }],
-    ['nuxt-facebook-pixel-module', {
-      track: 'PageView',
-      pixelId: '337172820372152',
-    }],
+    //'@nuxtjs/sentry',
+    //'@nuxtjs/google-gtag',
+    //'nuxt-facebook-pixel-module',
     ['nuxt-i18n', {
       defaultLocale: 'en',
       locales: [
@@ -150,37 +159,36 @@ module.exports = {
 
   /*
   |--------------------------------------------------------------------------
-  | Plugins
-  |--------------------------------------------------------------------------
-  */
-
-  plugins: [
-    '~/plugins/global.js',
-    '~/plugins/disqus',
-    '~/plugins/kentico',
-    { src: '~plugins/crisp.js', ssr: false }
-  ],
-
-  /*
-  |--------------------------------------------------------------------------
   | Sentry config
   |--------------------------------------------------------------------------
   */
 
   sentry: {
-    dsn: 'https://034a385b35114c24a52746f15e902320:bb844caff5d942a093c49b7dc10e9ee0@sentry.io/1273174',
-    public_dns: 'https://034a385b35114c24a52746f15e902320@sentry.io/1273174',
+    dsn: 'PRIVATE_DNS',
+    public_dns: 'PUBLIC_DNS',
     disabled: process.env.NODE_ENV !== 'production',
     disableClientSide: process.env.NODE_ENV !== 'production',
   },
 
   /*
   |--------------------------------------------------------------------------
-  | Google Analytics
+  | Facebook Pixel config
+  |--------------------------------------------------------------------------
+  */
+
+  facebook: {
+    track: 'PageView',
+    pixelId: 'FACEBOOK_PIXEL_ID',
+    disabled: false
+  },
+
+  /*
+  |--------------------------------------------------------------------------
+  | Google Tag config
   |--------------------------------------------------------------------------
   */
 
   'google-tag': {
-    id: 'UA-81356151-2'
+    id: 'GOOGLE_ID'
   }
 }

@@ -4,8 +4,8 @@
         <div class="container">
             <div class="navbar-brand">
                 <nuxt-link class="navbar-item" :to="localePath('index')">
-                    <img v-show="!transparent || active" src="~assets/img/logo.svg" alt="Witify logo">
-                    <img v-show="transparent && !active" src="~assets/img/logo-white.svg" alt="Witify logo">
+                    <img v-show="!transparent || active" src="~assets/img/logo.svg" :alt="$config.app.name + ' logo'">
+                    <img v-show="transparent && !active" src="~assets/img/logo-white.svg" :alt="$config.app.name + ' logo'">
                 </nuxt-link>
                 <div @click="toggle()" class="navbar-burger">
                     <div class="icon">
@@ -19,54 +19,8 @@
 
                 <div class="navbar-start">
 
-                    <nuxt-link :to="localePath('projects')" class="navbar-item is-bold">
-                        {{ $t('pages.projects.index') }}
-                    </nuxt-link>
-
-                    <div class="navbar-item has-dropdown is-hoverable">
-                        <nuxt-link :to="localePath('services')" class="navbar-link is-bold">
-                            {{ $t('pages.services.index') }}
-                        </nuxt-link>
-
-                        <div class="navbar-dropdown is-boxed is-services">
-                            <div class="navbar-item">
-                                <nuxt-link :to="localePath('services-process-optimisation')" class="navbar-media">
-                                    <span class="icon has-text-process-optimisation">
-                                        <i class="mdi mdi-rocket"></i>
-                                    </span>
-                                    <span>
-                                        <strong>{{ $t('pages.services.process-optimisation') }}</strong>
-                                        <span>{{ $t('pages.services.process-optimisation-subtext') }}</span>
-                                    </span>
-                                </nuxt-link>
-                            </div>
-                            <div class="navbar-item">
-                                <nuxt-link :to="localePath('services-e-commerce')" class="navbar-media">
-                                    <span class="icon has-text-e-commerce">
-                                        <i class="mdi mdi-store"></i>
-                                    </span>
-                                    <span>
-                                        <strong>{{ $t('pages.services.e-commerce') }}</strong>
-                                        <span>{{ $t('pages.services.e-commerce-subtext') }}</span>
-                                    </span>
-                                </nuxt-link>
-                            </div>
-                            <div class="navbar-item">
-                                <nuxt-link :to="localePath('services-custom-application')" class="navbar-media">
-                                    <span class="icon has-text-custom-application">
-                                        <i class="mdi mdi-server-network"></i>
-                                    </span>
-                                    <span>
-                                        <strong>{{ $t('pages.services.custom-application') }}</strong>
-                                        <span>{{ $t('pages.services.custom-application-subtext') }}</span>
-                                    </span>
-                                </nuxt-link>
-                            </div>
-                        </div>
-                    </div>
-
-                    <nuxt-link :to="localePath('blog')" class="navbar-item is-bold">
-                        {{ $t('pages.blog.title') }}
+                    <nuxt-link :to="localePath('index')" class="navbar-item is-bold">
+                        {{ $t('pages.home.title') }}
                     </nuxt-link>
 
                     <nuxt-link :to="localePath('about')" class="navbar-item is-bold">
@@ -114,10 +68,7 @@ export default {
     methods: {
         isTransparent() {
             if (this.$nuxt.$route.name) {
-                return this.$nuxt.$route.name.includes('index__') ||
-                    this.$nuxt.$route.name.includes('projects-') ||
-                    this.$nuxt.$route.name.includes('about') ||
-                    this.$nuxt.$route.name.includes('services')
+                return this.$nuxt.$route.name.includes('index__')
             }
             return false
         },

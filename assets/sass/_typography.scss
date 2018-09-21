@@ -31,28 +31,37 @@ h1, h2, h3, h4, h5, h6 {
 
 /*
 |--------------------------------------------------------------------------
+| Heading
+|--------------------------------------------------------------------------
+*/
+
+.heading {
+    color: $grey;
+    font-weight: $weight-semibold;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+/*
+|--------------------------------------------------------------------------
 | Paragraphs
 |--------------------------------------------------------------------------
 */
+
+p {
+    font-weight: 400;
+    color: $grey-dark;
+    font-size: 1.1rem;
+
+    @include mobile() {
+        font-size: 1rem;
+    }
+}
 
 p.is-lead {
     color: $black;
     font-size: 1.5rem;
     line-height: 1.4;
-}
-
-p.is-medium {
-    font-weight: 400;
-    color: $grey-dark;
-    font-size: 1.2rem;
-
-    @include mobile() {
-        font-size: 1.1rem;
-    }
-}
-
-p.is-tight {
-    line-height: 1.1;
 }
 
 /*
@@ -138,5 +147,4 @@ strong {
     .is-size-5 {
         font-size: $size-6 !important;
     }
-    
 }

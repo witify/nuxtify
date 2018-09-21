@@ -1,7 +1,7 @@
 {
-  "name": "witify",
+  "name": "nuxtify",
   "version": "1.0.0",
-  "description": "Witify Official Website",
+  "description": "Nuxtify",
   "author": "Francois Levesque <info@cumuluswebdesign.com>",
   "private": true,
   "scripts": {
@@ -13,7 +13,6 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "@nuxtjs/google-analytics": "^2.0.2",
     "@nuxtjs/google-gtag": "^1.0.4",
     "axios": "^0.18.0",
     "bulma": "^0.7.1",
