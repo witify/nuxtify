@@ -1,12 +1,12 @@
 .page-about {
     .hero.is-main {
-        background-image: url('~/assets/img/about/bg.jpg');
+        background-image: url('~assets/img/about/bg.jpg');
     }
     
     .is-excellence {
         @include tablet() {
 
-            background-image: url('~/assets/img/about/excellence.jpg');
+            background-image: url('~assets/img/about/excellence.jpg');
             background-position: right top;
             background-size: 50%;
             background-repeat: repeat-y;
