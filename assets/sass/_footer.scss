@@ -15,12 +15,18 @@
         font-weight: $weight-semibold;
         margin-bottom: 35px;
         font-size: $size-5;
+
+        @include mobile() {
+            margin-bottom: 15px;
+        }
     }
+
     .footer-link, p {
         display: block;
         color: $grey-dark;
         margin-bottom: 10px;
     }
+
     p {
         @include tablet() {
             padding-right: 100px;
@@ -47,7 +53,7 @@
                 vertical-align: middle;
             }
             img {
-                opacity: 0.4;
+                opacity: 0.3;
                 width: 32px;
             }
             span {

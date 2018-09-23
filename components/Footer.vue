@@ -21,7 +21,7 @@
                 </div>
                 <div class="footer-bottom">
                     <div class="footer-bottom-left">
-                        <img src="~assets/img/logo.svg" alt=" logo">
+                        <img src="~assets/img/logo-black.svg" :alt="`$(${$config.app.name}) logo`">
                         <span>{{ $config.app.name }} Inc. {{ $t('pages.footer.all-rights-reserved') }}</span>
                     </div>
                     <div class="footer-bottom-right">

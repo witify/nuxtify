@@ -1,7 +1,7 @@
 <template>
   <div class="page-home">
 
-    <section class="hero has-text-centered is-medium is-primary is-bold">
+    <section class="hero has-text-centered is-large is-primary is-bold is-top">
       <div class="hero-body">
         <div class="container">
 

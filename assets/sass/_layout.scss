@@ -60,6 +60,12 @@ body {
     border-bottom: solid 1px $white-ter;
 }
 
+.hero.is-top {
+    .hero-body {
+        margin-top: $navbar-height / 2;
+    }
+}
+
 /*
 |--------------------------------------------------------------------------
 | Section

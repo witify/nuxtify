@@ -6,7 +6,7 @@ export default {
     },
     about: {
       title: 'À Propos',
-      subtitle: "Nous sommes une entreprise <strong>montréalaise</strong> en pleine croissance. Nous adorons le contact humain et les défis en tout genre. Notre équipe est dynamique et se fera un plaisir <strong>d\'écouter</strong> vos idées et <strong>concrétiser</strong> vos projets.",
+      subtitle: "Ut dolore sint irure dolor quis culpa amet sint sunt quis adipisicing aliquip fugiat. Aute do incididunt enim ea ut quis.",
     },
     blog: {
       title: 'Blog',
@@ -44,7 +44,7 @@ export default {
     },
     footer: {
       about: 'À propos',
-      'about-text': 'Notre équipe est basée à Montréal et grandit rapidement. Elle prospère sur la connexion humaine et les projets sympas. Nous aimerions entendre parler de votre prochaine super idée! Peu importe le stade auquel vous êtes, nous en tirerons le meilleur parti. Nous sommes seulement à un appel téléphonique ou à un courriel de distance.',
+      'about-text': 'Ut dolore sint irure dolor quis culpa amet sint sunt quis adipisicing aliquip fugiat. Aute do incididunt enim ea ut quis.',
       'all-services': 'Tous les services',
       'all-rights-reserved': 'Tous droits réservés.',
       'next-big-idea': "Parlez-nous de votre prochaine grande idée",
