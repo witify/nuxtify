@@ -90,7 +90,7 @@ module.exports = {
               path.join(__dirname, './components/**/*.vue')
             ]),
             whitelist: ['html', 'body'],
-            whitelistPatterns: [/nuxt-/]
+            whitelistPatterns: [/nuxt-/, /-enter$/, /-leave-active$/, /-enter-active$/, /aos/]
           })
         );
       }
