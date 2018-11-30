@@ -1,4 +1,6 @@
-const purgecss = require('@fullhuman/postcss-purgecss')
+const PurgecssPlugin = require('purgecss-webpack-plugin')
+const glob = require('glob-all')
+const path = require('path')
 
 import config from './config/general'
 
@@ -65,6 +67,9 @@ module.exports = {
   */
 
   build: {
+
+    analyze: false,
+    extractCSS: true,
     
     extend (config, { isDev }) {
       if (isDev && process.client) {
@@ -75,25 +80,20 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
-    },
 
-    analyze: false,
-
-    postcss: {
-      plugins: [
-        purgecss({
-          content: [
-            './pages/**/*.vue',
-            './layouts/**/*.vue',
-            './components/**/*.vue'
-          ],
-          whitelist: ['html', 'body'],
-          whitelistPatterns: [/nuxt-/]
-        }),
-        require('cssnano')({
-          preset: 'default',
-        })
-      ]
+      if (!isDev) {
+        config.plugins.push(
+          new PurgecssPlugin({
+            paths: glob.sync([
+              path.join(__dirname, './pages/**/*.vue'),
+              path.join(__dirname, './layouts/**/*.vue'),
+              path.join(__dirname, './components/**/*.vue')
+            ]),
+            whitelist: ['html', 'body'],
+            whitelistPatterns: [/nuxt-/, /-enter$/, /-leave-active$/, /-enter-active$/, /aos/]
+          })
+        );
+      }
     }
   },
 
