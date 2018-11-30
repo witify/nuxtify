@@ -74,13 +74,13 @@
                             </div>
                             <div class="field">
                                 <label class="checkbox">
-                                    <input type="checkbox" value="thursday" v-model="form.day">
+                                    <input type="checkbox" value="Thursday" v-model="form.day">
                                     {{ $t('pages.contact.thursday') }}
                                 </label>
                             </div>
                             <div class="field">
                                 <label class="checkbox">
-                                    <input type="checkbox" value="friday" v-model="form.day">
+                                    <input type="checkbox" value="Friday" v-model="form.day">
                                     {{ $t('pages.contact.friday') }}
                                 </label>
                             </div>
@@ -154,16 +154,16 @@
                 this.sendRequest()
             },
             sendRequest() {
-                let data = {
-                    "text": "New message " + this.$config.app.url + " 🤗",
-                    "attachments": [
-                        {
-                            "title": this.form.name + ' @' + this.form.email,
-                            "text": this.form.message + '\n' + this.form.phone + '\n' + this.form.day.join(', ') + '\n' + this.form.time.join(' + ') + '\n'
-                        }
-                    ]
-                }
-                axios.post('https://hooks.slack.com/services/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', JSON.stringify(data))
+                axios.post(
+                    'https://mailer.witify.io/api/mail/submit',
+                    {
+                        subject: 'New message on ' + this.$config.app.url,
+                        data: this.form
+                    },
+                    {
+                        headers: {Authorization: "Bearer $2y$10$H9h9sKYqiLkOQagh.OcSm.aNVPCOfkYdfKSRhUgOEvEbWVggexNWq"}
+                    }
+                )
                 .then(response => {
                     this.sent = true
                     this.loading = false
