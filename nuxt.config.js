@@ -132,25 +132,20 @@ module.exports = {
 				order: "-sys.createdAt",
 				locale: "*"
 			});
+
+			let locales = [
+				{iso: "fr-CA", route: "/fr/blog/"},
+				{iso: "en-US", route: "/blog/"},          
+			];
       
-			let routes = posts.items.map(post => {
-
-				let locales = [
-					{iso: "fr-CA", route: "/fr/blog/"},
-					{iso: "en-US", route: "/blog/"},          
-				];
-        
-				return locales.map(locale => {
-					return formatPosts(posts, locale.iso).map(post => {
-						return {
-							route: locale.route + post.slug,
-							payload: post
-						};
-					});
-				}).flat();
+			return locales.map(locale => {
+				return formatPosts(posts, locale.iso).map(post => {
+					return {
+						route: locale.route + post.slug,
+						payload: post
+					};
+				});
 			}).flat();
-
-			return routes;
 		}
 	},
 
