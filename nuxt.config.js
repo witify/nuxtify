@@ -138,8 +138,8 @@ module.exports = {
 				{iso: "en-US", route: "/blog/"},          
 			];
       
-			return locales.map(function(locale) {
-				return formatPosts(posts, locale.iso).map(function(post) {
+			return locales.map(locale => {
+				return formatPosts(posts, locale.iso).map(post => {
 					return {
 						route: locale.route + post.slug,
 						payload: post

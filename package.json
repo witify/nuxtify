@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Nuxtify",
   "author": "Francois Levesque <francois@witify.io>",
+  "engines" : {
+    "node" : ">=11.0.0"
+  },
   "private": true,
   "scripts": {
     "dev": "cross-env NODE_ENV=development nuxt",
