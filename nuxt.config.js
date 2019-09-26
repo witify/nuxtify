@@ -145,7 +145,9 @@ module.exports = {
 						payload: post
 					};
 				});
-			}).flat();
+			}).reduce((acc, current) => {
+				return acc.concat(current);
+			}, []);
 		}
 	},
 
