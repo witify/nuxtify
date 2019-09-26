@@ -13,29 +13,27 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
+    "@nuxtjs/component-cache": "^1.1.5",
     "@nuxtjs/google-gtag": "^1.0.4",
-    "axios": "^0.18.0",
-    "bulma": "^0.7.1",
-    "nuxt": "^2.0.0",
-    "nuxt-facebook-pixel-module": "^1.0.0",
-    "nuxt-i18n": "^5.0.0",
-    "vue-disqus": "^3.0.4",
-    "vue-scrollto": "^2.11.0",
-    "vue-typer": "^1.2.0"
+    "@nuxtjs/sentry": "^3.0.0",
+    "axios": "^0.19.0",
+    "bulma": "^0.7.5",
+    "nuxt": "^2.9.2",
+    "nuxt-facebook-pixel-module": "^1.3.0",
+    "nuxt-i18n": "^6.3.0",
+    "vue-scrollto": "^2.17.1"
   },
   "devDependencies": {
-    "@nuxtjs/component-cache": "^1.1.2",
-    "@nuxtjs/sentry": "^1.1.2",
-    "babel-eslint": "^8.2.1",
-    "cross-env": "^5.2.0",
-    "cssnano": "^4.1.0",
-    "eslint": "^4.15.0",
-    "eslint-friendly-formatter": "^3.0.0",
-    "eslint-loader": "^1.7.1",
-    "eslint-plugin-vue": "^4.0.0",
+    "babel-eslint": "^10.0.3",
+    "cross-env": "^6.0.0",
+    "cssnano": "^4.1.10",
+    "eslint": "^6.4.0",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-loader": "^3.0.1",
+    "eslint-plugin-vue": "^5.2.3",
     "glob-all": "^3.1.0",
-    "node-sass": "^4.9.0",
-    "purgecss-webpack-plugin": "^1.3.1",
-    "sass-loader": "^7.0.3"
+    "node-sass": "^4.12.0",
+    "purgecss-webpack-plugin": "^1.6.0",
+    "sass-loader": "^7.3.1"
   }
 }

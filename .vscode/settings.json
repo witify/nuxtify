@@ -1,0 +1,30 @@
+{
+    "git.enableSmartCommit": true,
+    "git.autofetch": true,
+    "window.zoomLevel": 1,
+    "emmet.showAbbreviationSuggestions": true,
+    "emmet.showExpandedAbbreviation": "always",
+    "emmet.includeLanguages": {
+        "vue-html": "html",
+        "vue": "html"
+    },
+    "scssFormatter.tabWidth": 4,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "vetur.format.options.tabSize": 2,
+    "eslint.alwaysShowStatus": true,
+    "eslint.options": {
+        "configFile": ".eslintrc.js"
+    },
+    "eslint.autoFixOnSave": true,
+    "eslint.validate": [
+        "javascript",
+        {"language": "vue", "autoFix": true}
+    ],
+    "[javascript]": {
+        "editor.tabSize": 2
+    },
+    "[vue]": {
+        "editor.tabSize": 2
+    },
+    "editor.detectIndentation": false
+}
