@@ -1,66 +1,92 @@
 <template>
-    <div class="wrapper">
+  <div class="wrapper">
+    <section class="hero is-main">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">
+            {{ $t('pages.blog.title') }}
+          </h1>
+          <h2 class="subtitle">
+            {{ $t('pages.blog.subtitle') }}
+          </h2>
+        </div>
+      </div>
+    </section>
+    
+    <hr>
 
-        <section class="hero is-main">
-            <div class="hero-body">
-                <div class="container">
-                    <h1 class="title">{{ $t('pages.blog.title') }}</h1>
-                    <h2 class="subtitle">{{ $t('pages.blog.subtitle') }}</h2>
+    <section class="section">
+      <div class="container">
+        <div class="columns is-multiline">
+          <div
+            v-for="post in posts"
+            :key="post.id"
+            class="column is-one-third"
+          >
+            <nuxt-link :to="`${localePath('blog')}/${post.slug}`">
+              <div class="card">
+                <div class="card-image">
+                  <img
+                    :src="`${post.picture.url}?fm=jpg&q=80&fit=fill&w=400&h=200`"
+                    :alt="post.title"
+                  >
                 </div>
-            </div>
-        </section>
-
-        <section class="section">
-            <div class="container">
-
-                <div class="columns is-multiline">
-                    <div class="column is-one-third" v-for="item in items">
-                        <nuxt-link :to="`${localePath('blog')}/${item.system.codename}`">
-                            <div class="card">
-                                <div class="card-image">
-                                    <img v-bind="$resizeImage(item.elements.picture.value[0].url, 400, 300)" alt="Placeholder image">
-                                </div>
-                                <div class="card-content">
-                                    <div class="content">
-                                        <h2 class="title is-size-4">{{ item.elements.title.value }}</h2>
-                                        <p v-if="item.elements.description.value">{{ item.elements.description.value }}</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </nuxt-link>
-                    </div>
+                <div class="card-content">
+                  <div class="content">
+                    <h2 class="title is-size-6">
+                      {{ post.title }}
+                    </h2>
+                    <p
+                      v-if="post.description"
+                      class="subtitle is-size-6 has-text-grey"
+                    >
+                      {{ $utils.limit(post.description, 100) }}
+                    </p>
+                  </div>
                 </div>
+              </div>
+            </nuxt-link>
+          </div>
+        </div>
 
-                <div class="has-text-centered" v-if="items.length == 0">
-                    <span class="icon is-size-1 mb-30">
-                        <i class="mdi mdi-newspaper"></i>
-                    </span>
-                    <h2 class="title is-size-4 has-text-grey">{{ $t('pages.blog.empty') }}</h2>
-                </div>
-
-            </div>
-        </section>
-    </div>
+        <div
+          v-if="posts.length == 0"
+          class="has-text-centered"
+        >
+          <span class="icon is-size-1 mb-30">
+            <i class="mdi mdi-newspaper" />
+          </span>
+          <h2 class="title is-size-4 has-text-grey">
+            {{ $t('pages.blog.empty') }}
+          </h2>
+        </div>
+      </div>
+    </section>
+  </div>
 </template>
 
 <script>
-import kentico from '@/plugins/kentico'
+import { createClient, formatPosts } from "~/plugins/contentful.js";
 
 export default {
-    layout: 'default',
-    data () {
-        return { items: [] }
-    },
-    asyncData ({ app }) {
-        return kentico.send(app.i18n.locale, 'post')
-            .then(response =>  {
-                return {items: response.data.items}
-            })
-    },
-    head() {
-        return {
-            title: this.$t('pages.blog.title')
-        }
-    }
-}
+	head() {
+		return {
+			title: this.$t("pages.blog.title")
+		};
+	},
+	async asyncData ({env, app}) {
+		const client = createClient();
+    
+		let data = await client.getEntries({
+			content_type: env.CTF_BLOG_POST_TYPE_ID,
+			order: "-sys.createdAt",
+			locale: "*"
+		});
+    
+    
+		return {
+			posts: formatPosts(data, app.$utils.currentLocaleISO())
+		};
+	}
+};
 </script>

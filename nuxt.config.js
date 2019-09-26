@@ -4,6 +4,10 @@ const path = require("path");
 
 import config from "./config/general";
 
+const contentful = require("contentful");
+const contentfulConfig = require("./.contentful.json");
+import { formatPosts } from "./plugins/contentful";
+
 module.exports = {
 
 	/*
@@ -62,6 +66,19 @@ module.exports = {
 
 	/*
   |--------------------------------------------------------------------------
+  | Environnement variables
+  |--------------------------------------------------------------------------
+  */
+  
+	env: {
+		CTF_SPACE_ID: contentfulConfig.CTF_SPACE_ID,
+		CTF_CDA_ACCESS_TOKEN: contentfulConfig.CTF_CDA_ACCESS_TOKEN,
+		CTF_PERSON_ID: contentfulConfig.CTF_PERSON_ID,
+		CTF_BLOG_POST_TYPE_ID: contentfulConfig.CTF_BLOG_POST_TYPE_ID
+	},
+
+	/*
+  |--------------------------------------------------------------------------
   | Build config
   |--------------------------------------------------------------------------
   */
@@ -69,7 +86,6 @@ module.exports = {
 	build: {
 
 		analyze: false,
-		extractCSS: true,
     
 		extend (config, { isDev }) {
 			if (isDev && process.client) {
@@ -96,6 +112,47 @@ module.exports = {
 			}
 		}
 	},
+  
+	/*
+  |--------------------------------------------------------------------------
+  | Generate config
+  |--------------------------------------------------------------------------
+  */
+
+	generate: {
+		routes: async function () {
+
+			const client = contentful.createClient({
+				space:  contentfulConfig.CTF_SPACE_ID,
+				accessToken: contentfulConfig.CTF_CDA_ACCESS_TOKEN
+			});
+    
+			let posts = await client.getEntries({
+				content_type: contentfulConfig.CTF_BLOG_POST_TYPE_ID,
+				order: "-sys.createdAt",
+				locale: "*"
+			});
+      
+			let routes = posts.items.map(post => {
+
+				let locales = [
+					{iso: "fr-CA", route: "/fr/blog/"},
+					{iso: "en-US", route: "/blog/"},          
+				];
+        
+				return locales.map(locale => {
+					return formatPosts(posts, locale.iso).map(post => {
+						return {
+							route: locale.route + post.slug,
+							payload: post
+						};
+					});
+				}).flat();
+			}).flat();
+
+			return routes;
+		}
+	},
 
 	/*
   |--------------------------------------------------------------------------
@@ -117,8 +174,8 @@ module.exports = {
 
 	plugins: [
 		"~/plugins/global.js",
-		//'~/plugins/disqus',
-		//'~/plugins/kentico',
+		"~/plugins/contentful",
+		"~/plugins/utils",
 		//{ src: '~plugins/crisp.js', ssr: false }
 	],
 
@@ -144,7 +201,7 @@ module.exports = {
 				},
 				{
 					code: "fr",
-					iso: "fr-FR",
+					iso: "fr-CA",
 					name: "Français",
 					file: "fr.js"
 				},

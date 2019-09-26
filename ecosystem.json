@@ -1,0 +1,12 @@
+{
+    "apps" : [{
+        "name"      : "nuxtify",
+        "exec_mode" : "cluster",
+        "instances" : "max",
+        "cwd"       : "./current",
+        "max_memory_restart": "150M",
+        "watch":    true,
+        "script"    : "./node_modules/.bin/nuxt",
+        "args"      : "start --port 3002"
+    }]
+}
