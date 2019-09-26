@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper">
     <section class="section post">
-      <div class="container is-sm">
+      <div class="container is-small">
         <img
           class="post-picture"
           :src="`${post.picture.url}?fm=jpg&fl=progressive&q=80&fit=scale&w=800`"
