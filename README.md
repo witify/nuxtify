@@ -1,5 +1,7 @@
 # Nuxtify
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/29125134-de58-48ad-bbb4-a8ed07c337f7/deploy-status)](https://app.netlify.com/sites/wizardly-goldberg-766207/deploys)
+
 > A clean boilerplate to start a static website, batteries included
 
 ## Build Setup
