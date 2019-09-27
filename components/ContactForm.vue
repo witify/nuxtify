@@ -95,7 +95,7 @@
               class="input"
               type="text"
               name="phone"
-              :required="this.form.contact_by_phone"
+              :required="form.contact_by_phone"
             >
           </div>
 
