@@ -22,17 +22,3 @@ $ npm run generate
 ```
 
 For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
-
-## Create new Contentful Project
-
-``` bash
-
-npm i -g contentful-cli
-
-contentful login
-
-contentful space export --space-id {SPACE_ID}
-
-contentful space import --space-id {SPACE_ID} --config {filename}
-
-```

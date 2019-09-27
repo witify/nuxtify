@@ -28,7 +28,7 @@
               <div class="card">
                 <div class="card-image">
                   <img
-                    :src="`${post.picture.url}?fm=jpg&q=80&fit=fill&w=400&h=200`"
+                    :src="$squidex.asset(post.picture)"
                     :alt="post.title"
                   >
                 </div>
@@ -67,8 +67,6 @@
 </template>
 
 <script>
-import { createClient, formatPosts, renderer } from "~/plugins/contentful.js";
-
 export default {
 	head() {
 		return {
@@ -76,29 +74,9 @@ export default {
 		};
 	},
 	async asyncData ({env, app}) {
-		const client = createClient();
-    
-		let posts = await client.getEntries({
-			content_type: "post",
-			order: "-sys.createdAt",
-			locale: "*"
-		});
-    
-		let page = await client.getEntries({
-			content_type: "page.blog",
-			locale: app.$utils.currentLocaleISO(),
-			limit: 1
-		});
-    
-		page = page.items[0];
-    
 		return {
-			page: {
-				seo_title: page.fields.seo_title || page.fields.title,
-				title: page.fields.title,
-				text: renderer(page.fields.text),
-			},
-			posts: formatPosts(posts, app.$utils.currentLocaleISO())
+			page: await app.$squidex.blog(app.i18n.locale),
+			posts: await app.$squidex.posts(app.i18n.locale)
 		};
 	}
 };

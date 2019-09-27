@@ -23,31 +23,15 @@
 </template>
 
 <script>
-import { createClient, renderer } from "~/plugins/contentful";
-
 export default {
 	head() {
 		return {
 			title: this.page.seo_title
 		};
 	},
-	async asyncData ({env, app}) {
-		const client = createClient();
-    
-		let data = await client.getEntries({
-			content_type: "page.about",
-			locale: app.$utils.currentLocaleISO(),
-			limit: 1
-		});
-    
-		let page = data.items[0];
-    
+	async asyncData ({env, app}) {   
 		return {
-			page: {
-				seo_title: page.fields.seo_title || page.fields.title,
-				title: page.fields.title,
-				text: renderer(page.fields.text),
-			}
+			page: await app.$squidex.about(app.i18n.locale)
 		};
 	}
 };
