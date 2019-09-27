@@ -213,8 +213,6 @@
 </template>
 
 <script>
-import axios from "axios";
-
 export default {
 	data () {
 		return {
@@ -237,7 +235,7 @@ export default {
 			this.sendRequest();
 		},
 		sendRequest() {
-			axios.post(
+			this.$axios.post(
 				"https://mailer.witify.io/api/mail/submit",
 				{
 					subject: "New message on " + this.$config.app.name,

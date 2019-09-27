@@ -14,6 +14,9 @@ export default {
 	components: {
 		"v-navigation": Navigation,
 		"v-footer": Footer
+	},
+	head () {
+		return this.$nuxtI18nSeo();
 	}
 };
 </script>

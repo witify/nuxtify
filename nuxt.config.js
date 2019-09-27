@@ -1,7 +1,7 @@
 const PurgecssPlugin = require("purgecss-webpack-plugin");
 const glob = require("glob-all");
 const path = require("path");
-require('dotenv').config();
+require("dotenv").config();
 
 import config from "./config/general";
 
@@ -69,13 +69,13 @@ module.exports = {
   |--------------------------------------------------------------------------
   */
   
-  env: {
-    URL: process.env.URL || 'http://localhost:3000',
-    NAME: process.env.NAME || 'Nuxtify',
-    CTF_SPACE_ID: process.env.CTF_SPACE_ID,
-    CTF_ACCESS_TOKEN: process.env.CTF_ACCESS_TOKEN,
-    MAILER_TOKEN: process.env.MAILER_TOKEN
-  },
+	env: {
+		URL: process.env.URL || "http://localhost:3000",
+		NAME: process.env.NAME || "Nuxtify",
+		CTF_SPACE_ID: process.env.CTF_SPACE_ID,
+		CTF_ACCESS_TOKEN: process.env.CTF_ACCESS_TOKEN,
+		MAILER_TOKEN: process.env.MAILER_TOKEN
+	},
   
 	/*
   |--------------------------------------------------------------------------
@@ -172,8 +172,9 @@ module.exports = {
   */
 
 	modules: [
-    "@nuxtjs/component-cache",
-    "@nuxtjs/dotenv",
+		"@nuxtjs/axios",
+		"@nuxtjs/component-cache",
+		"@nuxtjs/dotenv",
 		//'@nuxtjs/sentry',
 		//'@nuxtjs/google-gtag',
 		//'nuxt-facebook-pixel-module',
@@ -195,6 +196,7 @@ module.exports = {
 			],
 			lazy: true,
 			langDir: "lang/",
+			seo: false,
 			vueI18n: {
 				fallbackLocale: "en"
 			}
