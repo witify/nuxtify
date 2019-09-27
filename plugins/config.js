@@ -1,8 +1,8 @@
 export default ({ app }, inject) => {
 	inject("config", {
 		app: {
-			name: process.env.WEBSITE_NAME,
-			url: process.env.WEBSITE_URL,
+			name: process.env.NAME,
+			url: process.env.URL,
 		},
 		socials: {
 			facebook: "https://facebook.com",

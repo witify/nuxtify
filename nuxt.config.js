@@ -70,8 +70,8 @@ module.exports = {
   */
   
   env: {
-    WEBSITE_NAME: process.env.WEBSITE_NAME || 'Nuxtify',
-    WEBSITE_URL: process.env.WEBSITE_URL || 'http://localhost',
+    URL: process.env.URL || 'http://localhost:3000',
+    NAME: process.env.NAME || 'Nuxtify',
     CTF_SPACE_ID: process.env.CTF_SPACE_ID,
     CTF_ACCESS_TOKEN: process.env.CTF_ACCESS_TOKEN,
     MAILER_TOKEN: process.env.MAILER_TOKEN
