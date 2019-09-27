@@ -50,6 +50,7 @@ export default {
     
 		return {
 			page: {
+				seo_title: data.items[0].fields.seo_title || data.items[0].fields.title,
 				title: data.items[0].fields.title,
 				text: renderer(data.items[0].fields.text),
 			}

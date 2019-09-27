@@ -6,9 +6,8 @@
     >
       <form
         v-if="!sent"
-        v-loading="loading"
         class="form"
-        @submit.prevent="send()"
+        netlify
       >
         <div class="columns">
           <div class="column">

@@ -7,7 +7,7 @@ export default {
   */
 
 	app: {
-		name: "Nuxtify",
+		name: process.env.WEBSITE_NAME,
 		url: "nuxtify.io",
 		email: "info@nuxtify.io",
 		phone: "1 800 555 5555"

@@ -1,7 +1,6 @@
 import Vue from "vue";
 
 import Socials from "@/components/Socials.vue";
-import config from "@/config/general";
 
 /*
  |--------------------------------------------------------------------------
@@ -50,8 +49,6 @@ Vue.directive("loading", {
  | Prototypes
  |--------------------------------------------------------------------------
 */ 
-
-Vue.prototype.$config = config;
 
 Vue.prototype.$resizeImage = function(image, width = 800, height = 600) {
 	let imageSrc = "";

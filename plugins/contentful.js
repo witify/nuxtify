@@ -1,15 +1,11 @@
 import { documentToHtmlString } from "@contentful/rich-text-html-renderer";
 import * as contentful from "contentful";
 
-// use default environment config for convenience
-// these will be set via `env` property in nuxt.config.js
-const config = {
-	space: process.env.CTF_SPACE_ID,
-	accessToken: process.env.CTF_CDA_ACCESS_TOKEN
-};
-
 export function createClient () {
-	return contentful.createClient(config);
+	return contentful.createClient({
+		space: process.env.CTF_SPACE_ID,
+		accessToken: process.env.CTF_ACCESS_TOKEN
+	});
 }
 
 /**

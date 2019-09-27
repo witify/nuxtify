@@ -41,7 +41,7 @@ export default {
 		let locale = app.$utils.currentLocaleISO();
 
 		let query = {
-			content_type: env.CTF_BLOG_POST_TYPE_ID,
+			content_type: "post",
 			locale: "*",
 			limit: 1
 		};

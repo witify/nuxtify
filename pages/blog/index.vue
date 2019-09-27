@@ -4,11 +4,12 @@
       <div class="hero-body">
         <div class="container">
           <h1 class="title">
-            {{ $t('pages.blog.title') }}
+            {{ page.title }}
           </h1>
-          <h2 class="subtitle">
-            {{ $t('pages.blog.subtitle') }}
-          </h2>
+          <div
+            class="content"
+            v-html="page.text"
+          />
         </div>
       </div>
     </section>
@@ -66,26 +67,38 @@
 </template>
 
 <script>
-import { createClient, formatPosts } from "~/plugins/contentful.js";
+import { createClient, formatPosts, renderer } from "~/plugins/contentful.js";
 
 export default {
 	head() {
 		return {
-			title: this.$t("pages.blog.title")
+			title: this.page.seo_title
 		};
 	},
 	async asyncData ({env, app}) {
 		const client = createClient();
     
-		let data = await client.getEntries({
-			content_type: env.CTF_BLOG_POST_TYPE_ID,
+		let posts = await client.getEntries({
+			content_type: "post",
 			order: "-sys.createdAt",
 			locale: "*"
 		});
     
+		let page = await client.getEntries({
+			content_type: "page.blog",
+			locale: app.$utils.currentLocaleISO(),
+			limit: 1
+		});
+    
+		page = page.items[0];
     
 		return {
-			posts: formatPosts(data, app.$utils.currentLocaleISO())
+			page: {
+				seo_title: page.fields.seo_title || page.fields.title,
+				title: page.fields.title,
+				text: renderer(page.fields.text),
+			},
+			posts: formatPosts(posts, app.$utils.currentLocaleISO())
 		};
 	}
 };

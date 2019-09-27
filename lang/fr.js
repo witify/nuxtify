@@ -1,16 +1,12 @@
 export default {
+	nav: {
+		home: "Accueil",
+		about: "À propos",
+		blog: "Nouvelles",
+		contact: "Nous joindre"
+	},
 	pages: {
-		home: {
-			title: "Accueil",
-			subtitle: "Witify est une équipe de conception et d'ingénierie qui confectionne des produits web supérieurs."
-		},
-		about: {
-			title: "À Propos",
-			subtitle: "Ut dolore sint irure dolor quis culpa amet sint sunt quis adipisicing aliquip fugiat. Aute do incididunt enim ea ut quis.",
-		},
 		blog: {
-			title: "Blog",
-			subtitle: "Dernières nouvelles",
 			empty: "Aucun article. Revenez plus tard!"
 		},
 		contact: {

@@ -1,11 +1,11 @@
 const PurgecssPlugin = require("purgecss-webpack-plugin");
 const glob = require("glob-all");
 const path = require("path");
+require('dotenv').config();
 
 import config from "./config/general";
 
 const contentful = require("contentful");
-const contentfulConfig = require("./.contentful.json");
 import { formatPosts } from "./plugins/contentful";
 
 module.exports = {
@@ -21,7 +21,6 @@ module.exports = {
 		meta: [
 			{ charset: "utf-8" },
 			{ name: "viewport", content: "width=device-width, initial-scale=1" },
-			{ hid: "description", name: "description", content: "Nuxtify Demo" },
 			{ name: "msapplication-TileColor", content: "#ffffff"},
 			{ name: "theme-color", content: "#ffffff"},
 			{ property: "og:image", content: "/thumbnail.jpg"},
@@ -70,13 +69,13 @@ module.exports = {
   |--------------------------------------------------------------------------
   */
   
-	env: {
-		CTF_SPACE_ID: contentfulConfig.CTF_SPACE_ID,
-		CTF_CDA_ACCESS_TOKEN: contentfulConfig.CTF_CDA_ACCESS_TOKEN,
-		CTF_PERSON_ID: contentfulConfig.CTF_PERSON_ID,
-		CTF_BLOG_POST_TYPE_ID: contentfulConfig.CTF_BLOG_POST_TYPE_ID
-	},
-
+  env: {
+    WEBSITE_NAME: process.env.WEBSITE_NAME || 'Nuxtify',
+    WEBSITE_URL: process.env.WEBSITE_URL || 'http://localhost',
+    CTF_SPACE_ID: process.env.CTF_SPACE_ID,
+    CTF_ACCESS_TOKEN: process.env.CTF_ACCESS_TOKEN
+  },
+  
 	/*
   |--------------------------------------------------------------------------
   | Build config
@@ -123,12 +122,12 @@ module.exports = {
 		routes: async function () {
 
 			const client = contentful.createClient({
-				space:  contentfulConfig.CTF_SPACE_ID,
-				accessToken: contentfulConfig.CTF_CDA_ACCESS_TOKEN
+				space: process.env.CTF_SPACE_ID,
+				accessToken: process.env.CTF_ACCESS_TOKEN
 			});
     
 			let posts = await client.getEntries({
-				content_type: contentfulConfig.CTF_BLOG_POST_TYPE_ID,
+				content_type: "post",
 				order: "-sys.createdAt",
 				locale: "*"
 			});
@@ -170,6 +169,7 @@ module.exports = {
   */
 
 	plugins: [
+		"~/plugins/config",
 		"~/plugins/global.js",
 		"~/plugins/contentful",
 		"~/plugins/utils",
@@ -183,7 +183,8 @@ module.exports = {
   */
 
 	modules: [
-		"@nuxtjs/component-cache",
+    "@nuxtjs/component-cache",
+    "@nuxtjs/dotenv",
 		//'@nuxtjs/sentry',
 		//'@nuxtjs/google-gtag',
 		//'nuxt-facebook-pixel-module',

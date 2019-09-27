@@ -7,29 +7,35 @@
             <h2 class="footer-title">
               {{ $t('pages.footer.about') }}
             </h2>
-            <p>{{ $t('pages.footer.about_text') }}</p>
+            <p>{{ globals.footerText }}</p>
           </div>
           <div class="column is-one-quarter">
             <h2 class="footer-title">
-              {{ $t('pages.home.title') }}
+              {{ $t('nav.home') }}
             </h2>
             <nuxt-link
               :to="localePath('index')"
               class="footer-link"
             >
-              {{ $t('pages.home.title') }}
+              {{ $t('nav.home') }}
             </nuxt-link>
             <nuxt-link
               :to="localePath('about')"
               class="footer-link"
             >
-              {{ $t('pages.about.title') }}
+              {{ $t('nav.about') }}
+            </nuxt-link>
+            <nuxt-link
+              :to="localePath('blog')"
+              class="footer-link"
+            >
+              {{ $t('nav.blog') }}
             </nuxt-link>
             <nuxt-link
               :to="localePath('contact')"
               class="footer-link"
             >
-              {{ $t('pages.contact.title') }}
+              {{ $t('nav.contact') }}
             </nuxt-link>
           </div>
         </div>
@@ -39,7 +45,7 @@
               src="~assets/img/logo-black.svg"
               :alt="`$(${$config.app.name}) logo`"
             >
-            <span>{{ $config.app.name }} Inc. {{ $t('pages.footer.all_rights_reserved') }}</span>
+            <span>{{ $config.app.name }}. {{ $t('pages.footer.all_rights_reserved') }}</span>
           </div>
           <div class="footer-bottom-right">
             <socials />
@@ -49,3 +55,13 @@
     </footer>
   </div>
 </template>
+
+<script>
+export default {
+	computed: {
+		globals () {
+			return this.$store.getters.globals(this.$utils.currentLocaleISO());
+		}
+	},
+};
+</script>

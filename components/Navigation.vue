@@ -46,28 +46,28 @@
             :to="localePath('index')"
             class="navbar-item is-bold"
           >
-            {{ $t('pages.home.title') }}
+            {{ $t('nav.home') }}
           </nuxt-link>
 
           <nuxt-link
             :to="localePath('about')"
             class="navbar-item is-bold"
           >
-            {{ $t('pages.about.title') }}
+            {{ $t('nav.about') }}
           </nuxt-link>
 
           <nuxt-link
             :to="localePath('blog')"
             class="navbar-item is-bold"
           >
-            {{ $t('pages.blog.title') }}
+            {{ $t('nav.blog') }}
           </nuxt-link>
 
           <nuxt-link
             :to="localePath('contact')"
             class="navbar-item is-bold"
           >
-            {{ $t('pages.contact.index') }}
+            {{ $t('nav.contact') }}
           </nuxt-link>
         </div>
 

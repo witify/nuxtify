@@ -1,16 +1,12 @@
 export default {
+	nav: {
+		home: "Home",
+		about: "About Us",
+		blog: "News",
+		contact: "Contact Us"
+	},
 	pages: {
-		home: {
-			title: "Home",
-			subtitle: "Witify is a design & engineering team crafting high-end digital products."
-		},
-		about: {
-			title: "About",
-			subtitle: "We are a growing company from Montreal. We love human contact and challenges of all kinds. Our dynamic team will be happy to listen to your ideas and bring your projects to the next stage.",
-		},
 		blog: {
-			title: "Blog",
-			subtitle: "Latest news",
 			empty: "No article. Come back later!"
 		},
 		contact: {

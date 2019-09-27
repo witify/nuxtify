@@ -25,19 +25,18 @@
               <div class="is-size-5">
                 <strong>{{ $t('pages.contact.email') }}</strong><br>
                 <div class="mb-30">
-                  <a :href="`mailto:${$config.app.email}`">{{ $config.app.email }}</a>
+                  <a :href="`mailto:${globals.email}`">{{ globals.email }}</a>
                 </div>
 
                 <strong>{{ $t('pages.contact.phone') }}</strong><br>
                 <div class="mb-30">
-                  <a :href="`tel:${$config.app.phone}`">{{ $config.app.phone }}</a>
+                  <a :href="`tel:${globals.phone}`">{{ globals.phone }}</a>
                 </div>
 
                 <strong>{{ $t('pages.contact.address') }}</strong><br>
-                <div>333 Sherbrooke E, 705</div>
-                <div>Montréal (Québec) H2X 4E3</div>
-                <div class="mb-25">
-                  Canada
+                <div style="white-space: pre;">
+<!--
+                  -->{{ globals.address }}
                 </div>
 
                 <div class="mb-30">
@@ -85,6 +84,11 @@ export default {
 	},
 	components: {
 		"contact-form": ContactForm
+	},
+	computed: {
+		globals () {
+			return this.$store.getters.globals(this.$utils.currentLocaleISO());
+		}
 	},
 	head() {
 		return {
