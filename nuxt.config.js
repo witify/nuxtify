@@ -34,7 +34,10 @@ module.exports = {
 			{ rel: "manifest", href: "/site.webmanifest" },
 			{ rel: "mask-icon", href: "/safari-pinned-tab.svg", color: "#000000" },
 			{ rel: "stylesheet", href: "https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/2.6.95/css/materialdesignicons.min.css" },
-		],
+    ],
+    script: [
+      { src: "https://identity.netlify.com/v1/netlify-identity-widget.js" }
+    ]
 	},
 
 	/*
@@ -172,6 +175,7 @@ module.exports = {
   */
 
 	modules: [
+    "nuxtdown",
     "@nuxtjs/component-cache",
     "@nuxtjs/dotenv",
 		//'@nuxtjs/sentry',
