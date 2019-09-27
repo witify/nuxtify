@@ -6,8 +6,9 @@
     >
       <form
         v-if="!sent"
+        v-loading="loading"
         class="form"
-        netlify
+        @submit.prevent="send()"
       >
         <div class="columns">
           <div class="column">
@@ -239,11 +240,11 @@ export default {
 			axios.post(
 				"https://mailer.witify.io/api/mail/submit",
 				{
-					subject: "New message on " + this.$config.app.url,
+					subject: "New message on " + this.$config.app.name,
 					data: this.form
 				},
 				{
-					headers: {Authorization: "Bearer $2y$10$H9h9sKYqiLkOQagh.OcSm.aNVPCOfkYdfKSRhUgOEvEbWVggexNWq"}
+					headers: {Authorization: `Bearer ${process.env.MAILER_TOKEN}`}
 				}
 			)
 				.then(response => {
