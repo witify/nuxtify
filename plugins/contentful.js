@@ -1,7 +1,8 @@
 import { documentToHtmlString } from "@contentful/rich-text-html-renderer";
+import { BLOCKS } from "@contentful/rich-text-types";
 import * as contentful from "contentful";
 
-export function createClient () {
+function createClient () {
 	return contentful.createClient({
 		space: process.env.CTF_SPACE_ID,
 		accessToken: process.env.CTF_ACCESS_TOKEN
@@ -13,8 +14,15 @@ export function createClient () {
  * @param {*} document 
  * @return {String}
  */
-export function renderer (document) {
-	return documentToHtmlString(document);
+function renderer (document) {
+	const options = {
+		renderNode: {
+			[BLOCKS.EMBEDDED_ASSET]: ({ data: { target: { fields }}}) =>
+				`<img src="${fields.file.url}" alt="${fields.title}"/>`,
+		},
+	};
+
+	return documentToHtmlString(document, options);
 }
 
 /**
@@ -23,7 +31,7 @@ export function renderer (document) {
  * @param {String} locale 
  * @return {Array}
  */
-export function formatPosts (data, locale) {
+function formatPosts (data, locale) {
 
 	let posts = [];
 
@@ -37,7 +45,7 @@ export function formatPosts (data, locale) {
 			title: post.title[locale],
 			slug: post.slug[locale],
 			description: post.description ? post.description[locale] : undefined,
-			body: documentToHtmlString(post.body[locale]),
+			body: renderer(post.body[locale]),
 			picture: {
 				url: pictureFile.url,
 				id: pictureId
@@ -47,3 +55,5 @@ export function formatPosts (data, locale) {
 
 	return posts;
 }
+
+export { createClient, renderer, formatPosts };
