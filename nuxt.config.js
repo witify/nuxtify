@@ -117,7 +117,7 @@ module.exports = {
 
 	generate: {
 		routes: async function () {
-
+      
 			let squidex = new Squidex;
 
 			let response = await squidex.makeRequest({
