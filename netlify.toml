@@ -1,6 +1,6 @@
 [build]
   publish = "dist/"
-  command = "npm run generate"
+  command = "npm run generate || { sleep 30; false; }" # Helps debugging when error
 
 [context.production]
   command = "BASE_URL=$URL npm run generate"
