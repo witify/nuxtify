@@ -64,6 +64,7 @@ class Squidex {
 
 		return {
 			seo_title: this.getFirst(data.seo_title, locale) || this.getFirst(data.title, locale),
+			seo_description: this.getFirst(data.seo_description, locale) || this.getFirst(data.title, locale),
 			title: this.getFirst(data.title, locale),
 			text: this.getFirst(data.text, locale),
 		};
@@ -74,6 +75,7 @@ class Squidex {
 
 		return {
 			seo_title: this.getFirst(data.seo_title, locale) || this.getFirst(data.title, locale),
+			seo_description: this.getFirst(data.seo_description, locale) || this.getFirst(data.title, locale),
 			title: this.getFirst(data.title, locale),
 			text: this.getFirst(data.text, locale),
 		};
@@ -84,6 +86,7 @@ class Squidex {
 
 		return {
 			seo_title: this.getFirst(data.seo_title, locale) || this.getFirst(data.title, locale),
+			seo_description: this.getFirst(data.seo_description, locale) || this.getFirst(data.title, locale),
 			title: this.getFirst(data.title, locale),
 			text: this.getFirst(data.text, locale),
 		};
@@ -123,7 +126,8 @@ class Squidex {
 	formatPost(post, locale) {
 		post = post.data;
 		return {
-			seo_title: this.getFirst(post.title, locale),
+			seo_title: this.getFirst(post.seo_title, locale) || this.getFirst(post.title, locale),
+			seo_description: this.getFirst(post.seo_description, locale) || this.getFirst(post.title, locale),
 			slug: this.getFirst(post.slug, locale),
 			title: this.getFirst(post.title, locale),
 			text: this.getFirst(post.text, locale),

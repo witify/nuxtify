@@ -28,7 +28,7 @@
               <div class="card">
                 <div class="card-image">
                   <img
-                    :src="$squidex.asset(post.picture)"
+                    :src="`${$squidex.asset(post.picture)}?width=400&Crop`"
                     :alt="post.title"
                   >
                 </div>

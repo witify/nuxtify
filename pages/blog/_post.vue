@@ -4,7 +4,7 @@
       <div class="container is-small">
         <img
           class="post-picture"
-          :src="`${$squidex.asset(post.picture)}`"
+          :src="`${$squidex.asset(post.picture)}?width=800&Crop`"
           :alt="post.title"
         >
         <h1 class="title">
@@ -24,8 +24,8 @@
 export default {
 	head() {
 		return this.$seo.head({
-			title: this.post.title,
-			description: this.post.description
+			title: this.post.seo_title,
+			description: this.post.seo_description
 		});
 	},
 	async asyncData ({app, store}) {
