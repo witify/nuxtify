@@ -30,7 +30,7 @@ export default {
 	},
 	async asyncData ({app, store}) {
 		let data = await app.$squidex.post(app.context.params.post, app.i18n.locale);
-		let post = app.$squidex.formatPost(data);
+		let post = app.$squidex.formatPost(data, app.i18n.locale);
     
 		let slug = data.data.slug;
     
