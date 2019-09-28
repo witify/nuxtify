@@ -6,9 +6,6 @@ require("dotenv").config();
 
 import config from "./config/general";
 
-const contentful = require("contentful");
-import { formatPosts } from "./plugins/contentful";
-
 module.exports = {
 
 	/*
@@ -25,17 +22,17 @@ module.exports = {
       
 			// Twitter Card Meta
 			// Doc: https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started.html
-			{ property: "twitter:card", content: "summary" },
-			//{ property: "twitter:site", value: "@witify" },
-			//{ property: "twitter:creator", value: "@witify" },
+			{ name: "twitter:card", content: "summary" },
+			//{ name: "twitter:site", value: "@witify" },
+			//{ name: "twitter:creator", value: "@witify" },
 
 			// OpenGraph Meta
 			// Doc: http://ogp.me/
-			{ hid: "og:url", property: "og:url", content: process.env.URL },
-			{ hid: "og:type", property: "og:type", content: "website" },
-			{ hid: "og:image", property: "og:image", content: process.env.URL + "/thumbnail.jpg" },
-			{ hid: "og:image:type", property: "og:image:type", content: "image/jpg" },
-			{ hid: "og:image:alt", property: "og:image:alt", content: process.env.NAME +" Logo" },
+			{ hid: "og:url", name: "og:url", content: process.env.URL },
+			{ hid: "og:type", name: "og:type", content: "website" },
+			{ hid: "og:image", name: "og:image", content: process.env.URL + "/thumbnail.jpg" },
+			{ hid: "og:image:type", name: "og:image:type", content: "image/jpg" },
+			{ hid: "og:image:alt", name: "og:image:alt", content: process.env.NAME +" Logo" },
       
 			// Favicons
 			{ name: "msapplication-TileColor", content: "#ffffff"},

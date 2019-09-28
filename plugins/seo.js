@@ -13,11 +13,14 @@ export default ({ route }, inject) => {
 			};
       
 			if (data.title !== undefined) {
-				headData.title = data.title + " " + process.env.NAME;
+        
+				let title = data.title + " - " + process.env.NAME;
+        
+				headData.title = title;
 				headData.meta.push({
 					hid: "og:title",
 					name: "og:title",
-					content: data.title + " " + process.env.NAME
+					content: title
 				});
 			}
       
