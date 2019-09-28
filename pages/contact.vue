@@ -76,6 +76,12 @@
 <script>
 import ContactForm from "../components/ContactForm.vue";
 export default {
+	head() {
+		return this.$seo.head({
+			title: this.$t("pages.contact.title"),
+			description: this.$t("pages.contact.subtitle")
+		});
+	},
 	nuxtI18n: {
 		paths: {
 			en: "/contact-us",
@@ -89,11 +95,6 @@ export default {
 		globals () {
 			return this.$store.getters.globals(this.$utils.currentLocaleISO());
 		}
-	},
-	head() {
-		return {
-			title: this.$t("pages.contact.title")
-		};
 	}
 };
 </script>

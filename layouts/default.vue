@@ -17,6 +17,14 @@ export default {
 	},
 	head () {
 		return this.$nuxtI18nSeo();
-	}
+	},
+	jsonld() {
+		return {
+			"@context": "http://schema.org",
+			"@type": "WebSite",
+			url: process.env.URL,
+			name: process.env.NAME
+		};
+	},
 };
 </script>

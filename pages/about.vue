@@ -27,9 +27,10 @@ import { createClient, renderer } from "~/plugins/contentful";
 
 export default {
 	head() {
-		return {
-			title: this.page.seo_title
-		};
+		return this.$seo.head({
+			title: this.page.seo_title,
+			description: this.page.seo_description
+		});
 	},
 	async asyncData ({env, app}) {
 		const client = createClient();
@@ -45,6 +46,7 @@ export default {
 		return {
 			page: {
 				seo_title: page.fields.seo_title || page.fields.title,
+				seo_description: page.fields.seo_description || page.fields.title,
 				title: page.fields.title,
 				text: renderer(page.fields.text),
 			}

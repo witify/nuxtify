@@ -3,8 +3,6 @@ const glob = require("glob-all");
 const path = require("path");
 require("dotenv").config();
 
-import config from "./config/general";
-
 const contentful = require("contentful");
 import { formatPosts } from "./plugins/contentful";
 
@@ -17,22 +15,38 @@ module.exports = {
   */
 
 	head: {
-		titleTemplate: "%s - " + config.app.name,
 		meta: [
 			{ charset: "utf-8" },
 			{ name: "viewport", content: "width=device-width, initial-scale=1" },
+      
+			// Twitter Card Meta
+			// Doc: https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started.html
+			{ property: "twitter:card", content: "summary" },
+			//{ property: "twitter:site", value: "@witify" },
+			//{ property: "twitter:creator", value: "@witify" },
+
+			// OpenGraph Meta
+			// Doc: http://ogp.me/
+			{ hid: "og:url", property: "og:url", content: process.env.URL },
+			{ hid: "og:type", property: "og:type", content: "website" },
+			{ hid: "og:image", property: "og:image", content: process.env.URL + "/thumbnail.jpg" },
+			{ hid: "og:image:type", property: "og:image:type", content: "image/jpg" },
+			{ hid: "og:image:alt", property: "og:image:alt", content: process.env.NAME +" Logo" },
+      
+			// Favicons
 			{ name: "msapplication-TileColor", content: "#ffffff"},
 			{ name: "theme-color", content: "#ffffff"},
-			{ property: "og:image", content: "/thumbnail.jpg"},
-			{ property: "og:type", content: "website"}
 		],
 		link: [
+			// Favicons
 			{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
 			{ rel: "apple-touch-icon", sizes: "180x180", href: "/apple-touch-icon.png" },
 			{ rel: "icon", type: "image/png", sizes: "32x32", href: "/favicon-32x32.png" },
 			{ rel: "icon", type: "image/png", sizes: "16x16", href: "/favicon-16x16.png" },
 			{ rel: "manifest", href: "/site.webmanifest" },
 			{ rel: "mask-icon", href: "/safari-pinned-tab.svg", color: "#000000" },
+      
+			// Material Design Icons
 			{ rel: "stylesheet", href: "https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/2.6.95/css/materialdesignicons.min.css" },
 		],
 	},
@@ -159,9 +173,11 @@ module.exports = {
 
 	plugins: [
 		"~/plugins/config",
-		"~/plugins/global.js",
+		"~/plugins/seo",
+		"~/plugins/global",
 		"~/plugins/contentful",
 		"~/plugins/utils",
+		"~/plugins/jsonld",
 		//{ src: '~plugins/crisp.js', ssr: false }
 	],
 

@@ -27,9 +27,10 @@ const client = createClient();
 
 export default {
 	head() {
-		return {
-			title: this.post.title
-		};
+		return this.$seo.head({
+			title: this.post.title,
+			description: this.post.description
+		});
 	},
 	computed: {
 		locale ({app}) {
