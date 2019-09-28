@@ -1,5 +1,3 @@
-import { createClient } from "~/plugins/contentful";
-
 export const state = () => ({
 	globals: {
 		address: null,
@@ -27,29 +25,15 @@ export const getters = {
 };
 
 export const actions = {
-	async nuxtServerInit ({ commit }) {
-		const client = createClient();
-    
-		let data = await client.getEntries({
-			content_type: "globals",
-			locale: "*",
-			limit: 1
-		});
-    
-		let globals = data.items[0].fields;
-    
-		globals = {
-			phone: globals.phone,
-			email: globals.email,
-			address: globals.address,
-			footerText: globals.footerText
-		};
-        
-		commit("setGlobals", globals);
+	async nuxtServerInit ({ commit }, { app }) {
+		commit("setGlobals", await app.$squidex.globals());
 	}
 };
 
 function getFirst(data, key) {
+	if (data == null) {
+		return null;
+	}
 	if (data[key] === undefined) {
 		return Object.values(data)[0];
 	}

@@ -60,7 +60,7 @@
 export default {
 	computed: {
 		globals () {
-			return this.$store.getters.globals(this.$utils.currentLocaleISO());
+			return this.$store.getters.globals(this.$i18n.locale);
 		}
 	},
 };

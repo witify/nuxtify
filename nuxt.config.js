@@ -1,7 +1,10 @@
 const PurgecssPlugin = require("purgecss-webpack-plugin");
 const glob = require("glob-all");
 const path = require("path");
+import { Squidex } from "./services/squidex";
 require("dotenv").config();
+
+import config from "./config/general";
 
 const contentful = require("contentful");
 import { formatPosts } from "./plugins/contentful";
@@ -15,6 +18,7 @@ module.exports = {
   */
 
 	head: {
+		titleTemplate: "%s - " + config.app.name,
 		meta: [
 			{ charset: "utf-8" },
 			{ name: "viewport", content: "width=device-width, initial-scale=1" },
@@ -86,8 +90,8 @@ module.exports = {
 	env: {
 		URL: process.env.URL || "http://localhost:3000",
 		NAME: process.env.NAME || "Nuxtify",
-		CTF_SPACE_ID: process.env.CTF_SPACE_ID,
-		CTF_ACCESS_TOKEN: process.env.CTF_ACCESS_TOKEN,
+		SQUIDEX_CLIENT: process.env.SQUIDEX_CLIENT,
+		SQUIDEX_SECRET: process.env.SQUIDEX_SECRET,
 		MAILER_TOKEN: process.env.MAILER_TOKEN
 	},
   
@@ -135,25 +139,25 @@ module.exports = {
 
 	generate: {
 		routes: async function () {
+      
+			let squidex = new Squidex;
 
-			const client = contentful.createClient({
-				space: process.env.CTF_SPACE_ID,
-				accessToken: process.env.CTF_ACCESS_TOKEN
+			let response = await squidex.makeRequest({
+				method: "get", 
+				url: `${squidex.baseURL}/post`
 			});
-    
-			let posts = await client.getEntries({
-				content_type: "post",
-				order: "-sys.createdAt",
-				locale: "*"
-			});
-
+      
+			let posts = response.data.items;
+      
+      
 			let locales = [
-				{iso: "fr-CA", route: "/fr/blog/"},
-				{iso: "en-US", route: "/blog/"},          
+				{iso: "fr", route: "/fr/blog/"},
+				{iso: "en", route: "/blog/"},
 			];
       
 			return locales.map(locale => {
-				return formatPosts(posts, locale.iso).map(post => {
+				return posts.map(post => {
+					post = squidex.formatPost(post, locale.iso);
 					return {
 						route: locale.route + post.slug,
 						payload: post
@@ -174,8 +178,7 @@ module.exports = {
 	plugins: [
 		"~/plugins/config",
 		"~/plugins/seo",
-		"~/plugins/global",
-		"~/plugins/contentful",
+		"~/plugins/squidex",
 		"~/plugins/utils",
 		"~/plugins/jsonld",
 		//{ src: '~plugins/crisp.js', ssr: false }
