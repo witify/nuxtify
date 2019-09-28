@@ -27,7 +27,7 @@ export default ({ route }, inject) => {
 			if (data.description !== undefined) {
 				headData.meta.push({
 					hid: "description",
-					property: "description",
+					name: "description",
 					content: data.description
 				});
 				headData.meta.push({
