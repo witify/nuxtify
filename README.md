@@ -22,3 +22,37 @@ $ npm run generate
 ```
 
 For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
+
+## Export/Import SQUIDEX Schema
+
+``` bash
+
+# CONFIGURATION
+
+# Add a configuration
+.\sq.exe config add [APP_NAME] [CLIENT_ID] [CLIENT_SECRET]
+
+# Show all configurations
+.\sq.exe config list
+
+# Switch to another config
+.\sq.exe config use [CONFIG_NAME]
+
+# SCHEMA
+
+# Save schema to a file
+.\sq.exe schemas get schema1 > schema.json
+
+# Sync with another app
+.\sq.exe config use app2
+.\sq.exe schemas sync schema.json
+
+# CONTENT
+
+# Export content
+.\sq.exe content export features
+
+# Import content
+.\sq.exe content import features File.csv
+
+```
