@@ -7,7 +7,7 @@ export default ({ route }, inject) => {
 				title: undefined,
 				meta: [{
 					hid: "og:url",
-					name: "og:url",
+					property: "og:url",
 					content: process.env.URL + route.path
 				}]
 			};
@@ -19,7 +19,7 @@ export default ({ route }, inject) => {
 				headData.title = title;
 				headData.meta.push({
 					hid: "og:title",
-					name: "og:title",
+					property: "og:title",
 					content: title
 				});
 			}
@@ -27,12 +27,12 @@ export default ({ route }, inject) => {
 			if (data.description !== undefined) {
 				headData.meta.push({
 					hid: "description",
-					name: "description",
+					property: "description",
 					content: data.description
 				});
 				headData.meta.push({
 					hid: "og:description",
-					name: "og:description",
+					property: "og:description",
 					content: data.description
 				});
 			}
