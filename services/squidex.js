@@ -125,6 +125,23 @@ class Squidex {
 			phone: data.phone
 		};
 	}
+  
+	async socialmedia() {
+		let response = await this.makeRequest({
+			method: "get",
+			url: `${this.baseURL}/socialmedia`
+		});
+    
+		let data = response.data.items;
+
+		return data.map(socialmedia => {
+			return {
+				name: socialmedia.data.name.iv,
+				icon: socialmedia.data.icon.iv,
+				url: socialmedia.data.url.iv,
+			};
+		});
+	}
 
 	formatPost(post, locale) {
 		post = post.data;

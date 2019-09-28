@@ -4,12 +4,16 @@ export const state = () => ({
 		phone: null,
 		email: null,
 		footerText: null
-	}
+	},
+	socialMedia: []
 });
 
 export const mutations = {
 	setGlobals (state, globals) {
 		state.globals = globals;
+	},
+	setSocialMedia (state, socialMedia) {
+		state.socialMedia = socialMedia;
 	}
 };
 
@@ -30,6 +34,7 @@ export const getters = {
 export const actions = {
 	async nuxtServerInit ({ commit }, { app }) {
 		commit("setGlobals", await app.$squidex.globals());
+		commit("setSocialMedia", await app.$squidex.socialmedia());
 	}
 };
 

@@ -1,13 +1,14 @@
 <template>
   <div class="socials">
     <a
-      v-for="(url, name) in $config.socials"
-      :key="url"
-      :href="url"
-      :arial-label="name"
+      v-for="socialMedia in $store.state.socialMedia"
+      :key="socialMedia.url"
+      :href="socialMedia.url"
+      :arial-label="socialMedia.name"
+      :title="socialMedia.name"
     >
       <div class="icon">
-        <i :class="`mdi mdi-${name}`" />
+        <i :class="`mdi mdi-${socialMedia.icon}`" />
       </div>
     </a>
   </div>
