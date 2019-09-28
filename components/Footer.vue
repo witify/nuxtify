@@ -42,7 +42,7 @@
         <div class="footer-bottom">
           <div class="footer-bottom-left">
             <img
-              src="~assets/img/logo-black.svg"
+              :src="globals.logoBlack"
               :alt="`$(${$config.app.name}) logo`"
             >
             <span>{{ $config.app.name }}. {{ $t('pages.footer.all_rights_reserved') }}</span>

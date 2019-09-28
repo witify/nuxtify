@@ -116,6 +116,9 @@ class Squidex {
 		let data = await this.getFirstItem("globals");
 
 		return {
+			logo: this.asset(data.logo.iv[0]),
+			logoWhite: this.asset(data.logoWhite.iv[0]),
+			logoBlack: this.asset(data.logoBlack.iv[0]),
 			footerText: data.footerText,
 			address: data.address,
 			email: data.email,

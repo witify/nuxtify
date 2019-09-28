@@ -11,12 +11,12 @@
         >
           <img
             v-show="!transparent || active"
-            src="~assets/img/logo.svg"
+            :src="globals.logo"
             :alt="$config.app.name + ' logo'"
           >
           <img
             v-show="transparent && !active"
-            src="~assets/img/logo-white.svg"
+            :src="globals.logoWhite"
             :alt="$config.app.name + ' logo'"
           >
         </nuxt-link>
@@ -98,6 +98,11 @@ export default {
 			active: false,
 			transparent: true
 		};
+	},
+	computed: {
+		globals () {
+			return this.$store.getters.globals(this.$i18n.locale);
+		}
 	},
 	watch: {
 		"$nuxt.$route.name"() {

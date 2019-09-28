@@ -16,6 +16,9 @@ export const mutations = {
 export const getters = {
 	globals: (state) => (locale) => {
 		return {
+			logo: state.globals.logo,
+			logoWhite: state.globals.logoWhite,
+			logoBlack: state.globals.logoBlack,
 			address: getFirst(state.globals.address, locale),
 			phone: getFirst(state.globals.phone, locale),
 			email: getFirst(state.globals.email, locale),
