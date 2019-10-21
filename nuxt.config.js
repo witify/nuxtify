@@ -29,7 +29,7 @@ module.exports = {
 			{ hid: "og:type", property: "og:type", content: "website" },
 			{ hid: "og:image", property: "og:image", content: process.env.URL + "/thumbnail.jpg" },
 			{ hid: "og:image:type", property: "og:image:type", content: "image/jpg" },
-			{ hid: "og:image:alt", property: "og:image:alt", content: process.env.NAME +" Logo" },
+			{ hid: "og:image:alt", property: "og:image:alt", content: process.env.NAME },
       
 			// Favicons
 			{ name: "msapplication-TileColor", content: "#ffffff"},
