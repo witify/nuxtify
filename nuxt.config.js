@@ -1,10 +1,9 @@
-const PurgecssPlugin = require("purgecss-webpack-plugin");
-const glob = require("glob-all");
-const path = require("path");
 import { Squidex } from "./services/squidex";
 require("dotenv").config();
 
 module.exports = {
+
+	mode: "universal",
 
 	/*
   |--------------------------------------------------------------------------
@@ -59,24 +58,6 @@ module.exports = {
 
 	/*
   |--------------------------------------------------------------------------
-  | CSS
-  |--------------------------------------------------------------------------
-  */
-
-	css: [
-		"@/assets/sass/main.scss",
-	],
-
-	/*
-  |--------------------------------------------------------------------------
-  | Cache
-  |--------------------------------------------------------------------------
-  */
-
-	cache: true,
-
-	/*
-  |--------------------------------------------------------------------------
   | Environnement variables
   |--------------------------------------------------------------------------
   */
@@ -95,35 +76,20 @@ module.exports = {
   |--------------------------------------------------------------------------
   */
 
-	build: {
-
-		analyze: false,
-    
-		extend (config, { isDev }) {
-			if (isDev && process.client) {
-				config.module.rules.push({
-					enforce: "pre",
-					test: /\.(js|vue)$/,
-					loader: "eslint-loader",
-					exclude: /(node_modules)/
-				});
-			}
-
-			if (!isDev) {
-				config.plugins.push(
-					new PurgecssPlugin({
-						paths: glob.sync([
-							path.join(__dirname, "./pages/**/*.vue"),
-							path.join(__dirname, "./layouts/**/*.vue"),
-							path.join(__dirname, "./components/**/*.vue")
-						]),
-						whitelist: ["html", "body"],
-						whitelistPatterns: [/nuxt-/, /-enter$/, /-leave-active$/, /-enter-active$/, /aos/]
-					})
-				);
-			}
+	build: {    
+		extend (config, ctx) {
 		}
 	},
+  
+	/*
+  |--------------------------------------------------------------------------
+  | Build Modules
+  |--------------------------------------------------------------------------
+  */
+  
+	buildModules: [
+		"@nuxtjs/tailwindcss"
+	],
   
 	/*
   |--------------------------------------------------------------------------
@@ -187,11 +153,7 @@ module.exports = {
 
 	modules: [
 		"@nuxtjs/axios",
-		"@nuxtjs/component-cache",
 		"@nuxtjs/dotenv",
-		//'@nuxtjs/sentry',
-		//'@nuxtjs/google-gtag',
-		//'nuxt-facebook-pixel-module',
 		["nuxt-i18n", {
 			defaultLocale: "en",
 			locales: [
@@ -215,6 +177,9 @@ module.exports = {
 				fallbackLocale: "en"
 			}
 		}]
+		//'@nuxtjs/sentry',
+		//'@nuxtjs/google-gtag',
+		//'nuxt-facebook-pixel-module'
 	],
 
 	/*
@@ -232,6 +197,16 @@ module.exports = {
 
 	/*
   |--------------------------------------------------------------------------
+  | Google Tag config
+  |--------------------------------------------------------------------------
+  */
+
+	"google-tag": {
+		id: "GOOGLE_ID"
+	},
+  
+	/*
+  |--------------------------------------------------------------------------
   | Facebook Pixel config
   |--------------------------------------------------------------------------
   */
@@ -241,14 +216,4 @@ module.exports = {
 		pixelId: "FACEBOOK_PIXEL_ID",
 		disabled: false
 	},
-
-	/*
-  |--------------------------------------------------------------------------
-  | Google Tag config
-  |--------------------------------------------------------------------------
-  */
-
-	"google-tag": {
-		id: "GOOGLE_ID"
-	}
 };

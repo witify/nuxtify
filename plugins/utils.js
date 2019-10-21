@@ -1,8 +1,6 @@
 export default ({ app }, inject) => {
+
 	inject("utils", {
-		currentLocaleISO () {
-			return app.i18n.locales.find(l => l.code == app.i18n.locale).iso;
-		},
 		limit (str, length, ending) {
 			if (length == null) {
 				length = 100;
@@ -17,4 +15,5 @@ export default ({ app }, inject) => {
 			}
 		}
 	});
+  
 };
