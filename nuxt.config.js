@@ -76,6 +76,10 @@ module.exports = {
   |--------------------------------------------------------------------------
   */
 
+	css: [
+		"assets/css/main.css"
+	],
+
 	build: {    
 		extend (config, ctx) {
 		}

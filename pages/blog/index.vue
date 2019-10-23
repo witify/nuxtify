@@ -1,21 +1,21 @@
 <template>
   <div class="wrapper">
-    <section class="py-6 sm:py-10">
-      <div class="container mx-auto">
-        <h1 class="font-bold text-lg sm:text-2xl">
+    <div class="py-6 sm:py-10 text-center">
+      <v-container>
+        <h1 class="font-semibold text-xl sm:text-3xl">
           {{ page.title }}
         </h1>
         <div
           class="content"
           v-html="page.text"
         />
-      </div>
-    </section>
+      </v-container>
+    </div>
     
     <hr>
 
-    <section class="py-10 sm:py-20">
-      <div class="container mx-auto">
+    <v-section>
+      <v-container>
         <div class="sm:flex sm:-mx-5">
           <div
             v-for="post in posts"
@@ -26,7 +26,7 @@
               :to="`${localePath('blog')}/${post.slug}`"
               class="block"
             >
-              <div class="w-full rounded overflow-hidden shadow-lg">
+              <div class="w-full rounded overflow-hidden shadow-lg hover:shadow-xl">
                 <img
                   class="w-full"
                   :src="`${$squidex.asset(post.picture)}?width=400&height=200&Crop`"
@@ -56,8 +56,8 @@
             {{ $t('pages.blog.empty') }}
           </h2>
         </div>
-      </div>
-    </section>
+      </v-container>
+    </v-section>
   </div>
 </template>
 

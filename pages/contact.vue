@@ -1,74 +1,84 @@
 <template>
   <div class="wrapper">
-    <div class="page-contact">
-      <section class="hero has-border-bottom">
-        <div class="hero-body">
-          <div class="container">
-            <h1 class="title">
-              {{ $t('pages.contact.title') }}
-            </h1>
-            <h2 class="subtitle">
-              {{ $t('pages.contact.subtitle') }}
-            </h2>
-          </div>
+    <div class="py-6 sm:py-10">
+      <v-container>
+        <div class="max-w-3xl">
+          <h1 class="font-semibold text-xl sm:text-3xl">
+            {{ $t('pages.contact.title') }}
+          </h1>
+          <h2>
+            {{ $t('pages.contact.subtitle') }}
+          </h2>
         </div>
-      </section>
+      </v-container>
+    </div>
 
-      <section class="section">
-        <div class="container">
-          <div class="columns">
-            <div class="column is-one-third-desktop">
-              <h2 class="title">
-                {{ $t('pages.contact.coordinates') }}
-              </h2>
+    <hr>
+
+    <div class="py-6 sm:py-10">
+      <v-container>
+        <div class="md:flex md:-mx-10">
+          <div class="md:w-1/4 md:px-10">
+            <h2 class="mb-5 text-xl sm:text-2xl">
+              {{ $t('pages.contact.coordinates') }}
+            </h2>
                             
-              <div class="is-size-5">
-                <strong>{{ $t('pages.contact.email') }}</strong><br>
-                <div class="mb-30">
-                  <a :href="`mailto:${globals.email}`">{{ globals.email }}</a>
-                </div>
+            <div class="is-size-5">
+              <strong>{{ $t('pages.contact.email') }}</strong><br>
+              <div class="mb-5">
+                <a
+                  :href="`mailto:${globals.email}`"
+                  class="text-indigo-600"
+                >{{ globals.email }}</a>
+              </div>
 
-                <strong>{{ $t('pages.contact.phone') }}</strong><br>
-                <div class="mb-30">
-                  <a :href="`tel:${globals.phone}`">{{ globals.phone }}</a>
-                </div>
+              <strong>{{ $t('pages.contact.phone') }}</strong><br>
+              <div class="mb-5">
+                <a
+                  :href="`tel:${globals.phone}`"
+                  class="text-indigo-600"
+                >{{ globals.phone }}</a>
+              </div>
 
-                <strong>{{ $t('pages.contact.address') }}</strong><br>
-                <div style="white-space: pre;">
+              <strong>{{ $t('pages.contact.address') }}</strong><br>
+              <div style="white-space: pre;">
 <!--
                   -->{{ globals.address }}
-                </div>
+              </div>
 
-                <div class="mb-30">
-                  <a href="https://twitter.com/WitifyInc">
-                    <div class="icon">
-                      <i class="mdi mdi-twitter" />
-                    </div>
-                  </a>
-                  <a href="https://dribbble.com/francoislevesque">
-                    <div class="icon">
-                      <i class="mdi mdi-dribbble" />
-                    </div>
-                  </a>
-                  <a href="https://www.linkedin.com/company/witify">
-                    <div class="icon">
-                      <i class="mdi mdi-linkedin" />
-                    </div>
-                  </a>
-                  <a href="https://www.facebook.com/witify/">
-                    <div class="icon">
-                      <i class="mdi mdi-facebook" />
-                    </div>
-                  </a>
-                </div>
+              <div class="flex mb-5 text-xl text-gray-800">
+                <a
+                  href="https://twitter.com/WitifyInc"
+                  class="mr-3"
+                >
+                  <i class="mdi mdi-twitter" />
+                </a>
+                <a
+                  href="https://dribbble.com/francoislevesque"
+                  class="mr-3"
+                >
+                  <i class="mdi mdi-dribbble" />
+                </a>
+                <a
+                  href="https://www.linkedin.com/company/witify"
+                  class="mr-3"
+                >
+                  <i class="mdi mdi-linkedin" />
+                </a>
+                <a
+                  href="https://www.facebook.com/witify/"
+                  class=""
+                >
+                  <i class="mdi mdi-facebook" />
+                </a>
               </div>
             </div>
-            <div class="column">
-              <contact-form />
-            </div>
+          </div>
+          <div class="md:px-10 flex-auto">
+            <contact-form />
           </div>
         </div>
-      </section>
+      </v-container>
     </div>
   </div>
 </template>
