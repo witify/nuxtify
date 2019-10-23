@@ -147,9 +147,10 @@ class Squidex {
 		post = post.data;
 		return {
 			seo_title: this.getFirst(post.seo_title, locale) || this.getFirst(post.title, locale),
-			seo_description: this.getFirst(post.seo_description, locale) || this.getFirst(post.title, locale),
+			seo_description: this.getFirst(post.seo_description, locale) || this.getFirst(post.description, locale),
 			slug: this.getFirst(post.slug, locale),
 			title: this.getFirst(post.title, locale),
+			description: this.getFirst(post.description, locale),
 			text: this.getFirst(post.text, locale),
 			picture: post.picture.iv[0],
 		};

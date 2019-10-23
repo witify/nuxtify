@@ -38,10 +38,11 @@ export default {
 			back_to_you: "Nous vous reviendrons dès que possible"
 
 		},
-		footer: {
-			about: "À propos",
-			about_text: "Ut dolore sint irure dolor quis culpa amet sint sunt quis adipisicing aliquip fugiat. Aute do incididunt enim ea ut quis.",
-			all_rights_reserved: "Tous droits réservés."
-		}
+	},
+	footer: {
+		about: "À propos",
+		pages: "Pages",
+		about_text: "Ut dolore sint irure dolor quis culpa amet sint sunt quis adipisicing aliquip fugiat. Aute do incididunt enim ea ut quis.",
+		all_rights_reserved: "Tous droits réservés."
 	}
 };

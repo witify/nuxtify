@@ -1,59 +1,58 @@
 <template>
-  <div>
-    <footer class="footer">
-      <div class="container">
-        <div class="columns">
-          <div class="column is-half">
-            <h2 class="footer-title">
-              {{ $t('pages.footer.about') }}
-            </h2>
-            <p>{{ globals.footerText }}</p>
-          </div>
-          <div class="column is-one-quarter">
-            <h2 class="footer-title">
-              {{ $t('nav.home') }}
-            </h2>
-            <nuxt-link
-              :to="localePath('index')"
-              class="footer-link"
-            >
-              {{ $t('nav.home') }}
-            </nuxt-link>
-            <nuxt-link
-              :to="localePath('about')"
-              class="footer-link"
-            >
-              {{ $t('nav.about') }}
-            </nuxt-link>
-            <nuxt-link
-              :to="localePath('blog')"
-              class="footer-link"
-            >
-              {{ $t('nav.blog') }}
-            </nuxt-link>
-            <nuxt-link
-              :to="localePath('contact')"
-              class="footer-link"
-            >
-              {{ $t('nav.contact') }}
-            </nuxt-link>
-          </div>
+  <footer class="bg-gray-200 py-10 sm:pb-15 sm:pt-24">
+    <div class="text-center container mx-auto sm:text-left">
+      <div class="sm:flex sm:-mx-10">
+        <div class="mb-6 sm:w-1/2 sm:px-10">
+          <h2 class="font-bold mb-4">
+            {{ $t('footer.about') }}
+          </h2>
+          <p>{{ globals.footerText }}</p>
         </div>
-        <div class="footer-bottom">
-          <div class="footer-bottom-left">
-            <img
-              :src="globals.logoBlack"
-              :alt="`$(${$config.app.name}) logo`"
-            >
-            <span>{{ $config.app.name }}. {{ $t('pages.footer.all_rights_reserved') }}</span>
-          </div>
-          <div class="footer-bottom-right">
-            <socials />
-          </div>
+        <div class="mb-6 sm:w-1/4 sm:px-10">
+          <h2 class="font-bold mb-4">
+            {{ $t('footer.pages') }}
+          </h2>
+          <nuxt-link
+            :to="localePath('index')"
+            class="block mb-1"
+          >
+            {{ $t('nav.home') }}
+          </nuxt-link>
+          <nuxt-link
+            :to="localePath('about')"
+            class="block mb-1"
+          >
+            {{ $t('nav.about') }}
+          </nuxt-link>
+          <nuxt-link
+            :to="localePath('blog')"
+            class="block mb-1"
+          >
+            {{ $t('nav.blog') }}
+          </nuxt-link>
+          <nuxt-link
+            :to="localePath('contact')"
+            class="block mb-1"
+          >
+            {{ $t('nav.contact') }}
+          </nuxt-link>
         </div>
       </div>
-    </footer>
-  </div>
+      <div class="mt-16 sm:flex sm:justify-between">
+        <div class="flex justify-center items-center">
+          <img
+            :src="globals.logoBlack"
+            :alt="`$(${$config.app.name}) logo`"
+            class="h-6 w-6 mr-3"
+          >
+          <span class="text-sm">{{ $config.app.name }}. {{ $t('footer.all_rights_reserved') }}</span>
+        </div>
+        <div class="mt-5 sm:mt-0">
+          <socials />
+        </div>
+      </div>
+    </div>
+  </footer>
 </template>
 
 <script>
