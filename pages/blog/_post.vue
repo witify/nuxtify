@@ -1,13 +1,13 @@
 <template>
   <div class="wrapper">
-    <section class="section post">
+    <div class="section pt-5 sm:pt-10">
       <div class="container is-small">
         <img
-          class="post-picture"
+          class="mb-5 sm:mb-10"
           :src="`${$squidex.asset(post.picture)}?width=800&Crop`"
           :alt="post.title"
         >
-        <h1 class="title">
+        <h1 class="font-semibold text-xl sm:text-3xl mb-2 sm:mb-5">
           {{ post.title }}
         </h1>
         <div
@@ -15,7 +15,7 @@
           v-html="post.text" 
         />
       </div>
-    </section>
+    </div>
   </div>
 </template>
 

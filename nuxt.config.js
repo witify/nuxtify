@@ -1,10 +1,9 @@
-const PurgecssPlugin = require("purgecss-webpack-plugin");
-const glob = require("glob-all");
-const path = require("path");
 import { Squidex } from "./services/squidex";
 require("dotenv").config();
 
 module.exports = {
+
+	mode: "universal",
 
 	/*
   |--------------------------------------------------------------------------
@@ -29,7 +28,7 @@ module.exports = {
 			{ hid: "og:type", property: "og:type", content: "website" },
 			{ hid: "og:image", property: "og:image", content: process.env.URL + "/thumbnail.jpg" },
 			{ hid: "og:image:type", property: "og:image:type", content: "image/jpg" },
-			{ hid: "og:image:alt", property: "og:image:alt", content: process.env.NAME +" Logo" },
+			{ hid: "og:image:alt", property: "og:image:alt", content: process.env.NAME },
       
 			// Favicons
 			{ name: "msapplication-TileColor", content: "#ffffff"},
@@ -42,10 +41,7 @@ module.exports = {
 			{ rel: "icon", type: "image/png", sizes: "32x32", href: "/favicon-32x32.png" },
 			{ rel: "icon", type: "image/png", sizes: "16x16", href: "/favicon-16x16.png" },
 			{ rel: "manifest", href: "/site.webmanifest" },
-			{ rel: "mask-icon", href: "/safari-pinned-tab.svg", color: "#000000" },
-      
-			// Material Design Icons
-			{ rel: "stylesheet", href: "https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/2.6.95/css/materialdesignicons.min.css" },
+			{ rel: "mask-icon", href: "/safari-pinned-tab.svg", color: "#000000" }
 		],
 	},
 
@@ -56,24 +52,6 @@ module.exports = {
   */
 
 	loading: { color: "#1100FF" },
-
-	/*
-  |--------------------------------------------------------------------------
-  | CSS
-  |--------------------------------------------------------------------------
-  */
-
-	css: [
-		"@/assets/sass/main.scss",
-	],
-
-	/*
-  |--------------------------------------------------------------------------
-  | Cache
-  |--------------------------------------------------------------------------
-  */
-
-	cache: true,
 
 	/*
   |--------------------------------------------------------------------------
@@ -95,35 +73,20 @@ module.exports = {
   |--------------------------------------------------------------------------
   */
 
-	build: {
-
-		analyze: false,
-    
-		extend (config, { isDev }) {
-			if (isDev && process.client) {
-				config.module.rules.push({
-					enforce: "pre",
-					test: /\.(js|vue)$/,
-					loader: "eslint-loader",
-					exclude: /(node_modules)/
-				});
-			}
-
-			if (!isDev) {
-				config.plugins.push(
-					new PurgecssPlugin({
-						paths: glob.sync([
-							path.join(__dirname, "./pages/**/*.vue"),
-							path.join(__dirname, "./layouts/**/*.vue"),
-							path.join(__dirname, "./components/**/*.vue")
-						]),
-						whitelist: ["html", "body"],
-						whitelistPatterns: [/nuxt-/, /-enter$/, /-leave-active$/, /-enter-active$/, /aos/]
-					})
-				);
-			}
+	build: {    
+		extend (config, ctx) {
 		}
 	},
+  
+	/*
+  |--------------------------------------------------------------------------
+  | Build Modules
+  |--------------------------------------------------------------------------
+  */
+  
+	buildModules: [
+		"@nuxtjs/tailwindcss"
+	],
   
 	/*
   |--------------------------------------------------------------------------
@@ -187,11 +150,7 @@ module.exports = {
 
 	modules: [
 		"@nuxtjs/axios",
-		"@nuxtjs/component-cache",
 		"@nuxtjs/dotenv",
-		//'@nuxtjs/sentry',
-		//'@nuxtjs/google-gtag',
-		//'nuxt-facebook-pixel-module',
 		["nuxt-i18n", {
 			defaultLocale: "en",
 			locales: [
@@ -215,6 +174,9 @@ module.exports = {
 				fallbackLocale: "en"
 			}
 		}]
+		//'@nuxtjs/sentry',
+		//'@nuxtjs/google-gtag',
+		//'nuxt-facebook-pixel-module'
 	],
 
 	/*
@@ -232,6 +194,16 @@ module.exports = {
 
 	/*
   |--------------------------------------------------------------------------
+  | Google Tag config
+  |--------------------------------------------------------------------------
+  */
+
+	"google-tag": {
+		id: "GOOGLE_ID"
+	},
+  
+	/*
+  |--------------------------------------------------------------------------
   | Facebook Pixel config
   |--------------------------------------------------------------------------
   */
@@ -241,14 +213,4 @@ module.exports = {
 		pixelId: "FACEBOOK_PIXEL_ID",
 		disabled: false
 	},
-
-	/*
-  |--------------------------------------------------------------------------
-  | Google Tag config
-  |--------------------------------------------------------------------------
-  */
-
-	"google-tag": {
-		id: "GOOGLE_ID"
-	}
 };

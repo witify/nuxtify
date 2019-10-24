@@ -36,11 +36,12 @@ export default {
 			which_time: "At which time?",
 			message_sent: "Message successfully sent!",
 			back_to_you: "We will get back to you as soon as possible"
-		},
-		footer: {
-			about: "About",
-			about_text: "Our team is Montreal-based and growing fast. It thrive on human connection and cool projects. We'd love to hear about your next awesome idea! No matter the stage you're at, we'll make the best out of it. We're only one phone call or one email away.",
-			all_rights_reserved: "All rights reserved."
 		}
+	},
+	footer: {
+		about: "About",
+		pages: "Pages",
+		about_text: "Our team is Montreal-based and growing fast. It thrive on human connection and cool projects. We'd love to hear about your next awesome idea! No matter the stage you're at, we'll make the best out of it. We're only one phone call or one email away.",
+		all_rights_reserved: "All rights reserved."
 	}
 };

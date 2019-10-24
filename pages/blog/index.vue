@@ -1,49 +1,44 @@
 <template>
   <div class="wrapper">
-    <section class="hero is-main">
-      <div class="hero-body">
-        <div class="container">
-          <h1 class="title">
-            {{ page.title }}
-          </h1>
-          <div
-            class="content"
-            v-html="page.text"
-          />
-        </div>
+    <div class="py-6 sm:py-10 text-center">
+      <div class="container">
+        <h1 class="font-semibold text-xl sm:text-3xl">
+          {{ page.title }}
+        </h1>
+        <div
+          class="content"
+          v-html="page.text"
+        />
       </div>
-    </section>
+    </div>
     
     <hr>
 
-    <section class="section">
+    <div class="section">
       <div class="container">
-        <div class="columns is-multiline">
+        <div class="sm:flex sm:-mx-5">
           <div
             v-for="post in posts"
             :key="post.id"
-            class="column is-one-third"
+            class="w-full sm:w-1/2 md:w-1/3 mb-5 sm:px-5 sm:mb-0"
           >
-            <nuxt-link :to="`${localePath('blog')}/${post.slug}`">
-              <div class="card">
-                <div class="card-image">
-                  <img
-                    :src="`${$squidex.asset(post.picture)}?width=400&Crop`"
-                    :alt="post.title"
-                  >
-                </div>
-                <div class="card-content">
-                  <div class="content">
-                    <h2 class="title is-size-6">
-                      {{ post.title }}
-                    </h2>
-                    <p
-                      v-if="post.description"
-                      class="subtitle is-size-6 has-text-grey"
-                    >
-                      {{ $utils.limit(post.description, 100) }}
-                    </p>
+            <nuxt-link
+              :to="`${localePath('blog')}/${post.slug}`"
+              class="block"
+            >
+              <div class="w-full rounded overflow-hidden shadow-lg hover:shadow-xl">
+                <img
+                  class="w-full"
+                  :src="`${$squidex.asset(post.picture)}?width=400&height=200&Crop`"
+                  :alt="post.title"
+                >
+                <div class="px-6 py-4">
+                  <div class="font-bold text-xl mb-2">
+                    {{ post.title }}
                   </div>
+                  <p class="text-gray-700 text-base">
+                    {{ $utils.limit(post.description, 120) }}
+                  </p>
                 </div>
               </div>
             </nuxt-link>
@@ -62,7 +57,7 @@
           </h2>
         </div>
       </div>
-    </section>
+    </div>
   </div>
 </template>
 

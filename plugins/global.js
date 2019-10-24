@@ -1,5 +1,9 @@
 import Vue from "vue";
 
+import Label from "@/components/form/Label.vue";
+import Input from "@/components/form/Input.vue";
+import Textarea from "@/components/form/Textarea.vue";
+
 import Socials from "@/components/Socials.vue";
 
 /*
@@ -7,6 +11,10 @@ import Socials from "@/components/Socials.vue";
  | Global components
  |--------------------------------------------------------------------------
 */
+
+Vue.component("v-label", Label);
+Vue.component("v-input", Input);
+Vue.component("v-textarea", Textarea);
 
 Vue.component("socials", Socials);
 

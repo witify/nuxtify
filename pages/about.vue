@@ -1,23 +1,20 @@
 <template>
   <div class="wrapper">
-    <div class="page-about">
-      <section class="hero has-text-centered is-primary">
-        <div class="hero-body">
-          <div class="container">
-            <h1 class="title">
-              {{ page.title }}
-            </h1>
-          </div>
-        </div>
-      </section>
-      <section class="section">
-        <div class="container is-small">
-          <div
-            class="content"
-            v-html="page.text"
-          />
-        </div>
-      </section>
+    <div class="py-10">
+      <div class="container is-small">
+        <h1 class="h1 text-center">
+          {{ page.title }}
+        </h1>
+      </div>
+    </div>
+    <hr>
+    <div class="section">
+      <div class="container is-small">
+        <div
+          class="content"
+          v-html="page.text"
+        />
+      </div>
     </div>
   </div>
 </template>

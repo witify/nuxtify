@@ -7,61 +7,56 @@
       <form
         v-if="!sent"
         v-loading="loading"
-        class="form"
         @submit.prevent="send()"
       >
-        <div class="columns">
-          <div class="column">
-            <div class="field">
-              <label
-                for=""
-                class="label"
-              >{{ $t('pages.contact.name') }}</label>
-              <input
+        <div class="flex-auto md:flex md:-mx-2 overflow-hidden">
+          <div class="md:w-1/2 md:px-2">
+            <div class="mb-4">
+              <v-label>{{ $t('pages.contact.name') }}</v-label>
+              <v-input
                 v-model="form.name"
-                class="input"
                 type="text"
                 name="name"
+                :placeholder="$t('pages.contact.name')"
                 required
-              >
+              />
             </div>
           </div>
-          <div class="column">
-            <div class="field">
-              <label
-                for=""
-                class="label"
-              >{{ $t('pages.contact.email') }}</label>
-              <input
+          <div class="md:w-1/2 md:px-2">
+            <div class="mb-4">
+              <v-label>
+                {{ $t('pages.contact.email') }}
+              </v-label>
+              <v-input
                 v-model="form.email"
-                class="input"
                 type="email"
                 name="email"
+                :placeholder="$t('pages.contact.email')"
                 required
-              >
+              />
             </div>
           </div>
         </div>
 
-        <div class="field">
-          <label class="label">{{ $t('pages.contact.message') }}</label>
-          <textarea
+        <div class="mb-4">
+          <v-label>{{ $t('pages.contact.message') }}</v-label>
+          <v-textarea
             v-model="form.message"
             cols="20"
             rows="5"
-            class="textarea"
+            name="message"
             minlength="3"
             required 
           />
         </div>
 
-        <div class="field">
-          <label class="label">{{ $t('pages.contact.contacted_by_phone') }}</label>
+        <div class="mb-1">
+          <v-label>{{ $t('pages.contact.contacted_by_phone') }}</v-label>
         </div>
 
-        <div class="field">
+        <div class="mb-4">
           <label
-            class="radio"
+            class="mr-2"
             required
           >
             <input
@@ -72,10 +67,7 @@
             {{ $t('pages.contact.no') }}
           </label>
 
-          <label
-            class="radio"
-            required
-          >
+          <label required>
             <input
               v-model="form.contact_by_phone"
               type="radio"
@@ -87,26 +79,28 @@
 
         <div
           v-show="form.contact_by_phone"
-          class="mb-15"
+          class="mb-4"
         >
-          <div class="field">
-            <label class="label">{{ $t('pages.contact.phone') }}</label>
-            <input
+          <div class="mb-4">
+            <v-label>
+              {{ $t('pages.contact.phone') }}
+            </v-label>
+            <v-input
               v-model="form.phone"
-              class="input"
               type="text"
               name="phone"
+              placeholder="123 456 7890"
               :required="form.contact_by_phone"
-            >
+            />
           </div>
 
-          <div class="columns">
-            <div class="column">
-              <div class="field">
-                <label class="label">{{ $t('pages.contact.when_available') }}</label>
+          <div class="">
+            <div class="mb-4">
+              <div class="mb-1">
+                <v-label>{{ $t('pages.contact.when_available') }}</v-label>
               </div>
 
-              <div class="field">
+              <div class="mb-1">
                 <label class="checkbox">
                   <input
                     v-model="form.day"
@@ -116,7 +110,7 @@
                   {{ $t('pages.contact.monday') }}
                 </label>
               </div>
-              <div class="field">
+              <div class="mb-1">
                 <label class="checkbox">
                   <input
                     v-model="form.day"
@@ -126,7 +120,7 @@
                   {{ $t('pages.contact.tuesday') }}
                 </label>
               </div>
-              <div class="field">
+              <div class="mb-1">
                 <label class="checkbox">
                   <input
                     v-model="form.day"
@@ -136,7 +130,7 @@
                   {{ $t('pages.contact.wednesday') }}
                 </label>
               </div>
-              <div class="field">
+              <div class="mb-1">
                 <label class="checkbox">
                   <input
                     v-model="form.day"
@@ -146,7 +140,7 @@
                   {{ $t('pages.contact.thursday') }}
                 </label>
               </div>
-              <div class="field">
+              <div class="mb-1">
                 <label class="checkbox">
                   <input
                     v-model="form.day"
@@ -158,12 +152,12 @@
               </div>
             </div>
 
-            <div class="column">
-              <div class="field">
-                <label class="label">{{ $t('pages.contact.which_time') }}</label>
+            <div class="mb-4">
+              <div class="mb-1">
+                <v-label>{{ $t('pages.contact.which_time') }}</v-label>
               </div>
 
-              <div class="field">
+              <div class="mb-1">
                 <label class="checkbox">
                   <input
                     v-model="form.time"
@@ -173,7 +167,7 @@
                   AM
                 </label>
               </div>
-              <div class="field">
+              <div class="mb-1">
                 <label class="checkbox">
                   <input
                     v-model="form.time"
@@ -187,7 +181,7 @@
           </div>
         </div>
 
-        <button class="button is-primary is-rounded is-medium mt-20">
+        <button class="button is-primary mt-4 mb-4">
           <span>{{ $t('pages.contact.submit') }}</span>
         </button>
       </form>
