@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper">
-    <v-section class="pt-5 sm:pt-10">
-      <v-container size="small">
+    <div class="section pt-5 sm:pt-10">
+      <div class="container is-small">
         <img
           class="mb-5 sm:mb-10"
           :src="`${$squidex.asset(post.picture)}?width=800&Crop`"
@@ -14,8 +14,8 @@
           class="content"
           v-html="post.text" 
         />
-      </v-container>
-    </v-section>
+      </div>
+    </div>
   </div>
 </template>
 

@@ -1,30 +1,39 @@
 <template>
   <div>
-    <v-hero class="relative bg-purple-800">
-      <v-container size="small">
-        <h1 class="text-center font-semibold leading-tight text-white text-xl sm:text-3xl">
+    <div class="relative pt-20 pb-10 sm:py-32 bg-purple-800">
+      <div class="container is-small">
+        <h1 class="h1 text-center text-white">
           {{ page.title }}
         </h1>
-      </v-container>
+      </div>
 
       <div class="absolute hidden sm:block w-full bottom-0 mb-5">
         <div
           v-scroll-to="'#content'"
           class="rounded-full p-2 shadow h-10 w-10 flex justify-center mx-auto bg-white"
         >
-          <div class="icon">
-            <i class="mdi mdi-chevron-down" />
-          </div>
+          <svg
+            style="width:24px;height:24px"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="#000000"
+              d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
+            />
+          </svg>
         </div>
       </div>
-    </v-hero>
-    <v-section id="content">
-      <v-container size="small">
+    </div>
+    <div
+      id="content"
+      class="section"
+    >
+      <div class="container is-small">
         <div
           v-html="page.text"
         />
-      </v-container>
-    </v-section>
+      </div>
+    </div>
   </div>
 </template>
 

@@ -1,6 +1,6 @@
 <template>
   <footer class="bg-gray-200 py-10 sm:pb-15 sm:pt-24">
-    <v-container class="text-center sm:text-left">
+    <div class="container text-center sm:text-left">
       <div class="overflow-hidden">
         <div class="sm:flex sm:-mx-10">
           <div class="mb-6 sm:w-1/2 sm:px-10">
@@ -53,7 +53,7 @@
           <socials />
         </div>
       </div>
-    </v-container>
+    </div>
   </footer>
 </template>
 

@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper">
     <div class="py-6 sm:py-10 text-center">
-      <v-container>
+      <div class="container">
         <h1 class="font-semibold text-xl sm:text-3xl">
           {{ page.title }}
         </h1>
@@ -9,13 +9,13 @@
           class="content"
           v-html="page.text"
         />
-      </v-container>
+      </div>
     </div>
     
     <hr>
 
-    <v-section>
-      <v-container>
+    <div class="section">
+      <div class="container">
         <div class="sm:flex sm:-mx-5">
           <div
             v-for="post in posts"
@@ -56,8 +56,8 @@
             {{ $t('pages.blog.empty') }}
           </h2>
         </div>
-      </v-container>
-    </v-section>
+      </div>
+    </div>
   </div>
 </template>
 

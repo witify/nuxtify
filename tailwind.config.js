@@ -7,7 +7,13 @@
 module.exports = {
 	theme: {
 		container: {
-			center: true
+			center: true,
+		},
+		extend: {
+			spacing: {
+				"72": "18rem",
+				"84": "21rem"
+			}
 		}
 	},
 	variants: {},

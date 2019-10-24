@@ -26,5 +26,8 @@
     "[vue]": {
         "editor.tabSize": 2
     },
-    "editor.detectIndentation": false
+    "editor.detectIndentation": false,
+    "css.validate": false,
+    "less.validate": false,
+    "scss.validate": false
 }

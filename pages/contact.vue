@@ -1,24 +1,24 @@
 <template>
   <div class="wrapper">
     <div class="py-6 sm:py-10">
-      <v-container>
+      <div class="container">
         <div class="max-w-3xl">
-          <h1 class="font-semibold text-xl sm:text-3xl">
+          <h1 class="h1 mb-1">
             {{ $t('pages.contact.title') }}
           </h1>
-          <h2>
+          <h2 class="h2 font-normal text-gray-600">
             {{ $t('pages.contact.subtitle') }}
           </h2>
         </div>
-      </v-container>
+      </div>
     </div>
 
     <hr>
 
     <div class="py-6 sm:py-10">
-      <v-container>
-        <div class="md:flex md:-mx-10">
-          <div class="md:w-1/4 md:px-10">
+      <div class="container">
+        <div class="md:flex md:-mx-16">
+          <div class="md:px-16">
             <h2 class="mb-5 text-xl sm:text-2xl">
               {{ $t('pages.contact.coordinates') }}
             </h2>
@@ -74,11 +74,11 @@
               </div>
             </div>
           </div>
-          <div class="md:px-10 flex-auto">
+          <div class="md:px-16 flex-auto">
             <contact-form />
           </div>
         </div>
-      </v-container>
+      </div>
     </div>
   </div>
 </template>

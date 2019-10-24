@@ -1,13 +1,134 @@
+/*
+|--------------------------------------------------------------------------
+| Layout
+|--------------------------------------------------------------------------
+*/
+
+.wrapper {
+    @apply pt-16;
+
+    @screen sm {
+        @apply pt-20;
+    }
+}
+
+.section {
+    @apply py-10;
+
+    @screen sm {
+        @apply py-20;
+    }
+}
+
+.container {
+    @apply px-5;
+
+    @screen sm {
+        @apply px-6;
+    }
+
+    &.is-tiny {
+        @apply max-w-xl;
+    }
+
+    &.is-small {
+        @apply max-w-3xl;
+    }
+}
+
+/*
+|--------------------------------------------------------------------------
+| Headings
+|--------------------------------------------------------------------------
+*/
+
+.h1 {
+    @apply font-semibold leading-tight text-xl;
+
+    @screen sm {
+        @apply text-3xl;
+    }
+}
+
+.h2 {
+    @apply font-semibold leading-tight text-base;
+
+    @screen sm {
+        @apply text-xl;
+    }
+}
+
+/*
+|--------------------------------------------------------------------------
+| Buttons
+|--------------------------------------------------------------------------
+*/
+
 .button {
     @apply font-semibold py-2 px-4 rounded bg-gray-400 text-gray-800;
-    &:hover {
-        @apply bg-gray-300;
-    }
+}
+
+.button:hover {
+    @apply bg-gray-300;
 }
 
 .button.is-primary {
     @apply bg-blue-500 text-white;
-    &:hover {
-        @apply bg-blue-600;
+}
+
+.button.is-primary:hover {
+    @apply bg-blue-600;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Utils
+|--------------------------------------------------------------------------
+*/
+
+.content {
+    @apply text-lg text-gray-900 leading-normal;
+
+    & > * + *,  & li + li, & li > p + p {
+        @apply mt-6;
+    }
+
+    & strong {
+        @apply text-black font-bold;
+    }
+
+    & a {
+        @apply text-black font-semibold;
+    }
+
+    & strong a {
+        @apply font-bold;
+    }
+
+    & h2 {
+        @apply leading-tight text-xl font-bold text-black mb-2 mt-10;
+    }
+
+    & h3 {
+        @apply leading-tight text-lg font-bold text-black mt-8 -mb-2;
+    }
+
+    & blockquote {
+        @apply border-l-4 border-gray-200 pl-4 italic;
+    }
+    
+    & ul, & ol {
+        @apply pl-5;
+        @screen sm {
+          @apply pl-10;
+        }
+    }
+
+    & p {
+        @apply mb-5;
+    }
+
+    & img {
+        @apply mb-5;
     }
 }

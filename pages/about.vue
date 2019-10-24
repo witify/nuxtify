@@ -1,18 +1,21 @@
 <template>
   <div class="wrapper">
     <div class="py-10">
-      <v-container size="small">
-        <h1 class="title text-center font-semibold text-xl sm:text-3xl">
+      <div class="container is-small">
+        <h1 class="h1 text-center">
           {{ page.title }}
         </h1>
-      </v-container>
+      </div>
     </div>
     <hr>
-    <v-section class="section">
-      <v-container size="small">
-        <div v-html="page.text" />
-      </v-container>
-    </v-section>
+    <div class="section">
+      <div class="container is-small">
+        <div
+          class="content"
+          v-html="page.text"
+        />
+      </div>
+    </div>
   </div>
 </template>
 

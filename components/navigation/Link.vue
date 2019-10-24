@@ -2,6 +2,7 @@
   <li>
     <nuxt-link
       class="block px-4 py-1 md:p-2 lg:px-4"
+      :class="linkClass"
       :to="to"
       :title="label"
     >
@@ -20,6 +21,14 @@ export default {
 		label: {
 			required: true,
 			type: String
+		}
+	},
+	computed: {
+		linkClass () {
+			if (this.$parent.transparent) {
+				return "md:text-white";
+			}
+			return "";
 		}
 	}
 };

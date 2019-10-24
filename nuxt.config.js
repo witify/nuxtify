@@ -41,10 +41,7 @@ module.exports = {
 			{ rel: "icon", type: "image/png", sizes: "32x32", href: "/favicon-32x32.png" },
 			{ rel: "icon", type: "image/png", sizes: "16x16", href: "/favicon-16x16.png" },
 			{ rel: "manifest", href: "/site.webmanifest" },
-			{ rel: "mask-icon", href: "/safari-pinned-tab.svg", color: "#000000" },
-      
-			// Material Design Icons
-			{ rel: "stylesheet", href: "https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/2.6.95/css/materialdesignicons.min.css" },
+			{ rel: "mask-icon", href: "/safari-pinned-tab.svg", color: "#000000" }
 		],
 	},
 
@@ -75,10 +72,6 @@ module.exports = {
   | Build config
   |--------------------------------------------------------------------------
   */
-
-	css: [
-		"assets/css/main.css"
-	],
 
 	build: {    
 		extend (config, ctx) {
